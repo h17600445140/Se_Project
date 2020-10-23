@@ -1,4 +1,4 @@
 .idea/
 .pytest_cache/
-__pucache__/
+__pycache__/
 *.pyc
