@@ -8,6 +8,7 @@ class PublicLoginPage(BasePage):
     password_input = (By.ID, 'password')
     login_button = (By.ID, 'login')
     getInto_button = (By.XPATH, '//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/p[2]')
+    getMessage_box = (By.CLASS_NAME, 'el-message__content')
 
     def __init__(self, driver):
         BasePage.__init__(self, driver)
@@ -29,3 +30,6 @@ class PublicLoginPage(BasePage):
 
     def get_into(self):
         self.click(*self.getInto_button)
+
+    def get_errortext(self):
+        return self.find_element(*self.getMessage_box).text

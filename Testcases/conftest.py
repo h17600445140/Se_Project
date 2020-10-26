@@ -14,12 +14,9 @@ def cmdopt(request):
 def get_urldict():
     path = os.path.dirname(os.path.dirname(__file__))
     yamlPath = os.sep.join([path, 'Config', 'test', 'testUrl_config.yml'])
-
-    # open方法打开直接读出来
     with open(yamlPath, 'r', encoding='utf-8') as f:
         cfg = f.read()
-
-    d = yaml.load(cfg, Loader=yaml.FullLoader)  # 用load方法转字典
+    d = yaml.load(cfg, Loader=yaml.FullLoader)
     # print(d)    # {'url': {'host': 'http://fsscysc.csztessc.com.cn:8085/'}}
     return d
 
