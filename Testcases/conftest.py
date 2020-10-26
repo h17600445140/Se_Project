@@ -5,11 +5,9 @@ import yaml
 def pytest_addoption(parser):
     parser.addoption("--test", default="testdata", help="使用 tsetdata")
 
-
 @pytest.fixture(scope="session")
 def cmdopt(request):
     return request.config.getoption("--test")
-
 
 def get_urldict():
     path = os.path.dirname(os.path.dirname(__file__))

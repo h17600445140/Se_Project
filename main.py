@@ -18,6 +18,31 @@
 # print(type(d))
 
 
-# if __name__ == '__main__':
-#     print('111')
+# login_data = [
+#     ('hctest', '123456', '账号密码不匹配'),
+#     ('admin', 'zfs123456', '登陆成功')
+# ]
+
+# dict = {
+#     "username": ["hcest", 'admin'],
+#     "password": ["123456", "zfs123456"],
+#     "casename": ["账号密码不匹配", "登陆成功"]
+# }
+
+# import json
+# path = "D:\Pycharm\自动化\SeleniumAutoProject\Data\loginPageData\loginPageData.json"
+# with open(path, encoding='UTF-8') as f:
+#     data = json.load(f)
+# list = [data[key] for key in data.keys()]
+# new_list = [i for i in zip(*list)]
+# print(new_list)
+
+# def trans(l):
+#     a = [[] for i in l[0]]
+#     print(a)
+#     for i in l:
+#         for j in range(len(i)):
+#             a[j].append(i[j])
+#     return a
+# print(trans(list))
 

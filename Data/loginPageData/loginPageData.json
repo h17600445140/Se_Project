@@ -1,0 +1,5 @@
+{
+    "account": ["hcest", "admin"],
+    "password": ["123456", "zfs123456"],
+    "casename": ["账号密码不匹配", "登陆成功"]
+}

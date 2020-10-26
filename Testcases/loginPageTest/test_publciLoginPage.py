@@ -13,27 +13,25 @@ class TestPublicLoginPage(object):
         ('admin', 'zfs123456', '登陆成功')
     ]
 
-    getMessage_box = (By.CLASS_NAME, 'el-message__content')
-
     def setup_class(self):
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(1)
         self.publicloginpage = PublicLoginPage(self.driver)
 
-    @pytest.mark.parametrize('account,password,casename', login_data)
-    def test_login(self, account, password, casename, env):
+    def test_login(self, json_testdata, env):
         self.publicloginpage.goto_publicloginpage(env['url']['host'])
-        self.publicloginpage.input_account(account)
-        self.publicloginpage.input_password(password)
+        self.publicloginpage.input_account(json_testdata[0])
+        self.publicloginpage.input_password(json_testdata[1])
         self.publicloginpage.click_loginbutton()
 
-        if casename == '账号密码不匹配':
-            WebDriverWait(self.publicloginpage.driver, 1).until(EC.visibility_of_element_located(self.getMessage_box))
+        if json_testdata[2] == '账号密码不匹配':
+            WebDriverWait(self.publicloginpage.driver, 1).until(EC.visibility_of_element_located(self.publicloginpage.getMessage_box))
             msg = self.publicloginpage.get_errortext()
             assert msg == "账号密码不匹配"
-        elif casename == '登陆成功':
+        elif json_testdata[2] == '登陆成功':
             WebDriverWait(self.publicloginpage.driver, 1).until(EC.visibility_of_element_located(self.publicloginpage.getInto_button))
             self.publicloginpage.get_into()
+            self.publicloginpage.driver.refresh()
             assert 1 == 1
 
 if __name__ == '__main__':

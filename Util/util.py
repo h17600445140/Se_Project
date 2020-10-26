@@ -1,3 +1,4 @@
+import json
 import pickle
 import random
 import string
@@ -5,6 +6,7 @@ from time import strftime, localtime, time
 from Lib.ShowapiRequest import ShowapiRequest
 from PIL import Image
 import os
+
 
 # 初始化logger对象
 def get_logger():
@@ -31,8 +33,9 @@ def get_logger():
 
     return logger
 
+
 # 获取验证码图片
-def get_code(driver, id):
+def get_code(driver, id) -> str:
     # 获取页面截图
     t1 = strftime("%Y-%m-%d-%H-%M-%S",localtime(time()))
     path1 = os.path.dirname(os.path.dirname(__file__)) + '/screenshots'
@@ -70,10 +73,12 @@ def get_code(driver, id):
     code = text['Result']
     return code
 
+
 # 生成随机字符串
-def gen_random_str():
+def gen_random_str() -> str:
     random_str = ''.join(random.sample(string.ascii_letters + string.digits, 16))
     return random_str
+
 
 # 保存cookie
 def save_cookie(driver, path):
@@ -82,9 +87,30 @@ def save_cookie(driver, path):
         print(cookies)
         pickle.dump(cookies, filehandler)
 
+
 # 加载cookie
 def load_cookie(driver, path):
     with open(path, 'rb') as cookiesfile:
         cookies = pickle.load(cookiesfile)
         for cookie in cookies:
             driver.add_cookie(cookie)
+
+
+# 加载Data目录下json数据
+def get_jsontestdata(path) -> list:
+    with open(path, encoding='UTF-8') as f:
+        data = json.load(f)
+    values = [data[key] for key in data.keys()]
+    new_list = [i for i in zip(*values)]
+    return new_list
+
+
+# 加载dataoath,传入当前test文件的工作路径
+def get_datapath(path):
+    a = path.split('/Testcases/')
+    # a[0] = 'D:/Pycharm/自动化/SeleniumAutoProject/'
+    b = a[1].split('Test')
+    # b[0] = 'loginPage'
+    data_path = os.sep.join([a[0], 'Data', b[0]+'Data', b[0]+'Data.json'])
+    return data_path
+
