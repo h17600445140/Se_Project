@@ -1,0 +1,25 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "NameError",
+      "children" : [ {
+        "name" : "登陆测试",
+        "uid" : "e05f5bdfb7b66c67",
+        "parentUid" : "d15adc72015c0b15b703c7d8cd098ce8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1603810674634,
+          "stop" : 1603810675618,
+          "duration" : 984
+        },
+        "flaky" : false,
+        "parameters" : [ "('admin', 'zfs123456', '登陆成功')" ]
+      } ],
+      "uid" : "d15adc72015c0b15b703c7d8cd098ce8"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

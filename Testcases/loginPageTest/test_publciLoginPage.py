@@ -9,25 +9,28 @@ from Util.util import get_jsontestdata, get_datapath
 import os
 
 @allure.feature("登陆模块")
-@allure.title("登陆测试")
-@allure.testcase("http://www.baidu.com")
 class TestPublicLoginPage(object):
 
     def setup_class(self):
-        self.driver = webdriver.Chrome()
-        self.driver.implicitly_wait(2)
-        self.publicloginpage = PublicLoginPage(self.driver)
+        with allure.step("第一步，初始化"):
+            self.driver = webdriver.Chrome()
+            self.driver.implicitly_wait(2)
+            self.publicloginpage = PublicLoginPage(self.driver)
 
     # @pytest.mark.parametrize('account, password, cases',get_jsontestdata(get_datapath(os.path.dirname(__file__))))
     @allure.story("测试登陆时发生的四种场景")
+    # @allure.title("登陆测试")
     @allure.severity('blocker')
     @allure.description("登陆成功 失败 成功")
-    @allure.link("https://docs.qameta.io/allure/#_pytest")
+    # @allure.testcase("http://www.baidu.com")
+    # @allure.link("https://docs.qameta.io/allure/#_pytest")
     def test_login(self, json_testdata, env):
+        allure.title(json_testdata[2])
         ''' 登录测试开始 '''
         self.publicloginpage.goto_publicloginpage(env['url']['host'])
-        self.publicloginpage.input_account(json_testdata[0])
-        self.publicloginpage.input_password(json_testdata[1])
+        with allure.step("第三步，输入账号/密码"):
+            self.publicloginpage.input_account(json_testdata[0])
+            self.publicloginpage.input_password(json_testdata[1])
         self.publicloginpage.click_loginbutton()
 
         if (json_testdata[2] == '账号密码不匹配') or (json_testdata[2] =='当前登录用户名或密码错误'):

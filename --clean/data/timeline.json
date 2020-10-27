@@ -1,0 +1,73 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "LAPTOP-DFUVMOEO",
+    "children" : [ {
+      "name" : "10916-MainThread",
+      "children" : [ {
+        "name" : "登陆测试",
+        "uid" : "2a8f496685569b88",
+        "parentUid" : "a3de45023f36ef4f11d7b45834a4d99e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603810668610,
+          "stop" : 1603810671888,
+          "duration" : 3278
+        },
+        "flaky" : false,
+        "parameters" : [ "('test', 'zfs123456', '账号密码不匹配')" ]
+      }, {
+        "name" : "登陆测试",
+        "uid" : "3d64b5d2f8e7c8c3",
+        "parentUid" : "a3de45023f36ef4f11d7b45834a4d99e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603810672892,
+          "stop" : 1603810673892,
+          "duration" : 1000
+        },
+        "flaky" : false,
+        "parameters" : [ "('admin', '', '请输入密码')" ]
+      }, {
+        "name" : "登陆测试",
+        "uid" : "e05f5bdfb7b66c67",
+        "parentUid" : "a3de45023f36ef4f11d7b45834a4d99e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1603810674634,
+          "stop" : 1603810675618,
+          "duration" : 984
+        },
+        "flaky" : false,
+        "parameters" : [ "('admin', 'zfs123456', '登陆成功')" ]
+      }, {
+        "name" : "登陆测试",
+        "uid" : "33d4a89e36d1a9a7",
+        "parentUid" : "a3de45023f36ef4f11d7b45834a4d99e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603810673895,
+          "stop" : 1603810674632,
+          "duration" : 737
+        },
+        "flaky" : false,
+        "parameters" : [ "('admin', '123456', '当前登录用户名或密码错误')" ]
+      }, {
+        "name" : "登陆测试",
+        "uid" : "7044cff65a229f26",
+        "parentUid" : "a3de45023f36ef4f11d7b45834a4d99e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603810671891,
+          "stop" : 1603810672889,
+          "duration" : 998
+        },
+        "flaky" : false,
+        "parameters" : [ "('', 'zfs123456', '请输入账户名称')" ]
+      } ],
+      "uid" : "a3de45023f36ef4f11d7b45834a4d99e"
+    } ],
+    "uid" : "0e8f462db74301e9a559fcef3dedf590"
+  } ]
+}

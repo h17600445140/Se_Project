@@ -1,0 +1,208 @@
+{
+  "uid" : "fb77a1198d27e818",
+  "name" : "test_login[当前登录用户名或密码错误]",
+  "fullName" : "Testcases.loginPageTest.test_publciLoginPage.TestPublicLoginPage#test_login",
+  "historyId" : "2b99ea86574217e4443397d8c22ee78d",
+  "time" : {
+    "start" : 1603812760369,
+    "stop" : 1603812761330,
+    "duration" : 961
+  },
+  "description" : "登陆成功 失败 成功",
+  "descriptionHtml" : "<p>登陆成功 失败 成功</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1603812752212,
+      "stop" : 1603812752212,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "env",
+    "time" : {
+      "start" : 1603812752212,
+      "stop" : 1603812752212,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "json_testdata",
+    "time" : {
+      "start" : 1603812760368,
+      "stop" : 1603812760368,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1603812752212,
+      "stop" : 1603812755512,
+      "duration" : 3300
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "第一步，初始化",
+      "time" : {
+        "start" : 1603812752212,
+        "stop" : 1603812755512,
+        "duration" : 3300
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "登陆成功 失败 成功",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "第二步，进入页面",
+      "time" : {
+        "start" : 1603812760369,
+        "stop" : 1603812760578,
+        "duration" : 209
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "第三步，输入账号/密码",
+      "time" : {
+        "start" : 1603812760578,
+        "stop" : 1603812761019,
+        "duration" : 441
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1603812762629,
+      "stop" : 1603812762629,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试登陆时发生的四种场景"
+  }, {
+    "name" : "feature",
+    "value" : "登陆模块"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.loginPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_publciLoginPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPublicLoginPage"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-DFUVMOEO"
+  }, {
+    "name" : "thread",
+    "value" : "6236-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.loginPageTest.test_publciLoginPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "json_testdata",
+    "value" : "('admin', '123456', '当前登录用户名或密码错误')"
+  } ],
+  "links" : [ {
+    "name" : "https://docs.qameta.io/allure/#_pytest",
+    "url" : "https://docs.qameta.io/allure/#_pytest",
+    "type" : "link"
+  }, {
+    "name" : "http://www.baidu.com",
+    "url" : "http://www.baidu.com",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fb77a1198d27e818.json",
+  "parameterValues" : [ "('admin', '123456', '当前登录用户名或密码错误')" ]
+}

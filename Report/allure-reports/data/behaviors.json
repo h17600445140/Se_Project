@@ -6,62 +6,62 @@
     "children" : [ {
       "name" : "测试登陆时发生的四种场景",
       "children" : [ {
-        "name" : "登陆测试",
-        "uid" : "df25a5260d1abd5c",
+        "name" : "test_login[账号密码不匹配]",
+        "uid" : "bfd0bc5f93435b13",
         "parentUid" : "e5a8c451ffb0826894d024e3949ff4f2",
         "status" : "passed",
         "time" : {
-          "start" : 1603794973067,
-          "stop" : 1603794976506,
-          "duration" : 3439
+          "start" : 1603812755512,
+          "stop" : 1603812758907,
+          "duration" : 3395
         },
         "flaky" : false,
         "parameters" : [ "('test', 'zfs123456', '账号密码不匹配')" ]
       }, {
-        "name" : "登陆测试",
-        "uid" : "7d1c9486e200bb27",
+        "name" : "test_login[请输入账户名称]",
+        "uid" : "3af99a1e35287860",
         "parentUid" : "e5a8c451ffb0826894d024e3949ff4f2",
         "status" : "passed",
         "time" : {
-          "start" : 1603794976512,
-          "stop" : 1603794978092,
-          "duration" : 1580
+          "start" : 1603812758911,
+          "stop" : 1603812759649,
+          "duration" : 738
         },
         "flaky" : false,
         "parameters" : [ "('', 'zfs123456', '请输入账户名称')" ]
       }, {
-        "name" : "登陆测试",
-        "uid" : "52bb7791a07fa31e",
+        "name" : "test_login[请输入密码]",
+        "uid" : "be6af81c50a68f47",
         "parentUid" : "e5a8c451ffb0826894d024e3949ff4f2",
         "status" : "passed",
         "time" : {
-          "start" : 1603794978099,
-          "stop" : 1603794979588,
-          "duration" : 1489
+          "start" : 1603812759652,
+          "stop" : 1603812760365,
+          "duration" : 713
         },
         "flaky" : false,
         "parameters" : [ "('admin', '', '请输入密码')" ]
       }, {
-        "name" : "登陆测试",
-        "uid" : "27361c662c979e9b",
+        "name" : "test_login[当前登录用户名或密码错误]",
+        "uid" : "fb77a1198d27e818",
         "parentUid" : "e5a8c451ffb0826894d024e3949ff4f2",
         "status" : "passed",
         "time" : {
-          "start" : 1603794979591,
-          "stop" : 1603794980943,
-          "duration" : 1352
+          "start" : 1603812760369,
+          "stop" : 1603812761330,
+          "duration" : 961
         },
         "flaky" : false,
         "parameters" : [ "('admin', '123456', '当前登录用户名或密码错误')" ]
       }, {
-        "name" : "登陆测试",
-        "uid" : "3df2bf6aa8243e9a",
+        "name" : "test_login[登陆成功]",
+        "uid" : "691b49db61c6026c",
         "parentUid" : "e5a8c451ffb0826894d024e3949ff4f2",
         "status" : "passed",
         "time" : {
-          "start" : 1603794980949,
-          "stop" : 1603794983075,
-          "duration" : 2126
+          "start" : 1603812761334,
+          "stop" : 1603812762628,
+          "duration" : 1294
         },
         "flaky" : false,
         "parameters" : [ "('admin', 'zfs123456', '登陆成功')" ]

@@ -1,0 +1,166 @@
+{
+  "uid" : "e05f5bdfb7b66c67",
+  "name" : "登陆测试",
+  "fullName" : "Testcases.loginPageTest.test_publciLoginPage.TestPublicLoginPage#test_login",
+  "historyId" : "6af8614bb72c017ba613731a6355181e",
+  "time" : {
+    "start" : 1603810674634,
+    "stop" : 1603810675618,
+    "duration" : 984
+  },
+  "description" : "登陆成功 失败 成功",
+  "descriptionHtml" : "<p>登陆成功 失败 成功</p>\n",
+  "status" : "broken",
+  "statusMessage" : "NameError",
+  "statusTrace" : "self = <Testcases.loginPageTest.test_publciLoginPage.TestPublicLoginPage object at 0x000002951E1DEB80>, json_testdata = ('admin', 'zfs123456', '登陆成功')\nenv = {'url': {'host': 'http://fsscysc.csztessc.com.cn:8085/public'}}\n\n    @allure.story(\"测试登陆时发生的四种场景\")\n    @allure.title(\"登陆测试\")\n    @allure.severity('blocker')\n    @allure.description(\"登陆成功 失败 成功\")\n    @allure.testcase(\"http://www.baidu.com\")\n    @allure.link(\"https://docs.qameta.io/allure/#_pytest\")\n    def test_login(self, json_testdata, env):\n        ''' 登录测试开始 '''\n        self.publicloginpage.goto_publicloginpage(env['url']['host'])\n        self.publicloginpage.input_account(json_testdata[0])\n        self.publicloginpage.input_password(json_testdata[1])\n        self.publicloginpage.click_loginbutton()\n    \n        if (json_testdata[2] == '账号密码不匹配') or (json_testdata[2] =='当前登录用户名或密码错误'):\n            WebDriverWait(self.publicloginpage.driver, 1).until(\n                EC.visibility_of_element_located(self.publicloginpage.getMessage_box))\n            msg = self.publicloginpage.get_errortext()\n            assert (json_testdata[2] in msg)\n        elif json_testdata[2] == '请输入账户名称':\n            WebDriverWait(self.publicloginpage.driver, 1).until(\n                EC.text_to_be_present_in_element(self.publicloginpage.accountInputError_box,json_testdata[2]))\n            msg = self.publicloginpage.get_accounterrortext()\n            assert json_testdata[2] == msg\n        elif json_testdata[2] == '请输入密码':\n            WebDriverWait(self.publicloginpage.driver, 1).until(\n                EC.text_to_be_present_in_element(self.publicloginpage.passwordInputError_box,json_testdata[2]))\n            msg = self.publicloginpage.get_passworderrortext()\n            assert json_testdata[2] == msg\n        elif json_testdata[2] == '登陆成功':\n            WebDriverWait(self.publicloginpage.driver, 1).until(\n                EC.visibility_of_element_located(self.publicloginpage.getInto_button))\n            self.publicloginpage.get_into()\n            self.publicloginpage.driver.refresh()\n>           raise NameError\nE           NameError\n\nTestcases\\loginPageTest\\test_publciLoginPage.py:53: NameError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "json_testdata",
+    "time" : {
+      "start" : 1603810674634,
+      "stop" : 1603810674634,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1603810665601,
+      "stop" : 1603810668609,
+      "duration" : 3008
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1603810665600,
+      "stop" : 1603810665600,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "env",
+    "time" : {
+      "start" : 1603810665600,
+      "stop" : 1603810665601,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1603810675779,
+      "stop" : 1603810675779,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "登陆模块"
+  }, {
+    "name" : "story",
+    "value" : "测试登陆时发生的四种场景"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.loginPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_publciLoginPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPublicLoginPage"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-DFUVMOEO"
+  }, {
+    "name" : "thread",
+    "value" : "10916-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.loginPageTest.test_publciLoginPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "json_testdata",
+    "value" : "('admin', 'zfs123456', '登陆成功')"
+  } ],
+  "links" : [ {
+    "name" : "https://docs.qameta.io/allure/#_pytest",
+    "url" : "https://docs.qameta.io/allure/#_pytest",
+    "type" : "link"
+  }, {
+    "name" : "http://www.baidu.com",
+    "url" : "http://www.baidu.com",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ {
+      "uid" : "39832ab421719187",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603809799678,
+        "stop" : 1603809800614,
+        "duration" : 936
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e05f5bdfb7b66c67.json",
+  "parameterValues" : [ "('admin', 'zfs123456', '登陆成功')" ]
+}
