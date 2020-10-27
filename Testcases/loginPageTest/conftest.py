@@ -1,11 +1,11 @@
 from Util.util import get_jsontestdata, get_datapath
-
 import os
 import pytest
 
+case = ["账号密码不匹配", "请输入账户名称", "请输入密码", "当前登录用户名或密码错误", "登陆成功"]
 
-@pytest.fixture()
-def json_testdata() ->list:
-    print(os.path.dirname(__file__))
-    data_path = get_datapath(os.path.dirname(__file__))
-    return get_jsontestdata(data_path)
+@pytest.fixture(params=get_jsontestdata(get_datapath(os.path.dirname(__file__))),ids=case)
+def json_testdata(request) ->list:
+    # 返回数据
+    return request.param
+

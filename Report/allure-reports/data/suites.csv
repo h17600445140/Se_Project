@@ -1,0 +1,6 @@
+"Status","Name","Duration in ms","Description"
+"passed","Testcases.loginPageTest.test_publciLoginPage.TestPublicLoginPage#test_login","2126","登陆成功 失败 成功"
+"passed","Testcases.loginPageTest.test_publciLoginPage.TestPublicLoginPage#test_login","1489","登陆成功 失败 成功"
+"passed","Testcases.loginPageTest.test_publciLoginPage.TestPublicLoginPage#test_login","1352","登陆成功 失败 成功"
+"passed","Testcases.loginPageTest.test_publciLoginPage.TestPublicLoginPage#test_login","3439","登陆成功 失败 成功"
+"passed","Testcases.loginPageTest.test_publciLoginPage.TestPublicLoginPage#test_login","1580","登陆成功 失败 成功"

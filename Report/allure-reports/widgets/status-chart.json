@@ -1,0 +1,51 @@
+[ {
+  "uid" : "3df2bf6aa8243e9a",
+  "name" : "登陆测试",
+  "time" : {
+    "start" : 1603794980949,
+    "stop" : 1603794983075,
+    "duration" : 2126
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "52bb7791a07fa31e",
+  "name" : "登陆测试",
+  "time" : {
+    "start" : 1603794978099,
+    "stop" : 1603794979588,
+    "duration" : 1489
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "27361c662c979e9b",
+  "name" : "登陆测试",
+  "time" : {
+    "start" : 1603794979591,
+    "stop" : 1603794980943,
+    "duration" : 1352
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "df25a5260d1abd5c",
+  "name" : "登陆测试",
+  "time" : {
+    "start" : 1603794973067,
+    "stop" : 1603794976506,
+    "duration" : 3439
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "7d1c9486e200bb27",
+  "name" : "登陆测试",
+  "time" : {
+    "start" : 1603794976512,
+    "stop" : 1603794978092,
+    "duration" : 1580
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+} ]

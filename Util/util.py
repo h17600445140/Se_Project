@@ -3,6 +3,9 @@ import pickle
 import random
 import string
 from time import strftime, localtime, time
+
+import yaml
+
 from Lib.ShowapiRequest import ShowapiRequest
 from PIL import Image
 import os
@@ -34,7 +37,7 @@ def get_logger():
     return logger
 
 
-# 获取验证码图片
+# 获取验证码
 def get_code(driver, id) -> str:
     # 获取页面截图
     t1 = strftime("%Y-%m-%d-%H-%M-%S",localtime(time()))
@@ -81,7 +84,7 @@ def gen_random_str() -> str:
 
 
 # 保存cookie
-def save_cookie(driver, path):
+def save_cookie(driver, path) -> None:
     with open(path, 'wb') as filehandler:
         cookies = driver.get_cookies()
         print(cookies)
@@ -89,14 +92,14 @@ def save_cookie(driver, path):
 
 
 # 加载cookie
-def load_cookie(driver, path):
+def load_cookie(driver, path) -> None:
     with open(path, 'rb') as cookiesfile:
         cookies = pickle.load(cookiesfile)
         for cookie in cookies:
             driver.add_cookie(cookie)
 
 
-# 加载Data目录下json数据
+# 加载 Data 目录下json数据
 def get_jsontestdata(path) -> list:
     with open(path, encoding='UTF-8') as f:
         data = json.load(f)
@@ -104,13 +107,22 @@ def get_jsontestdata(path) -> list:
     new_list = [i for i in zip(*values)]
     return new_list
 
-
-# 加载dataoath,传入当前test文件的工作路径
-def get_datapath(path):
-    a = path.split('/Testcases/')
-    # a[0] = 'D:/Pycharm/自动化/SeleniumAutoProject/'
+# 获取 data_path
+def get_datapath(path) -> str:
+    a = path.split('Testcases')
     b = a[1].split('Test')
-    # b[0] = 'loginPage'
-    data_path = os.sep.join([a[0], 'Data', b[0]+'Data', b[0]+'Data.json'])
+    data_path = a[0] + 'Data' + b[0] + 'Data' + b[0] + 'Data.json'
     return data_path
+
+# 获取url文件
+def get_urldict() -> dict:
+    path = os.path.dirname(os.path.dirname(__file__))
+    yamlPath = os.sep.join([path, 'Config', 'test', 'testUrl_config.yml'])
+    with open(yamlPath, 'r', encoding='utf-8') as f:
+        cfg = f.read()
+    d = yaml.load(cfg, Loader=yaml.FullLoader)
+    # print(d)    # {'url': {'host': 'http://fsscysc.csztessc.com.cn:8085/'}}
+    return d
+
+
 

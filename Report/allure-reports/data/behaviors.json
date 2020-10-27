@@ -1,0 +1,73 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "登陆模块",
+    "children" : [ {
+      "name" : "测试登陆时发生的四种场景",
+      "children" : [ {
+        "name" : "登陆测试",
+        "uid" : "df25a5260d1abd5c",
+        "parentUid" : "e5a8c451ffb0826894d024e3949ff4f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603794973067,
+          "stop" : 1603794976506,
+          "duration" : 3439
+        },
+        "flaky" : false,
+        "parameters" : [ "('test', 'zfs123456', '账号密码不匹配')" ]
+      }, {
+        "name" : "登陆测试",
+        "uid" : "7d1c9486e200bb27",
+        "parentUid" : "e5a8c451ffb0826894d024e3949ff4f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603794976512,
+          "stop" : 1603794978092,
+          "duration" : 1580
+        },
+        "flaky" : false,
+        "parameters" : [ "('', 'zfs123456', '请输入账户名称')" ]
+      }, {
+        "name" : "登陆测试",
+        "uid" : "52bb7791a07fa31e",
+        "parentUid" : "e5a8c451ffb0826894d024e3949ff4f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603794978099,
+          "stop" : 1603794979588,
+          "duration" : 1489
+        },
+        "flaky" : false,
+        "parameters" : [ "('admin', '', '请输入密码')" ]
+      }, {
+        "name" : "登陆测试",
+        "uid" : "27361c662c979e9b",
+        "parentUid" : "e5a8c451ffb0826894d024e3949ff4f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603794979591,
+          "stop" : 1603794980943,
+          "duration" : 1352
+        },
+        "flaky" : false,
+        "parameters" : [ "('admin', '123456', '当前登录用户名或密码错误')" ]
+      }, {
+        "name" : "登陆测试",
+        "uid" : "3df2bf6aa8243e9a",
+        "parentUid" : "e5a8c451ffb0826894d024e3949ff4f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603794980949,
+          "stop" : 1603794983075,
+          "duration" : 2126
+        },
+        "flaky" : false,
+        "parameters" : [ "('admin', 'zfs123456', '登陆成功')" ]
+      } ],
+      "uid" : "e5a8c451ffb0826894d024e3949ff4f2"
+    } ],
+    "uid" : "aabb69485063425b718b057ab51a7a51"
+  } ]
+}
