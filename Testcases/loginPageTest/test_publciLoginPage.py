@@ -71,6 +71,7 @@ class TestPublicLoginPage(object):
                     self.publicloginpage.driver.refresh()
                     assert 1 == 1
             except Exception as e:
+                self.logger.error("出现异常")
                 self.logger.error(type(e))
                 code = 'wrong'
                 timeNow = strftime("%Y-%m-%d-%H-%M-%S",localtime(time()))
