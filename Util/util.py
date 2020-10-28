@@ -108,12 +108,14 @@ def get_jsontestdata(path) -> list:
     new_list = [i for i in zip(*values)]
     return new_list
 
+
 # 获取 data_path
 def get_datapath(path) -> str:
     a = path.split('Testcases')
     b = a[1].split('Test')
     data_path = a[0] + 'Data' + b[0] + 'Data' + b[0] + 'Data.json'
     return data_path
+
 
 # 获取url文件
 def get_urldict() -> dict:
@@ -124,6 +126,17 @@ def get_urldict() -> dict:
     d = yaml.load(cfg, Loader=yaml.FullLoader)
     # print(d)    # {'url': {'host': 'http://fsscysc.csztessc.com.cn:8085/'}}
     return d
+
+
+# 获取图片路径
+def get_picture_path(state,time) -> str:
+    if state == 'success':
+        code = 'success_picture'
+    else:
+        code = 'wrong_picture'
+    path = os.path.dirname(os.path.dirname(__file__))
+    picture_path = os.sep.join([path, 'Image', code, time]) + ".png"
+    return picture_path
 
 
 

@@ -1,6 +1,0 @@
-"Status","Name","Duration in ms","Description"
-"passed","Testcases.loginPageTest.test_publciLoginPage.TestPublicLoginPage#test_login","990"," 登录 ""账号密码不匹配"", ""请输入账户名称"", ""请输入密码"", ""当前登录用户名或密码错误"", ""登陆成功"" "
-"passed","Testcases.loginPageTest.test_publciLoginPage.TestPublicLoginPage#test_login","1202"," 登录 ""账号密码不匹配"", ""请输入账户名称"", ""请输入密码"", ""当前登录用户名或密码错误"", ""登陆成功"" "
-"passed","Testcases.loginPageTest.test_publciLoginPage.TestPublicLoginPage#test_login","838"," 登录 ""账号密码不匹配"", ""请输入账户名称"", ""请输入密码"", ""当前登录用户名或密码错误"", ""登陆成功"" "
-"passed","Testcases.loginPageTest.test_publciLoginPage.TestPublicLoginPage#test_login","1091"," 登录 ""账号密码不匹配"", ""请输入账户名称"", ""请输入密码"", ""当前登录用户名或密码错误"", ""登陆成功"" "
-"passed","Testcases.loginPageTest.test_publciLoginPage.TestPublicLoginPage#test_login","1209"," 登录 ""账号密码不匹配"", ""请输入账户名称"", ""请输入密码"", ""当前登录用户名或密码错误"", ""登陆成功"" "
