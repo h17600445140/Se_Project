@@ -2,72 +2,72 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "登陆模块",
+    "name" : "页面登陆模块",
     "children" : [ {
-      "name" : "测试登陆时发生的四种场景",
+      "name" : "测试登陆时发生的五种场景",
       "children" : [ {
         "name" : "test_login[账号密码不匹配]",
-        "uid" : "bfd0bc5f93435b13",
-        "parentUid" : "e5a8c451ffb0826894d024e3949ff4f2",
+        "uid" : "a12700ad2cb005aa",
+        "parentUid" : "a8af7e822fc93322112f1fd58f67e3f3",
         "status" : "passed",
         "time" : {
-          "start" : 1603812755512,
-          "stop" : 1603812758907,
-          "duration" : 3395
+          "start" : 1603853668176,
+          "stop" : 1603853669332,
+          "duration" : 1156
         },
         "flaky" : false,
         "parameters" : [ "('test', 'zfs123456', '账号密码不匹配')" ]
       }, {
         "name" : "test_login[请输入账户名称]",
-        "uid" : "3af99a1e35287860",
-        "parentUid" : "e5a8c451ffb0826894d024e3949ff4f2",
+        "uid" : "807d614dad9269f4",
+        "parentUid" : "a8af7e822fc93322112f1fd58f67e3f3",
         "status" : "passed",
         "time" : {
-          "start" : 1603812758911,
-          "stop" : 1603812759649,
-          "duration" : 738
+          "start" : 1603853669337,
+          "stop" : 1603853670831,
+          "duration" : 1494
         },
         "flaky" : false,
         "parameters" : [ "('', 'zfs123456', '请输入账户名称')" ]
       }, {
         "name" : "test_login[请输入密码]",
-        "uid" : "be6af81c50a68f47",
-        "parentUid" : "e5a8c451ffb0826894d024e3949ff4f2",
+        "uid" : "bc52929ab4243990",
+        "parentUid" : "a8af7e822fc93322112f1fd58f67e3f3",
         "status" : "passed",
         "time" : {
-          "start" : 1603812759652,
-          "stop" : 1603812760365,
-          "duration" : 713
+          "start" : 1603853670837,
+          "stop" : 1603853672140,
+          "duration" : 1303
         },
         "flaky" : false,
         "parameters" : [ "('admin', '', '请输入密码')" ]
       }, {
         "name" : "test_login[当前登录用户名或密码错误]",
-        "uid" : "fb77a1198d27e818",
-        "parentUid" : "e5a8c451ffb0826894d024e3949ff4f2",
+        "uid" : "f334d38e55d00ce",
+        "parentUid" : "a8af7e822fc93322112f1fd58f67e3f3",
         "status" : "passed",
         "time" : {
-          "start" : 1603812760369,
-          "stop" : 1603812761330,
-          "duration" : 961
+          "start" : 1603853672144,
+          "stop" : 1603853673252,
+          "duration" : 1108
         },
         "flaky" : false,
         "parameters" : [ "('admin', '123456', '当前登录用户名或密码错误')" ]
       }, {
         "name" : "test_login[登陆成功]",
-        "uid" : "691b49db61c6026c",
-        "parentUid" : "e5a8c451ffb0826894d024e3949ff4f2",
+        "uid" : "4039ddb4623cbdc9",
+        "parentUid" : "a8af7e822fc93322112f1fd58f67e3f3",
         "status" : "passed",
         "time" : {
-          "start" : 1603812761334,
-          "stop" : 1603812762628,
-          "duration" : 1294
+          "start" : 1603853673256,
+          "stop" : 1603853674826,
+          "duration" : 1570
         },
         "flaky" : false,
         "parameters" : [ "('admin', 'zfs123456', '登陆成功')" ]
       } ],
-      "uid" : "e5a8c451ffb0826894d024e3949ff4f2"
+      "uid" : "a8af7e822fc93322112f1fd58f67e3f3"
     } ],
-    "uid" : "aabb69485063425b718b057ab51a7a51"
+    "uid" : "0dfa9b235adce358465cc9d6b871e344"
   } ]
 }

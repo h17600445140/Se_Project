@@ -1,38 +1,39 @@
+from time import strftime, localtime, time
+from Lib.ShowapiRequest import ShowapiRequest
+from PIL import Image
+from logging import handlers
+
+import logging
+import datetime
 import json
 import pickle
 import random
 import string
-from time import strftime, localtime, time
-
 import yaml
-
-from Lib.ShowapiRequest import ShowapiRequest
-from PIL import Image
 import os
 
 
 # 初始化logger对象
 def get_logger():
-    import logging
-    import logging.handlers
-    import datetime
-
+    # 初始化logger对象
     logger = logging.getLogger('mylogger')
     logger.setLevel(logging.DEBUG)
 
-    # 记录所有的日志
-    rf_handler = logging.handlers.TimedRotatingFileHandler('all.log', when='midnight', interval=1, backupCount=7,
-                                                           atTime=datetime.time(0, 0, 0, 0))
-    rf_handler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
+    path = os.path.dirname(os.path.dirname(__file__))
+    allLogPath = os.sep.join([path, 'Log', 'allLogs', 'all.log'])
+    errorLogPath = os.sep.join([path, 'Log', 'errorLogs', 'error.log'])
 
+    # 记录所有的日志
+    all_handler = handlers.TimedRotatingFileHandler(allLogPath, when='midnight', interval=1, backupCount=7,atTime=datetime.time(hour=0, minute=0, second=0, microsecond=0),encoding="UTF-8")
+    all_handler.setFormatter(logging.Formatter("%(levelname)s - %(asctime)s - %(message)s"))
     # 记录错误级别以上的日志
-    f_handler = logging.FileHandler('error.log')
-    f_handler.setLevel(logging.ERROR)
-    f_handler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(filename)s[:%(lineno)d] - %(message)s"))
+    error_handler = logging.FileHandler(errorLogPath,encoding="UTF-8")
+    error_handler.setLevel(logging.ERROR)
+    error_handler.setFormatter(logging.Formatter("%(levelname)s - %(asctime)s - %(pathname)s - %(filename)s[:%(lineno)d] - %(message)s"))
 
     # 将 handler 添加到 logger 中
-    logger.addHandler(rf_handler)
-    logger.addHandler(f_handler)
+    logger.addHandler(all_handler)
+    logger.addHandler(error_handler)
 
     return logger
 

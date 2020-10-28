@@ -16,11 +16,15 @@ import os
 # print(path)
 
 
-def get_datapath(path):
-    a = path.split('Testcases')
-    b = a[1].split('Test')
-    data_path = a[0] + 'Data' + b[0] + 'Data' + b[0] + 'Data.json'
-    return data_path
+# def get_datapath(path):
+#     a = path.split('Testcases')
+#     b = a[1].split('Test')
+#     data_path = a[0] + 'Data' + b[0] + 'Data' + b[0] + 'Data.json'
+#     return data_path
+
+from Util.util import get_logger
+
+
 
 
 

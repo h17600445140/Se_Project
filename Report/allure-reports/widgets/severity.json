@@ -1,50 +1,50 @@
 [ {
-  "uid" : "3af99a1e35287860",
+  "uid" : "807d614dad9269f4",
   "name" : "test_login[请输入账户名称]",
   "time" : {
-    "start" : 1603812758911,
-    "stop" : 1603812759649,
-    "duration" : 738
+    "start" : 1603853669337,
+    "stop" : 1603853670831,
+    "duration" : 1494
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "bfd0bc5f93435b13",
-  "name" : "test_login[账号密码不匹配]",
-  "time" : {
-    "start" : 1603812755512,
-    "stop" : 1603812758907,
-    "duration" : 3395
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "fb77a1198d27e818",
-  "name" : "test_login[当前登录用户名或密码错误]",
-  "time" : {
-    "start" : 1603812760369,
-    "stop" : 1603812761330,
-    "duration" : 961
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "691b49db61c6026c",
+  "uid" : "4039ddb4623cbdc9",
   "name" : "test_login[登陆成功]",
   "time" : {
-    "start" : 1603812761334,
-    "stop" : 1603812762628,
-    "duration" : 1294
+    "start" : 1603853673256,
+    "stop" : 1603853674826,
+    "duration" : 1570
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "be6af81c50a68f47",
+  "uid" : "bc52929ab4243990",
   "name" : "test_login[请输入密码]",
   "time" : {
-    "start" : 1603812759652,
-    "stop" : 1603812760365,
-    "duration" : 713
+    "start" : 1603853670837,
+    "stop" : 1603853672140,
+    "duration" : 1303
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "f334d38e55d00ce",
+  "name" : "test_login[当前登录用户名或密码错误]",
+  "time" : {
+    "start" : 1603853672144,
+    "stop" : 1603853673252,
+    "duration" : 1108
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "a12700ad2cb005aa",
+  "name" : "test_login[账号密码不匹配]",
+  "time" : {
+    "start" : 1603853668176,
+    "stop" : 1603853669332,
+    "duration" : 1156
   },
   "status" : "passed",
   "severity" : "blocker"

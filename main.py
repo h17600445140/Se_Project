@@ -46,3 +46,4 @@
 #     return a
 # print(trans(list))
 
+
