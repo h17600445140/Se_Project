@@ -1,0 +1,215 @@
+{
+  "uid" : "fb060506601558d8",
+  "name" : "test_login[请输入密码]",
+  "fullName" : "Testcases.loginPageTest.test_publciLoginPage.TestPublicLoginPage#test_login",
+  "historyId" : "814077be3182ce545de82be31a34c971",
+  "time" : {
+    "start" : 1603968213247,
+    "stop" : 1603968214692,
+    "duration" : 1445
+  },
+  "description" : " --------------------测试登陆时不同场景-------------------- ",
+  "descriptionHtml" : "<p>--------------------测试登陆时不同场景--------------------</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1603968204235,
+      "stop" : 1603968209980,
+      "duration" : 5745
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "json_testdata",
+    "time" : {
+      "start" : 1603968213247,
+      "stop" : 1603968213247,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : " --------------------测试登陆时不同场景-------------------- ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "First Function",
+      "time" : {
+        "start" : 1603968213248,
+        "stop" : 1603968214691,
+        "duration" : 1443
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "第一步，登录页面初始化",
+        "time" : {
+          "start" : 1603968213248,
+          "stop" : 1603968213421,
+          "duration" : 173
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "第二步，输入账号/密码",
+        "time" : {
+          "start" : 1603968213422,
+          "stop" : 1603968213633,
+          "duration" : 211
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "第三步，点击登录按钮",
+        "time" : {
+          "start" : 1603968213633,
+          "stop" : 1603968213668,
+          "duration" : 35
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "第四步，判断断言信息",
+        "time" : {
+          "start" : 1603968213668,
+          "stop" : 1603968214691,
+          "duration" : 1023
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "e7efb4c9f397269b",
+          "name" : "2020-10-29-18-43-34successscreenshot",
+          "source" : "e7efb4c9f397269b.png",
+          "type" : "image/png",
+          "size" : 709405
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "json_testdata",
+        "value" : "('admin', '', '请输入密码', 'normal', '3')"
+      } ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 4
+    } ],
+    "attachments" : [ {
+      "uid" : "1a24b18fad6f307b",
+      "name" : "log",
+      "source" : "1a24b18fad6f307b.txt",
+      "type" : "text/plain",
+      "size" : 351
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 5
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1603968218199,
+      "stop" : 1603968220342,
+      "duration" : 2143
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "feature",
+    "value" : "页面登陆模块"
+  }, {
+    "name" : "story",
+    "value" : "测试登陆时发生的五种场景"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.loginPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_publciLoginPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPublicLoginPage"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "7380-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.loginPageTest.test_publciLoginPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "json_testdata",
+    "value" : "('admin', '', '请输入密码', 'normal', '3')"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "minor",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fb060506601558d8.json",
+  "parameterValues" : [ "('admin', '', '请输入密码', 'normal', '3')" ]
+}

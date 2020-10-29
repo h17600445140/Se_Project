@@ -8,7 +8,7 @@ class PublicLoginPage(BasePage):
     __password_input = (By.ID, 'password')
     __login_button = (By.ID, 'login')
     getInto_button = (By.XPATH, '//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/p[2]')
-    getMessage_box = (By.CLASS_NAME, 'el-message__content1')
+    getMessage_box = (By.CLASS_NAME, 'el-message__content')
     accountInputError_box = (By.XPATH, '//*[@id="app"]/div/div[1]/div/form/div[1]/div/div')
     passwordInputError_box = (By.XPATH, '//*[@id="app"]/div/div[1]/div/form/div[2]/div/div')
 

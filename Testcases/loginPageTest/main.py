@@ -1,6 +1,6 @@
 import os
 
-# from Util.util import get_jsontestdata, get_datapath
+from Util.util import get_jsontestdata, get_datapath
 
 
 # path = os.path.dirname(__file__)
@@ -29,4 +29,7 @@ import os
 # print(localtime(time()))
 
 
-
+# a,b =get_jsontestdata(get_datapath(os.path.dirname(__file__)))
+#
+# print(a)
+# print(b)

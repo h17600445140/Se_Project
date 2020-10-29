@@ -38,7 +38,7 @@ def get_logger():
     return logger
 
 
-# 获取验证码
+# 获取验证码（需要修改）
 def get_code(driver, id) -> str:
     # 获取页面截图
     t1 = strftime("%Y-%m-%d-%H-%M-%S",localtime(time()))
@@ -104,9 +104,10 @@ def load_cookie(driver, path) -> None:
 def get_jsontestdata(path) -> list:
     with open(path, encoding='UTF-8') as f:
         data = json.load(f)
-    values = [data[key] for key in data.keys()]
+    values = [value for value in data.values()]
+    case_name = data.get("casename")
     new_list = [i for i in zip(*values)]
-    return new_list
+    return new_list,case_name
 
 
 # 获取 data_path
@@ -115,7 +116,7 @@ def get_datapath(path) -> str:
     b = a[1].split('Test')
     data_path = a[0] + 'Data' + b[0] + 'Data' + b[0] + 'Data.json'
     return data_path
-
+# D:\Pycharm\自动化\SeleniumAutoProject\Testcases\loginPageTest
 
 # 获取url文件
 def get_urldict() -> dict:

@@ -72,3 +72,9 @@ ERROR - 2020-10-29 01:09:04,813 - D:\Pycharm\AutoProject\SeleniumAutoProject\Tes
 ERROR - 2020-10-29 01:09:08,611 - D:\Pycharm\AutoProject\SeleniumAutoProject\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:74] - <class 'selenium.common.exceptions.TimeoutException'>
 ERROR - 2020-10-29 01:27:31,635 - D:\Pycharm\AutoProject\SeleniumAutoProject\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:74] - <class 'selenium.common.exceptions.TimeoutException'>
 ERROR - 2020-10-29 01:27:37,080 - D:\Pycharm\AutoProject\SeleniumAutoProject\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:74] - <class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2020-10-29 12:44:00,264 - D:\csv\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:75] - 出现异常
+ERROR - 2020-10-29 12:44:00,264 - D:\csv\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:76] - <class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2020-10-29 12:44:05,970 - D:\csv\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:75] - 出现异常
+ERROR - 2020-10-29 12:44:05,970 - D:\csv\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:76] - <class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2020-10-29 12:44:08,474 - D:\csv\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:75] - 出现异常
+ERROR - 2020-10-29 12:44:08,474 - D:\csv\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:76] - <class 'selenium.common.exceptions.TimeoutException'>

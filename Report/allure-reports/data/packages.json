@@ -1,0 +1,69 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "Testcases.loginPageTest.test_publciLoginPage",
+    "children" : [ {
+      "name" : "test_login[账号密码不匹配]",
+      "uid" : "3ff059d21f82ba4",
+      "parentUid" : "7a881a7b36b49c5c30b52fb5a83327e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603968209981,
+        "stop" : 1603968211684,
+        "duration" : 1703
+      },
+      "flaky" : false,
+      "parameters" : [ "('test', 'zfs123456', '账号密码不匹配', 'blocker', '1')" ]
+    }, {
+      "name" : "test_login[请输入账户名称]",
+      "uid" : "6a52b6703986bc4e",
+      "parentUid" : "7a881a7b36b49c5c30b52fb5a83327e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603968211689,
+        "stop" : 1603968213243,
+        "duration" : 1554
+      },
+      "flaky" : false,
+      "parameters" : [ "('', 'zfs123456', '请输入账户名称', 'critical', '2')" ]
+    }, {
+      "name" : "test_login[请输入密码]",
+      "uid" : "fb060506601558d8",
+      "parentUid" : "7a881a7b36b49c5c30b52fb5a83327e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603968213247,
+        "stop" : 1603968214692,
+        "duration" : 1445
+      },
+      "flaky" : false,
+      "parameters" : [ "('admin', '', '请输入密码', 'normal', '3')" ]
+    }, {
+      "name" : "test_login[当前登录用户名或密码错误]",
+      "uid" : "2da1feea8ac69111",
+      "parentUid" : "7a881a7b36b49c5c30b52fb5a83327e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603968214696,
+        "stop" : 1603968216488,
+        "duration" : 1792
+      },
+      "flaky" : false,
+      "parameters" : [ "('admin', '123456', '当前登录用户名或密码错误', 'minor', '4')" ]
+    }, {
+      "name" : "test_login[登陆成功]",
+      "uid" : "71272ab9c0d9703c",
+      "parentUid" : "7a881a7b36b49c5c30b52fb5a83327e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603968216493,
+        "stop" : 1603968218197,
+        "duration" : 1704
+      },
+      "flaky" : false,
+      "parameters" : [ "('admin', 'zfs123456', '登陆成功', 'trivial', '5')" ]
+    } ],
+    "uid" : "Testcases.loginPageTest.test_publciLoginPage"
+  } ]
+}

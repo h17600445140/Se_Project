@@ -26,13 +26,15 @@ class TestPublicLoginPage(object):
 
     # @pytest.mark.parametrize('account, password, cases',get_jsontestdata(get_datapath(os.path.dirname(__file__))))
     @allure.story("测试登陆时发生的五种场景")
-    @allure.severity('blocker')
+    # @allure.severity('blocker')
     @allure.step("First Function")
     # @allure.description("--------------------测试登陆时不同场景--------------------")
     # @allure.testcase("http://www.baidu.com")
     # @allure.link("https://docs.qameta.io/allure/#_pytest")
+    @allure.severity("minor")
     def test_login(self, json_testdata):
         ''' --------------------测试登陆时不同场景-------------------- '''
+        print(json_testdata[3])
         allure.title(json_testdata[2])
         with allure.step("第一步，登录页面初始化"):
             self.publicloginpage.driver.refresh()
