@@ -2,7 +2,6 @@ from Util.util import get_jsontestdata, get_datapath
 import os
 import pytest
 
-
 data,casename =get_jsontestdata(get_datapath(os.path.dirname(__file__)))
 
 @pytest.fixture(params=data,ids=casename,scope="class")
