@@ -1,5 +1,0 @@
-[32mINFO    [0m mylogger:test_publciLoginPage.py:41 页面刷新
-[35mDEBUG   [0m mylogger:test_publciLoginPage.py:45 输入账户为：
-[35mDEBUG   [0m mylogger:test_publciLoginPage.py:47 输入密码为：zfs123456
-[35mDEBUG   [0m mylogger:test_publciLoginPage.py:50 点击登录
-[32mINFO    [0m mylogger:test_publciLoginPage.py:85 断言成功
