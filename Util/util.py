@@ -101,14 +101,27 @@ def load_cookie(driver, path) -> None:
 
 
 # 加载 Data 目录下json数据
-def get_jsontestdata(path) -> list:
+# ----- old version -----[(param1,param2,param3),(param11,param22,param33)]
+# def get_jsontestdata(path) -> list:
+#     with open(path, encoding='UTF-8') as f:
+#         data = json.load(f)
+#     values = [value for value in data.values()]
+#     case_name = data.get("casename")
+#     new_list = [i for i in zip(*values)]
+#     return new_list,case_name
+# ----- new version -----
+def get_jsontestdata(path,suitename) -> (dict,list):
     with open(path, encoding='UTF-8') as f:
         data = json.load(f)
-    values = [value for value in data.values()]
-    case_name = data.get("casename")
-    new_list = [i for i in zip(*values)]
-    return new_list,case_name
+        casename = [data[suitename][i]["casename"] for i in range(len(data[suitename]))]
+    return data[suitename],casename
 
+def get_ymltestdata(path,suitename) -> (dict,list):
+    with open(path, 'r', encoding='utf-8') as f:
+        cfg = f.read()
+    data = yaml.load(cfg, Loader=yaml.FullLoader)
+    casename = [data[suitename][i]["casename"] for i in range(len(data[suitename]))]
+    return data[suitename],casename
 
 # 获取 data_path
 def get_datapath(path) -> str:
@@ -116,7 +129,13 @@ def get_datapath(path) -> str:
     b = a[1].split('Test')
     data_path = a[0] + 'Data' + b[0] + 'Data' + b[0] + 'Data.json'
     return data_path
-# D:\Pycharm\自动化\SeleniumAutoProject\Testcases\loginPageTest
+
+def get_ymldatapath(path) -> str:
+    a = path.split('Testcases')
+    b = a[1].split('Test')
+    data_path = a[0] + 'Data' + b[0] + 'Data' + b[0] + 'Data.yml'
+    return data_path
+
 
 # 获取url文件
 def get_urldict() -> dict:
