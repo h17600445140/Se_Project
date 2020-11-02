@@ -1,0 +1,27 @@
+---
+publicLoginPage:
+        -   number: '1'
+            casename: 账号密码不匹配
+            severity: blocker
+            account: test
+            password: zfs123456
+        -   number: '2'
+            casename: 请输入账户名称
+            severity: critical
+            account: ''
+            password: zfs123456
+        -   number: '3'
+            casename: 请输入密码
+            severity: normal
+            account: admin
+            password: ''
+        -   number: '4'
+            casename: 当前登录用户名或密码错误
+            severity: minor
+            account: admin
+            password: '123456'
+        -   number: '5'
+            casename: 登陆成功
+            severity: trivial
+            account: admin
+            password: zfs123456
