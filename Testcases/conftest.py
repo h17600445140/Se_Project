@@ -1,4 +1,3 @@
-# 公共conftest.py文件
 import pytest
 from Util.util import get_urldict
 
