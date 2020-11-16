@@ -1,0 +1,215 @@
+{
+  "uid" : "c78febc1da314fcb",
+  "name" : "test_login[账号密码不匹配]",
+  "fullName" : "Testcases.loginPageTest.test_publciLoginPage.TestPublicLoginPage#test_login",
+  "historyId" : "95be268afba4255572ba1268e19c2cfd",
+  "time" : {
+    "start" : 1605497026414,
+    "stop" : 1605497028140,
+    "duration" : 1726
+  },
+  "description" : " --------------------测试登陆时不同场景-------------------- ",
+  "descriptionHtml" : "<p>--------------------测试登陆时不同场景--------------------</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1605497020708,
+      "stop" : 1605497026414,
+      "duration" : 5706
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "publciLoginPage_testdata",
+    "time" : {
+      "start" : 1605497026414,
+      "stop" : 1605497026414,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : " --------------------测试登陆时不同场景-------------------- ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "First Function",
+      "time" : {
+        "start" : 1605497026414,
+        "stop" : 1605497028140,
+        "duration" : 1726
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "第一步，登录页面初始化",
+        "time" : {
+          "start" : 1605497026415,
+          "stop" : 1605497026730,
+          "duration" : 315
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "第二步，输入账号/密码",
+        "time" : {
+          "start" : 1605497026730,
+          "stop" : 1605497026973,
+          "duration" : 243
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "第三步，点击登录按钮",
+        "time" : {
+          "start" : 1605497026974,
+          "stop" : 1605497027029,
+          "duration" : 55
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "第四步，判断断言信息",
+        "time" : {
+          "start" : 1605497027029,
+          "stop" : 1605497028140,
+          "duration" : 1111
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "9c1f889a78e01a2b",
+          "name" : "2020-11-16-11-23-47successscreenshot",
+          "source" : "9c1f889a78e01a2b.png",
+          "type" : "image/png",
+          "size" : 707756
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "publciLoginPage_testdata",
+        "value" : "{'number': '1', 'casename': '账号密码不匹配', 'severity': 'blocker', 'account': 'test', 'password': 'zfs123456'}"
+      } ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 4
+    } ],
+    "attachments" : [ {
+      "uid" : "bbda33cfdedeba3f",
+      "name" : "log",
+      "source" : "bbda33cfdedeba3f.txt",
+      "type" : "text/plain",
+      "size" : 432
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 5
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1605497034225,
+      "stop" : 1605497036360,
+      "duration" : 2135
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试登陆时发生的五种场景"
+  }, {
+    "name" : "feature",
+    "value" : "页面登陆模块"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.loginPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_publciLoginPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPublicLoginPage"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "65544-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.loginPageTest.test_publciLoginPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "publciLoginPage_testdata",
+    "value" : "{'number': '1', 'casename': '账号密码不匹配', 'severity': 'blocker', 'account': 'test', 'password': 'zfs123456'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "minor",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c78febc1da314fcb.json",
+  "parameterValues" : [ "{'number': '1', 'casename': '账号密码不匹配', 'severity': 'blocker', 'account': 'test', 'password': 'zfs123456'}" ]
+}

@@ -1,0 +1,215 @@
+{
+  "uid" : "186806697e3f8a58",
+  "name" : "test_login[当前登录用户名或密码错误]",
+  "fullName" : "Testcases.loginPageTest.test_publciLoginPage.TestPublicLoginPage#test_login",
+  "historyId" : "2b99ea86574217e4443397d8c22ee78d",
+  "time" : {
+    "start" : 1605497031192,
+    "stop" : 1605497032528,
+    "duration" : 1336
+  },
+  "description" : " --------------------测试登陆时不同场景-------------------- ",
+  "descriptionHtml" : "<p>--------------------测试登陆时不同场景--------------------</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1605497020708,
+      "stop" : 1605497026414,
+      "duration" : 5706
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "publciLoginPage_testdata",
+    "time" : {
+      "start" : 1605497031192,
+      "stop" : 1605497031192,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : " --------------------测试登陆时不同场景-------------------- ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "First Function",
+      "time" : {
+        "start" : 1605497031193,
+        "stop" : 1605497032528,
+        "duration" : 1335
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "第一步，登录页面初始化",
+        "time" : {
+          "start" : 1605497031193,
+          "stop" : 1605497031454,
+          "duration" : 261
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "第二步，输入账号/密码",
+        "time" : {
+          "start" : 1605497031454,
+          "stop" : 1605497031694,
+          "duration" : 240
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "第三步，点击登录按钮",
+        "time" : {
+          "start" : 1605497031694,
+          "stop" : 1605497031746,
+          "duration" : 52
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "第四步，判断断言信息",
+        "time" : {
+          "start" : 1605497031746,
+          "stop" : 1605497032528,
+          "duration" : 782
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "755b617cb92106de",
+          "name" : "2020-11-16-11-23-52successscreenshot",
+          "source" : "755b617cb92106de.png",
+          "type" : "image/png",
+          "size" : 724973
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "publciLoginPage_testdata",
+        "value" : "{'number': '4', 'casename': '当前登录用户名或密码错误', 'severity': 'minor', 'account': 'admin', 'password': '123456'}"
+      } ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 4
+    } ],
+    "attachments" : [ {
+      "uid" : "fefe4be74d506c3",
+      "name" : "log",
+      "source" : "fefe4be74d506c3.txt",
+      "type" : "text/plain",
+      "size" : 357
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 5
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1605497034225,
+      "stop" : 1605497036360,
+      "duration" : 2135
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试登陆时发生的五种场景"
+  }, {
+    "name" : "feature",
+    "value" : "页面登陆模块"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.loginPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_publciLoginPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPublicLoginPage"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "65544-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.loginPageTest.test_publciLoginPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "publciLoginPage_testdata",
+    "value" : "{'number': '4', 'casename': '当前登录用户名或密码错误', 'severity': 'minor', 'account': 'admin', 'password': '123456'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "minor",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "186806697e3f8a58.json",
+  "parameterValues" : [ "{'number': '4', 'casename': '当前登录用户名或密码错误', 'severity': 'minor', 'account': 'admin', 'password': '123456'}" ]
+}
