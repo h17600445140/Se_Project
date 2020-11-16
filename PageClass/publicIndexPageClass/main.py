@@ -71,3 +71,5 @@ M.input_describeC("这是自动化测试")
 M.input_describeE("this is a auto test")
 M.click_confirm()
 
+print("this is test")
+
