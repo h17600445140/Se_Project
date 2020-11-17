@@ -1,7 +1,6 @@
 import pytest
 from Util.util import get_urldict
 
-
 def pytest_collection_modifyitems(items):
     for item in items:
         item.name = item.name.encode("utf-8").decode("unicode_escape")
@@ -16,7 +15,7 @@ def cmdopt(request):
     return request.config.getoption("--test")
 
 @pytest.fixture(scope="class")
-def env(request, cmdopt) -> dict:
+def env(request) -> dict:
     request.config.base_data = get_urldict()
     return request.config.base_data
 
