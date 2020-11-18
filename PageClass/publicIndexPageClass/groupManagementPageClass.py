@@ -4,7 +4,7 @@ from PageClass.basePage import BasePage
 
 class GroupManagementPageClass(BasePage):
 
-    _groupManagement = (By.XPATH, '//*[@id="app"]/section/section/aside/div/div[2]/div[1]/div/ul/li[1]/div/span')
+    groupManagement = (By.XPATH, '//*[@id="app"]/section/section/aside/div/div[2]/div[1]/div/ul/li[1]/div/span')
     _management = (By.XPATH, '//*[@id="app"]/section/section/aside/div/div[2]/div[1]/div/ul/li[1]/ul/li[1]/span')
     _role = (By.XPATH, '//*[@id="app"]/section/section/aside/div/div[2]/div[1]/div/ul/li[1]/ul/li[2]/span')
     _user = (By.XPATH, '//*[@id="app"]/section/section/aside/div/div[2]/div[1]/div/ul/li[1]/ul/li[3]/span')
@@ -17,14 +17,13 @@ class GroupManagementPageClass(BasePage):
     _select = (By.XPATH, '//*[@id="app"]/section/section/section/main/div/div/div/div[1]/form/div[2]/div/button[1]/span')
     _reset = (By.XPATH, '//*[@id="app"]/section/section/section/main/div/div/div/div[1]/form/div[2]/div/button[2]/span')
 
-    errorBox = (By.XPATH, '/html/body/div[3]/p')
-    successBox = (By.XPATH, '/html/body/div[2]/p')
+    toastBox = (By.XPATH, '/html/body/div[2]/p')
 
     def __init__(self,driver):
         BasePage.__init__(self,driver)
 
     def open_groupManagement(self):
-        self.click(*self._groupManagement)
+        self.click(*self.groupManagement)
 
     def open_management(self):
         self.click(*self._management)
@@ -100,6 +99,9 @@ class RolePageClass(GroupManagementPageClass):
 
     def __init__(self,driver):
         GroupManagementPageClass.__init__(self,driver)
+
+    def clickAddButton(self):
+        self.click(*self._add)
 
 class UserPageClass(GroupManagementPageClass):
 

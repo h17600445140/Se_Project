@@ -5,6 +5,9 @@ class BasePage(object):
     def find_element(self, *loc):
         return self.driver.find_element(*loc)
 
+    def find_elements(self, *loc):
+        return self.driver.find_elements(*loc)
+
     def send_text(self, text, *loc):
         self.find_element(*loc).send_keys(text)
 

@@ -38,17 +38,20 @@
 from time import sleep
 
 from selenium import webdriver
+from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 
 from PageClass.loginPageClass.publicLoginPage import PublicLoginPage
-from PageClass.publicIndexPageClass.groupManagementPageClass import ManagementPageClass
+
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+
+from PageClass.publicIndexPageClass.groupManagementPageClass import RolePageClass
 
 driver = webdriver.Chrome()
 
 L = PublicLoginPage(driver)
-M = ManagementPageClass(driver)
+R = RolePageClass(L.driver)
 
 L.goto_publicloginpage("http://fsscysc.csztessc.com.cn:8085/public")
 sleep(1)
@@ -59,33 +62,28 @@ L.click_loginbutton()
 sleep(1)
 L.get_into()
 sleep(2)
-
-
-M.open_groupManagement()
+R.open_groupManagement()
 sleep(1)
-M.open_management()
-sleep(1)
-M.clickAddButton()
-sleep(1)
-M.input_groupCname("测试1")
-M.input_groupEname("test1")
-M.input_groupCode("testhc")
-M.input_maxUserRegister("10")
-M.input_describeC("这是自动化测试")
-M.input_describeE("this is a auto test")
-M.click_confirm()
+R.open_role()
+# R.clickAddButton()
 
-WebDriverWait(M.driver, 3).until(
-    EC.text_to_be_present_in_element((By.XPATH, '/html/body/div[2]/p'), '编码已存在'))
+R.send_text('huangchao', *(By.ID, 'undefined_name'))
+sleep(1)
+R.click(*(By.XPATH, '//*[@id="app"]/section/section/section/main/div/div/div/div[1]/form/div[4]/div/button[1]/span'))
+sleep(2)
 
-# '/div/p'
-# '/html/body/div[2]'
-#
-# <div role="alert" class="el-message el-message--success" style="top: 20px; z-index: 2010;">
-#     <i class="el-message__icon el-icon-success">
-#     </i>
-#     <p class="el-message__content">删除成功</p><!---->
-# </div>
+R.click(*(By.XPATH, '//*[@id="app"]/section/section/section/main/div/div/div/div[3]/div/div[3]/table/tbody/tr/td[9]/div/button/span'))
+sleep(2)
+
+
+print(R.find_element(*(By.XPATH, '/html/body/div[3]/div/div[2]/div/div[2]/div/div[1]/div/div')))
+print(len(R.find_element(*(By.XPATH, '/html/body/div[3]/div/div[2]/div/div[2]/div/div[1]/div/div')).find_elements(*(By.CLASS_NAME, 'el-checkbox__inner'))))
+print(type(R.find_element(*(By.XPATH, '/html/body/div[3]/div/div[2]/div/div[2]/div/div[1]/div/div')).find_elements(*(By.CLASS_NAME, 'el-checkbox__inner'))))
+
+oList = R.find_element(*(By.XPATH, '/html/body/div[3]/div/div[2]/div/div[2]/div/div[1]/div/div')).find_elements(*(By.CLASS_NAME, 'el-checkbox__inner'))
+
+for i in range(len(oList)):
+    oList[i].click()
 
 print("成功")
 
