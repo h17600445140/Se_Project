@@ -89,5 +89,13 @@ class TestPublicLoginPage(object):
                 allure.attach.file(get_picture_path(code, timeNow), name=timeNow + code + "screenshot",
                                    attachment_type=allure.attachment_type.PNG)
 
+class TestA():
+
+     def testOne(self):
+         print("hello")
+
+     def testTwo(self):
+         print("world")
+
 if __name__ == '__main__':
     pytest.main(['-sv','test_publciLoginPage.py'])

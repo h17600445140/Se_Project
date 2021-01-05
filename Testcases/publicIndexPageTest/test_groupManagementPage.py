@@ -2,7 +2,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 from PageClass.publicIndexPageClass.groupManagementPageClass import ManagementPageClass
-from Testcases.loginDepend import TestLoginDepend
+from Testcases.common.loginDepend import LoginDepend
 
 from Util.util import get_logger
 
@@ -12,7 +12,8 @@ class TestManagementPageClass(object):
 
     def setup_class(self):
         self.logger = get_logger()
-        self.publicLogin = TestLoginDepend()
+        self.publicLogin = LoginDepend()
+        self.publicLogin.publicLogin()
         self.managementPageClass = ManagementPageClass(self.publicLogin.driver)
 
     def teardown_class(self):
@@ -33,7 +34,7 @@ class TestManagementPageClass(object):
         self.managementPageClass.input_describeE(managementPageClass_testdata["describeE"])
         self.managementPageClass.click_confirm()
 
-        WebDriverWait(self.managementPageClass, 1).until(
+        WebDriverWait(self.managementPageClass, 10).until(
             EC.text_to_be_present_in_element(self.managementPageClass.toastBox, '保存成功'))
 
 

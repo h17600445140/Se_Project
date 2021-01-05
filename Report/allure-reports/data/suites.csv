@@ -1,0 +1,7 @@
+"Status","Name","Duration in ms","Description"
+"passed","Testcases.loginPageTest.test_publciLoginPage.TestPublicLoginPage#test_login","1871"," --------------------测试登陆时不同场景-------------------- "
+"passed","Testcases.loginPageTest.test_publciLoginPage.TestPublicLoginPage#test_login","1377"," --------------------测试登陆时不同场景-------------------- "
+"passed","Testcases.loginPageTest.test_publciLoginPage.TestPublicLoginPage#test_login","1467"," --------------------测试登陆时不同场景-------------------- "
+"passed","Testcases.loginPageTest.test_publciLoginPage.TestPublicLoginPage#test_login","1764"," --------------------测试登陆时不同场景-------------------- "
+"passed","Testcases.loginPageTest.test_publciLoginPage.TestPublicLoginPage#test_login","1545"," --------------------测试登陆时不同场景-------------------- "
+"broken","Testcases.publicIndexPageTest.test_groupManagementPage.TestManagementPageClass#test_addGroup","19270",""

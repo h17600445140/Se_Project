@@ -1,0 +1,117 @@
+{
+  "6af8614bb72c017ba613731a6355181e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a01af747e5b1e837",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609834545409,
+        "stop" : 1609834547280,
+        "duration" : 1871
+      }
+    } ]
+  },
+  "95be268afba4255572ba1268e19c2cfd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "eadd6860a2bac207",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609834539234,
+        "stop" : 1609834540998,
+        "duration" : 1764
+      }
+    } ]
+  },
+  "814077be3182ce545de82be31a34c971" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9e95bdd488359160",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609834542557,
+        "stop" : 1609834544024,
+        "duration" : 1467
+      }
+    } ]
+  },
+  "2b99ea86574217e4443397d8c22ee78d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f7d75cffe2ff659e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609834544028,
+        "stop" : 1609834545405,
+        "duration" : 1377
+      }
+    } ]
+  },
+  "6d484b4772a5e177faa9a4c483c0ed12" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a48465def230c7dd",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: chrome not reachable\n  (Session info: chrome=84.0.4147.125)",
+      "time" : {
+        "start" : 1609834555824,
+        "stop" : 1609834575094,
+        "duration" : 19270
+      }
+    } ]
+  },
+  "7b895fe0ce88da9f4e1bc13593631ff6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e931368e6c0a16a0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1609834541005,
+        "stop" : 1609834542550,
+        "duration" : 1545
+      }
+    } ]
+  }
+}
