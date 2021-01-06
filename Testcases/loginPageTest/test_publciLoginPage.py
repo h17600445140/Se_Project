@@ -1,10 +1,13 @@
-from selenium import webdriver
+# -*- coding:utf-8 -*-
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+
 from PageClass.loginPageClass.publicLoginPage import PublicLoginPage
-from Util.util import get_jsontestdata, get_datapath, get_urldict, get_picture_path
-from time import time,localtime,strftime
-from Util.util import get_logger
+from Util import driverFactory
+from Util.util import get_logger, getNowTime
+
+from Util.util import getPicturePath
+from Util import config
 
 import pytest
 import allure
@@ -15,9 +18,9 @@ class TestPublicLoginPage(object):
 
     def setup_class(self):
         self.logger = get_logger()
-        self.driver = webdriver.Chrome()
+        self.driver = driverFactory.get_driver('chrome')
         self.publicloginpage = PublicLoginPage(self.driver)
-        self.publicloginpage.goto_publicloginpage(get_urldict()['url']['host'])
+        self.publicloginpage.goto_publicloginpage(config.getUrlDict()['url']['host'])
         self.driver.implicitly_wait(1)
         self.logger.info("测试用户登录")
 
@@ -76,17 +79,17 @@ class TestPublicLoginPage(object):
                 self.logger.error("出现异常")
                 self.logger.error(type(e))
                 code = 'wrong'
-                timeNow = strftime("%Y-%m-%d-%H-%M-%S",localtime(time()))
-                self.publicloginpage.driver.get_screenshot_as_file(get_picture_path(code,timeNow))
-                allure.attach.file(get_picture_path(code,timeNow),name=timeNow + code + "screenshot",
+                timeNow = getNowTime()
+                self.publicloginpage.screenshot(code, timeNow)
+                allure.attach.file(getPicturePath(code,timeNow),name=timeNow + code + "screenshot",
                                    attachment_type=allure.attachment_type.PNG)
                 assert 1 == 0
             else:
                 self.logger.info("断言成功")
                 code = 'success'
-                timeNow = strftime("%Y-%m-%d-%H-%M-%S", localtime(time()))
-                self.publicloginpage.driver.get_screenshot_as_file(get_picture_path(code, timeNow))
-                allure.attach.file(get_picture_path(code, timeNow), name=timeNow + code + "screenshot",
+                timeNow = getNowTime()
+                self.publicloginpage.screenshot(code, timeNow)
+                allure.attach.file(getPicturePath(code, timeNow), name=timeNow + code + "screenshot",
                                    attachment_type=allure.attachment_type.PNG)
 
 class TestA():
@@ -98,4 +101,5 @@ class TestA():
          print("world")
 
 if __name__ == '__main__':
-    pytest.main(['-sv','test_publciLoginPage.py'])
+    # pytest.main(['-sv','test_publciLoginPage.py'])
+    print(getPicturePath('success', getNowTime()))

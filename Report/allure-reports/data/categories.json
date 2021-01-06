@@ -4,21 +4,21 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.WebDriverException: Message: chrome not reachable\n  (Session info: chrome=84.0.4147.125)",
+      "name" : "selenium.common.exceptions.TimeoutException: Message:",
       "children" : [ {
         "name" : "test_addGroup[保存成功]",
-        "uid" : "a48465def230c7dd",
-        "parentUid" : "6d1e8defe5b5e22f42e607bfa7f966f0",
+        "uid" : "17bd5a26b222aaed",
+        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1609834555824,
-          "stop" : 1609834575094,
-          "duration" : 19270
+          "start" : 1609916946318,
+          "stop" : 1609916960361,
+          "duration" : 14043
         },
         "flaky" : false,
         "parameters" : [ "{'number': '1', 'casename': '保存成功', 'severity': 'blocker', 'groupCname': '测试1', 'groupEname': 'test1', 'groupCode': 'testhc', 'maxUserRegister': 10, 'describeC': '这是自动化测试', 'describeE': 'this is a auto test'}" ]
       } ],
-      "uid" : "6d1e8defe5b5e22f42e607bfa7f966f0"
+      "uid" : "31bb78a6a95ede3f78b260ed048910d8"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]

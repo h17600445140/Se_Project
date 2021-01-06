@@ -1,5 +1,6 @@
+# -*- coding:utf-8 -*-
 import pytest
-from Util.util import get_urldict
+from Util import config
 
 def pytest_collection_modifyitems(items):
     for item in items:
@@ -16,7 +17,7 @@ def cmdopt(request):
 
 @pytest.fixture(scope="class")
 def env(request) -> dict:
-    request.config.base_data = get_urldict()
+    request.config.base_data = config.getUrlDict()
     return request.config.base_data
 
 

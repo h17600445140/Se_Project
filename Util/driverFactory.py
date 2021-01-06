@@ -1,5 +1,4 @@
-import threading
-
+# -*- coding:utf-8 -*-
 from selenium import webdriver
 
 
@@ -16,7 +15,6 @@ class Browser():
 
 
 class Chrome(Browser):
-    _instance_lock = threading.Lock()
 
     def __init__(self):
         super(Browser).__init__()
@@ -41,6 +39,7 @@ class DriverFactory():
             raise Exception("please input 'chrome' or 'firefox'")
 
 
+driverFactory = DriverFactory()
 
 if __name__ == '__main__':
 

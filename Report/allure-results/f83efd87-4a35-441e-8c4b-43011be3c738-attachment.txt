@@ -1,0 +1,5 @@
+[32mINFO    [0m mylogger:test_publciLoginPage.py:44 页面刷新
+[35mDEBUG   [0m mylogger:test_publciLoginPage.py:48 输入账户为：admin
+[35mDEBUG   [0m mylogger:test_publciLoginPage.py:50 输入密码为：
+[35mDEBUG   [0m mylogger:test_publciLoginPage.py:53 点击登录
+[32mINFO    [0m mylogger:test_publciLoginPage.py:88 断言成功

@@ -1,12 +1,13 @@
+# -*- coding:utf-8 -*-
 from selenium.webdriver.common.by import By
 from PageClass.basePage import BasePage
 
 
 class PublicLoginPage(BasePage):
 
-    __account_input = (By.ID, 'loginKey')
-    __password_input = (By.ID, 'password')
-    __login_button = (By.ID, 'login')
+    _account_input = (By.ID, 'loginKey')
+    _password_input = (By.ID, 'password')
+    _login_button = (By.ID, 'login')
     getInto_button = (By.XPATH, '//*[@id="app"]/div/div[2]/div/div[2]/div/div[2]/p[2]')
     getMessage_box = (By.CLASS_NAME, 'el-message__content')
     accountInputError_box = (By.XPATH, '//*[@id="app"]/div/div[1]/div/form/div[1]/div/div')
@@ -20,15 +21,15 @@ class PublicLoginPage(BasePage):
         self.driver.maximize_window()
 
     def input_account(self, account):
-        self.clear(*self.__account_input)
-        self.send_text(account, *self.__account_input)
+        self.clear(*self._account_input)
+        self.send_text(account, *self._account_input)
 
     def input_password(self, password):
-        self.clear(*self.__password_input)
-        self.send_text(password, *self.__password_input)
+        self.clear(*self._password_input)
+        self.send_text(password, *self._password_input)
 
     def click_loginbutton(self):
-        self.click(*self.__login_button)
+        self.click(*self._login_button)
 
     def get_into(self):
         self.click(*self.getInto_button)

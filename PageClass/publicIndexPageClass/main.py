@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 # class one(object):
 #     __a = 1
 #     __b = 2

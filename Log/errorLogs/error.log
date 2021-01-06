@@ -80,3 +80,7 @@ ERROR - 2020-10-29 12:44:08,474 - D:\csv\Se_Project\Testcases\loginPageTest\test
 ERROR - 2020-10-29 12:44:08,474 - D:\csv\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:76] - <class 'selenium.common.exceptions.TimeoutException'>
 ERROR - 2020-11-16 11:18:12,872 - D:\csv\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:76] - 出现异常
 ERROR - 2020-11-16 11:18:12,875 - D:\csv\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:77] - <class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-01-06 13:33:11,650 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:80] - 出现异常
+ERROR - 2021-01-06 13:33:11,650 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:81] - <class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-01-06 14:17:48,620 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:79] - 出现异常
+ERROR - 2021-01-06 14:17:48,620 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:80] - <class 'selenium.common.exceptions.TimeoutException'>

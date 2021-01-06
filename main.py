@@ -1,10 +1,11 @@
+# -*- coding:utf-8 -*-
 # import os
 # import yaml
 #
 # path = os.path.dirname(__file__)
-# yamlPath = os.sep.join([path, 'Config', 'test', 'testUrl_config.yml'])
-# # yamlPath = os.path.join(path, 'Config', 'test', 'testUrl_config.yml')
-# # yamlPath = path + '/' + 'Config' + '/' + 'test' + '/' + 'testUrl_config.yml'
+# yamlPath = os.sep.join([path, 'Config', 'test', 'UrlConfig.yml'])
+# # yamlPath = os.path.join(path, 'Config', 'test', 'UrlConfig.yml')
+# # yamlPath = path + '/' + 'Config' + '/' + 'test' + '/' + 'UrlConfig.yml'
 # print(yamlPath)
 #
 # # open方法打开直接读出来

@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 from time import strftime, localtime, time
 from Lib.ShowapiRequest import ShowapiRequest
 from PIL import Image
@@ -12,6 +13,7 @@ import string
 import yaml
 import os
 
+from Util import config
 
 # 初始化logger对象
 def get_logger():
@@ -78,7 +80,7 @@ def get_code(driver, id) -> str:
     return code
 
 
-# 生成随机字符串
+# 生成16位随机字符串
 def gen_random_str() -> str:
     random_str = ''.join(random.sample(string.ascii_letters + string.digits, 16))
     return random_str
@@ -100,63 +102,22 @@ def load_cookie(driver, path) -> None:
             driver.add_cookie(cookie)
 
 
-# 加载 Data 目录下json数据
-# ----- old version -----[(param1,param2,param3),(param11,param22,param33)]
-# def get_jsontestdata(path) -> list:
-#     with open(path, encoding='UTF-8') as f:
-#         data = json.load(f)
-#     values = [value for value in data.values()]
-#     case_name = data.get("casename")
-#     new_list = [i for i in zip(*values)]
-#     return new_list,case_name
-# ----- new version -----
-def get_jsontestdata(path,suitename) -> (dict,list):
-    with open(path, encoding='UTF-8') as f:
-        data = json.load(f)
-        casename = [data[suitename][i]["casename"] for i in range(len(data[suitename]))]
-    return data[suitename],casename
-
-def get_ymltestdata(path,suitename) -> (dict,list):
-    with open(path, 'r', encoding='utf-8') as f:
-        cfg = f.read()
-    data = yaml.load(cfg, Loader=yaml.FullLoader)
-    casename = [data[suitename][i]["casename"] for i in range(len(data[suitename]))]
-    return data[suitename],casename
-
-# 获取 data_path
-def get_datapath(path) -> str:
-    a = path.split('Testcases')
-    b = a[1].split('Test')
-    data_path = a[0] + 'Data' + b[0] + 'Data' + b[0] + 'Data.json'
-    return data_path
-
-def get_ymldatapath(path) -> str:
-    a = path.split('Testcases')
-    b = a[1].split('Test')
-    data_path = a[0] + 'Data' + b[0] + 'Data' + b[0] + 'Data.yml'
-    return data_path
-
-
-# 获取url文件
-def get_urldict() -> dict:
-    path = os.path.dirname(os.path.dirname(__file__))
-    yamlPath = os.sep.join([path, 'Config', 'test', 'testUrl_config.yml'])
-    with open(yamlPath, 'r', encoding='utf-8') as f:
-        cfg = f.read()
-    d = yaml.load(cfg, Loader=yaml.FullLoader)
-    # print(d)    # {'url': {'host': 'http://fsscysc.csztessc.com.cn:8085/'}}
-    return d
-
-
 # 获取图片路径
-def get_picture_path(state,time) -> str:
+def getPicturePath(state,time) -> str:
     if state == 'success':
         code = 'success_picture'
     else:
         code = 'wrong_picture'
-    path = os.path.dirname(os.path.dirname(__file__))
-    picture_path = os.sep.join([path, 'Image', code, time]) + ".png"
+    picture_path = os.path.join(config.ImagePath() , code, time) + ".png"
     return picture_path
 
 
+# 获取当前时间
+def getNowTime():
+    timeNow = strftime("%Y-%m-%d-%H-%M-%S", localtime(time()))
+    return timeNow
+
+
+if __name__ == '__main__':
+    pass
 
