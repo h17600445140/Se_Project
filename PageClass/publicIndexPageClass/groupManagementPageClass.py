@@ -5,7 +5,7 @@ from PageClass.basePage import BasePage
 
 class GroupManagementPageClass(BasePage):
 
-    groupManagement = (By.XPATH, '//*[@id="app"]/section/section/aside/div/div[2]/div[1]/div/ul/li[1]/div/span')
+    _groupManagement = (By.XPATH, '//*[@id="app"]/section/section/aside/div/div[2]/div[1]/div/ul/li[1]/div/span')
     _management = (By.XPATH, '//*[@id="app"]/section/section/aside/div/div[2]/div[1]/div/ul/li[1]/ul/li[1]/span')
     _role = (By.XPATH, '//*[@id="app"]/section/section/aside/div/div[2]/div[1]/div/ul/li[1]/ul/li[2]/span')
     _user = (By.XPATH, '//*[@id="app"]/section/section/aside/div/div[2]/div[1]/div/ul/li[1]/ul/li[3]/span')
@@ -24,7 +24,10 @@ class GroupManagementPageClass(BasePage):
         BasePage.__init__(self,driver)
 
     def open_groupManagement(self):
-        self.click(*self.groupManagement)
+        self.click(*self._groupManagement)
+
+    def getGroupManagement(self):
+        return self._groupManagement
 
     def open_management(self):
         self.click(*self._management)
@@ -37,15 +40,15 @@ class GroupManagementPageClass(BasePage):
 
 class ManagementPageClass(GroupManagementPageClass):
 
-    __groupCname = (By.ID, 'form_name_zh-CN')
-    __groupEname = (By.ID, 'form_name_en-US')
-    __groupCode = (By.ID, 'form_codeNo')
-    __maxUserRegister = (By.ID, 'form_encryptMaxAccount')
-    __describeC = (By.ID, 'form_remark_zh-CN')
-    __describeE = (By.ID, 'form_remark_en-US')
+    _groupCname = (By.ID, 'form_name_zh-CN')
+    _groupEname = (By.ID, 'form_name_en-US')
+    _groupCode = (By.ID, 'form_codeNo')
+    _maxUserRegister = (By.ID, 'form_encryptMaxAccount')
+    _describeC = (By.ID, 'form_remark_zh-CN')
+    _describeE = (By.ID, 'form_remark_en-US')
 
-    __cancel = (By.XPATH, '//*[@id="form"]/div[8]/div/button[1]/span')
-    __confirm = (By.XPATH, '//*[@id="form"]/div[8]/div/button[2]/span')
+    _cancel = (By.XPATH, '//*[@id="form"]/div[8]/div/button[1]/span')
+    _confirm = (By.XPATH, '//*[@id="form"]/div[8]/div/button[2]/span')
 
     groupCname_errorBox = (By.XPATH, '//*[@id="form"]/div[1]/div/div[2]')
     groupCode_errorBox = (By.XPATH, '//*[@id="form"]/div[3]/div/div[2]')
@@ -67,34 +70,34 @@ class ManagementPageClass(GroupManagementPageClass):
         self.click(*self._disable)
 
     def input_groupCname(self, text):
-        self.clear(*self.__groupCname)
-        self.send_text(text, *self.__groupCname)
+        self.clear(*self._groupCname)
+        self.send_text(text, *self._groupCname)
 
     def input_groupEname(self, text):
-        self.clear(*self.__groupEname)
-        self.send_text(text, *self.__groupEname)
+        self.clear(*self._groupEname)
+        self.send_text(text, *self._groupEname)
 
     def input_groupCode(self, text):
-        self.clear(*self.__groupCode)
-        self.send_text(text, *self.__groupCode)
+        self.clear(*self._groupCode)
+        self.send_text(text, *self._groupCode)
 
     def input_maxUserRegister(self, text):
-        self.clear(*self.__maxUserRegister)
-        self.send_text(text, *self.__maxUserRegister)
+        self.clear(*self._maxUserRegister)
+        self.send_text(text, *self._maxUserRegister)
 
     def input_describeC(self, text):
-        self.clear(*self.__describeC)
-        self.send_text(text, *self.__describeC)
+        self.clear(*self._describeC)
+        self.send_text(text, *self._describeC)
 
     def input_describeE(self, text):
-        self.clear(*self.__describeE)
-        self.send_text(text, *self.__describeE)
+        self.clear(*self._describeE)
+        self.send_text(text, *self._describeE)
 
     def click_cancel(self):
-        self.click(*self.__cancel)
+        self.click(*self._cancel)
 
     def click_confirm(self):
-        self.click(*self.__confirm)
+        self.click(*self._confirm)
 
 class RolePageClass(GroupManagementPageClass):
 

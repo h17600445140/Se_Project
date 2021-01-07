@@ -84,3 +84,43 @@ ERROR - 2021-01-06 13:33:11,650 - D:\se\Se_Project\Testcases\loginPageTest\test_
 ERROR - 2021-01-06 13:33:11,650 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:81] - <class 'selenium.common.exceptions.TimeoutException'>
 ERROR - 2021-01-06 14:17:48,620 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:79] - 出现异常
 ERROR - 2021-01-06 14:17:48,620 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:80] - <class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-01-06 20:18:57,629 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:79] - 出现异常
+ERROR - 2021-01-06 20:18:57,629 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:80] - <class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-01-06 20:18:59,909 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:79] - 出现异常
+ERROR - 2021-01-06 20:18:59,909 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:80] - <class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-01-07 09:17:02,923 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:79] - 出现异常
+ERROR - 2021-01-07 09:17:02,924 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:80] - <class 'AttributeError'>
+ERROR - 2021-01-07 09:17:04,055 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:79] - 出现异常
+ERROR - 2021-01-07 09:17:04,056 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:80] - <class 'AttributeError'>
+ERROR - 2021-01-07 09:17:05,041 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:79] - 出现异常
+ERROR - 2021-01-07 09:17:05,041 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:80] - <class 'AttributeError'>
+ERROR - 2021-01-07 09:17:06,101 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:79] - 出现异常
+ERROR - 2021-01-07 09:17:06,101 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:80] - <class 'AttributeError'>
+ERROR - 2021-01-07 09:17:07,120 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:79] - 出现异常
+ERROR - 2021-01-07 09:17:07,120 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:80] - <class 'AttributeError'>
+ERROR - 2021-01-07 09:20:12,063 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:79] - 出现异常
+ERROR - 2021-01-07 09:20:12,064 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:80] - <class 'AssertionError'>
+ERROR - 2021-01-07 09:20:15,736 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:79] - 出现异常
+ERROR - 2021-01-07 09:20:15,736 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:80] - <class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-01-07 09:20:17,608 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:79] - 出现异常
+ERROR - 2021-01-07 09:20:17,609 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:80] - <class 'AssertionError'>
+ERROR - 2021-01-07 09:20:20,103 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:79] - 出现异常
+ERROR - 2021-01-07 09:20:20,103 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:80] - <class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-01-07 09:34:32,803 - D:/se/Se_Project/Util/log.py - log.py[:44] - 测试error
+CRITICAL - 2021-01-07 09:34:32,803 - D:/se/Se_Project/Util/log.py - log.py[:47] - 测试critical
+ERROR - 2021-01-07 09:36:40,131 - D:/se/Se_Project/Util/log.py - log.py[:45] - 测试error
+CRITICAL - 2021-01-07 09:36:40,131 - D:/se/Se_Project/Util/log.py - log.py[:48] - 测试critical
+ERROR - 2021-01-07 10:06:43,762 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:83] - 出现异常
+ERROR - 2021-01-07 10:06:43,763 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:84] - <class 'AssertionError'>
+ERROR - 2021-01-07 10:06:49,560 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:83] - 出现异常
+ERROR - 2021-01-07 10:06:49,560 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:84] - <class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-01-07 10:06:52,170 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:83] - 出现异常
+ERROR - 2021-01-07 10:06:52,170 - D:\se\Se_Project\Testcases\loginPageTest\test_publciLoginPage.py - test_publciLoginPage.py[:84] - <class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-01-07 10:21:33,209 - D:\se\Se_Project\Util\log.py - log.py[:46] - 出现异常
+ERROR - 2021-01-07 10:21:33,209 - D:\se\Se_Project\Util\log.py - log.py[:46] - <class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-01-07 10:21:39,421 - D:\se\Se_Project\Util\log.py - log.py[:46] - 出现异常
+ERROR - 2021-01-07 10:21:39,421 - D:\se\Se_Project\Util\log.py - log.py[:46] - <class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-01-07 10:21:42,297 - D:\se\Se_Project\Util\log.py - log.py[:46] - 出现异常
+ERROR - 2021-01-07 10:21:42,298 - D:\se\Se_Project\Util\log.py - log.py[:46] - <class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-01-07 10:25:51,024 - D:\se\Se_Project\Util\log.py - log.py[:46] - 出现异常
+ERROR - 2021-01-07 10:25:51,024 - D:\se\Se_Project\Util\log.py - log.py[:46] - <class 'selenium.common.exceptions.TimeoutException'>

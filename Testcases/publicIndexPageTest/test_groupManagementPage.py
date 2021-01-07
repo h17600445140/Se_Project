@@ -4,14 +4,11 @@ from selenium.webdriver.support import expected_conditions as EC
 from PageClass.publicIndexPageClass.groupManagementPageClass import ManagementPageClass
 from Testcases.common.loginDepend import LoginDepend
 
-from Util.util import get_logger
-
 
 
 class TestManagementPageClass(object):
 
     def setup_class(self):
-        self.logger = get_logger()
         self.publicLogin = LoginDepend()
         self.publicLogin.publicLogin()
         self.managementPageClass = ManagementPageClass(self.publicLogin.driver)
@@ -20,8 +17,8 @@ class TestManagementPageClass(object):
         self.managementPageClass.driver.quit()
 
     def test_addGroup(self, managementPageClass_testdata):
-        WebDriverWait(self.managementPageClass.driver, 2).until(
-            EC.visibility_of_element_located(self.managementPageClass.groupManagement))
+        WebDriverWait(self.managementPageClass.driver, 5).until(
+            EC.visibility_of_element_located(self.managementPageClass.getGroupManagement()))
 
         self.managementPageClass.open_groupManagement()
         self.managementPageClass.open_management()

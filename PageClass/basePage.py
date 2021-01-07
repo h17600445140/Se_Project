@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
 from Util.util import getPicturePath
+from Util import logger
 
 
 class BasePage(object):
@@ -23,6 +24,10 @@ class BasePage(object):
 
     def get_title(self):
         return self.driver.title
+
+    def refresh(self):
+        self.driver.refresh()
+        logger.info("页面刷新")
 
     def screenshot(self, code, timeNow):
         self.driver.get_screenshot_as_file(getPicturePath(code,timeNow))

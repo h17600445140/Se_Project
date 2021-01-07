@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 from selenium import webdriver
-
+from selenium.webdriver.chrome.options import Options
+from fake_useragent import UserAgent
 
 class Browser():
 
@@ -16,25 +17,37 @@ class Browser():
 
 class Chrome(Browser):
 
-    def __init__(self):
+    def __init__(self, system):
         super(Browser).__init__()
-        self.driver = webdriver.Chrome()
+
+        if system == "windows":
+            self.chrome_options = Options()
+            self.chrome_options.add_argument('User-Agent={}'.format(UserAgent().chrome))
+            self.driver = webdriver.Chrome(options=self.chrome_options)
+        elif system == "linux":
+            self.chrome_options = Options()
+            self.chrome_options.add_argument('--no-sandbox')
+            self.chrome_options.add_argument('--disable-dev-shm-usage')
+            self.chrome_options.add_argument('--headless')
+            self.chrome_options.add_argument('User-Agent={}'.format(UserAgent().chrome))
+            self.driver = webdriver.Chrome(options=self.chrome_options)
 
 
 class Firefox(Browser):
 
-    def __init__(self):
+    def __init__(self, system):
         super(Browser).__init__()
-        self.driver = webdriver.Firefox()
+        if system == "windows":
+            self.driver = webdriver.Firefox()
 
 
 class DriverFactory():
 
     def get_driver(self, browser):
         if browser == "chrome":
-            return Chrome().getDriver()
+            return Chrome("windows").getDriver()
         elif browser == "firefox":
-            return Firefox().getDriver()
+            return Firefox("windows").getDriver()
         else:
             raise Exception("please input 'chrome' or 'firefox'")
 

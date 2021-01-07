@@ -1,0 +1,4 @@
+[32mINFO    [0m WebUIAuto:log.py:40 请求链接
+[32mINFO    [0m WebUIAuto:log.py:40 输入账户
+[32mINFO    [0m WebUIAuto:log.py:40 输入密码
+[32mINFO    [0m WebUIAuto:log.py:40 点击登录

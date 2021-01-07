@@ -22,6 +22,6 @@ class LoginDepend(object):
         self.publicLoginPage.input_password(config.getUrlDict()['url']['password'])
         self.publicLoginPage.click_loginbutton()
         WebDriverWait(self.publicLoginPage.driver, 10).until(
-            EC.visibility_of_element_located(self.publicLoginPage.getInto_button))
+            EC.visibility_of_element_located(self.publicLoginPage.getIntoButton()))
         self.publicLoginPage.get_into()
 

@@ -25,8 +25,13 @@ class Config():
 
     # 图片保存路径
     @classmethod
-    def ImagePath(cls):
+    def imagePath(cls):
         return os.path.join(Config.getRootPath(), "Image")
+
+    # 图片保存路径
+    @classmethod
+    def logPath(cls):
+        return os.path.join(Config.getRootPath(), "Log")
 
     # 获取配置Url地址
     @classmethod
@@ -43,6 +48,6 @@ config = Config()
 
 
 if __name__ == '__main__':
-    print(config.ImagePath())
+    print(config.imagePath())
 
 
