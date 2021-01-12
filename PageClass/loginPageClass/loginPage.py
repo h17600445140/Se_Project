@@ -4,7 +4,8 @@ from PageClass.basePage import BasePage
 from Util import logger
 
 
-class PublicLoginPage(BasePage):
+
+class LoginPage(BasePage):
 
     _accountInput = (By.ID, 'loginKey')
     _passwordInput = (By.ID, 'password')
@@ -15,12 +16,10 @@ class PublicLoginPage(BasePage):
     _accountInputErrorBox = (By.XPATH, '//*[@id="app"]/div/div[1]/div/form/div[1]/div/div')
     _passwordInputErrorBox = (By.XPATH, '//*[@id="app"]/div/div[1]/div/form/div[2]/div/div')
 
-
-
     def __init__(self, driver):
         BasePage.__init__(self, driver)
 
-    def goto_publicloginpage(self,url):
+    def goto_loginpage(self,url):
         self.driver.get(url)
         logger.info("请求链接")
         self.driver.maximize_window()
@@ -41,6 +40,7 @@ class PublicLoginPage(BasePage):
 
     def get_into(self):
         self.click(*self._IntoButton)
+        logger.info("直接进入")
 
     def get_errortext(self):
         return self.find_element(*self._MessageBox).text

@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from PageClass.basePage import BasePage
 
 
+
 class GroupManagementPageClass(BasePage):
 
     _groupManagement = (By.XPATH, '//*[@id="app"]/section/section/aside/div/div[2]/div[1]/div/ul/li[1]/div/span')

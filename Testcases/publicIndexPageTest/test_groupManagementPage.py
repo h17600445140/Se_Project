@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -9,8 +10,8 @@ from Testcases.common.loginDepend import LoginDepend
 class TestManagementPageClass(object):
 
     def setup_class(self):
-        self.publicLogin = LoginDepend()
-        self.publicLogin.publicLogin()
+        self.publicLogin = LoginDepend('publicHost')
+        # self.publicLogin.publicLogin('publicHost')
         self.managementPageClass = ManagementPageClass(self.publicLogin.driver)
 
     def teardown_class(self):

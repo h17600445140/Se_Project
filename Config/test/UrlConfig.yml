@@ -1,4 +1,6 @@
 url:
-  host: http://fsscysc.csztessc.com.cn:8085/public
+  publicHost: http://fsscysc.csztessc.com.cn:8085/public
+  baseHost: http://fsscysc.csztessc.com.cn:8085/base
+user:
   account: hc3
   password: 123456

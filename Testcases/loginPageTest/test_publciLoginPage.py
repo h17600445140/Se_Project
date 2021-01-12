@@ -19,8 +19,8 @@ class TestPublicLoginPage(object):
     def setup_class(self):
         self.driver = driverFactory.get_driver('chrome')
         self.publicloginpage = PublicLoginPage(self.driver)
-        self.publicloginpage.goto_publicloginpage(config.getUrlDict()['url']['host'])
-        logger.info("链接地址为：{}".format(config.getUrlDict()['url']['host']))
+        self.publicloginpage.goto_publicloginpage(config.getUrlDict()['url']['publicHost'])
+        logger.info("链接地址为：{}".format(config.getUrlDict()['url']['publicHost']))
         self.driver.implicitly_wait(1)
         logger.info("测试用户登录场景")
 

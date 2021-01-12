@@ -2,26 +2,42 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+from PageClass.loginPageClass.loginPage import LoginPage
 from PageClass.loginPageClass.publicLoginPage import PublicLoginPage
-from selenium import webdriver
 
-from Util import config
+from Util import config,driverFactory
 
 
 
 class LoginDepend(object):
 
-    def __init__(self):
-        self.driver = webdriver.Chrome()
-        self.publicLoginPage = PublicLoginPage(self.driver)
+    def __init__(self, host):
+        self.driver = driverFactory.get_driver("chrome")
+        if host == 'baseHost':
+            self.login = LoginPage(self.driver)
+            self._login(host)
 
-    def publicLogin(self):
-        self.publicLoginPage.goto_publicloginpage(config.getUrlDict()['url']['host'])
+        elif host == 'publicHost':
+            self.publicLoginPage = PublicLoginPage(self.driver)
+            self._publicLogin('publicHost')
+
+    def _publicLogin(self, host):
+        self.publicLoginPage.goto_publicloginpage(config.getUrlDict()['url'][host])
         self.driver.implicitly_wait(1)
-        self.publicLoginPage.input_account(config.getUrlDict()['url']['account'])
-        self.publicLoginPage.input_password(config.getUrlDict()['url']['password'])
+        self.publicLoginPage.input_account(config.getUrlDict()['user']['account'])
+        self.publicLoginPage.input_password(config.getUrlDict()['user']['password'])
         self.publicLoginPage.click_loginbutton()
-        WebDriverWait(self.publicLoginPage.driver, 10).until(
+        WebDriverWait(self.publicLoginPage.driver, 5).until(
             EC.visibility_of_element_located(self.publicLoginPage.getIntoButton()))
         self.publicLoginPage.get_into()
+
+    def _login(self, host):
+        self.login.goto_loginpage(config.getUrlDict()['url'][host])
+        self.driver.implicitly_wait(1)
+        self.login.input_account(config.getUrlDict()['user']['account'])
+        self.login.input_password(config.getUrlDict()['user']['password'])
+        self.login.click_loginbutton()
+        WebDriverWait(self.login.driver, 5).until(
+            EC.visibility_of_element_located(self.login.getIntoButton()))
+        self.login.get_into()
 
