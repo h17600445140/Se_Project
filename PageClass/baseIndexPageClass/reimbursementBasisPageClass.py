@@ -7,7 +7,8 @@ from PageClass.basePage import BasePage
 class ReimbursementBasisPageClass(BasePage):
 
     _reimbursementBasis = (By.CSS_SELECTOR, '#app > section > section > aside > div > div.menu-sroll.el-scrollbar > div.el-scrollbar__wrap > div > ul > li:nth-child(5) > div > span')
-    _businessType = (By.CSS_SELECTOR, '#app > section > section > aside > div > div.menu-sroll.el-scrollbar > div.el-scrollbar__wrap > div > ul > li.el-submenu.is-opened > ul > li:nth-child(2) > span')
+    _businessType = (By.XPATH, '//*[@id="app"]/section/section/aside/div/div[2]/div[1]/div/ul/li[5]/ul/li[2]/span')
+    _billConfig = (By.XPATH, '//*[@id="app"]/section/section/aside/div/div[2]/div[1]/div/ul/li[5]/ul/li[5]/span')
 
     def open_reimbursementBasis(self):
         self.click(*self._reimbursementBasis)
@@ -18,8 +19,13 @@ class ReimbursementBasisPageClass(BasePage):
     def open_businessType(self):
         self.click(*self._businessType)
 
+    def open_billConfig(self):
+        self.click(*self._billConfig)
+
     def __init__(self, driver):
         BasePage.__init__(self, driver)
+
+
 
 class BusinessTypePageClass(ReimbursementBasisPageClass):
 
@@ -135,3 +141,62 @@ class BusinessTypePageClass(ReimbursementBasisPageClass):
 
     def click_editButton(self):
         self.click(*self._editButton)
+
+
+
+class BillConfigPageClass(ReimbursementBasisPageClass):
+
+    _billName = (By.ID, 'undefined_keyword')
+
+    _selectButton = (By.XPATH, '//*[@id="app"]/section/section/section/main/div/div/div[1]/div/div[1]/form/div[2]/div/button[1]/span')
+    _resetButton = (By.XPATH, '//*[@id="app"]/section/section/section/main/div/div/div[1]/div/div[1]/form/div[2]/div/button[2]/span')
+    _businessTypeButton = (By.XPATH, '//*[@id="app"]/section/section/section/main/div/div/div[1]/div/div[3]/div/div[3]/table/tbody/tr/td[14]/div/button/span')
+
+    _businessInputBox = (By.XPATH, '/html/body/div[3]/div/div[2]/div[1]/input')
+    _selectAllBox = (By.XPATH, '/html/body/div[3]/div/div[2]/label/span[1]/span')
+    _selectFirstBox = (By.XPATH, '/html/body/div[3]/div/div[2]/div[3]/div/label/span[1]')
+
+    _closeButton = (By.XPATH, '/html/body/div[3]/div/div[3]/span/button[1]/span')
+    _confirmButton = (By.XPATH, '/html/body/div[3]/div/div[3]/span/button[2]/span')
+
+
+    def __init__(self, driver):
+        ReimbursementBasisPageClass.__init__(self, driver)
+
+    def input_billName(self, text):
+        self.clear(*self._billName)
+        self.send_text(text, *self._billName)
+
+    def click_selectButton(self):
+        self.click(*self._selectButton)
+
+    def click_resetButton(self):
+        self.click(*self._resetButton)
+
+    def click_businessTypeButton(self):
+        self.click(*self._businessTypeButton)
+
+    def input_businessInputBox(self, text):
+        self.clear(*self._businessInputBox)
+        self.send_text(text, *self._businessInputBox)
+
+    def click_selectAllBox(self):
+        self.click(*self._selectAllBox)
+
+    def click_selectFirstBox(self):
+        self.click(*self._selectFirstBox)
+
+    def getSelectFirstBox(self):
+        return self._selectFirstBox
+
+    def click_closeButton(self):
+        self.click(*self._closeButton)
+
+    def click_confirmButton(self):
+        self.click(*self._confirmButton)
+
+
+
+
+
+

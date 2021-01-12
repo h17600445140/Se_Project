@@ -5,9 +5,10 @@ import pytest
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from PageClass.baseIndexPageClass.reimbursementBasisPageClass import BusinessTypePageClass
+from PageClass.baseIndexPageClass.reimbursementBasisPageClass import BusinessTypePageClass, BillConfigPageClass
 from Testcases.common.loginDepend import LoginDepend
 from Util import logger
+
 
 
 class TestBusinessTypePageClass(object):
@@ -18,8 +19,8 @@ class TestBusinessTypePageClass(object):
         # self.businessTypePageClass.driver.implicitly_wait(2)
 
     def teardown_class(self):
-        # self.businessTypePageClass.driver.quit()
-        pass
+        self.businessTypePageClass.driver.quit()
+
 
     @pytest.mark.run(order=1)
     def test_addBusinessCategoryBig(self):
@@ -123,6 +124,65 @@ class TestBusinessTypePageClass(object):
 
         sleep(1)
         assert self.businessTypePageClass.elementIsDisplay(*self.businessTypePageClass.getBusinessTypeBig()) == True
+
+
+
+class TestBillConfigPageClass(object):
+
+    def setup_class(self):
+        self.login = LoginDepend('baseHost')
+        self.billConfigPageClass = BillConfigPageClass(self.login.driver)
+        # self.businessTypePageClass.driver.implicitly_wait(2)
+
+    def teardown_class(self):
+        # self.businessTypePageClass.driver.quit()
+        pass
+
+    def test_configureBusinessType(self):
+
+        sleep(2)
+
+        self.billConfigPageClass.open_reimbursementBasis()
+
+        self.billConfigPageClass.open_billConfig()
+
+        self.billConfigPageClass.input_billName('日常费用报账单')
+
+        self.billConfigPageClass.click_selectButton()
+
+        self.billConfigPageClass.click_businessTypeButton()
+
+        self.billConfigPageClass.input_businessInputBox('test')
+
+        info = self.billConfigPageClass.getElementAttribute('class', *self.billConfigPageClass.getSelectFirstBox())
+
+        logger.info("hello,-----> {}".format(info))
+
+        self.billConfigPageClass.click_selectFirstBox()
+
+        self.billConfigPageClass.click_confirmButton()
+
+        WebDriverWait(self.billConfigPageClass.driver, 5).until(
+            EC.visibility_of_element_located(self.billConfigPageClass.getToastBox()))
+
+        logger.info("这是：------->{}".format(self.billConfigPageClass.getToastBoxText()))
+
+        assert self.billConfigPageClass.getToastBoxText() == "保存成功"
+
+        sleep(3)
+
+        self.billConfigPageClass.click_businessTypeButton()
+
+        self.billConfigPageClass.input_businessInputBox('test')
+
+        info = self.billConfigPageClass.getElementAttribute('class', *self.billConfigPageClass.getSelectFirstBox())
+
+        logger.info("hello,-----> {}".format(info))
+
+        self.billConfigPageClass.click_closeButton()
+
+        assert 'is-checked' in info
+
 
 
 

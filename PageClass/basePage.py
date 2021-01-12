@@ -57,6 +57,12 @@ class BasePage(object):
     def elementIsDisplay(self, *loc) -> bool:
         return self.driver.find_element(*loc).is_displayed()
 
+    def elementIsSelect(self, *loc) -> bool:
+        return self.driver.find_element(*loc).is_selected()
+
+    def getElementAttribute(self, attribute, *loc):
+        return self.driver.find_element(*loc).get_attribute(attribute)
+
     def getToastBoxText(self):
         return self.get_elementText(*self._toastBox)
 
