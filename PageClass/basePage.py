@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 
 from Util.util import getPicturePath
@@ -24,6 +25,10 @@ class BasePage(object):
 
     def click(self, *loc):
         self.find_element(*loc).click()
+
+    def moveToclick(self, *loc):
+        element = self.find_element(*loc)
+        ActionChains(self.driver).move_to_element(element).click(element).perform()
 
     def clear(self, *loc):
         self.find_element(*loc).clear()
