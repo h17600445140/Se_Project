@@ -10,7 +10,7 @@ from Util import logger
 
 class ReimbursementBasisPageClass(BasePage):
 
-    _reimbursementBasis = (By.CSS_SELECTOR, '#app > section > section > aside > div > div.menu-sroll.el-scrollbar > div.el-scrollbar__wrap > div > ul > li:nth-child(5) > div > span')
+    _reimbursementBasis = (By.XPATH, '//*[@id="app"]/section/section/aside/div/div[2]/div[1]/div/ul/li[5]/div/span')
     _businessType = (By.XPATH, '//*[@id="app"]/section/section/aside/div/div[2]/div[1]/div/ul/li[5]/ul/li[2]/span')
     _billConfig = (By.XPATH, '//*[@id="app"]/section/section/aside/div/div[2]/div[1]/div/ul/li[5]/ul/li[5]/span')
 
