@@ -2,6 +2,8 @@ url:
   publicHost: http://fsscysc.csztessc.com.cn:8085/public
   baseHost: http://fsscysc.csztessc.com.cn:8085/base
   easHost: http://192.168.0.200/eas
+  fscHost: http://192.168.0.200/fsc
+  timerHost: http://192.168.0.200/ip/timerManage
 user:
   account: 1
   password: 123456

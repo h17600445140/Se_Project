@@ -4,7 +4,7 @@ from time import sleep
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from PageClass.boeApplyPageClass.comFeeApplyBoePage import ComFeeApplyBoePage
-from Testcases.common.businessApprove import BusinessApprove
+from Testcases.common.boeBusinessApprove import BusinessApprove
 from Testcases.common.loginDepend import LoginDepend
 from Util import logger
 
