@@ -10,6 +10,7 @@ from Util import logger
 class BasePage(object):
 
     _toastBox = (By.XPATH, '/html/body/div[2]/p')
+    _toastBoxRe = (By.XPATH, '/html/body/div[3]/p')
 
     def __init__(self, driver):
         self.driver = driver
@@ -69,8 +70,21 @@ class BasePage(object):
         return self.driver.find_element(*loc).get_attribute(attribute)
 
     def getToastBoxText(self):
-        return self.get_elementText(*self._toastBox)
+        try:
+            content = self.get_elementText(*self._toastBox)
+            return content
+        except:
+            content = self.get_elementText(*self._toastBoxRe)
+            return content
 
     def getToastBox(self):
         return self._toastBox
 
+    def getWindowHandles(self):
+        return self.driver.window_handles
+
+    def getCurrentWindowHandle(self):
+        return self.driver.current_window_handle
+
+    def switchToWin(self, window):
+        self.driver.switch_to.window(window)

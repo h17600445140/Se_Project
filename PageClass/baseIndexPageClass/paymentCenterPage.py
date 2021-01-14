@@ -4,7 +4,7 @@ from PageClass.basePage import BasePage
 
 
 
-class PaymentCenterPageClass(BasePage):
+class PaymentCenterPage(BasePage):
 
     _paymentCenter = (By.XPATH, '//*[@id="app"]/section/section/aside/div/div[2]/div[1]/div/ul/li[7]/div/span')
     _companyAccount = (By.XPATH, '//*[@id="app"]/section/section/aside/div/div[2]/div[1]/div/ul/li[7]/ul/li[2]/span')
@@ -42,7 +42,7 @@ class PaymentCenterPageClass(BasePage):
     def click_disableButton(self):
         self.click(*self._disableButton)
 
-class CompanyAccountPageClass(PaymentCenterPageClass):
+class CompanyAccountPage(PaymentCenterPage):
 
     _selectCode = (By.ID, 'undefined_code')
     _selectButton = (By.XPATH, '//*[@id="app"]/section/section/section/main/div/div/div/div[1]/form/div[8]/div/button[1]')
@@ -106,7 +106,7 @@ class CompanyAccountPageClass(PaymentCenterPageClass):
     _addEditSubmit = (By.XPATH, '//*[@id="form"]/div[14]/div/button[2]/span')
 
     def __init__(self, driver):
-        PaymentCenterPageClass.__init__(self, driver)
+        PaymentCenterPage.__init__(self, driver)
 
     def input_selectCode(self, text):
         self.clear(*self._selectCode)
@@ -181,7 +181,7 @@ class CompanyAccountPageClass(PaymentCenterPageClass):
     def click_addEditSubmit(self):
         self.click(*self._addEditSubmit)
 
-class PayMethodPageClass(PaymentCenterPageClass):
+class PayMethodPage(PaymentCenterPage):
 
     # 新增页面 -> 优先级
     _priorityInput = (By.XPATH, '//*[@id="form_paymentSort"]/div/input')
@@ -237,7 +237,7 @@ class PayMethodPageClass(PaymentCenterPageClass):
 
 
     def __init__(self, driver):
-        PaymentCenterPageClass.__init__(self, driver)
+        PaymentCenterPage.__init__(self, driver)
 
     def input_priorityInput(self, text):
         self.clear(*self._priorityInput)

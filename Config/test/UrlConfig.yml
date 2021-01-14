@@ -1,6 +1,13 @@
 url:
   publicHost: http://fsscysc.csztessc.com.cn:8085/public
   baseHost: http://fsscysc.csztessc.com.cn:8085/base
+  easHost: http://192.168.0.200/eas
 user:
-  account: hc3
+  account: 1
+  password: 123456
+leader:
+  account: 2
+  password: 123456
+finance:
+  account: 1
   password: 123456

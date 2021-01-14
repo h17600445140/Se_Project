@@ -5,181 +5,181 @@ import pytest
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from PageClass.baseIndexPageClass.reimbursementBasisPageClass import BusinessTypePageClass, BillConfigPageClass
+from PageClass.baseIndexPageClass.reimbursementBasisPage import BusinessTypePage, BillConfigPage
 from Testcases.common.loginDepend import LoginDepend
 from Util import logger
 
 
 
-class TestBusinessTypePageClass(object):
+class TestBusinessTypePage(object):
 
     def setup_class(self):
-        self.login = LoginDepend('baseHost')
-        self.businessTypePageClass = BusinessTypePageClass(self.login.driver)
-        # self.businessTypePageClass.driver.implicitly_wait(2)
+        self.login = LoginDepend('baseHost', 'user')
+        self.businessTypePage = BusinessTypePage(self.login.driver)
+        # self.businessTypePage.driver.implicitly_wait(2)
 
     def teardown_class(self):
-        self.businessTypePageClass.driver.quit()
+        self.businessTypePage.driver.quit()
 
 
     @pytest.mark.run(order=1)
     def test_addBusinessCategoryBig(self):
 
-        WebDriverWait(self.businessTypePageClass.driver, 5).until(
-            EC.visibility_of_element_located(self.businessTypePageClass.getReimbursementBasis()))
+        WebDriverWait(self.businessTypePage.driver, 5).until(
+            EC.visibility_of_element_located(self.businessTypePage.getReimbursementBasis()))
 
-        self.businessTypePageClass.open_reimbursementBasis()
-        self.businessTypePageClass.open_businessType()
+        self.businessTypePage.open_reimbursementBasis()
+        self.businessTypePage.open_businessType()
 
-        WebDriverWait(self.businessTypePageClass.driver, 5).until(
-            EC.visibility_of_element_located(self.businessTypePageClass.getTotalBusinessType()))
+        WebDriverWait(self.businessTypePage.driver, 5).until(
+            EC.visibility_of_element_located(self.businessTypePage.getTotalBusinessType()))
 
-        self.businessTypePageClass.click_totalBusinessType()
-        self.businessTypePageClass.click_addBusinessCategoryBigButton()
+        self.businessTypePage.click_totalBusinessType()
+        self.businessTypePage.click_addBusinessCategoryBigButton()
 
-        self.businessTypePageClass.input_businessTypeCodeBox("test")
-        self.businessTypePageClass.input_businessTypeNameCBox("test")
+        self.businessTypePage.input_businessTypeCodeBox("test")
+        self.businessTypePage.input_businessTypeNameCBox("test")
 
 
-        self.businessTypePageClass.input_appDisplayNameCBox("test")
-        self.businessTypePageClass.input_auditPointsCBox("test")
+        self.businessTypePage.input_appDisplayNameCBox("test")
+        self.businessTypePage.input_auditPointsCBox("test")
 
-        self.businessTypePageClass.click_submitButton()
+        self.businessTypePage.click_submitButton()
 
-        WebDriverWait(self.businessTypePageClass.driver, 5).until(
-            EC.visibility_of_element_located(self.businessTypePageClass.getToastBox()))
+        WebDriverWait(self.businessTypePage.driver, 5).until(
+            EC.visibility_of_element_located(self.businessTypePage.getToastBox()))
 
-        logger.info("这是：------->{}".format(self.businessTypePageClass.getToastBoxText()))
+        logger.info("这是：------->{}".format(self.businessTypePage.getToastBoxText()))
 
-        assert self.businessTypePageClass.getToastBoxText() == "新建成功"
+        assert self.businessTypePage.getToastBoxText() == "新建成功"
 
     @pytest.mark.run(order=4)
     def test_deleteBusinessCategoryBig(self):
         sleep(1)
-        self.businessTypePageClass.open_businessType()
+        self.businessTypePage.open_businessType()
 
         sleep(1)
-        self.businessTypePageClass.input_filterBox("test1")
+        self.businessTypePage.input_filterBox("test1")
 
         sleep(1)
-        self.businessTypePageClass.click_businessOpen()
+        self.businessTypePage.click_businessOpen()
 
-        self.businessTypePageClass.click_businessTypeBig()
-
-        sleep(1)
-        self.businessTypePageClass.click_deleteButton()
+        self.businessTypePage.click_businessTypeBig()
 
         sleep(1)
-        self.businessTypePageClass.click_deleteSubmitButton()
+        self.businessTypePage.click_deleteButton()
 
-        self.businessTypePageClass.click_totalBusinessType()
+        sleep(1)
+        self.businessTypePage.click_deleteSubmitButton()
 
-        WebDriverWait(self.businessTypePageClass.driver, 5).until(
-            EC.visibility_of_element_located(self.businessTypePageClass.getToastBox()))
+        self.businessTypePage.click_totalBusinessType()
 
-        logger.info("这是：------->{}".format(self.businessTypePageClass.getToastBoxText()))
+        WebDriverWait(self.businessTypePage.driver, 5).until(
+            EC.visibility_of_element_located(self.businessTypePage.getToastBox()))
 
-        assert self.businessTypePageClass.getToastBoxText() == "删除成功"
+        logger.info("这是：------->{}".format(self.businessTypePage.getToastBoxText()))
+
+        assert self.businessTypePage.getToastBoxText() == "删除成功"
 
     @pytest.mark.run(order=2)
     def test_updateBusinessCategoryBig(self):
         sleep(1)
-        self.businessTypePageClass.open_businessType()
+        self.businessTypePage.open_businessType()
 
         sleep(1)
-        self.businessTypePageClass.input_filterBox("test")
+        self.businessTypePage.input_filterBox("test")
 
         sleep(1)
-        self.businessTypePageClass.click_businessOpen()
+        self.businessTypePage.click_businessOpen()
 
-        self.businessTypePageClass.click_businessTypeBig()
+        self.businessTypePage.click_businessTypeBig()
 
-        self.businessTypePageClass.click_editButton()
+        self.businessTypePage.click_editButton()
 
-        self.businessTypePageClass.input_businessTypeCodeBox("test1")
-        self.businessTypePageClass.input_businessTypeNameCBox("test1")
+        self.businessTypePage.input_businessTypeCodeBox("test1")
+        self.businessTypePage.input_businessTypeNameCBox("test1")
 
-        self.businessTypePageClass.input_appDisplayNameCBox("test1")
-        self.businessTypePageClass.input_auditPointsCBox("test1")
+        self.businessTypePage.input_appDisplayNameCBox("test1")
+        self.businessTypePage.input_auditPointsCBox("test1")
 
-        self.businessTypePageClass.click_submitButton()
+        self.businessTypePage.click_submitButton()
 
-        WebDriverWait(self.businessTypePageClass.driver, 5).until(
-            EC.visibility_of_element_located(self.businessTypePageClass.getToastBox()))
+        WebDriverWait(self.businessTypePage.driver, 5).until(
+            EC.visibility_of_element_located(self.businessTypePage.getToastBox()))
 
-        logger.info("这是：------->{}".format(self.businessTypePageClass.getToastBoxText()))
+        logger.info("这是：------->{}".format(self.businessTypePage.getToastBoxText()))
 
-        assert self.businessTypePageClass.getToastBoxText() == "编辑成功"
+        assert self.businessTypePage.getToastBoxText() == "编辑成功"
 
     @pytest.mark.run(order=3)
     def test_selectBusinessCategoryBig(self):
         sleep(1)
-        self.businessTypePageClass.open_businessType()
+        self.businessTypePage.open_businessType()
 
         sleep(1)
-        self.businessTypePageClass.input_filterBox("test1")
+        self.businessTypePage.input_filterBox("test1")
 
         sleep(1)
-        self.businessTypePageClass.click_businessOpen()
+        self.businessTypePage.click_businessOpen()
 
         sleep(1)
-        assert self.businessTypePageClass.elementIsDisplay(*self.businessTypePageClass.getBusinessTypeBig()) == True
+        assert self.businessTypePage.elementIsDisplay(*self.businessTypePage.getBusinessTypeBig()) == True
 
 
 
-class TestBillConfigPageClass(object):
+class TestbillConfigPage(object):
 
     def setup_class(self):
-        self.login = LoginDepend('baseHost')
-        self.billConfigPageClass = BillConfigPageClass(self.login.driver)
-        # self.businessTypePageClass.driver.implicitly_wait(2)
+        self.login = LoginDepend('baseHost', 'user')
+        self.billConfigPage = BillConfigPage(self.login.driver)
+        # self.businessTypePage.driver.implicitly_wait(2)
 
     def teardown_class(self):
-        # self.businessTypePageClass.driver.quit()
+        # self.businessTypePage.driver.quit()
         pass
 
     def test_configureBusinessType(self):
 
         sleep(2)
 
-        self.billConfigPageClass.open_reimbursementBasis()
+        self.billConfigPage.open_reimbursementBasis()
 
-        self.billConfigPageClass.open_billConfig()
+        self.billConfigPage.open_billConfig()
 
-        self.billConfigPageClass.input_billName('日常费用报账单')
+        self.billConfigPage.input_billName('日常费用报账单')
 
-        self.billConfigPageClass.click_selectButton()
+        self.billConfigPage.click_selectButton()
 
-        self.billConfigPageClass.click_businessTypeButton()
+        self.billConfigPage.click_businessTypeButton()
 
-        self.billConfigPageClass.input_businessInputBox('test')
+        self.billConfigPage.input_businessInputBox('test')
 
-        info = self.billConfigPageClass.getElementAttribute('class', *self.billConfigPageClass.getSelectFirstBox())
+        info = self.billConfigPage.getElementAttribute('class', *self.billConfigPage.getSelectFirstBox())
 
         logger.info("hello,-----> {}".format(info))
 
-        self.billConfigPageClass.click_selectFirstBox()
+        self.billConfigPage.click_selectFirstBox()
 
-        self.billConfigPageClass.click_businessTypeConfirmButton()
+        self.billConfigPage.click_businessTypeConfirmButton()
 
-        WebDriverWait(self.billConfigPageClass.driver, 5).until(
-            EC.visibility_of_element_located(self.billConfigPageClass.getToastBox()))
+        WebDriverWait(self.billConfigPage.driver, 5).until(
+            EC.visibility_of_element_located(self.billConfigPage.getToastBox()))
 
-        logger.info("这是：------->{}".format(self.billConfigPageClass.getToastBoxText()))
+        logger.info("这是：------->{}".format(self.billConfigPage.getToastBoxText()))
 
-        assert self.billConfigPageClass.getToastBoxText() == "保存成功"
+        assert self.billConfigPage.getToastBoxText() == "保存成功"
 
         sleep(3)
 
-        self.billConfigPageClass.click_businessTypeButton()
+        self.billConfigPage.click_businessTypeButton()
 
-        self.billConfigPageClass.input_businessInputBox('test')
+        self.billConfigPage.input_businessInputBox('test')
 
-        info = self.billConfigPageClass.getElementAttribute('class', *self.billConfigPageClass.getSelectFirstBox())
+        info = self.billConfigPage.getElementAttribute('class', *self.billConfigPage.getSelectFirstBox())
 
         logger.info("hello,-----> {}".format(info))
 
-        self.billConfigPageClass.click_businessTypeCloseButton()
+        self.billConfigPage.click_businessTypeCloseButton()
 
         assert 'is-checked' in info
 
@@ -188,58 +188,59 @@ class TestBillConfigPageClass(object):
 
         sleep(2)
 
-        self.billConfigPageClass.open_reimbursementBasis()
+        self.billConfigPage.open_reimbursementBasis()
 
-        self.billConfigPageClass.open_billConfig()
+        self.billConfigPage.open_billConfig()
 
-        self.billConfigPageClass.input_billName('日常费用报账单')
+        self.billConfigPage.input_billName('日常费用报账单')
 
-        self.billConfigPageClass.click_selectButton()
+        self.billConfigPage.click_selectButton()
 
-        self.billConfigPageClass.click_voucherTypeButton()
+        self.billConfigPage.click_voucherTypeButton()
 
-        self.billConfigPageClass.click_voucherAddButton()
-
-        sleep(1)
-        self.billConfigPageClass.accountingEntitySelect("爆破核算主体")
+        self.billConfigPage.click_voucherAddButton()
 
         sleep(1)
-        self.billConfigPageClass.vendorTypeSelect('客户')
+        self.billConfigPage.accountingEntitySelect("爆破核算主体")
 
         sleep(1)
-        self.billConfigPageClass.voucherCategorySelect('预付凭证')
+        self.billConfigPage.vendorTypeSelect('客户')
 
         sleep(1)
-        self.billConfigPageClass.voucherTypeSelect('预付')
+        self.billConfigPage.voucherCategorySelect('预付凭证')
 
         sleep(1)
-        self.billConfigPageClass.createNodeSelect('审核完成')
+        self.billConfigPage.voucherTypeSelect('预付')
 
         sleep(1)
-        self.billConfigPageClass.importNodeSelect('审核完成')
+        self.billConfigPage.createNodeSelect('审核完成')
 
         sleep(1)
-        self.billConfigPageClass.whetherMergeSelect('是')
+        self.billConfigPage.importNodeSelect('审核完成')
 
         sleep(1)
-        self.billConfigPageClass.click_voucherAddSubmit()
+        self.billConfigPage.whetherMergeSelect('是')
 
         sleep(1)
-        self.billConfigPageClass.click_voucherSubmit()
+        self.billConfigPage.click_voucherAddSubmit()
+
+        sleep(1)
+        self.billConfigPage.click_voucherSubmit()
+
 
     def test_configureEditBill(self):
 
         sleep(2)
 
-        self.billConfigPageClass.open_reimbursementBasis()
+        self.billConfigPage.open_reimbursementBasis()
 
-        self.billConfigPageClass.open_billConfig()
+        self.billConfigPage.open_billConfig()
 
-        self.billConfigPageClass.input_billName('日常费用报账单')
+        self.billConfigPage.input_billName('日常费用报账单')
 
-        self.billConfigPageClass.click_selectButton()
+        self.billConfigPage.click_selectButton()
 
-        self.billConfigPageClass.click_billEditButton()
+        self.billConfigPage.click_billEditButton()
 
         isStandardControl = True
         isPay = True
@@ -252,125 +253,125 @@ class TestBillConfigPageClass(object):
 
 
         if isStandardControl != True:
-            if 'is-checked' in self.billConfigPageClass.getElementAttribute(
-                    'class', *self.billConfigPageClass.getBillWhetherToStandardControlButton()):
-                self.billConfigPageClass.click_billWhetherToStandardControlButton()
+            if 'is-checked' in self.billConfigPage.getElementAttribute(
+                    'class', *self.billConfigPage.getBillWhetherToStandardControlButton()):
+                self.billConfigPage.click_billWhetherToStandardControlButton()
                 logger.info("状态由选中转变为未选中状态")
             else:
                 logger.info("状态已经为未选中状态")
         else:
-            if 'is-checked' in self.billConfigPageClass.getElementAttribute(
-                    'class', *self.billConfigPageClass.getBillWhetherToStandardControlButton()):
+            if 'is-checked' in self.billConfigPage.getElementAttribute(
+                    'class', *self.billConfigPage.getBillWhetherToStandardControlButton()):
                 logger.info("状态已经为选中状态")
             else:
-                self.billConfigPageClass.click_billWhetherToStandardControlButton()
+                self.billConfigPage.click_billWhetherToStandardControlButton()
                 logger.info("状态由未选中转变为选中状态")
 
         sleep(2)
         if isPay != True:
-            if 'is-checked' in self.billConfigPageClass.getElementAttribute(
-                    'class', *self.billConfigPageClass.getBillWhetherToPayButton()):
-                self.billConfigPageClass.click_billWhetherToPayButton()
+            if 'is-checked' in self.billConfigPage.getElementAttribute(
+                    'class', *self.billConfigPage.getBillWhetherToPayButton()):
+                self.billConfigPage.click_billWhetherToPayButton()
                 logger.info("状态由选中转变为未选中状态")
             else:
                 logger.info("状态已经为未选中状态")
         else:
-            if 'is-checked' in self.billConfigPageClass.getElementAttribute(
-                    'class', *self.billConfigPageClass.getBillWhetherToPayButton()):
+            if 'is-checked' in self.billConfigPage.getElementAttribute(
+                    'class', *self.billConfigPage.getBillWhetherToPayButton()):
                 logger.info("状态已经为选中状态")
             else:
-                self.billConfigPageClass.click_billWhetherToPayButton()
+                self.billConfigPage.click_billWhetherToPayButton()
                 logger.info("状态由未选中转变为选中状态")
 
         sleep(2)
         if isAPPSubmitBill != True:
-            if 'is-checked' in self.billConfigPageClass.getElementAttribute(
-                    'class', *self.billConfigPageClass.getBillWhetherToAPPSubmitBill()):
-                self.billConfigPageClass.click_billWhetherToAPPSubmitBill()
+            if 'is-checked' in self.billConfigPage.getElementAttribute(
+                    'class', *self.billConfigPage.getBillWhetherToAPPSubmitBill()):
+                self.billConfigPage.click_billWhetherToAPPSubmitBill()
                 logger.info("状态由选中转变为未选中状态")
             else:
                 logger.info("状态已经为未选中状态")
         else:
-            if 'is-checked' in self.billConfigPageClass.getElementAttribute(
-                    'class', *self.billConfigPageClass.getBillWhetherToAPPSubmitBill()):
+            if 'is-checked' in self.billConfigPage.getElementAttribute(
+                    'class', *self.billConfigPage.getBillWhetherToAPPSubmitBill()):
                 logger.info("状态已经为选中状态")
             else:
-                self.billConfigPageClass.click_billWhetherToAPPSubmitBill()
+                self.billConfigPage.click_billWhetherToAPPSubmitBill()
                 logger.info("状态由未选中转变为选中状态")
 
         sleep(2)
         if isGenerateVoucher != True:
-            if 'is-checked' in self.billConfigPageClass.getElementAttribute(
-                    'class', *self.billConfigPageClass.getBillWhetherToGenerateVoucher()):
-                self.billConfigPageClass.click_billWhetherToGenerateVoucher()
+            if 'is-checked' in self.billConfigPage.getElementAttribute(
+                    'class', *self.billConfigPage.getBillWhetherToGenerateVoucher()):
+                self.billConfigPage.click_billWhetherToGenerateVoucher()
                 logger.info("状态由选中转变为未选中状态")
             else:
                 logger.info("状态已经为未选中状态")
         else:
-            if 'is-checked' in self.billConfigPageClass.getElementAttribute(
-                    'class', *self.billConfigPageClass.getBillWhetherToGenerateVoucher()):
+            if 'is-checked' in self.billConfigPage.getElementAttribute(
+                    'class', *self.billConfigPage.getBillWhetherToGenerateVoucher()):
                 logger.info("状态已经为选中状态")
             else:
-                self.billConfigPageClass.click_billWhetherToGenerateVoucher()
+                self.billConfigPage.click_billWhetherToGenerateVoucher()
                 logger.info("状态由未选中转变为选中状态")
 
         sleep(2)
         if isStatistics != True:
-            if 'is-checked' in self.billConfigPageClass.getElementAttribute(
-                    'class', *self.billConfigPageClass.getBillWhetherToStatistics()):
-                self.billConfigPageClass.click_billWhetherToStatistics()
+            if 'is-checked' in self.billConfigPage.getElementAttribute(
+                    'class', *self.billConfigPage.getBillWhetherToStatistics()):
+                self.billConfigPage.click_billWhetherToStatistics()
                 logger.info("状态由选中转变为未选中状态")
             else:
                 logger.info("状态已经为未选中状态")
         else:
-            if 'is-checked' in self.billConfigPageClass.getElementAttribute(
-                    'class', *self.billConfigPageClass.getBillWhetherToStatistics()):
+            if 'is-checked' in self.billConfigPage.getElementAttribute(
+                    'class', *self.billConfigPage.getBillWhetherToStatistics()):
                 logger.info("状态已经为选中状态")
             else:
-                self.billConfigPageClass.click_billWhetherToStatistics()
+                self.billConfigPage.click_billWhetherToStatistics()
                 logger.info("状态由未选中转变为选中状态")
 
         sleep(2)
         if isEnableBillImageArea != True:
-            if 'is-checked' in self.billConfigPageClass.getElementAttribute(
-                    'class', *self.billConfigPageClass.getBillWhetherToEnableBillImageArea()):
-                self.billConfigPageClass.click_billWhetherToEnableBillImageArea()
+            if 'is-checked' in self.billConfigPage.getElementAttribute(
+                    'class', *self.billConfigPage.getBillWhetherToEnableBillImageArea()):
+                self.billConfigPage.click_billWhetherToEnableBillImageArea()
                 logger.info("状态由选中转变为未选中状态")
             else:
                 logger.info("状态已经为未选中状态")
         else:
-            if 'is-checked' in self.billConfigPageClass.getElementAttribute(
-                    'class', *self.billConfigPageClass.getBillWhetherToEnableBillImageArea()):
+            if 'is-checked' in self.billConfigPage.getElementAttribute(
+                    'class', *self.billConfigPage.getBillWhetherToEnableBillImageArea()):
                 logger.info("状态已经为选中状态")
             else:
-                self.billConfigPageClass.click_billWhetherToEnableBillImageArea()
+                self.billConfigPage.click_billWhetherToEnableBillImageArea()
                 logger.info("状态由未选中转变为选中状态")
 
         sleep(2)
         if isEnableOCR != True:
-            if 'is-checked' in self.billConfigPageClass.getElementAttribute(
-                    'class', *self.billConfigPageClass.getBillWhetherToEnableOCR()):
-                self.billConfigPageClass.click_billWhetherToEnableOCR()
+            if 'is-checked' in self.billConfigPage.getElementAttribute(
+                    'class', *self.billConfigPage.getBillWhetherToEnableOCR()):
+                self.billConfigPage.click_billWhetherToEnableOCR()
                 logger.info("状态由选中转变为未选中状态")
             else:
                 logger.info("状态已经为未选中状态")
         else:
-            if 'is-checked' in self.billConfigPageClass.getElementAttribute(
-                    'class', *self.billConfigPageClass.getBillWhetherToEnableOCR()):
+            if 'is-checked' in self.billConfigPage.getElementAttribute(
+                    'class', *self.billConfigPage.getBillWhetherToEnableOCR()):
                 logger.info("状态已经为选中状态")
             else:
-                self.billConfigPageClass.click_billWhetherToEnableOCR()
+                self.billConfigPage.click_billWhetherToEnableOCR()
                 logger.info("状态由未选中转变为选中状态")
 
         sleep(2)
-        self.billConfigPageClass.click_billSubmitButton()
+        self.billConfigPage.click_billSubmitButton()
 
-        WebDriverWait(self.billConfigPageClass.driver, 5).until(
-            EC.visibility_of_element_located(self.billConfigPageClass.getToastBox()))
+        WebDriverWait(self.billConfigPage.driver, 5).until(
+            EC.visibility_of_element_located(self.billConfigPage.getToastBox()))
 
-        logger.info("这是：------->{}".format(self.billConfigPageClass.getToastBoxText()))
+        logger.info("这是：------->{}".format(self.billConfigPage.getToastBoxText()))
 
-        assert self.billConfigPageClass.getToastBoxText() == "保存成功"
+        assert self.billConfigPage.getToastBoxText() == "保存成功"
 
 
 

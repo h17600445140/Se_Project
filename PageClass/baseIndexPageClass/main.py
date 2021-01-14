@@ -1,15 +1,15 @@
 from time import sleep
 from selenium import webdriver
-from PageClass.baseIndexPageClass.reimbursementBasisPageClass import ReimbursementBasisPageClass, BusinessTypePageClass
+from PageClass.baseIndexPageClass.reimbursementBasisPage import ReimbursementBasisPage, BusinessTypePage
 from Testcases.common.loginDepend import LoginDepend
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-login = LoginDepend('baseHost')
+login = LoginDepend('baseHost', 'user')
 
 sleep(2)
-a = BusinessTypePageClass(login.driver)
+a = BusinessTypePage(login.driver)
 a.open_reimbursementBasis()
 a.open_businessType()
 

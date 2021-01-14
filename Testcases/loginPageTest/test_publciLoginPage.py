@@ -13,6 +13,7 @@ import pytest
 import allure
 
 
+
 @allure.feature("页面登陆模块")
 class TestPublicLoginPage(object):
 

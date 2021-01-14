@@ -4,6 +4,7 @@ from PageClass.basePage import BasePage
 from Util import logger
 
 
+
 class PublicLoginPage(BasePage):
 
     _accountInput = (By.ID, 'loginKey')

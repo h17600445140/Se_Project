@@ -8,7 +8,8 @@ from PageClass.basePage import BasePage
 from Util import logger
 
 
-class ReimbursementBasisPageClass(BasePage):
+
+class ReimbursementBasisPage(BasePage):
 
     _reimbursementBasis = (By.XPATH, '//*[@id="app"]/section/section/aside/div/div[2]/div[1]/div/ul/li[5]/div/span')
     _businessType = (By.XPATH, '//*[@id="app"]/section/section/aside/div/div[2]/div[1]/div/ul/li[5]/ul/li[2]/span')
@@ -31,7 +32,7 @@ class ReimbursementBasisPageClass(BasePage):
 
 
 
-class BusinessTypePageClass(ReimbursementBasisPageClass):
+class BusinessTypePage(ReimbursementBasisPage):
 
     _filterBox = (By.XPATH, '//*[@id="app"]/section/section/section/main/div/div/div[1]/div[1]/input')
     _businessOpen = (By.XPATH, '//*[@id="app"]/section/section/section/main/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/span[1]')
@@ -64,7 +65,7 @@ class BusinessTypePageClass(ReimbursementBasisPageClass):
     _deleteSubmitButton = (By.XPATH, '//body/div[2]/div/button[2]')
 
     def __init__(self, driver):
-        ReimbursementBasisPageClass.__init__(self, driver)
+        ReimbursementBasisPage.__init__(self, driver)
 
     def input_filterBox(self, text):
         self.clear(*self._filterBox)
@@ -148,7 +149,7 @@ class BusinessTypePageClass(ReimbursementBasisPageClass):
 
 
 
-class BillConfigPageClass(ReimbursementBasisPageClass):
+class BillConfigPage(ReimbursementBasisPage):
 
     _billName = (By.ID, 'undefined_keyword')
 
@@ -223,7 +224,7 @@ class BillConfigPageClass(ReimbursementBasisPageClass):
     _billSubmitButton = (By.XPATH, '//*[@id="form"]/div[20]/div/button[2]/span')
 
     def __init__(self, driver):
-        ReimbursementBasisPageClass.__init__(self, driver)
+        ReimbursementBasisPage.__init__(self, driver)
 
     # —————————— 业务类型 ——————————
 

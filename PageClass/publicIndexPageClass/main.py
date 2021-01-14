@@ -47,7 +47,7 @@ from PageClass.loginPageClass.publicLoginPage import PublicLoginPage
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from PageClass.publicIndexPageClass.groupManagementPageClass import RolePageClass
+from PageClass.publicIndexPageClass.groupManagementPage import RolePageClass
 
 driver = webdriver.Chrome()
 

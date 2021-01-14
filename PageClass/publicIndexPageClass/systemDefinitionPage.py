@@ -2,7 +2,8 @@
 from PageClass.basePage import BasePage
 
 
-class SharingCenterPageClass(BasePage):
+
+class SystemDefinitionPage(BasePage):
 
     def __init__(self, driver):
         BasePage.__init__(self, driver)

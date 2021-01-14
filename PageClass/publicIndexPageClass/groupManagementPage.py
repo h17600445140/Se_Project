@@ -4,7 +4,7 @@ from PageClass.basePage import BasePage
 
 
 
-class GroupManagementPageClass(BasePage):
+class GroupManagementPage(BasePage):
 
     _groupManagement = (By.XPATH, '//*[@id="app"]/section/section/aside/div/div[2]/div[1]/div/ul/li[1]/div/span')
     _management = (By.XPATH, '//*[@id="app"]/section/section/aside/div/div[2]/div[1]/div/ul/li[1]/ul/li[1]/span')
@@ -39,7 +39,7 @@ class GroupManagementPageClass(BasePage):
     def open_user(self):
         self.click(*self._user)
 
-class ManagementPageClass(GroupManagementPageClass):
+class ManagementPage(GroupManagementPage):
 
     _groupCname = (By.ID, 'form_name_zh-CN')
     _groupEname = (By.ID, 'form_name_en-US')
@@ -56,7 +56,7 @@ class ManagementPageClass(GroupManagementPageClass):
     maxUserRegister_errorBox = (By.XPATH, '//*[@id="form"]/div[4]/div/div[2]')
 
     def __init__(self,driver):
-        GroupManagementPageClass.__init__(self,driver)
+        GroupManagementPage.__init__(self,driver)
 
     def clickAddButton(self):
         self.click(*self._add)
@@ -100,15 +100,15 @@ class ManagementPageClass(GroupManagementPageClass):
     def click_confirm(self):
         self.click(*self._confirm)
 
-class RolePageClass(GroupManagementPageClass):
+class RolePage(GroupManagementPage):
 
     def __init__(self,driver):
-        GroupManagementPageClass.__init__(self,driver)
+        GroupManagementPage.__init__(self,driver)
 
     def clickAddButton(self):
         self.click(*self._add)
 
-class UserPageClass(GroupManagementPageClass):
+class UserPage(GroupManagementPage):
 
     def __init__(self,driver):
-        GroupManagementPageClass.__init__(self,driver)
+        GroupManagementPage.__init__(self,driver)

@@ -11,11 +11,11 @@ from Util import config,driverFactory
 
 class LoginDepend(object):
 
-    def __init__(self, host):
+    def __init__(self, host, user):
         self.driver = driverFactory.get_driver("chrome")
-        if host == 'baseHost':
+        if host == 'baseHost' or host == 'easHost':
             self.login = LoginPage(self.driver)
-            self._login(host)
+            self._login(host, user)
 
         elif host == 'publicHost':
             self.publicLoginPage = PublicLoginPage(self.driver)
@@ -31,13 +31,17 @@ class LoginDepend(object):
             EC.visibility_of_element_located(self.publicLoginPage.getIntoButton()))
         self.publicLoginPage.get_into()
 
-    def _login(self, host):
+    def _login(self, host, user):
         self.login.goto_loginpage(config.getUrlDict()['url'][host])
         self.driver.implicitly_wait(1)
-        self.login.input_account(config.getUrlDict()['user']['account'])
-        self.login.input_password(config.getUrlDict()['user']['password'])
+        self.login.input_account(config.getUrlDict()[user]['account'])
+        self.login.input_password(config.getUrlDict()[user]['password'])
         self.login.click_loginbutton()
-        WebDriverWait(self.login.driver, 5).until(
-            EC.visibility_of_element_located(self.login.getIntoButton()))
-        self.login.get_into()
+        try:
+            WebDriverWait(self.login.driver, 3).until(
+                EC.visibility_of_element_located(self.login.getIntoButton()))
+        except:
+            pass
+        else:
+            self.login.get_into()
 
