@@ -19,9 +19,12 @@ class HandleTimer():
 
     def runTimer(self):
         if self.timerType == '共享中心':
+            sleep(1)
             self.timerManage.click_sharingCenterTimer()
             self.timerManage.input_selectTimerName(self.timerName)
             self.timerManage.click_selectButton()
             self.timerManage.click_runTimer()
+            sleep(1)
+            self.timerManage.back()
 
 

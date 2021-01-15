@@ -88,3 +88,6 @@ class BasePage(object):
 
     def switchToWin(self, window):
         self.driver.switch_to.window(window)
+
+    def back(self):
+        self.driver.back()
