@@ -13,12 +13,16 @@ class AuditAdjustDirectorPage(FscCommonPage):
 
     _distributeToGroup = (By.XPATH, '//*[@id="app"]/section/section/main/div/div/div/div[2]/button[2]/span')
     _selectGroup = (By.ID, 'form_fGroupId')
-    _selectFirstGroup = (By.XPATH, '/html/body/div[5]/div[1]/div[1]/ul/li')
-    _selectGroupSubmit = (By.XPATH, '//*[@id="form"]/div[3]/div/button[2]')
 
+    _selectFirstGroup = (By.XPATH, '/html/body/div[5]/div[1]/div[1]/ul/li')
+    _selectFirstGroup1 = (By.XPATH, '/html/body/div[4]/div[1]/div[1]/ul/li')
+
+    _selectGroupSubmit = (By.XPATH, '//*[@id="form"]/div[3]/div/button[2]')
     _distributeToStaff = (By.XPATH, '//*[@id="app"]/section/section/main/div/div/div/div[2]/button[3]/span')
     _selectOperatorUser = (By.ID, 'form_operatorUserId')
     _selectFirstOperatorUser = (By.XPATH, '/html/body/div[5]/div[1]/div[1]/ul/li')
+    _selectFirstOperatorUser1 = (By.XPATH, '/html/body/div[4]/div[1]/div[1]/ul/li')
+
     _selectOperatorUserSubmit = (By.XPATH, '//*[@id="form"]/div[4]/div/button[2]')
 
     _taskTakeToBack = (By.XPATH, '//*[@id="app"]/section/section/main/div/div/div/div[2]/button[4]/span')
@@ -35,6 +39,9 @@ class AuditAdjustDirectorPage(FscCommonPage):
     def click_selectResult(self):
         self.click(*self._selectResult)
 
+    def getSelectResult(self):
+        return self._selectResult
+
     def click_distributeToGroup(self):
         self.click(*self._distributeToGroup)
 
@@ -42,7 +49,10 @@ class AuditAdjustDirectorPage(FscCommonPage):
         self.click(*self._selectGroup)
 
     def click_selectFirstGroup(self):
-        self.click(*self._selectFirstGroup)
+        try:
+            self.click(*self._selectFirstGroup)
+        except:
+            self.click(*self._selectFirstGroup1)
 
     def click_selectGroupSubmit(self):
         self.click(*self._selectGroupSubmit)
@@ -54,10 +64,15 @@ class AuditAdjustDirectorPage(FscCommonPage):
         self.click(*self._selectOperatorUser)
 
     def click_selectFirstOperatorUser(self):
-        self.click(*self._selectFirstOperatorUser)
+        try:
+            self.click(*self._selectFirstOperatorUser)
+        except:
+            self.click(*self._selectFirstOperatorUser1)
 
     def click_selectOperatorUserSubmit(self):
         self.click(*self._selectOperatorUserSubmit)
 
     def click_taskTakeToBack(self):
         self.click(*self._taskTakeToBack)
+
+

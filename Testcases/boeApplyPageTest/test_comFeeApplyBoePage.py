@@ -5,6 +5,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from PageClass.boeApplyPageClass.comFeeApplyBoePage import ComFeeApplyBoePage
 from Testcases.common.boeBusinessApprove import BusinessApprove
+from Testcases.common.boeSharingCenterApprove import SharingCenterApprove
 from Testcases.common.loginDepend import LoginDepend
 from Util import logger
 
@@ -81,3 +82,9 @@ class TestComFeeApplyBoePage(object):
         content = self.businessApprove.boeBusinessApprove()
 
         assert content == '审批成功'
+
+    def test_sharingCenterApprove(self):
+        global boeNum
+        self.sharingCenterApprove = SharingCenterApprove(boeNum)
+        self.sharingCenterApprove.sharingCenterApproveChuShen()
+        self.sharingCenterApprove.sharingCenterApproveFuShen()

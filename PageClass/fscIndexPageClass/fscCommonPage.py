@@ -41,6 +41,9 @@ class FscCommonPage(BasePage):
     def click_auditList(self):
         self.click(*self._auditList)
 
+    def getAuditList(self):
+        return self._auditList
+
     def click_auditAdjustDirector(self):
         self.click(*self._auditAdjustDirector)
 

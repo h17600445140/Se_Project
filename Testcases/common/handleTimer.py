@@ -23,6 +23,7 @@ class HandleTimer():
             self.timerManage.click_sharingCenterTimer()
             self.timerManage.input_selectTimerName(self.timerName)
             self.timerManage.click_selectButton()
+            sleep(1)
             self.timerManage.click_runTimer()
             sleep(1)
             self.timerManage.back()

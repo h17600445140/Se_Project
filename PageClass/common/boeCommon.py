@@ -50,6 +50,6 @@ class BoeCommen(BasePage):
 
     def click_approveButton(self):
         try:
-            self.click(*self._accountMessage)
+            self.click(*self._approveButton)
         except:
             self.click(*self._approveButton1)
