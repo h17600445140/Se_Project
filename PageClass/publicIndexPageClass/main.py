@@ -47,12 +47,12 @@ from PageClass.loginPageClass.publicLoginPage import PublicLoginPage
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from PageClass.publicIndexPageClass.groupManagementPage import RolePageClass
+from PageClass.publicIndexPageClass.groupManagementPage import RolePage
 
 driver = webdriver.Chrome()
 
 L = PublicLoginPage(driver)
-R = RolePageClass(L.driver)
+R = RolePage(L.driver)
 
 L.goto_publicloginpage("http://fsscysc.csztessc.com.cn:8085/public")
 sleep(1)

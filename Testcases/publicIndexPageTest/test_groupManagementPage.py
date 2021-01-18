@@ -32,5 +32,5 @@ class TestManagementPage(object):
         self.managementPage.input_describeE(managementPage_testdata["describeE"])
         self.managementPage.click_confirm()
 
-        WebDriverWait(self.managementPage, 10).until(
+        WebDriverWait(self.managementPage.driver, 10).until(
             EC.text_to_be_present_in_element(self.managementPage.toastBox, '保存成功'))

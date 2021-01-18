@@ -17,10 +17,12 @@ class ComFeeApplyBoePage(EasIndexPage,BoeCommen):
 
 
     # 主表区
-    _employee = (By.ID, 'boeHeader.0.employeeId')
-    _operationType = (By.ID, 'boeHeader.0.operationTypeId')
-    _paperAccessories = (By.ID, 'boeHeader.0.paperAccessories')
-    _boeAbstract = (By.ID, 'boeHeader.0.boeAbstract')
+    # _employee = (By.ID, 'boeHeader.0.employeeId')
+    # _operationType = (By.ID, 'boeHeader.0.operationTypeId')
+    # _paperAccessories = (By.ID, 'boeHeader.0.paperAccessories')
+    # _boeAbstract = (By.ID, 'boeHeader.0.boeAbstract')
+
+
     # 费用区
     _operationSubTypeId = (By.ID, 'cost.0.operationSubTypeId')
     _expenseAmount = (By.ID, 'cost.0.expenseAmount')
@@ -36,16 +38,16 @@ class ComFeeApplyBoePage(EasIndexPage,BoeCommen):
     def getBoeNum(self):
         return self.get_elementText(*self._boeNum)
 
-    def input_operationType(self, text):
-        self.clear(*self._operationType)
-        self.send_text(text, *self._operationType)
+    # def input_operationType(self, text):
+    #     self.clear(*self._operationType)
+    #     self.send_text(text, *self._operationType)
 
-    def input_boeAbstract(self, text):
-        self.clear(*self._boeAbstract)
-        self.send_text(text, *self._boeAbstract)
-
-    def getBoeAbstract(self):
-        return self._boeAbstract
+    # def input_boeAbstract(self, text):
+    #     self.clear(*self._boeAbstract)
+    #     self.send_text(text, *self._boeAbstract)
+    #
+    # def getBoeAbstract(self):
+    #     return self._boeAbstract
 
     def input_operationSubTypeId(self, text):
         self.clear(*self._operationSubTypeId)

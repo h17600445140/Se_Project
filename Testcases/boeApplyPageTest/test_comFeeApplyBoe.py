@@ -10,9 +10,9 @@ from Testcases.common.loginDepend import LoginDepend
 from Util import logger
 
 
-class TestComFeeApplyBoePage(object):
+class TestComFeeApplyBoe(object):
 
-    boeNum = None
+    boeNum = globals()
 
     def setup_class(self):
         self.login = LoginDepend('easHost', 'user')
