@@ -18,11 +18,6 @@ class EmployeeLoansBoePage(EasIndexPage,BoeCommen):
     _expenseAmount = (By.ID, 'loan.0.expenseAmount')
     _projectId = (By.ID, 'loan.0.projectId')
 
-    _paymentModeCode = (By.ID, 'zfsBoePayments.0.paymentModeCode')
-    _vendorId = (By.ID, 'zfsBoePayments.0.vendorId')
-    _paymentAmount = (By.ID, 'zfsBoePayments.0.paymentAmount')
-    _paymentMemo = (By.ID, 'zfsBoePayments.0.paymentMemo')
-
     def __init__(self, driver):
         EasIndexPage.__init__(self, driver)
 

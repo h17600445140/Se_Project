@@ -18,7 +18,7 @@ class TestEmployeeRepaymentBoe(object):
         self.employeeRepaymentBoePage = EmployeeRepaymentBoePage(self.login.driver)
 
     def teardown_class(self):
-        # self.employeeLoansBoePage.driver.quit()
+        # self.employeeRepaymentBoePage.driver.quit()
         pass
 
     def test_employeeRepayment(self):

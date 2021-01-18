@@ -12,6 +12,7 @@ from PageClass.easIndexPageClass.easIndexPage import EasIndexPage
 from Util import logger
 
 
+
 class EmployeeRepaymentBoePage(EasIndexPage,BoeCommen):
 
     _employeeRepaymentBoe = (By.XPATH, '//*[@id="app"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div[2]/div[2]/div/div[1]/i')
