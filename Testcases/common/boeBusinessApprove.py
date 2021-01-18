@@ -36,10 +36,14 @@ class BusinessApprove():
 
         if self.easIndexPage.getToastBoxText() == '操作成功':
             content = '审批成功'
+            self.login.driver.quit()
             return content
         else:
             content = '审批失败'
+            self.login.driver.quit()
             return content
+
+
 
 
 if __name__ == '__main__':

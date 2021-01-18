@@ -29,7 +29,8 @@ class BasePage(object):
 
     def moveToclick(self, *loc):
         element = self.find_element(*loc)
-        ActionChains(self.driver).move_to_element(element).click(element).perform()
+        ActionChains(self.driver).move_to_element(element).perform()
+        self.click(*loc)
 
     def clear(self, *loc):
         self.find_element(*loc).clear()

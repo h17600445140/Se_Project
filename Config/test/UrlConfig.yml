@@ -4,6 +4,7 @@ url:
   easHost: http://192.168.0.200/eas
   fscHost: http://192.168.0.200/fsc
   timerHost: http://192.168.0.200/ip/timerManage
+  invoiceIpoolHost: http://192.168.0.200/ipool
 user:
   account: 1
   password: 123456

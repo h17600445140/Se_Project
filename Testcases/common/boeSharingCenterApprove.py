@@ -123,6 +123,8 @@ class SharingCenterApprove():
         windowsList = self.comFeeApplyBoePage.getWindowHandles()
         self.comFeeApplyBoePage.switchToWin(windowsList[0])
 
+        self.login.driver.quit()
+
 if __name__ == '__main__':
     a = SharingCenterApprove('hcGroup-BX210108158')
     a.sharingCenterApproveChuShen()

@@ -34,9 +34,3 @@ class TestManagementPage(object):
 
         WebDriverWait(self.managementPage, 10).until(
             EC.text_to_be_present_in_element(self.managementPage.toastBox, '保存成功'))
-
-
-
-
-
-

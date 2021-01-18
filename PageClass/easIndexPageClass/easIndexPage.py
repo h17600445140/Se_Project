@@ -7,6 +7,7 @@ from PageClass.basePage import BasePage
 from Util import logger
 
 
+
 class EasIndexPage(BasePage):
 
     _boeApply = (By.XPATH, '//*[@id="app"]/section/main/div/div/div[2]/div[3]/div[2]/div[1]/div/div')
