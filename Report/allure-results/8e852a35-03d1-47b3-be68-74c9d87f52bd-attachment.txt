@@ -1,0 +1,21 @@
+[32mINFO    [0m WebUIAuto:log.py:40 请求链接
+[32mINFO    [0m WebUIAuto:log.py:40 输入账户
+[32mINFO    [0m WebUIAuto:log.py:40 输入密码
+[32mINFO    [0m WebUIAuto:log.py:40 点击登录
+[32mINFO    [0m WebUIAuto:log.py:40 单据类型为：差旅报账单（国际） ,单据业务类型为: 差旅
+[32mINFO    [0m WebUIAuto:log.py:40 是否正常打开单据: True
+[32mINFO    [0m WebUIAuto:log.py:40 当前窗口为：CDwindow-9A820EC2D2DF4B4F23DFAB29DFF28E51
+[32mINFO    [0m WebUIAuto:log.py:40 所有窗口为：['CDwindow-9A820EC2D2DF4B4F23DFAB29DFF28E51', 'CDwindow-136783BBFB9695071EFB99E9DDFC7BC2']
+[32mINFO    [0m WebUIAuto:log.py:40 当前窗口为：CDwindow-136783BBFB9695071EFB99E9DDFC7BC2
+[32mINFO    [0m WebUIAuto:log.py:40 当前提单单据号为：hcGroup-BX210120137
+[32mINFO    [0m WebUIAuto:log.py:40 选择的数据为：是
+[32mINFO    [0m WebUIAuto:log.py:40 当前日期框填写的日期值为：15号
+[32mINFO    [0m WebUIAuto:log.py:40 选择的数据为：二等座（高铁/动车）
+[32mINFO    [0m WebUIAuto:log.py:40 当前日期框填写的日期值为：15号
+[32mINFO    [0m WebUIAuto:log.py:40 当前日期框填写的日期值为：20号
+[32mINFO    [0m WebUIAuto:log.py:40 城市间交通费报账金额为：111.11
+[32mINFO    [0m WebUIAuto:log.py:40 住宿费报账金额为：555.56
+[32mINFO    [0m WebUIAuto:log.py:40 补贴金额为：555.61
+[32mINFO    [0m WebUIAuto:log.py:40 其他金额为：555.61
+[32mINFO    [0m WebUIAuto:log.py:40 总金额为：1777.89
+[32mINFO    [0m WebUIAuto:log.py:40 单据流程结束
