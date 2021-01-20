@@ -1,25 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ {
-    "name" : "Test defects",
-    "children" : [ {
-      "name" : "selenium.common.exceptions.TimeoutException: Message:",
-      "children" : [ {
-        "name" : "test_addGroup[保存成功]",
-        "uid" : "17bd5a26b222aaed",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1609916946318,
-          "stop" : 1609916960361,
-          "duration" : 14043
-        },
-        "flaky" : false,
-        "parameters" : [ "{'number': '1', 'casename': '保存成功', 'severity': 'blocker', 'groupCname': '测试1', 'groupEname': 'test1', 'groupCode': 'testhc', 'maxUserRegister': 10, 'describeC': '这是自动化测试', 'describeE': 'this is a auto test'}" ]
-      } ],
-      "uid" : "31bb78a6a95ede3f78b260ed048910d8"
-    } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
-  } ]
+  "children" : [ ]
 }

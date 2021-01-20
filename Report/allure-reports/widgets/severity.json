@@ -1,60 +1,50 @@
 [ {
-  "uid" : "f8dd445cf573b007",
-  "name" : "test_login[账号密码不匹配]",
-  "time" : {
-    "start" : 1609916927800,
-    "stop" : 1609916929567,
-    "duration" : 1767
-  },
-  "status" : "passed",
-  "severity" : "minor"
-}, {
-  "uid" : "17bd5a26b222aaed",
-  "name" : "test_addGroup[保存成功]",
-  "time" : {
-    "start" : 1609916946318,
-    "stop" : 1609916960361,
-    "duration" : 14043
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "8f728e8600c182e3",
-  "name" : "test_login[登陆成功]",
-  "time" : {
-    "start" : 1609916934177,
-    "stop" : 1609916936376,
-    "duration" : 2199
-  },
-  "status" : "passed",
-  "severity" : "minor"
-}, {
-  "uid" : "cbb7fbf9edbb5f35",
-  "name" : "test_login[请输入账户名称]",
-  "time" : {
-    "start" : 1609916929571,
-    "stop" : 1609916931187,
-    "duration" : 1616
-  },
-  "status" : "passed",
-  "severity" : "minor"
-}, {
-  "uid" : "8e102db8ac616249",
-  "name" : "test_login[当前登录用户名或密码错误]",
-  "time" : {
-    "start" : 1609916932762,
-    "stop" : 1609916934172,
-    "duration" : 1410
-  },
-  "status" : "passed",
-  "severity" : "minor"
-}, {
-  "uid" : "29c4f71c1241b5c0",
+  "uid" : "bfd68d1919a3a1de",
   "name" : "test_login[请输入密码]",
   "time" : {
-    "start" : 1609916931192,
-    "stop" : 1609916932758,
-    "duration" : 1566
+    "start" : 1611022709318,
+    "stop" : 1611022711042,
+    "duration" : 1724
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "8fa20ba2a92ce07b",
+  "name" : "test_login[账号密码不匹配]",
+  "time" : {
+    "start" : 1611022705618,
+    "stop" : 1611022707543,
+    "duration" : 1925
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "ee80854fdeede577",
+  "name" : "test_login[当前登录用户名或密码错误]",
+  "time" : {
+    "start" : 1611022711046,
+    "stop" : 1611022712470,
+    "duration" : 1424
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "a60f66ef202066e0",
+  "name" : "test_login[请输入账户名称]",
+  "time" : {
+    "start" : 1611022707562,
+    "stop" : 1611022709302,
+    "duration" : 1740
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "40a1aad851ac0bf3",
+  "name" : "test_login[登陆成功]",
+  "time" : {
+    "start" : 1611022712484,
+    "stop" : 1611022714342,
+    "duration" : 1858
   },
   "status" : "passed",
   "severity" : "minor"

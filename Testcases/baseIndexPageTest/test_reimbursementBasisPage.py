@@ -19,8 +19,8 @@ class TestBusinessTypePage(object):
         # self.businessTypePage.driver.implicitly_wait(2)
 
     def teardown_class(self):
-        self.businessTypePage.driver.quit()
-
+        # self.businessTypePage.driver.quit()
+        pass
 
     @pytest.mark.run(order=1)
     def test_addBusinessCategoryBig(self):
@@ -59,7 +59,7 @@ class TestBusinessTypePage(object):
         self.businessTypePage.open_businessType()
 
         sleep(1)
-        self.businessTypePage.input_filterBox("test1")
+        self.businessTypePage.input_filterBox("test")
 
         sleep(1)
         self.businessTypePage.click_businessOpen()
@@ -96,11 +96,11 @@ class TestBusinessTypePage(object):
 
         self.businessTypePage.click_editButton()
 
-        self.businessTypePage.input_businessTypeCodeBox("test1")
-        self.businessTypePage.input_businessTypeNameCBox("test1")
+        self.businessTypePage.input_businessTypeCodeBox("test")
+        self.businessTypePage.input_businessTypeNameCBox("test")
 
-        self.businessTypePage.input_appDisplayNameCBox("test1")
-        self.businessTypePage.input_auditPointsCBox("test1")
+        self.businessTypePage.input_appDisplayNameCBox("test")
+        self.businessTypePage.input_auditPointsCBox("test")
 
         self.businessTypePage.click_submitButton()
 
@@ -117,7 +117,7 @@ class TestBusinessTypePage(object):
         self.businessTypePage.open_businessType()
 
         sleep(1)
-        self.businessTypePage.input_filterBox("test1")
+        self.businessTypePage.input_filterBox("test")
 
         sleep(1)
         self.businessTypePage.click_businessOpen()
@@ -152,7 +152,7 @@ class TestbillConfigPage(object):
 
         self.billConfigPage.click_businessTypeButton()
 
-        self.billConfigPage.input_businessInputBox('test')
+        self.billConfigPage.input_businessInputBox('test1')
 
         info = self.billConfigPage.getElementAttribute('class', *self.billConfigPage.getSelectFirstBox())
 
@@ -173,7 +173,7 @@ class TestbillConfigPage(object):
 
         self.billConfigPage.click_businessTypeButton()
 
-        self.billConfigPage.input_businessInputBox('test')
+        self.billConfigPage.input_businessInputBox('test1')
 
         info = self.billConfigPage.getElementAttribute('class', *self.billConfigPage.getSelectFirstBox())
 
@@ -201,16 +201,16 @@ class TestbillConfigPage(object):
         self.billConfigPage.click_voucherAddButton()
 
         sleep(1)
-        self.billConfigPage.accountingEntitySelect("爆破核算主体")
+        self.billConfigPage.accountingEntitySelect("hc核算主体")
 
         sleep(1)
         self.billConfigPage.vendorTypeSelect('客户')
 
         sleep(1)
-        self.billConfigPage.voucherCategorySelect('预付凭证')
+        self.billConfigPage.voucherCategorySelect('付款凭证')
 
         sleep(1)
-        self.billConfigPage.voucherTypeSelect('预付')
+        self.billConfigPage.voucherTypeSelect('资产过账')
 
         sleep(1)
         self.billConfigPage.createNodeSelect('审核完成')

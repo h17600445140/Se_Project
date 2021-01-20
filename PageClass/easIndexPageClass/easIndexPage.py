@@ -10,9 +10,13 @@ from Util import logger
 
 class EasIndexPage(BasePage):
 
+    # 事项申请
     _boeApply = (By.XPATH, '//*[@id="app"]/section/main/div/div/div[2]/div[3]/div[2]/div[1]/div/div')
+    # 费用报销
     _boeReimburse = (By.XPATH, '//*[@id="app"]/section/main/div/div/div[2]/div[3]/div[2]/div[2]/div/div')
+    # 借款还款
     _boeBorrow = (By.XPATH, '//*[@id="app"]/section/main/div/div/div[2]/div[3]/div[2]/div[3]/div/div')
+    # 我的发票
     _menuMyInvoice = (By.XPATH, '//*[@id="app"]/section/main/div/div/div[2]/div[3]/div[2]/div[5]/div/div')
 
     _myWaitApprove = (By.ID, 'tab-waitApprovel')
@@ -30,6 +34,28 @@ class EasIndexPage(BasePage):
 
     def __init__(self, driver):
         BasePage.__init__(self, driver)
+
+    def open_boe(self, boeType, boeName):
+        logger.info("单据类型为：{} ,单据业务类型为: {}".format(boeType, boeName))
+        flag = False
+        for i in range(len(self.find_elements(*(By.XPATH, '//*[@id="app"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div')))):
+            if flag == True:
+                break
+            if self.get_elementText(*(By.XPATH, '//*[@id="app"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div[{}]/div[1]/span'.format(i+1))) == boeType:
+                for j in range(len(self.find_elements(*(By.XPATH, '//*[@id="app"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div[{}]/div[2]/div'.format(i+1))))):
+                    if self.get_elementText(*(By.XPATH, '//*[@id="app"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div[{}]/div[2]/div[{}]/div[2]'.format(i+1, j+1))) == boeName:
+                        self.moveToclick(*(By.XPATH, '//*[@id="app"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div[{}]/div[2]/div[{}]'.format(i+1, j+1)))
+                        flag = True
+                        break
+                    else:
+                        pass
+            else:
+                pass
+        logger.info("是否正常打开单据: {}".format(flag))
+        if flag != True:
+            logger.error('Exception: Don\'t find Boe, please check config')
+            raise Exception('Don\'t find Boe, please check config')
+
 
     def open_boeApply(self):
         self.click(*self._boeApply)

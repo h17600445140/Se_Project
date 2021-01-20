@@ -39,7 +39,7 @@ class TestEmployeeRepaymentBoe(object):
         logger.info("当前提单单据号为：{}".format(boeNum))
 
         sleep(1)
-        self.boeFee = self.employeeRepaymentBoePage.selectWriteOffBoe('hcGroup-BX2012180013')
+        self.boeFee = self.employeeRepaymentBoePage.selectWriteOffBoe('hcGroup-BX210119105')
 
         self.employeeRepaymentBoePage.selectReplaymentType('还款002')
 

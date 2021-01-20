@@ -1,5 +1,5 @@
 ---
-managementPageClass:
+managementPage:
           - number: '1'
             casename: 保存成功
             severity: blocker

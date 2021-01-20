@@ -34,8 +34,8 @@ class TestEasMyInvoicePage(object):
         sleep(1)
         self.easMyInvoiceIndexPage.open_addInvoiceWindow('增值税普通发票')
 
-        self.easMyInvoiceIndexPage.input_invoiceNo('810000000003')
-        self.easMyInvoiceIndexPage.input_invoiceCode('81000003')
+        self.easMyInvoiceIndexPage.input_invoiceNo('810000000006')
+        self.easMyInvoiceIndexPage.input_invoiceCode('81000006')
         self.easMyInvoiceIndexPage.selectInvoiceDate()
 
 
@@ -45,7 +45,7 @@ class TestEasMyInvoicePage(object):
 
         self.easMyInvoiceIndexPage.click_invoiceSubmitButton()
 
-        self.easMyInvoiceIndexPage.input_billingCode('81000003')
+        self.easMyInvoiceIndexPage.input_billingCode('81000006')
         self.easMyInvoiceIndexPage.click_myInvoiceQueryButton()
 
         sleep(1)
@@ -57,8 +57,8 @@ class TestEasMyInvoicePage(object):
 
         sleep(3)
         self.invoiceQueryPage.open_subInvoiceQueryTab('增值税普票')
-        self.invoiceQueryPage.input_billingNoQuery('810000000003')
-        self.invoiceQueryPage.input_billingCodeQuery('81000003')
+        self.invoiceQueryPage.input_billingNoQuery('810000000006')
+        self.invoiceQueryPage.input_billingCodeQuery('81000006')
         self.invoiceQueryPage.click_invoiceQueryButton()
 
 

@@ -27,9 +27,13 @@ class LoginDepend(object):
         self.publicLoginPage.input_account(config.getUrlDict()['user']['account'])
         self.publicLoginPage.input_password(config.getUrlDict()['user']['password'])
         self.publicLoginPage.click_loginbutton()
-        WebDriverWait(self.publicLoginPage.driver, 5).until(
-            EC.visibility_of_element_located(self.publicLoginPage.getIntoButton()))
-        self.publicLoginPage.get_into()
+        try:
+            WebDriverWait(self.publicLoginPage.driver, 5).until(
+                EC.visibility_of_element_located(self.publicLoginPage.getIntoButton()))
+        except:
+            pass
+        else:
+            self.publicLoginPage.get_into()
 
     def _login(self, host, user):
         self.login.goto_loginpage(config.getUrlDict()['url'][host])

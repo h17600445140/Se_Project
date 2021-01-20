@@ -30,13 +30,11 @@ class TestComFeeApplyBoe(object):
         self.comFeeApplyBoePage.open_comFeeApplyBoe()
 
         sleep(1)
+        # 切换窗口
         logger.info("当前窗口为：{}".format(self.comFeeApplyBoePage.getCurrentWindowHandle()))
         logger.info("所有窗口为：{}".format(self.comFeeApplyBoePage.getWindowHandles()))
-
-        # 切换窗口
         windowsList = self.comFeeApplyBoePage.getWindowHandles()
         self.comFeeApplyBoePage.switchToWin(windowsList[1])
-
         logger.info("当前窗口为：{}".format(self.comFeeApplyBoePage.getCurrentWindowHandle()))
 
         sleep(1)

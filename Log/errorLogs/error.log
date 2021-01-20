@@ -124,3 +124,12 @@ ERROR - 2021-01-07 10:21:42,297 - D:\se\Se_Project\Util\log.py - log.py[:46] - �
 ERROR - 2021-01-07 10:21:42,298 - D:\se\Se_Project\Util\log.py - log.py[:46] - <class 'selenium.common.exceptions.TimeoutException'>
 ERROR - 2021-01-07 10:25:51,024 - D:\se\Se_Project\Util\log.py - log.py[:46] - 出现异常
 ERROR - 2021-01-07 10:25:51,024 - D:\se\Se_Project\Util\log.py - log.py[:46] - <class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-01-19 15:05:29,570 - D:\se\Se_Project\Util\log.py - log.py[:46] - Exception: Don't find Boe, please check config
+ERROR - 2021-01-19 15:07:20,198 - D:\se\Se_Project\Util\log.py - log.py[:46] - Exception: Don't find Boe, please check config
+ERROR - 2021-01-19 15:22:37,643 - D:\se\Se_Project\Util\log.py - log.py[:46] - Exception: Don't find Boe, please check config
+ERROR - 2021-01-19 15:23:30,747 - D:\se\Se_Project\Util\log.py - log.py[:46] - Exception: Don't find Boe, please check config
+ERROR - 2021-01-19 17:42:41,544 - D:\se\Se_Project\Util\log.py - log.py[:46] - 没有找到对应配置项，请检查配置
+ERROR - 2021-01-19 17:43:40,309 - D:\se\Se_Project\Util\log.py - log.py[:46] - 没有找到对应配置项，请检查配置
+ERROR - 2021-01-19 20:46:13,141 - D:\se\Se_Project\Util\log.py - log.py[:46] - 没有找到对应配置项，请检查配置
+ERROR - 2021-01-19 20:47:05,598 - D:\se\Se_Project\Util\log.py - log.py[:46] - 没有找到对应配置项，请检查配置
+ERROR - 2021-01-19 21:00:53,801 - D:\se\Se_Project\Util\log.py - log.py[:46] - 没有找到对应配置项，请检查配置

@@ -4,81 +4,69 @@
   "children" : [ {
     "name" : "LAPTOP-3T6FO04H",
     "children" : [ {
-      "name" : "2076-MainThread",
+      "name" : "19444-MainThread",
       "children" : [ {
-        "name" : "test_login[当前登录用户名或密码错误]",
-        "uid" : "8e102db8ac616249",
-        "parentUid" : "7ebb461e3ad8b8c883bd1f511efbf768",
-        "status" : "passed",
-        "time" : {
-          "start" : 1609916932762,
-          "stop" : 1609916934172,
-          "duration" : 1410
-        },
-        "flaky" : false,
-        "parameters" : [ "{'number': '4', 'casename': '当前登录用户名或密码错误', 'severity': 'minor', 'account': 'admin', 'password': '123456'}" ]
-      }, {
-        "name" : "test_login[请输入账户名称]",
-        "uid" : "cbb7fbf9edbb5f35",
-        "parentUid" : "7ebb461e3ad8b8c883bd1f511efbf768",
-        "status" : "passed",
-        "time" : {
-          "start" : 1609916929571,
-          "stop" : 1609916931187,
-          "duration" : 1616
-        },
-        "flaky" : false,
-        "parameters" : [ "{'number': '2', 'casename': '请输入账户名称', 'severity': 'critical', 'account': '', 'password': 'zfs123456'}" ]
-      }, {
         "name" : "test_login[请输入密码]",
-        "uid" : "29c4f71c1241b5c0",
-        "parentUid" : "7ebb461e3ad8b8c883bd1f511efbf768",
+        "uid" : "bfd68d1919a3a1de",
+        "parentUid" : "8870c489ec1f265dcba3a3bd82d7b5d6",
         "status" : "passed",
         "time" : {
-          "start" : 1609916931192,
-          "stop" : 1609916932758,
-          "duration" : 1566
+          "start" : 1611022709318,
+          "stop" : 1611022711042,
+          "duration" : 1724
         },
         "flaky" : false,
         "parameters" : [ "{'number': '3', 'casename': '请输入密码', 'severity': 'normal', 'account': 'admin', 'password': ''}" ]
       }, {
-        "name" : "test_addGroup[保存成功]",
-        "uid" : "17bd5a26b222aaed",
-        "parentUid" : "7ebb461e3ad8b8c883bd1f511efbf768",
-        "status" : "broken",
-        "time" : {
-          "start" : 1609916946318,
-          "stop" : 1609916960361,
-          "duration" : 14043
-        },
-        "flaky" : false,
-        "parameters" : [ "{'number': '1', 'casename': '保存成功', 'severity': 'blocker', 'groupCname': '测试1', 'groupEname': 'test1', 'groupCode': 'testhc', 'maxUserRegister': 10, 'describeC': '这是自动化测试', 'describeE': 'this is a auto test'}" ]
-      }, {
         "name" : "test_login[账号密码不匹配]",
-        "uid" : "f8dd445cf573b007",
-        "parentUid" : "7ebb461e3ad8b8c883bd1f511efbf768",
+        "uid" : "8fa20ba2a92ce07b",
+        "parentUid" : "8870c489ec1f265dcba3a3bd82d7b5d6",
         "status" : "passed",
         "time" : {
-          "start" : 1609916927800,
-          "stop" : 1609916929567,
-          "duration" : 1767
+          "start" : 1611022705618,
+          "stop" : 1611022707543,
+          "duration" : 1925
         },
         "flaky" : false,
         "parameters" : [ "{'number': '1', 'casename': '账号密码不匹配', 'severity': 'blocker', 'account': 'test', 'password': 'zfs123456'}" ]
       }, {
-        "name" : "test_login[登陆成功]",
-        "uid" : "8f728e8600c182e3",
-        "parentUid" : "7ebb461e3ad8b8c883bd1f511efbf768",
+        "name" : "test_login[当前登录用户名或密码错误]",
+        "uid" : "ee80854fdeede577",
+        "parentUid" : "8870c489ec1f265dcba3a3bd82d7b5d6",
         "status" : "passed",
         "time" : {
-          "start" : 1609916934177,
-          "stop" : 1609916936376,
-          "duration" : 2199
+          "start" : 1611022711046,
+          "stop" : 1611022712470,
+          "duration" : 1424
+        },
+        "flaky" : false,
+        "parameters" : [ "{'number': '4', 'casename': '当前登录用户名或密码错误', 'severity': 'minor', 'account': 'admin', 'password': '123456'}" ]
+      }, {
+        "name" : "test_login[登陆成功]",
+        "uid" : "40a1aad851ac0bf3",
+        "parentUid" : "8870c489ec1f265dcba3a3bd82d7b5d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611022712484,
+          "stop" : 1611022714342,
+          "duration" : 1858
         },
         "flaky" : false,
         "parameters" : [ "{'number': '5', 'casename': '登陆成功', 'severity': 'trivial', 'account': 'admin', 'password': 'zfs123456'}" ]
+      }, {
+        "name" : "test_login[请输入账户名称]",
+        "uid" : "a60f66ef202066e0",
+        "parentUid" : "8870c489ec1f265dcba3a3bd82d7b5d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611022707562,
+          "stop" : 1611022709302,
+          "duration" : 1740
+        },
+        "flaky" : false,
+        "parameters" : [ "{'number': '2', 'casename': '请输入账户名称', 'severity': 'critical', 'account': '', 'password': 'zfs123456'}" ]
       } ],
-      "uid" : "7ebb461e3ad8b8c883bd1f511efbf768"
+      "uid" : "8870c489ec1f265dcba3a3bd82d7b5d6"
     } ],
     "uid" : "69ee4a0293be02b1ec7057ad8cfca68f"
   } ]

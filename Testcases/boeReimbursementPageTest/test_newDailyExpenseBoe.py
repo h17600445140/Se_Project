@@ -43,13 +43,13 @@ class TestNewDailyExpenseBoe():
         self.newDailyExpenseBoePage.input_boeAbstract('测试')
 
         sleep(1)
-        self.newDailyExpenseBoePage.selectRelatedInvoice('81000002')
+        self.newDailyExpenseBoePage.selectRelatedInvoice('80000010')
 
         sleep(1)
         self.newDailyExpenseBoePage.selectOperationSubType('通用业务1')
 
         sleep(1)
-        self.newDailyExpenseBoePage.selectDepartment('B部门')
+        self.newDailyExpenseBoePage.selectDepartment('BD', 'B部门')
 
         sleep(1)
         self.newDailyExpenseBoePage.input_projectId('hc项目1')

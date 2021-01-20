@@ -1,17 +1,6 @@
 {
-  "total" : 2,
+  "total" : 1,
   "items" : [ {
-    "uid" : "bb0ec005b2632715bf5e828c21018b9c",
-    "name" : "Testcases.publicIndexPageTest",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    }
-  }, {
     "uid" : "468eaab4ef2f3f83a9550ddcd6e22f94",
     "name" : "Testcases.loginPageTest",
     "statistic" : {
