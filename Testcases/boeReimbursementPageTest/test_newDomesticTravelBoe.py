@@ -50,8 +50,8 @@ class TestNewDomesticTravelBoe():
         self.newDomesticTravelBoePage.click_invoiceType()
 
         # 差旅火车票新增
-        invoiceFactory.get_invoice(self.login.driver, '火车票').getTickets(
-            '2021-1-11', '内部人员', '1hc', '长沙', '北京', '二等座（高铁/动车）', '500.00', '否')
+        invoiceFactory.get_invoice(self.login.driver, '火车票', 'boeInvoicePage').getTickets(
+            '2021-1-13', '内部人员', '1hc', '长沙', '西安', '二等座（高铁/动车）', '500.00', '否')
 
         self.newDomesticTravelBoePage.selectDepartment('BD', 'B部门')
         self.newDomesticTravelBoePage.input_projectId('hc项目1')

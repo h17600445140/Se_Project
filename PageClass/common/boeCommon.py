@@ -167,7 +167,7 @@ class BoeCommen(BasePage):
         for i in range(len(self.find_element(*(By.ID, 'cost')).find_elements(*(By.TAG_NAME, 'button')))):
             if self.find_element(*(By.ID, 'cost')).find_elements(*(By.TAG_NAME, 'button'))[i].text == '新增发票':
                 self.find_element(*(By.ID, 'cost')).find_elements(*(By.TAG_NAME, 'button'))[i].click()
-
+    # 注意此处和我的发票界面不相同
     _invoiceType = (By.ID, 'itembillTypeInvoice')
     def click_invoiceType(self):
         self.click(*self._invoiceType)
@@ -195,6 +195,13 @@ class BoeCommen(BasePage):
                 break
         logger.info('选择的数据为：{}'.format(option))
 
+    # 点击按钮
+    def click_button(self, buttonName):
+        for i in range(len(self.find_elements(*(By.TAG_NAME, 'button')))):
+            if self.find_elements(*(By.TAG_NAME, 'button'))[i].text == buttonName:
+                self.find_elements(*(By.TAG_NAME, 'button'))[i].click()
+                break
+
     # 浮动下拉框选择
     def select_item(self, type):
         for i in range(len(self.find_elements(*(By.CLASS_NAME, 'el-select-dropdown__item')))):
@@ -204,17 +211,19 @@ class BoeCommen(BasePage):
                 element.click()
 
     # 操作日期面板
-
     _calendar = (By.CLASS_NAME, 'calendar')
     # 日期控件选择年月日
     def select_date(self, year, month, day):
 
+        WebDriverWait(self.driver, 5).until(
+            EC.visibility_of_element_located( (By.CLASS_NAME, 'el-date-picker__header') ))
         dateHeaderPanel = self.find_element(*(By.CLASS_NAME, 'el-date-picker__header'))
         dateContentPanel = self.find_element(*(By.CLASS_NAME, 'el-picker-panel__content'))
 
         # 操作年份
         selectedY = dateHeaderPanel.find_elements(*(By.TAG_NAME, 'span'))[0].text
         selectedYear = selectedY.split(' ')[0]
+        logger.info('年为{}'.format(selectedY))
         if year > selectedYear:
             num = int(year) - int(selectedYear)
             for i in range(num):
@@ -242,7 +251,12 @@ class BoeCommen(BasePage):
 
         # 操作日
         dayTable = dateContentPanel.find_element(*(By.CLASS_NAME, 'el-date-table'))
+        startNum = 0
         for i in range(len(dayTable.find_elements(*(By.TAG_NAME, 'span')))):
+            if dayTable.find_elements(*(By.TAG_NAME, 'span'))[i].text == '1':
+                startNum = i
+                break
+        for i in range(startNum, len(dayTable.find_elements(*(By.TAG_NAME, 'span')))):
             if dayTable.find_elements(*(By.TAG_NAME, 'span'))[i].text == day:
                 dayTable.find_elements(*(By.TAG_NAME, 'span'))[i].click()
 

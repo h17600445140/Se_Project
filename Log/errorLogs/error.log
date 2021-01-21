@@ -137,3 +137,8 @@ ERROR - 2021-01-20 16:52:40,732 - D:\se\Se_Project\Util\log.py - log.py[:46] - E
 ERROR - 2021-01-21 14:04:15,678 - D:\se\Se_Project\Util\log.py - log.py[:46] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
 ERROR - 2021-01-21 14:18:59,864 - D:\se\Se_Project\Util\log.py - log.py[:46] - 出现异常，异常信息为：<class 'selenium.common.exceptions.ElementClickInterceptedException'>
 ERROR - 2021-01-21 14:41:03,395 - D:\se\Se_Project\Util\log.py - log.py[:46] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
+ERROR - 2021-01-21 18:56:25,844 - D:\se\Se_Project\Util\log.py - log.py[:46] - Exception: Don't find Boe, please check config
+ERROR - 2021-01-21 20:04:09,421 - D:\se\Se_Project\Util\log.py - log.py[:46] - Exception: Don't find Boe, please check config
+ERROR - 2021-01-21 20:45:50,247 - D:\se\Se_Project\Util\log.py - log.py[:46] - 出现异常，异常信息为：<class 'ValueError'>
+ERROR - 2021-01-21 20:47:43,322 - D:\se\Se_Project\Util\log.py - log.py[:46] - 出现异常，异常信息为：<class 'ValueError'>
+ERROR - 2021-01-21 20:50:47,814 - D:\se\Se_Project\Util\log.py - log.py[:46] - 出现异常，异常信息为：<class 'ValueError'>
