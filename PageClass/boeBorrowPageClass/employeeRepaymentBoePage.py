@@ -76,10 +76,9 @@ class EmployeeRepaymentBoePage(EasIndexPage,BoeCommen):
         self.click(*(By.XPATH, '/html/body//table/tbody/tr'))
         self.click(*(By.XPATH, '/html/body//span/button[2]'))
 
-    def selectLoanRepaymentDate(self):
+    def selectLoanRepaymentDate(self, year, month, day):
         self.click(*self._loanRepaymentDate)
-        sleep(1)
-        self.click(*(By.XPATH, '/html/body//tbody/tr[5]/td[4]'))
+        self.select_date(year, month, day)
 
     def input_remark(self, text):
         self.send_text(text, *self._remark)

@@ -1,5 +1,5 @@
 url:
-  publicHost: http://192.168.0.200/public
+  publicHost: http://fssc200.csztessc.com.cn:8085/public
   baseHost: http://192.168.0.200/base
   easHost: http://192.168.0.200/eas
   fscHost: http://192.168.0.200/fsc

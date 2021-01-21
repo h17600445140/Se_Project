@@ -6,6 +6,4 @@
 [32mINFO    [0m WebUIAuto:log.py:40 元素不存在
 [32mINFO    [0m WebUIAuto:log.py:40 元素不存在
 [32mINFO    [0m WebUIAuto:log.py:40 元素不存在
-[32mINFO    [0m WebUIAuto:log.py:40 元素不存在
-[32mINFO    [0m WebUIAuto:log.py:40 元素不存在
 [32mINFO    [0m WebUIAuto:log.py:40 元素存在

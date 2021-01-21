@@ -14,27 +14,27 @@ class BusinessApprove():
     def __init__(self, boeNum):
         self.boeNum = boeNum
         self.login = LoginDepend('easHost', 'leader')
-        self.easIndexPage = EasIndexPage(self.login.driver)
+        self._easIndexPage = EasIndexPage(self.login.driver)
 
     def boeBusinessApprove(self):
 
-        self.easIndexPage.click_myWaitApprove()
-        self.easIndexPage.click_moreButton()
+        self._easIndexPage.click_myWaitApprove()
+        self._easIndexPage.click_moreButton()
 
-        windowsList = self.easIndexPage.getWindowHandles()
-        self.easIndexPage.switchToWin(windowsList[1])
+        windowsList = self._easIndexPage.getWindowHandles()
+        self._easIndexPage.switchToWin(windowsList[1])
 
-        WebDriverWait(self.easIndexPage.driver, 5).until(
-            EC.visibility_of_element_located(self.easIndexPage.getBoeNo()))
+        WebDriverWait(self._easIndexPage.driver, 5).until(
+            EC.visibility_of_element_located(self._easIndexPage.getBoeNo()))
 
-        self.easIndexPage.input_boeNo(self.boeNum)
+        self._easIndexPage.input_boeNo(self.boeNum)
         sleep(1)
-        self.easIndexPage.click_boeNoSelectButton()
-        self.easIndexPage.click_boeBusinessApprove()
+        self._easIndexPage.click_boeNoSelectButton()
+        self._easIndexPage.click_boeBusinessApprove()
         sleep(1)
-        self.easIndexPage.click_boeBusinessTipConfirm()
+        self._easIndexPage.click_boeBusinessTipConfirm()
 
-        if self.easIndexPage.getToastBoxText() == '操作成功':
+        if self._easIndexPage.getToastBoxText() == '操作成功':
             content = '审批成功'
             self.login.driver.quit()
             return content

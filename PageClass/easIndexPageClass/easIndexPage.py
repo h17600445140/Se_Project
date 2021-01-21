@@ -2,6 +2,8 @@
 
 
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 from PageClass.basePage import BasePage
 from Util import logger
@@ -56,11 +58,12 @@ class EasIndexPage(BasePage):
             logger.error('Exception: Don\'t find Boe, please check config')
             raise Exception('Don\'t find Boe, please check config')
 
-
     def open_boeApply(self):
         self.click(*self._boeApply)
 
     def open_boeReimburse(self):
+        WebDriverWait(self.driver, 5).until(
+            EC.visibility_of_element_located(self._boeReimburse))
         self.click(*self._boeReimburse)
 
     def open_boeBorrow(self):

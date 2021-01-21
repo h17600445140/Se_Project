@@ -133,3 +133,7 @@ ERROR - 2021-01-19 17:43:40,309 - D:\se\Se_Project\Util\log.py - log.py[:46] - �
 ERROR - 2021-01-19 20:46:13,141 - D:\se\Se_Project\Util\log.py - log.py[:46] - 没有找到对应配置项，请检查配置
 ERROR - 2021-01-19 20:47:05,598 - D:\se\Se_Project\Util\log.py - log.py[:46] - 没有找到对应配置项，请检查配置
 ERROR - 2021-01-19 21:00:53,801 - D:\se\Se_Project\Util\log.py - log.py[:46] - 没有找到对应配置项，请检查配置
+ERROR - 2021-01-20 16:52:40,732 - D:\se\Se_Project\Util\log.py - log.py[:46] - Exception: Don't find Boe, please check config
+ERROR - 2021-01-21 14:04:15,678 - D:\se\Se_Project\Util\log.py - log.py[:46] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
+ERROR - 2021-01-21 14:18:59,864 - D:\se\Se_Project\Util\log.py - log.py[:46] - 出现异常，异常信息为：<class 'selenium.common.exceptions.ElementClickInterceptedException'>
+ERROR - 2021-01-21 14:41:03,395 - D:\se\Se_Project\Util\log.py - log.py[:46] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>

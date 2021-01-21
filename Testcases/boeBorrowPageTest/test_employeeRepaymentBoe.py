@@ -39,7 +39,7 @@ class TestEmployeeRepaymentBoe(object):
         logger.info("当前提单单据号为：{}".format(boeNum))
 
         sleep(1)
-        self.boeFee = self.employeeRepaymentBoePage.selectWriteOffBoe('hcGroup-BX210119105')
+        self.boeFee = self.employeeRepaymentBoePage.selectWriteOffBoe('hcGroup-BX210118186')
 
         self.employeeRepaymentBoePage.selectReplaymentType('还款002')
 
@@ -47,7 +47,7 @@ class TestEmployeeRepaymentBoe(object):
 
         self.employeeRepaymentBoePage.selectCollectionAccount('hc账户1')
 
-        self.employeeRepaymentBoePage.selectLoanRepaymentDate()
+        self.employeeRepaymentBoePage.selectLoanRepaymentDate('2021', '2', '20')
 
         self.employeeRepaymentBoePage.input_remark('测试')
 

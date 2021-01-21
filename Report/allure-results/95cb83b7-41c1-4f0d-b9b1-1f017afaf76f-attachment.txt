@@ -1,0 +1,12 @@
+[32mINFO    [0m WebUIAuto:log.py:40 请求链接
+[32mINFO    [0m WebUIAuto:log.py:40 输入账户
+[32mINFO    [0m WebUIAuto:log.py:40 输入密码
+[32mINFO    [0m WebUIAuto:log.py:40 点击登录
+[32mINFO    [0m WebUIAuto:log.py:40 单据类型为：差旅报账单 ,单据业务类型为: 差旅
+[32mINFO    [0m WebUIAuto:log.py:40 是否正常打开单据: True
+[32mINFO    [0m WebUIAuto:log.py:40 当前窗口为：CDwindow-F59666A08F4461C32BF02BD776BE161E
+[32mINFO    [0m WebUIAuto:log.py:40 所有窗口为：['CDwindow-F59666A08F4461C32BF02BD776BE161E', 'CDwindow-D9043C89BE7ACBA3604259D9FF28C643']
+[32mINFO    [0m WebUIAuto:log.py:40 当前窗口为：CDwindow-D9043C89BE7ACBA3604259D9FF28C643
+[32mINFO    [0m WebUIAuto:log.py:40 当前提单单据号为：hcGroup-BX210121163
+[33mWARNING [0m WebUIAuto:log.py:43 出现警告，警告信息为：<class 'selenium.common.exceptions.ElementClickInterceptedException'>，重试点击操作
+[32mINFO    [0m WebUIAuto:log.py:40 单据流程结束
