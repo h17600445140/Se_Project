@@ -4,17 +4,17 @@ from time import sleep
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.keys import Keys
 
-from PageClass.common.boeCommon import BoeCommen
+from PageClass.common.boeCommon import BoeCommon
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
 
 
-class BoeInvoiceCommon(BoeCommen):
+class BoeInvoiceCommon(BoeCommon):
 
     def __init__(self, driver):
-        BoeCommen.__init__(self, driver)
+        BoeCommon.__init__(self, driver)
 
     # 打开对应发票新增窗口
     def open_addInvoiceWindow(self, type):
@@ -97,7 +97,7 @@ class BoeInvoiceCommon(BoeCommen):
         WebDriverWait(self.driver, 5).until(
             EC.visibility_of_element_located(self._itemstartOffCityName))
         self.send_text(cityName, *self._itemstartOffCityName)
-        sleep(0.5)
+        sleep(1)
 
     # 下车车站
     _itemarriveCityName = (By.XPATH, '//*[@id="itemarriveCityName"]/div/div/div[1]/input')
@@ -107,7 +107,7 @@ class BoeInvoiceCommon(BoeCommen):
         WebDriverWait(self.driver, 5).until(
             EC.visibility_of_element_located(self._itemarriveCityName))
         self.send_text(cityName, *self._itemarriveCityName)
-        sleep(0.5)
+        sleep(1)
 
     # 座位级别
     _itemseatLevel = (By.ID, 'itemseatLevel')

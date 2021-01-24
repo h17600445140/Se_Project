@@ -131,6 +131,21 @@ def singleton(cls):
 
     return _singleton
 
+# 写入记录文件
+def writeBoeNum(path, boeNum):
+    with open(path, "r", encoding="UTF-8") as f:
+        Rdata = json.load(f)
+    Rdata["data"].update({'boeNum': boeNum})
+    data = Rdata
+    with open(path, "w", encoding="UTF-8") as f:
+        json.dump(data, f)
+
+# 读取记录文件
+def readBoeNum(path):
+    with open(path, "r", encoding="UTF-8") as f:
+        Rdata = json.load(f)
+    return Rdata['data']['boeNum']
+
 
 if __name__ == '__main__':
     print(os.path.dirname(os.path.dirname(__file__)))

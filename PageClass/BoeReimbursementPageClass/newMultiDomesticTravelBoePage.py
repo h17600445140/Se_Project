@@ -5,13 +5,16 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from PageClass.common.boeCommon import BoeCommen
+from PageClass.common.boeCommon import BoeCommon
 from PageClass.easIndexPageClass.easIndexPage import EasIndexPage
 
 
 
 # 多人差旅报账单实例
-class NewMultiDomesticTravelBoePage(EasIndexPage,BoeCommen):
+from Util import logger
+
+
+class NewMultiDomesticTravelBoePage(EasIndexPage,BoeCommon):
 
     def __init__(self, driver):
         EasIndexPage.__init__(self, driver)
@@ -25,12 +28,15 @@ class NewMultiDomesticTravelBoePage(EasIndexPage,BoeCommen):
         self.click_button('查询')
         self.click(*(By.XPATH, '/html/body//table/tbody/tr/td[1]/div/label/span'))
         self.click(*(By.XPATH, '/html/body//div[3]/span/button[2]'))
+        logger.info('增加出行人员，出行人员的工号为：{}'.format(keyWord))
 
     # 项目
     _projectId = (By.ID, 'boeHeaderChild.0.projectId')
     def select_projectId(self, text):
         self.click(*self._projectId)
         self.send_text(text, *self._projectId)
+        logger.info('选择的项目为：{}'.format(text))
+        sleep(1)
 
     # ------------------------------
 

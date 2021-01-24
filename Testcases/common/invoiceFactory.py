@@ -35,6 +35,8 @@ class trainTickets():
             self._oeInvoiceCommon.input_itemfee(ticketFee)
             self._oeInvoiceCommon.select_itemisReplacementTicket(isReplace)
             self._oeInvoiceCommon.click_invoiceSubmitButton()
+            sleep(2)
+            logger.info('新增火车票成功')
 
 
 

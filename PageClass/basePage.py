@@ -1,6 +1,10 @@
 # -*- coding:utf-8 -*-
+from time import sleep
+
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 from Util.util import getPicturePath
 from Util import logger
@@ -9,7 +13,7 @@ from Util import logger
 
 class BasePage(object):
 
-    _toastBox = (By.XPATH, '/html/body/div[2]/p')
+
     _toastBoxRe = (By.XPATH, '/html/body/div[3]/p')
 
     def __init__(self, driver):
@@ -47,6 +51,7 @@ class BasePage(object):
 
     def screenshot(self, code, timeNow):
         self.driver.get_screenshot_as_file(getPicturePath(code,timeNow))
+        logger.info("进行截图操作")
 
     def elementExistIsOrNot(self, *loc) -> bool:
         try:
@@ -70,16 +75,12 @@ class BasePage(object):
     def getElementAttribute(self, attribute, *loc):
         return self.driver.find_element(*loc).get_attribute(attribute)
 
+    _toastBox = (By.CLASS_NAME, 'el-message__content')
     def getToastBoxText(self):
-        try:
-            content = self.get_elementText(*self._toastBox)
-            return content
-        except:
-            content = self.get_elementText(*self._toastBoxRe)
-            return content
-
-    def getToastBox(self):
-        return self._toastBox
+        WebDriverWait(self.driver, 5).until(
+            EC.visibility_of_element_located(self._toastBox))
+        content = self.find_element(*self._toastBox).text
+        return content
 
     def getWindowHandles(self):
         return self.driver.window_handles
@@ -92,3 +93,39 @@ class BasePage(object):
 
     def back(self):
         self.driver.back()
+        logger.info("浏览器回退操作")
+
+    # 操作切换黄口
+    def switchWindow(self):
+        num = 0
+        while True:
+            if len(self.getWindowHandles()) > 1:
+                break
+            if num > 1000:
+                break
+            num = num + 1
+        logger.debug("所有窗口为：{}".format(self.getWindowHandles()))
+        windowsList = self.getWindowHandles()
+        index = 0
+        for i in range(len(self.getWindowHandles())):
+            if len(self.getWindowHandles()) == 1:
+                break
+            if self.getCurrentWindowHandle() != self.getWindowHandles()[i]:
+                index = i
+        self.switchToWin(windowsList[index])
+        logger.debug("当前窗口为：{}".format(self.getCurrentWindowHandle()))
+
+    # 点击按钮
+    def click_button(self, buttonName):
+        for i in range(len(self.find_elements(*(By.TAG_NAME, 'button')))):
+            if self.find_elements(*(By.TAG_NAME, 'button'))[i].text == buttonName:
+                self.find_elements(*(By.TAG_NAME, 'button'))[i].click()
+                break
+
+    # 浮动下拉框选择
+    def select_item(self, type):
+        for i in range(len(self.find_elements(*(By.CLASS_NAME, 'el-select-dropdown__item')))):
+            if self.find_elements(*(By.CLASS_NAME, 'el-select-dropdown__item'))[i].text == type:
+                element = self.find_elements(*(By.CLASS_NAME, 'el-select-dropdown__item'))[i]
+                ActionChains(self.driver).move_to_element(element).perform()
+                element.click()

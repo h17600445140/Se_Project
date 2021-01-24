@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from PageClass.loginPageClass.loginPage import LoginPage
 from PageClass.loginPageClass.publicLoginPage import PublicLoginPage
 
-from Util import config,driverFactory
+from Util import config, driverFactory, logger
 
 
 
@@ -48,4 +48,5 @@ class LoginDepend(object):
             pass
         else:
             self.login.get_into()
+        logger.info('成功登录界面：{}'.format(host))
 

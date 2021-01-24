@@ -1,14 +1,18 @@
 # -*- coding:utf-8 -*-
-from selenium.webdriver.common.by import By
-from PageClass.basePage import BasePage
+from time import sleep
 
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+from PageClass.basePage import BasePage
+from Util import logger, config
 
 
 class FscCommonPage(BasePage):
 
-    _taskHandle = (By.XPATH, '//*[@id="app"]/section/section/header/ul/li[1]/div/span')
-    _auditList = (By.XPATH, '/html/body/div[2]/ul/li[1]/span')
-    _auditAdjustDirector = (By.XPATH, '/html/body/div[2]/ul/li[2]/span')
+
+
     _auditAdjustGroup = (By.XPATH, '/html/body/div[2]/ul/li[3]/span')
     _missionAudit = (By.XPATH, '/html/body/div[2]/ul/li[4]/span')
     _hasAuditList = (By.XPATH, '/html/body/div[2]/ul/li[5]/span')
@@ -35,17 +39,38 @@ class FscCommonPage(BasePage):
     def __init__(self,driver):
         BasePage.__init__(self,driver)
 
+    _taskHandle = (By.XPATH, '//*[@id="app"]/section/section/header/ul/li[1]/div/span')
     def click_taskHandle(self):
-        self.click(*self._taskHandle)
+        self.moveToclick(*self._taskHandle)
+        logger.info('点击任务处理')
 
+    _auditList = (By.XPATH, '/html/body/div[2]/ul/li[1]/span')
     def click_auditList(self):
-        self.click(*self._auditList)
+        sleep(1)
+        self.moveToclick(*self._auditList)
+        logger.info('点击我的工作台')
+        self.refresh()
+    def gotoAuditList(self):
+        sleep(1)
+        self.driver.get(config.getUrlDict()['url']['fscAuditList'])
 
-    def getAuditList(self):
-        return self._auditList
-
+    _auditAdjustDirector = (By.XPATH, '/html/body/div[2]/ul/li[2]/span')
     def click_auditAdjustDirector(self):
-        self.click(*self._auditAdjustDirector)
+        sleep(1)
+        self.moveToclick(*self._auditAdjustDirector)
+        logger.info('点击任务调整（主任）')
+        self.refresh()
+    def gotoAuditAdjustDirectorPage(self):
+        sleep(1)
+        self.driver.get(config.getUrlDict()['url']['fscAuditAdjustDirector'])
+
+    _sharingItem = (By.CLASS_NAME, 'el-menu-item')
+    def click_item(self, itemName):
+        itemList = self.find_elements(*self._sharingItem)
+        for i in range(len(itemList)):
+            if itemList[i].get_attribute('title') == itemName:
+                itemList[i].click()
+        self.refresh()
 
     def click_auditAdjustGroup(self):
         self.click(*self._auditAdjustGroup)

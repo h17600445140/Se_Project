@@ -1,14 +1,10 @@
 # -*- coding:utf-8 -*-
-from time import sleep
-
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-
-from PageClass.boeApplyPageClass.comFeeApplyBoePage import ComFeeApplyBoePage
+from PageClass.common.boeCommon import BoeCommon
 from PageClass.fscIndexPageClass.auditAdjustDirectorPage import AuditAdjustDirectorPage
 from PageClass.fscIndexPageClass.myAuditListPage import MyAuditListPage
 from Testcases.common.handleTimer import HandleTimer
 from Testcases.common.loginDepend import LoginDepend
+from Util import logger
 
 
 
@@ -17,116 +13,115 @@ class SharingCenterApprove():
     def __init__(self, boeNum):
         self.login = LoginDepend('fscHost', 'finance')
         self.boeNum = boeNum
-        self.myAuditListPage = MyAuditListPage(self.login.driver)
+        self._myAuditListPage = MyAuditListPage(self.login.driver)
         self._auditAdjustDirectorPage = AuditAdjustDirectorPage(self.login.driver)
+        self._boeCommon = BoeCommon(self.login.driver)
 
     def sharingCenterApproveChuShen(self):
-        self.handleTimer = HandleTimer('共享中心', '共享从中台同步单据', self.login.driver)
-        self.handleTimer.runTimer()
 
-        self.myAuditListPage.click_taskHandle()
-        sleep(1)
-        self.myAuditListPage.click_auditAdjustDirector()
+        self._handleTimer = HandleTimer('共享中心', '共享从中台同步单据', self.login.driver)
+        self._handleTimer.runTimer()
 
-        sleep(1)
+        self._myAuditListPage.gotoAuditAdjustDirectorPage()
         self._auditAdjustDirectorPage.input_selectBoeNum(self.boeNum)
         self._auditAdjustDirectorPage.click_selectButton()
-        self._auditAdjustDirectorPage.click_selectResult()
+
+        try:
+            self._auditAdjustDirectorPage.click_selectResult()
+        except:
+            logger.info('没有找到单据，{}'.format(self.boeNum))
+            logger.info('----- Try again -----')
+            self._handleTimer = HandleTimer('共享中心', '共享从中台同步单据', self.login.driver)
+            self._handleTimer.runTimer()
+            self._auditAdjustDirectorPage.input_selectBoeNum(self.boeNum)
+            self._auditAdjustDirectorPage.click_selectButton()
+
         self._auditAdjustDirectorPage.click_taskTakeToBack()
-        sleep(1)
         self._auditAdjustDirectorPage.click_selectResult()
-        self._auditAdjustDirectorPage.click_distributeToGroup()
-        self._auditAdjustDirectorPage.click_selectGroup()
-        self._auditAdjustDirectorPage.click_selectFirstGroup()
-        self._auditAdjustDirectorPage.click_selectGroupSubmit()
-        sleep(1)
+
+        # 分配到组
+        try:
+            self._auditAdjustDirectorPage.choiceGroup('自动化财务初审')
+        except:
+            self._auditAdjustDirectorPage.click_selectResult()
+            self._auditAdjustDirectorPage.choiceGroup('自动化财务初审')
+
+        # 分配到人
         self._auditAdjustDirectorPage.click_selectResult()
-        self._auditAdjustDirectorPage.click_distributeToStaff()
-        self._auditAdjustDirectorPage.click_selectOperatorUser()
-        self._auditAdjustDirectorPage.click_selectFirstOperatorUser()
-        self._auditAdjustDirectorPage.click_selectOperatorUserSubmit()
-        self._auditAdjustDirectorPage.click_taskHandle()
+        try:
+            self._auditAdjustDirectorPage.choiceOperatorUser('hc3')
+        except:
+            self._auditAdjustDirectorPage.click_selectResult()
+            self._auditAdjustDirectorPage.choiceOperatorUser('hc3')
 
-        WebDriverWait(self._auditAdjustDirectorPage.driver, 5).until(
-            EC.visibility_of_element_located(self._auditAdjustDirectorPage.getAuditList()))
-        self._auditAdjustDirectorPage.click_auditList()
+        self._auditAdjustDirectorPage.gotoAuditList()
+        self._myAuditListPage.input_boeNumQuery(self.boeNum)
+        self._myAuditListPage.click_boeNumQueryButton()
 
-        self.myAuditListPage.input_boeNumQuery(self.boeNum)
-        self.myAuditListPage.click_boeNumQueryButton()
-        self.myAuditListPage.getIntoBoe()
+        self._myAuditListPage.getIntoBoe()
+        self._boeCommon.switchWindow()
 
-        # 待测试
-        self.comFeeApplyBoePage = ComFeeApplyBoePage(self.login.driver)
-        windowsList = self.comFeeApplyBoePage.getWindowHandles()
-        self.comFeeApplyBoePage.switchToWin(windowsList[1])
-        self.comFeeApplyBoePage.click_accountMessage()
-        self.comFeeApplyBoePage.click_approveButton()
-        sleep(3)
-        windowsList = self.comFeeApplyBoePage.getWindowHandles()
-        self.comFeeApplyBoePage.switchToWin(windowsList[0])
+        self._boeCommon.click_accountMessage()
+        self._boeCommon.click_approveButton()
+        self._boeCommon.switchWindow()
 
     def sharingCenterApproveFuShen(self):
 
-        self.myAuditListPage.click_taskHandle()
-        sleep(1)
-        self.myAuditListPage.click_auditAdjustDirector()
-        sleep(1)
+        self._myAuditListPage.gotoAuditAdjustDirectorPage()
         self._auditAdjustDirectorPage.input_selectBoeNum(self.boeNum)
         self._auditAdjustDirectorPage.click_selectButton()
-        sleep(1)
+
         flag = self._auditAdjustDirectorPage.elementExistIsOrNot(*self._auditAdjustDirectorPage.getSelectResult())
-        sleep(1)
-        print('第一次flag:{}'.format(flag))
+        num = 0
         while True:
             if flag == True:
                 break
             else:
-                self.handleTimer = HandleTimer('共享中心', '生成任务', self.login.driver)
-                self.handleTimer.runTimer()
+                self._handleTimer = HandleTimer('共享中心', '生成任务', self.login.driver)
+                self._handleTimer.runTimer()
                 self._auditAdjustDirectorPage.input_selectBoeNum(self.boeNum)
-                sleep(1)
                 self._auditAdjustDirectorPage.click_selectButton()
-                sleep(1)
                 flag = self._auditAdjustDirectorPage.elementExistIsOrNot(*self._auditAdjustDirectorPage.getSelectResult())
+            if num == 20:
+                break
+            else:
+                num = num + 1
 
         self._auditAdjustDirectorPage.click_selectResult()
         self._auditAdjustDirectorPage.click_taskTakeToBack()
-        sleep(1)
         self._auditAdjustDirectorPage.click_selectResult()
-        self._auditAdjustDirectorPage.click_distributeToGroup()
-        self._auditAdjustDirectorPage.click_selectGroup()
-        self._auditAdjustDirectorPage.click_selectFirstGroup()
-        self._auditAdjustDirectorPage.click_selectGroupSubmit()
-        sleep(1)
+
+        # 分配到组
+        try:
+            self._auditAdjustDirectorPage.choiceGroup('自动化财务复审')
+        except:
+            self._auditAdjustDirectorPage.click_selectResult()
+            self._auditAdjustDirectorPage.choiceGroup('自动化财务复审')
+
         self._auditAdjustDirectorPage.click_selectResult()
-        self._auditAdjustDirectorPage.click_distributeToStaff()
-        self._auditAdjustDirectorPage.click_selectOperatorUser()
-        self._auditAdjustDirectorPage.click_selectFirstOperatorUser()
-        self._auditAdjustDirectorPage.click_selectOperatorUserSubmit()
-        self._auditAdjustDirectorPage.click_taskHandle()
 
-        WebDriverWait(self._auditAdjustDirectorPage.driver, 5).until(
-            EC.visibility_of_element_located(self._auditAdjustDirectorPage.getAuditList()))
-        self._auditAdjustDirectorPage.click_auditList()
+        # 分配到人
+        try:
+            self._auditAdjustDirectorPage.choiceOperatorUser('hc3')
+        except:
+            self._auditAdjustDirectorPage.click_selectResult()
+            self._auditAdjustDirectorPage.choiceOperatorUser('hc3')
 
-        self.myAuditListPage.input_boeNumQuery(self.boeNum)
-        self.myAuditListPage.click_boeNumQueryButton()
-        self.myAuditListPage.getIntoBoe()
+        self._auditAdjustDirectorPage.gotoAuditList()
+        self._myAuditListPage.input_boeNumQuery(self.boeNum)
+        self._myAuditListPage.click_boeNumQueryButton()
 
-        # 待测试
-        self.comFeeApplyBoePage = ComFeeApplyBoePage(self.login.driver)
-        windowsList = self.comFeeApplyBoePage.getWindowHandles()
-        self.comFeeApplyBoePage.switchToWin(windowsList[1])
-        self.comFeeApplyBoePage.click_accountMessage()
-        self.comFeeApplyBoePage.click_approveButton()
-        sleep(3)
-        windowsList = self.comFeeApplyBoePage.getWindowHandles()
-        self.comFeeApplyBoePage.switchToWin(windowsList[0])
+        self._myAuditListPage.getIntoBoe()
+        self._boeCommon.switchWindow()
+
+        self._boeCommon.click_accountMessage()
+        self._boeCommon.click_approveButton()
+        self._boeCommon.switchWindow()
 
         self.login.driver.quit()
 
 if __name__ == '__main__':
-    a = SharingCenterApprove('hcGroup-BX210108158')
+    a = SharingCenterApprove('LMJT-BX2101240302')
     a.sharingCenterApproveChuShen()
     a.sharingCenterApproveFuShen()
 

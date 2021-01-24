@@ -11,7 +11,7 @@ from Util import logger,DC
 
 
 
-class BoeCommen(BasePage):
+class BoeCommon(BasePage):
 
     def __init__(self, driver):
         BasePage.__init__(self, driver)
@@ -19,7 +19,10 @@ class BoeCommen(BasePage):
     # 获取 boeNum 号码
     _boeNum = (By.XPATH, '//*[@id="top"]/span[3]')
     def getBoeNum(self):
-        return self.get_elementText(*self._boeNum)
+        self.switchWindow()
+        boeNum = self.get_elementText(*self._boeNum)
+        logger.info("当前提单单据号为：{}".format(boeNum))
+        return boeNum
 
     # 单据保存
     _boeSaveButton = (By.ID, 'save')
@@ -31,6 +34,7 @@ class BoeCommen(BasePage):
         WebDriverWait(self.driver, 5).until(
             EC.visibility_of_element_located(self._boeSubmitButton))
         self.click(*self._boeSubmitButton)
+        logger.info("点击提交单据")
 
     # 打印封面
     _printCover = (By.XPATH, '/html/body/div[1]/div/div[4]/div/div/div[2]/div/div[2]/button[1]')
@@ -51,23 +55,34 @@ class BoeCommen(BasePage):
     # 关闭
     _close = (By.XPATH, '/html/body/div[1]/div/div[4]/div/div/div[2]/div/div[2]/button[5]')
     def click_close(self):
-        WebDriverWait(self.driver, 5).until(
+        WebDriverWait(self.driver, 8).until(
             EC.visibility_of_element_located(self._close))
         self.click(*self._close)
+        logger.info("点击单据关闭按钮")
+        self.switchWindow()
 
     # ---------- 审批 ----------
     # 会记信息Tab
     _accountMessage = (By.ID, 'tab-accounting')
     def click_accountMessage(self):
-        self.click(*self._accountMessage)
+        WebDriverWait(self.driver, 8).until(
+            EC.visibility_of_element_located(self._accountMessage))
+        try:
+            self.click(*self._accountMessage)
+        except:
+            sleep(3)
+            self.click(*self._accountMessage)
+        logger.info("点击单据会记信息")
 
     # 同意
     _approveButton = (By.XPATH, '//*[@id="pane-accounting"]//div[2]/div[4]/button[1]')
     def click_approveButton(self):
-        try:
-            self.click(*self._approveButton)
-        except:
-            raise Exception('没有找到同意按钮')
+        WebDriverWait(self.driver, 8).until(
+            EC.visibility_of_element_located(self._approveButton))
+        self.click(*self._approveButton)
+        sleep(1)
+        logger.info("点击单据审批同意")
+
 
     # —————————— 主表区 ——————————
     # 申请人
@@ -84,12 +99,18 @@ class BoeCommen(BasePage):
     # 操作主表区
 
     def input_operationType(self, text):
+        WebDriverWait(self.driver, 5).until(
+            EC.visibility_of_element_located(self._operationTypeId))
         self.clear(*self._operationTypeId)
         self.send_text(text, *self._operationTypeId)
+        logger.info("选择的业务类型为：{}".format(text))
 
     def input_boeAbstract(self, text):
+        WebDriverWait(self.driver, 5).until(
+            EC.visibility_of_element_located(self._boeAbstract))
         self.clear(*self._boeAbstract)
         self.send_text(text, *self._boeAbstract)
+        logger.info("输入的备注为：{}".format(text))
 
     # ——————————————————————————————
 
@@ -115,14 +136,17 @@ class BoeCommen(BasePage):
         self.send_text(deptCode, *(By.ID, 'itemDEPT_CODE'))
         self.send_text(deptName, *(By.ID, 'itemDEPT_NAME'))
         self.click(*(By.XPATH, '/html/body//form/div[3]/div/button[1]'))
-        WebDriverWait(self.driver, 5).until(
-            EC.visibility_of_element_located( (By.XPATH, '/html/body//table/tbody/tr[1]') ))
+        sleep(1)
         self.click(*(By.XPATH, '/html/body//table/tbody/tr[1]'))
         self.click(*(By.XPATH, '/html/body//div[3]/span/button[2]'))
+        logger.info('选择的部门编码为：{}'.format(deptCode))
+        logger.info('选择的部门名称为：{}'.format(deptName))
 
     def input_projectId(self, text):
         self.click(*self._projectId)
         self.send_text(text, *self._projectId)
+        logger.info('选择的项目为：{}'.format(text))
+        sleep(1)
 
     def input_expenseAmount(self, text):
         self.click(*self._expenseAmount)
@@ -175,6 +199,7 @@ class BoeCommen(BasePage):
 
 
     # —————————— Boe common抽象方法 ——————————
+
     # 金额输入框输入
     def input_amount(self, text, *loc):
         self.click(*loc)
@@ -195,13 +220,6 @@ class BoeCommen(BasePage):
                 break
         logger.info('选择的数据为：{}'.format(option))
 
-    # 点击按钮
-    def click_button(self, buttonName):
-        for i in range(len(self.find_elements(*(By.TAG_NAME, 'button')))):
-            if self.find_elements(*(By.TAG_NAME, 'button'))[i].text == buttonName:
-                self.find_elements(*(By.TAG_NAME, 'button'))[i].click()
-                break
-
     # 浮动下拉框选择
     def select_item(self, type):
         for i in range(len(self.find_elements(*(By.CLASS_NAME, 'el-select-dropdown__item')))):
@@ -215,15 +233,20 @@ class BoeCommen(BasePage):
     # 日期控件选择年月日
     def select_date(self, year, month, day):
 
-        WebDriverWait(self.driver, 5).until(
-            EC.visibility_of_element_located( (By.CLASS_NAME, 'el-date-picker__header') ))
-        dateHeaderPanel = self.find_element(*(By.CLASS_NAME, 'el-date-picker__header'))
-        dateContentPanel = self.find_element(*(By.CLASS_NAME, 'el-picker-panel__content'))
+        sleep(0.5)
+        # WebDriverWait(self.driver, 5).until(
+        #     EC.visibility_of_element_located( (By.CLASS_NAME, 'el-date-picker__header') ))
+
+        if len(self.find_elements(*(By.CLASS_NAME, 'el-picker-panel__body'))) > 1 :
+            dateHeaderPanel = self.find_elements(*(By.CLASS_NAME, 'el-date-picker__header'))[1]
+            dateContentPanel = self.find_elements(*(By.CLASS_NAME, 'el-picker-panel__content'))[1]
+        else:
+            dateHeaderPanel = self.find_element(*(By.CLASS_NAME, 'el-date-picker__header'))
+            dateContentPanel = self.find_element(*(By.CLASS_NAME, 'el-picker-panel__content'))
 
         # 操作年份
         selectedY = dateHeaderPanel.find_elements(*(By.TAG_NAME, 'span'))[0].text
         selectedYear = selectedY.split(' ')[0]
-        logger.info('年为{}'.format(selectedY))
         if year > selectedYear:
             num = int(year) - int(selectedYear)
             for i in range(num):

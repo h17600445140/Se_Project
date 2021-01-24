@@ -36,12 +36,11 @@ class Config():
     # 获取配置Url地址
     @classmethod
     def getUrlDict(cls) -> dict:
-        urlDictPath = os.path.join(Config.getRootPath(),"Config", 'test', 'UrlConfig.yml')
+        urlDictPath = os.path.join(Config.getRootPath(),"Config", 'release', 'UrlConfig.yml')
         with open(urlDictPath, 'r', encoding='utf-8') as f:
             cfg = f.read()
         urlDict = yaml.load(cfg, Loader=yaml.FullLoader)
         return urlDict
-
 
 
 config = Config()

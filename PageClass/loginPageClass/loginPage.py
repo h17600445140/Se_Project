@@ -21,26 +21,25 @@ class LoginPage(BasePage):
 
     def goto_loginpage(self,url):
         self.driver.get(url)
-        logger.info("请求链接")
+        logger.info("请求链接，链接地址为：{}".format(url))
         self.driver.maximize_window()
 
     def input_account(self, account):
         self.clear(*self._accountInput)
         self.send_text(account, *self._accountInput)
-        logger.info("输入账户")
+        logger.debug("输入账户，账户为：{}".format(account))
 
     def input_password(self, password):
         self.clear(*self._passwordInput)
         self.send_text(password, *self._passwordInput)
-        logger.info("输入密码")
+        logger.debug("输入密码，密码为：{}".format(password))
 
     def click_loginbutton(self):
         self.click(*self._loginButton)
-        logger.info("点击登录")
+        logger.info("点击登录按钮")
 
     def get_into(self):
         self.click(*self._IntoButton)
-        logger.info("直接进入")
 
     def get_errortext(self):
         return self.find_element(*self._MessageBox).text

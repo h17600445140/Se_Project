@@ -4,6 +4,7 @@ from Util import config
 import pandas as pd
 
 
+
 class TestSuite():
 
     def __init__(self):
@@ -31,6 +32,8 @@ class TestSuite():
             df = pd.read_excel(io=testcasePath, sheet_name=0)
             row = df.shape[0]
             for i in range(row):
+                if df.at[i, "是否执行"] == "N":
+                    continue
                 if df.at[i, "配置方式"] == "1-按方法运行":
                     self._testsuites.append(
                         os.path.join(df.at[i, "路径"], df.at[i, "文件名"]) + "::" + df.at[i, "类名"] + "::" + df.at[i, "方法名"])
@@ -42,6 +45,10 @@ class TestSuite():
         return self._testsuites
 
 testSuite = TestSuite()
+
+
+if __name__ == '__main__':
+    testSuite.readTestPlan()
 
 
 

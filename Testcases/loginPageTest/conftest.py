@@ -14,5 +14,8 @@ def publciLoginPage_testdata(request) -> dict:
     return request.param
 
 if __name__ == '__main__':
-    pass
+    print(data)
+    print(casename)
+    print(loadTestData.get_datapath(os.path.dirname(__file__)))
+    print(os.path.dirname(__file__))
 

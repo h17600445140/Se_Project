@@ -1,15 +1,37 @@
 {
-  "total" : 1,
+  "total" : 3,
   "items" : [ {
-    "uid" : "468eaab4ef2f3f83a9550ddcd6e22f94",
-    "name" : "Testcases.loginPageTest",
+    "uid" : "45c63baf1e23e50ded4a5b5aa5ab0c3c",
+    "name" : "Testcases.boeApplyPageTest",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 5,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 5
+      "total" : 9
+    }
+  }, {
+    "uid" : "4766ae66244b8f1358d3c2c02058f75b",
+    "name" : "Testcases.boeReimbursementPageTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 0,
+      "total" : 9
+    }
+  }, {
+    "uid" : "da0369c1bb0451a1d0569c40ee393fb6",
+    "name" : "Testcases.boeBorrowPageTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 6
     }
   } ]
 }

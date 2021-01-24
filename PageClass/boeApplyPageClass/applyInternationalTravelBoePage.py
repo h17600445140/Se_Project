@@ -1,12 +1,14 @@
 # -*- coding:utf-8 -*-
+from time import sleep
+
 from selenium.webdriver.common.by import By
 
-from PageClass.common.boeCommon import BoeCommen
+from PageClass.common.boeCommon import BoeCommon
 from PageClass.easIndexPageClass.easIndexPage import EasIndexPage
+from Util import logger
 
 
-
-class ApplyInternationalTravelBoePage(EasIndexPage,BoeCommen):
+class ApplyInternationalTravelBoePage(EasIndexPage,BoeCommon):
 
     def __init__(self, driver):
         EasIndexPage.__init__(self, driver)
@@ -16,6 +18,7 @@ class ApplyInternationalTravelBoePage(EasIndexPage,BoeCommen):
     # 输入支付金额
     def input_applyAmount(self, amount):
         self.input_amount(amount, *self._applyAmount)
+        logger.info("输入的金额为：{}".format(amount))
 
     # 开始日期
     _beginDateStr = (By.ID, 'boeHeaderChild.0.beginDateStr')
@@ -24,7 +27,9 @@ class ApplyInternationalTravelBoePage(EasIndexPage,BoeCommen):
     # 输入开始日期
     def input_beginDateStr(self, date):
         self.click_beginDateStr()
-        self.input_date(date)
+        year, month, day = date.split('-')[0], date.split('-')[1], date.split('-')[2]
+        self.select_date(year, month, day)
+        logger.info('选择的开始日期为：{}'.format(date))
 
     # 结束日期
     _endDateStr = (By.ID, 'boeHeaderChild.0.endDateStr')
@@ -33,7 +38,9 @@ class ApplyInternationalTravelBoePage(EasIndexPage,BoeCommen):
     # 输入结束日期
     def input_endDateStr(self, date):
         self.click_endDateStr()
-        self.input_date(date)
+        year, month, day = date.split('-')[0], date.split('-')[1], date.split('-')[2]
+        self.select_date(year, month, day)
+        logger.info('选择的结束日期为：{}'.format(date))
 
     # 出发城市
     _fromCity = (By.XPATH, '//*[@id="boeHeaderChild.0.fromSiteName"]/div/div/div[1]/input')
@@ -41,6 +48,8 @@ class ApplyInternationalTravelBoePage(EasIndexPage,BoeCommen):
     def input_fromCity(self, text):
         self.click(*self._fromCity)
         self.send_text(text, *self._fromCity)
+        logger.info('选择的出发城市为：{}'.format(text))
+        sleep(1)
 
     # 到达城市
     _toCity = (By.XPATH, '//*[@id="boeHeaderChild.0.toSiteName"]/div/div/div[1]/input')
@@ -48,19 +57,25 @@ class ApplyInternationalTravelBoePage(EasIndexPage,BoeCommen):
     def input_toCity(self, text):
         self.click(*self._toCity)
         self.send_text(text, *self._toCity)
+        logger.info('选择的到达城市为：{}'.format(text))
+        sleep(1)
 
     # 交通工具
     _transportation = (By.ID, 'boeHeaderChild.0.transportation')
     def select_transportation(self, option):
         self.select_option(option, *self._transportation)
+        logger.info('选择的交通工具为：{}'.format(option))
 
     # 出差任务
     _travelTask = (By.ID, 'boeHeaderChild.0.travelTask')
     def select_travelTask(self, option):
         self.select_option(option, *self._travelTask)
+        logger.info('选择的出差任务为：{}'.format(option))
 
     # 项目
     _projectId = (By.ID, 'boeHeaderChild.0.projectId')
     def input_projectId(self, projectName):
         self.click(*self._projectId)
         self.send_text(projectName, *self._projectId)
+        logger.info('选择的项目为：{}'.format(projectName))
+        sleep(1)

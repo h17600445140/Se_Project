@@ -3,13 +3,13 @@ from time import sleep
 
 from selenium.webdriver.common.by import By
 from Util import logger
-from PageClass.common.boeCommon import BoeCommen
+from PageClass.common.boeCommon import BoeCommon
 from PageClass.easIndexPageClass.easIndexPage import EasIndexPage
 
 
 
 # 差旅报账单（国际）实例
-class InternationalTravelBoePage(EasIndexPage,BoeCommen):
+class InternationalTravelBoePage(EasIndexPage,BoeCommon):
 
     def __init__(self, driver):
         EasIndexPage.__init__(self, driver)

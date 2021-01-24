@@ -7,15 +7,15 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from PageClass.basePage import BasePage
-from PageClass.common.boeCommon import BoeCommen
+from PageClass.common.boeCommon import BoeCommon
 from Util import logger, config
 
 
 
-class EasMyInvoiceIndexPage(BoeCommen):
+class EasMyInvoiceIndexPage(BoeCommon):
 
     def __init__(self, driver):
-        BoeCommen.__init__(self, driver)
+        BoeCommon.__init__(self, driver)
 
     _reimbursementState = (By.ID, 'undefined_reimbursementState')
     _billTypeInvoice = (By.ID, 'undefined_billTypeInvoice')

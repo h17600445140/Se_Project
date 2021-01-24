@@ -2,72 +2,420 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "页面登陆模块",
+    "name" : "通用费用申请单流程",
     "children" : [ {
-      "name" : "测试登陆时发生的五种场景",
+      "name" : "通用费用申请单费用报销界面单据提交",
       "children" : [ {
-        "name" : "test_login[账号密码不匹配]",
-        "uid" : "8fa20ba2a92ce07b",
-        "parentUid" : "a8af7e822fc93322112f1fd58f67e3f3",
+        "name" : "test_comFeeApply[通用费用申请单提交主流程]",
+        "uid" : "3e655d18d2c1726e",
+        "parentUid" : "37c77b666d680a5063f6827be34e28bb",
         "status" : "passed",
         "time" : {
-          "start" : 1611022705618,
-          "stop" : 1611022707543,
-          "duration" : 1925
+          "start" : 1611506695368,
+          "stop" : 1611506715655,
+          "duration" : 20287
         },
         "flaky" : false,
-        "parameters" : [ "{'number': '1', 'casename': '账号密码不匹配', 'severity': 'blocker', 'account': 'test', 'password': 'zfs123456'}" ]
-      }, {
-        "name" : "test_login[请输入账户名称]",
-        "uid" : "a60f66ef202066e0",
-        "parentUid" : "a8af7e822fc93322112f1fd58f67e3f3",
-        "status" : "passed",
-        "time" : {
-          "start" : 1611022707562,
-          "stop" : 1611022709302,
-          "duration" : 1740
-        },
-        "flaky" : false,
-        "parameters" : [ "{'number': '2', 'casename': '请输入账户名称', 'severity': 'critical', 'account': '', 'password': 'zfs123456'}" ]
-      }, {
-        "name" : "test_login[请输入密码]",
-        "uid" : "bfd68d1919a3a1de",
-        "parentUid" : "a8af7e822fc93322112f1fd58f67e3f3",
-        "status" : "passed",
-        "time" : {
-          "start" : 1611022709318,
-          "stop" : 1611022711042,
-          "duration" : 1724
-        },
-        "flaky" : false,
-        "parameters" : [ "{'number': '3', 'casename': '请输入密码', 'severity': 'normal', 'account': 'admin', 'password': ''}" ]
-      }, {
-        "name" : "test_login[当前登录用户名或密码错误]",
-        "uid" : "ee80854fdeede577",
-        "parentUid" : "a8af7e822fc93322112f1fd58f67e3f3",
-        "status" : "passed",
-        "time" : {
-          "start" : 1611022711046,
-          "stop" : 1611022712470,
-          "duration" : 1424
-        },
-        "flaky" : false,
-        "parameters" : [ "{'number': '4', 'casename': '当前登录用户名或密码错误', 'severity': 'minor', 'account': 'admin', 'password': '123456'}" ]
-      }, {
-        "name" : "test_login[登陆成功]",
-        "uid" : "40a1aad851ac0bf3",
-        "parentUid" : "a8af7e822fc93322112f1fd58f67e3f3",
-        "status" : "passed",
-        "time" : {
-          "start" : 1611022712484,
-          "stop" : 1611022714342,
-          "duration" : 1858
-        },
-        "flaky" : false,
-        "parameters" : [ "{'number': '5', 'casename': '登陆成功', 'severity': 'trivial', 'account': 'admin', 'password': 'zfs123456'}" ]
+        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试通用费用申请单', 'operationSubTypeId': 'UI通用1', 'expenseAmount': '100.10', 'remark': '测试通用费用申请单', 'casename': '通用费用申请单提交主流程'}" ]
       } ],
-      "uid" : "a8af7e822fc93322112f1fd58f67e3f3"
+      "uid" : "37c77b666d680a5063f6827be34e28bb"
+    }, {
+      "name" : "通用费用申请费用报销界面业务审批",
+      "children" : [ {
+        "name" : "test_businessApprove",
+        "uid" : "6f614d4303ebec89",
+        "parentUid" : "22acf041ea99cf16712142afb8f420ee",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611506715662,
+          "stop" : 1611506738032,
+          "duration" : 22370
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "22acf041ea99cf16712142afb8f420ee"
+    }, {
+      "name" : "通用费用申请共享中心界面财务审批",
+      "children" : [ {
+        "name" : "test_sharingCenterApprove",
+        "uid" : "5d499526febcfaa5",
+        "parentUid" : "9da4e5c5f67e124021b36de2de46e9ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611506738039,
+          "stop" : 1611506839683,
+          "duration" : 101644
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9da4e5c5f67e124021b36de2de46e9ec"
     } ],
-    "uid" : "0dfa9b235adce358465cc9d6b871e344"
+    "uid" : "abe903ae1aca57a34252d96d36d4af19"
+  }, {
+    "name" : "差旅申请单流程",
+    "children" : [ {
+      "name" : "差旅申请单费用报销界面单据提交",
+      "children" : [ {
+        "name" : "test_applyTravel[差旅申请单提交主流程]",
+        "uid" : "f2796e7c1d1f2214",
+        "parentUid" : "b420d9f27d50b0a9f10e350ba6286dcc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611506855169,
+          "stop" : 1611506884702,
+          "duration" : 29533
+        },
+        "flaky" : false,
+        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试差旅申请单', 'applyAmount': '100.10', 'beginDateStr': '2021-1-1', 'endDateStr': '2021-1-20', 'travelTask': '会议出差', 'fromCity': '长沙', 'toCity': '北京', 'transportation': '动卧', 'casename': '差旅申请单提交主流程'}" ]
+      } ],
+      "uid" : "b420d9f27d50b0a9f10e350ba6286dcc"
+    }, {
+      "name" : "差旅申请单费用报销界面业务审批",
+      "children" : [ {
+        "name" : "test_businessApprove",
+        "uid" : "72520360bbfdd84f",
+        "parentUid" : "a6d23e1f01b86f9e3c2d771869555ef8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611506884714,
+          "stop" : 1611506907767,
+          "duration" : 23053
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a6d23e1f01b86f9e3c2d771869555ef8"
+    }, {
+      "name" : "差旅申请单共享中心界面财务审批",
+      "children" : [ {
+        "name" : "test_sharingCenterApprove",
+        "uid" : "7c84d1ce3744895b",
+        "parentUid" : "28f9beaea75c82ee5c076b838e7af5b8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611506907774,
+          "stop" : 1611507004748,
+          "duration" : 96974
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "28f9beaea75c82ee5c076b838e7af5b8"
+    } ],
+    "uid" : "4d626d9ed64d92ddf400579ff0eebccc"
+  }, {
+    "name" : "差旅申请单（国际）流程",
+    "children" : [ {
+      "name" : "差旅申请单（国际）费用报销界面单据提交",
+      "children" : [ {
+        "name" : "test_applyInternationalTravel[测试差旅申请单（国际）提交主流程]",
+        "uid" : "808b3120f97d526b",
+        "parentUid" : "72ff42af35e0733fc71ba07f46301eb1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611507020600,
+          "stop" : 1611507051439,
+          "duration" : 30839
+        },
+        "flaky" : false,
+        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试差旅申请单（国际）', 'applyAmount': '100.10', 'beginDateStr': '2021-1-1', 'endDateStr': '2021-1-20', 'fromCity': '长沙', 'toCity': '北京', 'transportation': '动卧', 'travelTask': '会议出差', 'projectName': '刘志成项目', 'casename': '测试差旅申请单（国际）提交主流程'}" ]
+      } ],
+      "uid" : "72ff42af35e0733fc71ba07f46301eb1"
+    }, {
+      "name" : "差旅申请单（国际）费用报销界面业务审批",
+      "children" : [ {
+        "name" : "test_businessApprove",
+        "uid" : "26678336fa231a91",
+        "parentUid" : "b2ec04503fda0628ed2b45ec4e614861",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611507051447,
+          "stop" : 1611507073940,
+          "duration" : 22493
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b2ec04503fda0628ed2b45ec4e614861"
+    }, {
+      "name" : "差旅申请单（国际）共享中心界面财务审批",
+      "children" : [ {
+        "name" : "test_sharingCenterApprove",
+        "uid" : "b60738a92a86dc7b",
+        "parentUid" : "e3a08221ce709d13d5fed863dbbfe7c1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611507073951,
+          "stop" : 1611507179577,
+          "duration" : 105626
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e3a08221ce709d13d5fed863dbbfe7c1"
+    } ],
+    "uid" : "39b0651ccde88c513ab683945343cd27"
+  }, {
+    "name" : "日常费用报账单流程",
+    "children" : [ {
+      "name" : "日常费用报账单费用报销界面单据提交",
+      "children" : [ {
+        "name" : "test_newDailyExpense[日常费用报账单提交主流程]",
+        "uid" : "ed538938413ffde3",
+        "parentUid" : "0feb0252492d6cd20bde6a8fd320fb0d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611507195321,
+          "stop" : 1611507222872,
+          "duration" : 27551
+        },
+        "flaky" : false,
+        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试日常费用报账单', 'relatedInvoice': '80000012', 'operationSubType': 'UI通用1', 'projectName': '刘志成项目', 'deptCode': 'UIdp', 'deptName': 'UI部门', 'casename': '日常费用报账单提交主流程'}" ]
+      } ],
+      "uid" : "0feb0252492d6cd20bde6a8fd320fb0d"
+    }, {
+      "name" : "日常费用报账单费用报销界面业务审批",
+      "children" : [ {
+        "name" : "test_businessApprove",
+        "uid" : "3d226596fc5f6d70",
+        "parentUid" : "f4dd9a8eddd8f2f3b11738f196ec7db8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611507222882,
+          "stop" : 1611507245093,
+          "duration" : 22211
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f4dd9a8eddd8f2f3b11738f196ec7db8"
+    }, {
+      "name" : "日常费用报账单共享中心界面财务审批",
+      "children" : [ {
+        "name" : "test_sharingCenterApprove",
+        "uid" : "2aa461d92c43f51e",
+        "parentUid" : "a432182ec30f918582c09d6a299b1e33",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611507245103,
+          "stop" : 1611507344853,
+          "duration" : 99750
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a432182ec30f918582c09d6a299b1e33"
+    } ],
+    "uid" : "1a4e86cd7e508422e2f26fe5222d83d0"
+  }, {
+    "name" : "差旅报账单流程",
+    "children" : [ {
+      "name" : "差旅报账单费用报销界面单据提交",
+      "children" : [ {
+        "name" : "test_newDomesticTravel[差旅报账单提交主流程]",
+        "uid" : "2447c028debcacbc",
+        "parentUid" : "d28db04415cc37611ced9c271ab9dfcb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611507360539,
+          "stop" : 1611507401781,
+          "duration" : 41242
+        },
+        "flaky" : false,
+        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试差旅报账单', 'projectName': '刘志成项目', 'deptCode': 'UIdp', 'deptName': 'UI部门', 'trainInvoice': [{'invoiceDate': '2021-1-1', 'invoicePersonType': '内部人员', 'invoicePersonName': 'hc1', 'invoiceFromCity': '长沙', 'invoiceToCity': '上海', 'invoiceSiteType': '二等座（高铁/动车）', 'invoiceTicketFee': '500.00', 'invoiceIsReplace': '否'}], 'casename': '差旅报账单提交主流程'}" ]
+      } ],
+      "uid" : "d28db04415cc37611ced9c271ab9dfcb"
+    }, {
+      "name" : "差旅报账单费用报销界面业务审批",
+      "children" : [ {
+        "name" : "test_businessApprove",
+        "uid" : "9d10a0d991e1f026",
+        "parentUid" : "6de0596356fe52076820e0c13fd36b55",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611507401790,
+          "stop" : 1611507424676,
+          "duration" : 22886
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6de0596356fe52076820e0c13fd36b55"
+    }, {
+      "name" : "差旅报账单共享中心界面财务审批",
+      "children" : [ {
+        "name" : "test_sharingCenterApprove",
+        "uid" : "82807fac984cb929",
+        "parentUid" : "94e89ef861edf37412e14df096b12f62",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611507424693,
+          "stop" : 1611507526510,
+          "duration" : 101817
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "94e89ef861edf37412e14df096b12f62"
+    } ],
+    "uid" : "833d2b8eb0434102012394cd32d8ca6d"
+  }, {
+    "name" : "多人差旅报账单流程",
+    "children" : [ {
+      "name" : "多人差旅报账单费用报销界面单据提交",
+      "children" : [ {
+        "name" : "test_newMultiDomesticTravel[多人差旅报账单提交主流程]",
+        "uid" : "8359086eaad33bf7",
+        "parentUid" : "7fa6424173bed2af95a24ef20894d699",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611507542032,
+          "stop" : 1611507600909,
+          "duration" : 58877
+        },
+        "flaky" : false,
+        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试多人差旅报账单', 'travelers': 'hc003', 'projectName': '刘志成项目', 'casename': '多人差旅报账单提交主流程'}" ]
+      } ],
+      "uid" : "7fa6424173bed2af95a24ef20894d699"
+    }, {
+      "name" : "多人差旅报账单费用报销界面业务审批",
+      "children" : [ {
+        "name" : "test_businessApprove",
+        "uid" : "3e4d91143b5b0af2",
+        "parentUid" : "b1909fca2b7c181309412d007ad6784a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611507600920,
+          "stop" : 1611507625244,
+          "duration" : 24324
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b1909fca2b7c181309412d007ad6784a"
+    }, {
+      "name" : "多人差旅报账单共享中心界面财务审批",
+      "children" : [ {
+        "name" : "test_sharingCenterApprove",
+        "uid" : "e67fa89876df8993",
+        "parentUid" : "949e061643a8579ed5d529ee7547169f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611507625251,
+          "stop" : 1611507732405,
+          "duration" : 107154
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "949e061643a8579ed5d529ee7547169f"
+    } ],
+    "uid" : "cb430a75d9855b46f4284bf4f05d08dd"
+  }, {
+    "name" : "员工借款单流程",
+    "children" : [ {
+      "name" : "员工借款单费用报销界面单据提交",
+      "children" : [ {
+        "name" : "test_employeeLoad[员工借款单提交主流程]",
+        "uid" : "dc3c32959689b76",
+        "parentUid" : "624067bfce4872fd23c19c65bcfa811c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611507748296,
+          "stop" : 1611507771630,
+          "duration" : 23334
+        },
+        "flaky" : false,
+        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试员工借款单', 'operationSubTypeId': 'UI通用1', 'expenseAmount': '100.10', 'projectName': '刘志成项目', 'casename': '员工借款单提交主流程'}" ]
+      } ],
+      "uid" : "624067bfce4872fd23c19c65bcfa811c"
+    }, {
+      "name" : "员工借款单费用报销界面业务审批",
+      "children" : [ {
+        "name" : "test_businessApprove",
+        "uid" : "52187668c839ef01",
+        "parentUid" : "36fce4d76348078fb651cc99ed95246e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611507771637,
+          "stop" : 1611507794430,
+          "duration" : 22793
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "36fce4d76348078fb651cc99ed95246e"
+    }, {
+      "name" : "员工借款单共享中心界面财务审批",
+      "children" : [ {
+        "name" : "test_sharingCenterApprove",
+        "uid" : "ca0dcea7e8e01582",
+        "parentUid" : "5f72927cfce6fbc16ac6beae95e04818",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611507794441,
+          "stop" : 1611507903716,
+          "duration" : 109275
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5f72927cfce6fbc16ac6beae95e04818"
+    } ],
+    "uid" : "de9080a4683683f89521fa0b36a5816d"
+  }, {
+    "name" : "员工还款单流程",
+    "children" : [ {
+      "name" : "员工还款单费用报销界面单据提交",
+      "children" : [ {
+        "name" : "test_employeeRepayment[员工还款单提交主流程]",
+        "uid" : "224ec2160a2c58ea",
+        "parentUid" : "10522450962f80fc26dd22eda5c938dc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611507919460,
+          "stop" : 1611507946206,
+          "duration" : 26746
+        },
+        "flaky" : false,
+        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试员工还款单', 'operationSubType': 'UI通用1', 'expenseAmount': '', 'favoriteId': 'B1', 'loanRepaymentDate': '2021-1-20', 'remark': '测试', 'casename': '员工还款单提交主流程'}" ]
+      } ],
+      "uid" : "10522450962f80fc26dd22eda5c938dc"
+    }, {
+      "name" : "员工还款单费用报销界面业务审批",
+      "children" : [ {
+        "name" : "test_businessApprove",
+        "uid" : "64a58fe631eaad5b",
+        "parentUid" : "0ff58fef89911099ed8a8e1ef2ad7721",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611507946216,
+          "stop" : 1611507968959,
+          "duration" : 22743
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0ff58fef89911099ed8a8e1ef2ad7721"
+    }, {
+      "name" : "员工还款单共享中心界面财务审批",
+      "children" : [ {
+        "name" : "test_sharingCenterApprove",
+        "uid" : "51099d244cb2686",
+        "parentUid" : "ca33b2b0a7d80b1ea422c4367005268a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611507968965,
+          "stop" : 1611508067136,
+          "duration" : 98171
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ca33b2b0a7d80b1ea422c4367005268a"
+    } ],
+    "uid" : "75d74d9dec2c888ed44febd581befe86"
   } ]
 }

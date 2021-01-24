@@ -2,76 +2,368 @@
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
   "name" : "suites",
   "children" : [ {
-    "name" : "Testcases.loginPageTest",
+    "name" : "Testcases.boeApplyPageTest",
     "children" : [ {
-      "name" : "test_publciLoginPage",
+      "name" : "test_comFeeApplyBoe",
       "children" : [ {
-        "name" : "TestPublicLoginPage",
+        "name" : "TestComFeeApplyBoe",
         "children" : [ {
-          "name" : "test_login[账号密码不匹配]",
-          "uid" : "8fa20ba2a92ce07b",
-          "parentUid" : "0fe80b552d41960c0a06f4bf6245eba0",
+          "name" : "test_comFeeApply[通用费用申请单提交主流程]",
+          "uid" : "3e655d18d2c1726e",
+          "parentUid" : "b9209f12c966224106b79780ae18cbbd",
           "status" : "passed",
           "time" : {
-            "start" : 1611022705618,
-            "stop" : 1611022707543,
-            "duration" : 1925
+            "start" : 1611506695368,
+            "stop" : 1611506715655,
+            "duration" : 20287
           },
           "flaky" : false,
-          "parameters" : [ "{'number': '1', 'casename': '账号密码不匹配', 'severity': 'blocker', 'account': 'test', 'password': 'zfs123456'}" ]
+          "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试通用费用申请单', 'operationSubTypeId': 'UI通用1', 'expenseAmount': '100.10', 'remark': '测试通用费用申请单', 'casename': '通用费用申请单提交主流程'}" ]
         }, {
-          "name" : "test_login[请输入账户名称]",
-          "uid" : "a60f66ef202066e0",
-          "parentUid" : "0fe80b552d41960c0a06f4bf6245eba0",
+          "name" : "test_businessApprove",
+          "uid" : "6f614d4303ebec89",
+          "parentUid" : "b9209f12c966224106b79780ae18cbbd",
           "status" : "passed",
           "time" : {
-            "start" : 1611022707562,
-            "stop" : 1611022709302,
-            "duration" : 1740
+            "start" : 1611506715662,
+            "stop" : 1611506738032,
+            "duration" : 22370
           },
           "flaky" : false,
-          "parameters" : [ "{'number': '2', 'casename': '请输入账户名称', 'severity': 'critical', 'account': '', 'password': 'zfs123456'}" ]
+          "parameters" : [ ]
         }, {
-          "name" : "test_login[请输入密码]",
-          "uid" : "bfd68d1919a3a1de",
-          "parentUid" : "0fe80b552d41960c0a06f4bf6245eba0",
+          "name" : "test_sharingCenterApprove",
+          "uid" : "5d499526febcfaa5",
+          "parentUid" : "b9209f12c966224106b79780ae18cbbd",
           "status" : "passed",
           "time" : {
-            "start" : 1611022709318,
-            "stop" : 1611022711042,
-            "duration" : 1724
+            "start" : 1611506738039,
+            "stop" : 1611506839683,
+            "duration" : 101644
           },
           "flaky" : false,
-          "parameters" : [ "{'number': '3', 'casename': '请输入密码', 'severity': 'normal', 'account': 'admin', 'password': ''}" ]
-        }, {
-          "name" : "test_login[当前登录用户名或密码错误]",
-          "uid" : "ee80854fdeede577",
-          "parentUid" : "0fe80b552d41960c0a06f4bf6245eba0",
-          "status" : "passed",
-          "time" : {
-            "start" : 1611022711046,
-            "stop" : 1611022712470,
-            "duration" : 1424
-          },
-          "flaky" : false,
-          "parameters" : [ "{'number': '4', 'casename': '当前登录用户名或密码错误', 'severity': 'minor', 'account': 'admin', 'password': '123456'}" ]
-        }, {
-          "name" : "test_login[登陆成功]",
-          "uid" : "40a1aad851ac0bf3",
-          "parentUid" : "0fe80b552d41960c0a06f4bf6245eba0",
-          "status" : "passed",
-          "time" : {
-            "start" : 1611022712484,
-            "stop" : 1611022714342,
-            "duration" : 1858
-          },
-          "flaky" : false,
-          "parameters" : [ "{'number': '5', 'casename': '登陆成功', 'severity': 'trivial', 'account': 'admin', 'password': 'zfs123456'}" ]
+          "parameters" : [ ]
         } ],
-        "uid" : "0fe80b552d41960c0a06f4bf6245eba0"
+        "uid" : "b9209f12c966224106b79780ae18cbbd"
       } ],
-      "uid" : "05cd15220536c061ebb16bf418671381"
+      "uid" : "672be25378dc4188ac2ba5be09164727"
+    }, {
+      "name" : "test_applyTravelBoe",
+      "children" : [ {
+        "name" : "TestApplyTravelBoe",
+        "children" : [ {
+          "name" : "test_applyTravel[差旅申请单提交主流程]",
+          "uid" : "f2796e7c1d1f2214",
+          "parentUid" : "7a2e6ebcbcd336165b538f5c79b15d9c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1611506855169,
+            "stop" : 1611506884702,
+            "duration" : 29533
+          },
+          "flaky" : false,
+          "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试差旅申请单', 'applyAmount': '100.10', 'beginDateStr': '2021-1-1', 'endDateStr': '2021-1-20', 'travelTask': '会议出差', 'fromCity': '长沙', 'toCity': '北京', 'transportation': '动卧', 'casename': '差旅申请单提交主流程'}" ]
+        }, {
+          "name" : "test_businessApprove",
+          "uid" : "72520360bbfdd84f",
+          "parentUid" : "7a2e6ebcbcd336165b538f5c79b15d9c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1611506884714,
+            "stop" : 1611506907767,
+            "duration" : 23053
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_sharingCenterApprove",
+          "uid" : "7c84d1ce3744895b",
+          "parentUid" : "7a2e6ebcbcd336165b538f5c79b15d9c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1611506907774,
+            "stop" : 1611507004748,
+            "duration" : 96974
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "7a2e6ebcbcd336165b538f5c79b15d9c"
+      } ],
+      "uid" : "fcb60f066df21116cc23e02eb8851352"
+    }, {
+      "name" : "test_applyInternationalTravelBoe",
+      "children" : [ {
+        "name" : "TestApplyInternationalTravelBoe",
+        "children" : [ {
+          "name" : "test_applyInternationalTravel[测试差旅申请单（国际）提交主流程]",
+          "uid" : "808b3120f97d526b",
+          "parentUid" : "a1157793fe45a081859283d2f4e94965",
+          "status" : "passed",
+          "time" : {
+            "start" : 1611507020600,
+            "stop" : 1611507051439,
+            "duration" : 30839
+          },
+          "flaky" : false,
+          "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试差旅申请单（国际）', 'applyAmount': '100.10', 'beginDateStr': '2021-1-1', 'endDateStr': '2021-1-20', 'fromCity': '长沙', 'toCity': '北京', 'transportation': '动卧', 'travelTask': '会议出差', 'projectName': '刘志成项目', 'casename': '测试差旅申请单（国际）提交主流程'}" ]
+        }, {
+          "name" : "test_businessApprove",
+          "uid" : "26678336fa231a91",
+          "parentUid" : "a1157793fe45a081859283d2f4e94965",
+          "status" : "passed",
+          "time" : {
+            "start" : 1611507051447,
+            "stop" : 1611507073940,
+            "duration" : 22493
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_sharingCenterApprove",
+          "uid" : "b60738a92a86dc7b",
+          "parentUid" : "a1157793fe45a081859283d2f4e94965",
+          "status" : "passed",
+          "time" : {
+            "start" : 1611507073951,
+            "stop" : 1611507179577,
+            "duration" : 105626
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "a1157793fe45a081859283d2f4e94965"
+      } ],
+      "uid" : "1508f75b67dff13f71b6456f4d35a254"
     } ],
-    "uid" : "468eaab4ef2f3f83a9550ddcd6e22f94"
+    "uid" : "45c63baf1e23e50ded4a5b5aa5ab0c3c"
+  }, {
+    "name" : "Testcases.boeReimbursementPageTest",
+    "children" : [ {
+      "name" : "test_newDailyExpenseBoe",
+      "children" : [ {
+        "name" : "TestNewDailyExpenseBoe",
+        "children" : [ {
+          "name" : "test_newDailyExpense[日常费用报账单提交主流程]",
+          "uid" : "ed538938413ffde3",
+          "parentUid" : "0d5e2c8db70ef5555ecd1fa175fc16cd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1611507195321,
+            "stop" : 1611507222872,
+            "duration" : 27551
+          },
+          "flaky" : false,
+          "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试日常费用报账单', 'relatedInvoice': '80000012', 'operationSubType': 'UI通用1', 'projectName': '刘志成项目', 'deptCode': 'UIdp', 'deptName': 'UI部门', 'casename': '日常费用报账单提交主流程'}" ]
+        }, {
+          "name" : "test_businessApprove",
+          "uid" : "3d226596fc5f6d70",
+          "parentUid" : "0d5e2c8db70ef5555ecd1fa175fc16cd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1611507222882,
+            "stop" : 1611507245093,
+            "duration" : 22211
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_sharingCenterApprove",
+          "uid" : "2aa461d92c43f51e",
+          "parentUid" : "0d5e2c8db70ef5555ecd1fa175fc16cd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1611507245103,
+            "stop" : 1611507344853,
+            "duration" : 99750
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "0d5e2c8db70ef5555ecd1fa175fc16cd"
+      } ],
+      "uid" : "063f7d4b08e0e524c276437341632007"
+    }, {
+      "name" : "test_newDomesticTravelBoe",
+      "children" : [ {
+        "name" : "TestNewDomesticTravelBoe",
+        "children" : [ {
+          "name" : "test_newDomesticTravel[差旅报账单提交主流程]",
+          "uid" : "2447c028debcacbc",
+          "parentUid" : "3cbcd58f61c6a469123d9463e9888e90",
+          "status" : "passed",
+          "time" : {
+            "start" : 1611507360539,
+            "stop" : 1611507401781,
+            "duration" : 41242
+          },
+          "flaky" : false,
+          "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试差旅报账单', 'projectName': '刘志成项目', 'deptCode': 'UIdp', 'deptName': 'UI部门', 'trainInvoice': [{'invoiceDate': '2021-1-1', 'invoicePersonType': '内部人员', 'invoicePersonName': 'hc1', 'invoiceFromCity': '长沙', 'invoiceToCity': '上海', 'invoiceSiteType': '二等座（高铁/动车）', 'invoiceTicketFee': '500.00', 'invoiceIsReplace': '否'}], 'casename': '差旅报账单提交主流程'}" ]
+        }, {
+          "name" : "test_businessApprove",
+          "uid" : "9d10a0d991e1f026",
+          "parentUid" : "3cbcd58f61c6a469123d9463e9888e90",
+          "status" : "passed",
+          "time" : {
+            "start" : 1611507401790,
+            "stop" : 1611507424676,
+            "duration" : 22886
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_sharingCenterApprove",
+          "uid" : "82807fac984cb929",
+          "parentUid" : "3cbcd58f61c6a469123d9463e9888e90",
+          "status" : "passed",
+          "time" : {
+            "start" : 1611507424693,
+            "stop" : 1611507526510,
+            "duration" : 101817
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "3cbcd58f61c6a469123d9463e9888e90"
+      } ],
+      "uid" : "bc74aad2efbf8b6350db4839f8b6dfc1"
+    }, {
+      "name" : "test_newMultiDomesticTravelBoe",
+      "children" : [ {
+        "name" : "TestNewMultiDomesticTravelBoe",
+        "children" : [ {
+          "name" : "test_newMultiDomesticTravel[多人差旅报账单提交主流程]",
+          "uid" : "8359086eaad33bf7",
+          "parentUid" : "0b4d9241562fbcbd864440d545ae49e7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1611507542032,
+            "stop" : 1611507600909,
+            "duration" : 58877
+          },
+          "flaky" : false,
+          "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试多人差旅报账单', 'travelers': 'hc003', 'projectName': '刘志成项目', 'casename': '多人差旅报账单提交主流程'}" ]
+        }, {
+          "name" : "test_businessApprove",
+          "uid" : "3e4d91143b5b0af2",
+          "parentUid" : "0b4d9241562fbcbd864440d545ae49e7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1611507600920,
+            "stop" : 1611507625244,
+            "duration" : 24324
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_sharingCenterApprove",
+          "uid" : "e67fa89876df8993",
+          "parentUid" : "0b4d9241562fbcbd864440d545ae49e7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1611507625251,
+            "stop" : 1611507732405,
+            "duration" : 107154
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "0b4d9241562fbcbd864440d545ae49e7"
+      } ],
+      "uid" : "a39ab26435ea2d771a073813f53c4492"
+    } ],
+    "uid" : "4766ae66244b8f1358d3c2c02058f75b"
+  }, {
+    "name" : "Testcases.boeBorrowPageTest",
+    "children" : [ {
+      "name" : "test_employeeLoadBoe",
+      "children" : [ {
+        "name" : "TestEmployeeLoadBoe",
+        "children" : [ {
+          "name" : "test_employeeLoad[员工借款单提交主流程]",
+          "uid" : "dc3c32959689b76",
+          "parentUid" : "418700a2622ea6f0ae4d6f72f88420c1",
+          "status" : "passed",
+          "time" : {
+            "start" : 1611507748296,
+            "stop" : 1611507771630,
+            "duration" : 23334
+          },
+          "flaky" : false,
+          "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试员工借款单', 'operationSubTypeId': 'UI通用1', 'expenseAmount': '100.10', 'projectName': '刘志成项目', 'casename': '员工借款单提交主流程'}" ]
+        }, {
+          "name" : "test_businessApprove",
+          "uid" : "52187668c839ef01",
+          "parentUid" : "418700a2622ea6f0ae4d6f72f88420c1",
+          "status" : "passed",
+          "time" : {
+            "start" : 1611507771637,
+            "stop" : 1611507794430,
+            "duration" : 22793
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_sharingCenterApprove",
+          "uid" : "ca0dcea7e8e01582",
+          "parentUid" : "418700a2622ea6f0ae4d6f72f88420c1",
+          "status" : "passed",
+          "time" : {
+            "start" : 1611507794441,
+            "stop" : 1611507903716,
+            "duration" : 109275
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "418700a2622ea6f0ae4d6f72f88420c1"
+      } ],
+      "uid" : "f14bcc56d61088c219a5332a17e38f26"
+    }, {
+      "name" : "test_employeeRepaymentBoe",
+      "children" : [ {
+        "name" : "TestEmployeeRepaymentBoe",
+        "children" : [ {
+          "name" : "test_employeeRepayment[员工还款单提交主流程]",
+          "uid" : "224ec2160a2c58ea",
+          "parentUid" : "ed32fcb13d6791c45dde1f55cc51fa2c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1611507919460,
+            "stop" : 1611507946206,
+            "duration" : 26746
+          },
+          "flaky" : false,
+          "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试员工还款单', 'operationSubType': 'UI通用1', 'expenseAmount': '', 'favoriteId': 'B1', 'loanRepaymentDate': '2021-1-20', 'remark': '测试', 'casename': '员工还款单提交主流程'}" ]
+        }, {
+          "name" : "test_businessApprove",
+          "uid" : "64a58fe631eaad5b",
+          "parentUid" : "ed32fcb13d6791c45dde1f55cc51fa2c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1611507946216,
+            "stop" : 1611507968959,
+            "duration" : 22743
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_sharingCenterApprove",
+          "uid" : "51099d244cb2686",
+          "parentUid" : "ed32fcb13d6791c45dde1f55cc51fa2c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1611507968965,
+            "stop" : 1611508067136,
+            "duration" : 98171
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "ed32fcb13d6791c45dde1f55cc51fa2c"
+      } ],
+      "uid" : "5bd0bc64a7eab83e8de43f0cd3a50e66"
+    } ],
+    "uid" : "da0369c1bb0451a1d0569c40ee393fb6"
   } ]
 }

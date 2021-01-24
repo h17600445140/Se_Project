@@ -1,14 +1,14 @@
 # -*- coding:utf-8 -*-
 from selenium.webdriver.common.by import By
 
-from PageClass.common.boeCommon import BoeCommen
+from PageClass.common.boeCommon import BoeCommon
 from PageClass.easIndexPageClass.easIndexPage import EasIndexPage
 
 
 
 
 # 差旅报账单实例
-class NewDomesticTravelBoePage(EasIndexPage,BoeCommen):
+class NewDomesticTravelBoePage(EasIndexPage,BoeCommon):
 
     def __init__(self, driver):
         EasIndexPage.__init__(self, driver)
