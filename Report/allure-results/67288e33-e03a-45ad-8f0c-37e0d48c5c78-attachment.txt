@@ -1,0 +1,31 @@
+[32mINFO    [0m WebUIAuto:log.py:40 请求链接，链接地址为：http://fol.ztessc.com.cn/eas
+[35mDEBUG   [0m WebUIAuto:log.py:37 输入账户，账户为：hc001
+[35mDEBUG   [0m WebUIAuto:log.py:37 输入密码，密码为：LMJT123456
+[32mINFO    [0m WebUIAuto:log.py:40 点击登录按钮
+[32mINFO    [0m WebUIAuto:log.py:40 成功登录界面：easHost
+[32mINFO    [0m WebUIAuto:log.py:40  ----- 单据流程开始 ----- 
+[32mINFO    [0m WebUIAuto:log.py:40 打开事项申请单据选择页面
+[32mINFO    [0m WebUIAuto:log.py:40 打开的单据类型为：通用费用申请单 ,选择的单据业务类型为: UI通用
+[32mINFO    [0m WebUIAuto:log.py:40 是否正常打开单据: True
+[35mDEBUG   [0m WebUIAuto:log.py:37 所有窗口为：['CDwindow-85D100FCC5BA74FC32C57E49815564F1', 'CDwindow-58342CDA0E5519AE9930136523357710']
+[35mDEBUG   [0m WebUIAuto:log.py:37 当前窗口为：CDwindow-58342CDA0E5519AE9930136523357710
+[32mINFO    [0m WebUIAuto:log.py:40 当前提单单据号为：LMJT-BX2101250144
+[32mINFO    [0m WebUIAuto:log.py:40 选择的业务类型为：UI通用
+[32mINFO    [0m WebUIAuto:log.py:40 输入的备注为：测试通用费用申请单
+[32mINFO    [0m WebUIAuto:log.py:40 选择的申请类型为：UI通用1
+[32mINFO    [0m WebUIAuto:log.py:40 输入的申请金额为：100.10
+[32mINFO    [0m WebUIAuto:log.py:40 输入的申请说明为：测试通用费用申请单
+[32mINFO    [0m WebUIAuto:log.py:40 点击提交单据
+[32mINFO    [0m WebUIAuto:log.py:40 点击单据关闭按钮
+[35mDEBUG   [0m WebUIAuto:log.py:37 所有窗口为：['CDwindow-85D100FCC5BA74FC32C57E49815564F1']
+[35mDEBUG   [0m WebUIAuto:log.py:37 当前窗口为：CDwindow-85D100FCC5BA74FC32C57E49815564F1
+[32mINFO    [0m WebUIAuto:log.py:40 点击我的单据
+[32mINFO    [0m WebUIAuto:log.py:40 点击更多按钮
+[35mDEBUG   [0m WebUIAuto:log.py:37 所有窗口为：['CDwindow-85D100FCC5BA74FC32C57E49815564F1', 'CDwindow-4C2FD2B7450D4A7C50BD7C1B7B7948C7']
+[35mDEBUG   [0m WebUIAuto:log.py:37 当前窗口为：CDwindow-4C2FD2B7450D4A7C50BD7C1B7B7948C7
+[32mINFO    [0m WebUIAuto:log.py:40 输入查询的单据编号为：LMJT-BX2101250144
+[32mINFO    [0m WebUIAuto:log.py:40 点击查询按钮
+[32mINFO    [0m WebUIAuto:log.py:40 Success ， 查询出对应结果
+[32mINFO    [0m WebUIAuto:log.py:40  ----- 单据提交流程结束 ----- 
+[32mINFO    [0m WebUIAuto:log.py:40 测试用例执行成功
+[32mINFO    [0m WebUIAuto:log.py:40 进行截图操作

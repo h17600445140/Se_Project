@@ -1,0 +1,125 @@
+{
+  "uid" : "7c84d1ce3744895b",
+  "name" : "test_sharingCenterApprove",
+  "fullName" : "Testcases.boeApplyPageTest.test_applyTravelBoe.TestApplyTravelBoe#test_sharingCenterApprove",
+  "historyId" : "ecab88573bbb1455101bb9f5d812730f",
+  "time" : {
+    "start" : 1611506907774,
+    "stop" : 1611507004748,
+    "duration" : 96974
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1611506841949,
+      "stop" : 1611506855167,
+      "duration" : 13218
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "差旅申请单共享中心界面财务审批步骤",
+      "time" : {
+        "start" : 1611506907774,
+        "stop" : 1611507004748,
+        "duration" : 96974
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "2b5f46f19939cefa",
+      "name" : "log",
+      "source" : "2b5f46f19939cefa.txt",
+      "type" : "text/plain",
+      "size" : 8757
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1611507004750,
+      "stop" : 1611507007022,
+      "duration" : 2272
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "差旅申请单流程"
+  }, {
+    "name" : "story",
+    "value" : "差旅申请单共享中心界面财务审批"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(depends=['submit'])"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.boeApplyPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_applyTravelBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestApplyTravelBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "14820-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.boeApplyPageTest.test_applyTravelBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(depends=['submit'])" ]
+  },
+  "source" : "7c84d1ce3744895b.json",
+  "parameterValues" : [ ]
+}

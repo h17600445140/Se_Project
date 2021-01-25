@@ -1,0 +1,35 @@
+---
+comFeeApplyBoe:
+        -   operationType: 'UI通用'
+            boeAbstract: '测试通用费用申请单'
+            operationSubTypeId: 'UI通用1'
+            expenseAmount: '100.10'
+            remark: '测试通用费用申请单'
+            casename: '通用费用申请单提交主流程'
+
+applyTravelBoe:
+        -   operationType: 'UI通用'
+            boeAbstract: '测试差旅申请单'
+            applyAmount: '100.10'
+            beginDateStr: '2021-1-1'
+            endDateStr: '2021-1-20'
+            travelTask: '会议出差'
+            fromCity: '长沙'
+            toCity: '北京'
+            transportation: '动卧'
+            casename: '差旅申请单提交主流程'
+
+applyInternationalTravelBoe:
+        -   operationType: 'UI通用'
+            boeAbstract: '测试差旅申请单（国际）'
+            applyAmount: '100.10'
+            beginDateStr: '2021-1-1'
+            endDateStr: '2021-1-20'
+            fromCity: '长沙'
+            toCity: '北京'
+            transportation: '动卧'
+            travelTask: '会议出差'
+            projectName: '刘志成项目'
+            casename: '测试差旅申请单（国际）提交主流程'
+
+

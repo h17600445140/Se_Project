@@ -1,0 +1,37 @@
+[32mINFO    [0m WebUIAuto:log.py:40 请求链接，链接地址为：http://fol.ztessc.com.cn/eas
+[35mDEBUG   [0m WebUIAuto:log.py:37 输入账户，账户为：hc001
+[35mDEBUG   [0m WebUIAuto:log.py:37 输入密码，密码为：LMJT123456
+[32mINFO    [0m WebUIAuto:log.py:40 点击登录按钮
+[32mINFO    [0m WebUIAuto:log.py:40 成功登录界面：easHost
+[32mINFO    [0m WebUIAuto:log.py:40  ----- 单据流程开始 ----- 
+[32mINFO    [0m WebUIAuto:log.py:40 打开借款还款单据选择页面
+[32mINFO    [0m WebUIAuto:log.py:40 打开的单据类型为：员工还款单 ,选择的单据业务类型为: UI通用
+[32mINFO    [0m WebUIAuto:log.py:40 是否正常打开单据: False
+[1m[31mERROR   [0m WebUIAuto:log.py:46 Exception: Don't find Boe, please check config
+[1m[31mERROR   [0m WebUIAuto:log.py:46  Don't find Boe, Try again
+[32mINFO    [0m WebUIAuto:log.py:40 打开的单据类型为：员工还款单 ,选择的单据业务类型为: UI通用
+[32mINFO    [0m WebUIAuto:log.py:40 是否正常打开单据: True
+[35mDEBUG   [0m WebUIAuto:log.py:37 所有窗口为：['CDwindow-489131A3AD165D80669899C980DD8CF2', 'CDwindow-30C215C58AA2A0E16C5D517F8991BBC8']
+[35mDEBUG   [0m WebUIAuto:log.py:37 当前窗口为：CDwindow-30C215C58AA2A0E16C5D517F8991BBC8
+[32mINFO    [0m WebUIAuto:log.py:40 当前提单单据号为：LMJT-BX2101250173
+[32mINFO    [0m WebUIAuto:log.py:40 选择的业务类型为：UI通用
+[32mINFO    [0m WebUIAuto:log.py:40 输入的备注为：测试员工还款单
+[32mINFO    [0m WebUIAuto:log.py:40 选择的还款方式为：UI通用1
+[32mINFO    [0m WebUIAuto:log.py:40 还款金额为：100.10
+[32mINFO    [0m WebUIAuto:log.py:40 选择的还款账户为：B1
+[32mINFO    [0m WebUIAuto:log.py:40 选择的还款日期为：2021-1-20
+[32mINFO    [0m WebUIAuto:log.py:40 还款说明为：测试
+[32mINFO    [0m WebUIAuto:log.py:40 点击提交单据
+[32mINFO    [0m WebUIAuto:log.py:40 点击单据关闭按钮
+[35mDEBUG   [0m WebUIAuto:log.py:37 所有窗口为：['CDwindow-489131A3AD165D80669899C980DD8CF2']
+[35mDEBUG   [0m WebUIAuto:log.py:37 当前窗口为：CDwindow-489131A3AD165D80669899C980DD8CF2
+[32mINFO    [0m WebUIAuto:log.py:40 点击我的单据
+[32mINFO    [0m WebUIAuto:log.py:40 点击更多按钮
+[35mDEBUG   [0m WebUIAuto:log.py:37 所有窗口为：['CDwindow-489131A3AD165D80669899C980DD8CF2', 'CDwindow-9123CBC5BF2DD047E2A53C934724DECC']
+[35mDEBUG   [0m WebUIAuto:log.py:37 当前窗口为：CDwindow-9123CBC5BF2DD047E2A53C934724DECC
+[32mINFO    [0m WebUIAuto:log.py:40 输入查询的单据编号为：LMJT-BX2101250173
+[32mINFO    [0m WebUIAuto:log.py:40 点击查询按钮
+[32mINFO    [0m WebUIAuto:log.py:40 Success ， 查询出对应结果
+[32mINFO    [0m WebUIAuto:log.py:40  ----- 单据提交流程结束 ----- 
+[32mINFO    [0m WebUIAuto:log.py:40 测试用例执行成功
+[32mINFO    [0m WebUIAuto:log.py:40 进行截图操作

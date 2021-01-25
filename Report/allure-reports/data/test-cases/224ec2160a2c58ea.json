@@ -1,0 +1,335 @@
+{
+  "uid" : "224ec2160a2c58ea",
+  "name" : "test_employeeRepayment[员工还款单提交主流程]",
+  "fullName" : "Testcases.boeBorrowPageTest.test_employeeRepaymentBoe.TestEmployeeRepaymentBoe#test_employeeRepayment",
+  "historyId" : "911e70628df21a2c999da2e5104cb2af",
+  "time" : {
+    "start" : 1611507919460,
+    "stop" : 1611507946206,
+    "duration" : 26746
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1611507906006,
+      "stop" : 1611507919458,
+      "duration" : 13452
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "employeeRepaymentBoe_testdata",
+    "time" : {
+      "start" : 1611507919458,
+      "stop" : 1611507919458,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "员工还款单费用报销界面单据提交步骤",
+      "time" : {
+        "start" : 1611507919460,
+        "stop" : 1611507946206,
+        "duration" : 26746
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "打开借款还款单据选择页面",
+        "time" : {
+          "start" : 1611507919460,
+          "stop" : 1611507920566,
+          "duration" : 1106
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "打开的单据类型为：员工还款单 ,选择的单据业务类型为: UI通用",
+        "time" : {
+          "start" : 1611507920566,
+          "stop" : 1611507923173,
+          "duration" : 2607
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "输入业务类型",
+        "time" : {
+          "start" : 1611507928414,
+          "stop" : 1611507928937,
+          "duration" : 523
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "输入备注",
+        "time" : {
+          "start" : 1611507928937,
+          "stop" : 1611507929247,
+          "duration" : 310
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "输入业务类型",
+        "time" : {
+          "start" : 1611507929247,
+          "stop" : 1611507930117,
+          "duration" : 870
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "输入还款金额",
+        "time" : {
+          "start" : 1611507930117,
+          "stop" : 1611507931049,
+          "duration" : 932
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "输入收款账户",
+        "time" : {
+          "start" : 1611507931049,
+          "stop" : 1611507932420,
+          "duration" : 1371
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "输入还款日期",
+        "time" : {
+          "start" : 1611507932420,
+          "stop" : 1611507935042,
+          "duration" : 2622
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "输入还困说明",
+        "time" : {
+          "start" : 1611507935042,
+          "stop" : 1611507935181,
+          "duration" : 139
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "点击单据提交",
+        "time" : {
+          "start" : 1611507935181,
+          "stop" : 1611507935336,
+          "duration" : 155
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "点击单据关闭按钮",
+        "time" : {
+          "start" : 1611507935336,
+          "stop" : 1611507942232,
+          "duration" : 6896
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "进行单据生成校验",
+        "time" : {
+          "start" : 1611507942232,
+          "stop" : 1611507945765,
+          "duration" : 3533
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ {
+        "uid" : "c77a21c3786f41f8",
+        "name" : "2021-01-25 01-05-45successscreenshot",
+        "source" : "c77a21c3786f41f8.png",
+        "type" : "image/png",
+        "size" : 91074
+      } ],
+      "parameters" : [ {
+        "name" : "employeeRepaymentBoe_testdata",
+        "value" : "{'operationType': 'UI通用', 'boeAbstract': '测试员工还款单', 'operationSubType': 'UI通用1', 'expenseAmount': '', 'favoriteId': 'B1', 'loanRepaymentDate': '2021-1-20', 'remark': '测试', 'casename': '员工还款单提交主流程'}"
+      } ],
+      "stepsCount" : 12,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "7be0f0d0f4c8e395",
+      "name" : "log",
+      "source" : "7be0f0d0f4c8e395.txt",
+      "type" : "text/plain",
+      "size" : 2980
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 13,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1611508067138,
+      "stop" : 1611508069417,
+      "duration" : 2279
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "员工还款单费用报销界面单据提交"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "员工还款单流程"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(name='submit')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.boeBorrowPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_employeeRepaymentBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestEmployeeRepaymentBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "14820-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.boeBorrowPageTest.test_employeeRepaymentBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "employeeRepaymentBoe_testdata",
+    "value" : "{'operationType': 'UI通用', 'boeAbstract': '测试员工还款单', 'operationSubType': 'UI通用1', 'expenseAmount': '', 'favoriteId': 'B1', 'loanRepaymentDate': '2021-1-20', 'remark': '测试', 'casename': '员工还款单提交主流程'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(name='submit')" ]
+  },
+  "source" : "224ec2160a2c58ea.json",
+  "parameterValues" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试员工还款单', 'operationSubType': 'UI通用1', 'expenseAmount': '', 'favoriteId': 'B1', 'loanRepaymentDate': '2021-1-20', 'remark': '测试', 'casename': '员工还款单提交主流程'}" ]
+}

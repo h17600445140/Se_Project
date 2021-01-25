@@ -1,0 +1,18 @@
+---
+employeeLoadBoe:
+        -   operationType: 'UI通用'
+            boeAbstract: '测试员工借款单'
+            operationSubTypeId: 'UI通用1'
+            expenseAmount: '100.10'
+            projectName: '刘志成项目'
+            casename: '员工借款单提交主流程'
+
+employeeRepaymentBoe:
+        -   operationType: 'UI通用'
+            boeAbstract: '测试员工还款单'
+            operationSubType: 'UI通用1'
+            expenseAmount: ''
+            favoriteId: 'B1'
+            loanRepaymentDate: '2021-1-20'
+            remark: '测试'
+            casename: '员工还款单提交主流程'

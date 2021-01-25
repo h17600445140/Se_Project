@@ -1,0 +1,365 @@
+{
+  "uid" : "f2796e7c1d1f2214",
+  "name" : "test_applyTravel[差旅申请单提交主流程]",
+  "fullName" : "Testcases.boeApplyPageTest.test_applyTravelBoe.TestApplyTravelBoe#test_applyTravel",
+  "historyId" : "6b9a0539c4b0e7ca053c2a097706f574",
+  "time" : {
+    "start" : 1611506855169,
+    "stop" : 1611506884702,
+    "duration" : 29533
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1611506841949,
+      "stop" : 1611506855167,
+      "duration" : 13218
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "applyTravelBoe_testdata",
+    "time" : {
+      "start" : 1611506855168,
+      "stop" : 1611506855168,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "差旅申请单费用报销界面单据提交步骤",
+      "time" : {
+        "start" : 1611506855170,
+        "stop" : 1611506884702,
+        "duration" : 29532
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "打开事项申请单据选择页面",
+        "time" : {
+          "start" : 1611506855170,
+          "stop" : 1611506856148,
+          "duration" : 978
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "打开的单据类型为：差旅申请单 ,选择的单据业务类型为: UI通用",
+        "time" : {
+          "start" : 1611506856148,
+          "stop" : 1611506857453,
+          "duration" : 1305
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "输入业务类型",
+        "time" : {
+          "start" : 1611506860168,
+          "stop" : 1611506860675,
+          "duration" : 507
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "输入备注",
+        "time" : {
+          "start" : 1611506860675,
+          "stop" : 1611506861025,
+          "duration" : 350
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "输入金额",
+        "time" : {
+          "start" : 1611506861025,
+          "stop" : 1611506861884,
+          "duration" : 859
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "输入开始时间：2021-1-1",
+        "time" : {
+          "start" : 1611506861884,
+          "stop" : 1611506864430,
+          "duration" : 2546
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "输入结束时间：2021-1-20",
+        "time" : {
+          "start" : 1611506864430,
+          "stop" : 1611506866896,
+          "duration" : 2466
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "输入出差任务",
+        "time" : {
+          "start" : 1611506866896,
+          "stop" : 1611506868518,
+          "duration" : 1622
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "输入出发城市",
+        "time" : {
+          "start" : 1611506868518,
+          "stop" : 1611506869943,
+          "duration" : 1425
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "输入到达城市",
+        "time" : {
+          "start" : 1611506869943,
+          "stop" : 1611506871309,
+          "duration" : 1366
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "输入交通工具",
+        "time" : {
+          "start" : 1611506871309,
+          "stop" : 1611506873693,
+          "duration" : 2384
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "点击单据提交",
+        "time" : {
+          "start" : 1611506873693,
+          "stop" : 1611506873865,
+          "duration" : 172
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "点击单据关闭按钮",
+        "time" : {
+          "start" : 1611506873865,
+          "stop" : 1611506880660,
+          "duration" : 6795
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "进行单据生成校验",
+        "time" : {
+          "start" : 1611506880660,
+          "stop" : 1611506884269,
+          "duration" : 3609
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ {
+        "uid" : "121ba085b4492512",
+        "name" : "2021-01-25 00-48-04successscreenshot",
+        "source" : "121ba085b4492512.png",
+        "type" : "image/png",
+        "size" : 91148
+      } ],
+      "parameters" : [ {
+        "name" : "applyTravelBoe_testdata",
+        "value" : "{'operationType': 'UI通用', 'boeAbstract': '测试差旅申请单', 'applyAmount': '100.10', 'beginDateStr': '2021-1-1', 'endDateStr': '2021-1-20', 'travelTask': '会议出差', 'fromCity': '长沙', 'toCity': '北京', 'transportation': '动卧', 'casename': '差旅申请单提交主流程'}"
+      } ],
+      "stepsCount" : 14,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "ca0d74622ee1940a",
+      "name" : "log",
+      "source" : "ca0d74622ee1940a.txt",
+      "type" : "text/plain",
+      "size" : 2932
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 15,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1611507004750,
+      "stop" : 1611507007022,
+      "duration" : 2272
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "差旅申请单费用报销界面单据提交"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "差旅申请单流程"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(name='submit')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.boeApplyPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_applyTravelBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestApplyTravelBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "14820-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.boeApplyPageTest.test_applyTravelBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "applyTravelBoe_testdata",
+    "value" : "{'operationType': 'UI通用', 'boeAbstract': '测试差旅申请单', 'applyAmount': '100.10', 'beginDateStr': '2021-1-1', 'endDateStr': '2021-1-20', 'travelTask': '会议出差', 'fromCity': '长沙', 'toCity': '北京', 'transportation': '动卧', 'casename': '差旅申请单提交主流程'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(name='submit')" ]
+  },
+  "source" : "f2796e7c1d1f2214.json",
+  "parameterValues" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试差旅申请单', 'applyAmount': '100.10', 'beginDateStr': '2021-1-1', 'endDateStr': '2021-1-20', 'travelTask': '会议出差', 'fromCity': '长沙', 'toCity': '北京', 'transportation': '动卧', 'casename': '差旅申请单提交主流程'}" ]
+}

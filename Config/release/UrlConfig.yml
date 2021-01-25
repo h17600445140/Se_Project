@@ -1,0 +1,18 @@
+url:
+  publicHost: http://fol.ztessc.com.cn/public
+  baseHost: http://fol.ztessc.com.cn/base
+  easHost: http://fol.ztessc.com.cn/eas
+  fscHost: http://fol.ztessc.com.cn/fsc
+  timerHost: http://fol.ztessc.com.cn/ip/timerManage
+  invoiceIpoolHost: http://fol.ztessc.com.cn/ipool
+  fscAuditList: http://fol.ztessc.com.cn/fsc/auditList
+  fscAuditAdjustDirector: http://fol.ztessc.com.cn/fsc/auditAdjustDirector
+user:
+  account: hc001
+  password: LMJT123456
+leader:
+  account: hc002
+  password: LMJT123456
+finance:
+  account: hc003
+  password: zfs123456

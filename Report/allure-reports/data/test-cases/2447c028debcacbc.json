@@ -1,0 +1,305 @@
+{
+  "uid" : "2447c028debcacbc",
+  "name" : "test_newDomesticTravel[差旅报账单提交主流程]",
+  "fullName" : "Testcases.boeReimbursementPageTest.test_newDomesticTravelBoe.TestNewDomesticTravelBoe#test_newDomesticTravel",
+  "historyId" : "77fa4af3d4440cf3ea0f26c73e5e0621",
+  "time" : {
+    "start" : 1611507360539,
+    "stop" : 1611507401781,
+    "duration" : 41242
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "newDomesticTravelBoe_testdata",
+    "time" : {
+      "start" : 1611507360538,
+      "stop" : 1611507360538,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1611507347108,
+      "stop" : 1611507360538,
+      "duration" : 13430
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "差旅报账单费用报销界面单据提交步骤",
+      "time" : {
+        "start" : 1611507360540,
+        "stop" : 1611507401781,
+        "duration" : 41241
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "打开费用报销单据选择页面",
+        "time" : {
+          "start" : 1611507360541,
+          "stop" : 1611507361572,
+          "duration" : 1031
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "打开的单据类型为：差旅报账单 ,选择的单据业务类型为: UI通用",
+        "time" : {
+          "start" : 1611507361572,
+          "stop" : 1611507362979,
+          "duration" : 1407
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "输入业务类型",
+        "time" : {
+          "start" : 1611507366951,
+          "stop" : 1611507367510,
+          "duration" : 559
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "输入备注",
+        "time" : {
+          "start" : 1611507367510,
+          "stop" : 1611507367933,
+          "duration" : 423
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "增加发票",
+        "time" : {
+          "start" : 1611507367933,
+          "stop" : 1611507384844,
+          "duration" : 16911
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "选择部门",
+        "time" : {
+          "start" : 1611507384845,
+          "stop" : 1611507387253,
+          "duration" : 2408
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "输入项目",
+        "time" : {
+          "start" : 1611507387253,
+          "stop" : 1611507388703,
+          "duration" : 1450
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "点击单据提交",
+        "time" : {
+          "start" : 1611507388703,
+          "stop" : 1611507388921,
+          "duration" : 218
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "点击单据关闭按钮",
+        "time" : {
+          "start" : 1611507388921,
+          "stop" : 1611507397488,
+          "duration" : 8567
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "进行单据生成校验",
+        "time" : {
+          "start" : 1611507397488,
+          "stop" : 1611507401292,
+          "duration" : 3804
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ {
+        "uid" : "60af291e3fd568cd",
+        "name" : "2021-01-25 00-56-41successscreenshot",
+        "source" : "60af291e3fd568cd.png",
+        "type" : "image/png",
+        "size" : 91385
+      } ],
+      "parameters" : [ {
+        "name" : "newDomesticTravelBoe_testdata",
+        "value" : "{'operationType': 'UI通用', 'boeAbstract': '测试差旅报账单', 'projectName': '刘志成项目', 'deptCode': 'UIdp', 'deptName': 'UI部门', 'trainInvoice': [{'invoiceDate': '2021-1-1', 'invoicePersonType': '内部人员', 'invoicePersonName': 'hc1', 'invoiceFromCity': '长沙', 'invoiceToCity': '上海', 'invoiceSiteType': '二等座（高铁/动车）', 'invoiceTicketFee': '500.00', 'invoiceIsReplace': '否'}], 'casename': '差旅报账单提交主流程'}"
+      } ],
+      "stepsCount" : 10,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "b0071fab1d39cadd",
+      "name" : "log",
+      "source" : "b0071fab1d39cadd.txt",
+      "type" : "text/plain",
+      "size" : 2699
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 11,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1611507526511,
+      "stop" : 1611507528747,
+      "duration" : 2236
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "差旅报账单流程"
+  }, {
+    "name" : "story",
+    "value" : "差旅报账单费用报销界面单据提交"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(name='submit')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.boeReimbursementPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_newDomesticTravelBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewDomesticTravelBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "14820-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.boeReimbursementPageTest.test_newDomesticTravelBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "newDomesticTravelBoe_testdata",
+    "value" : "{'operationType': 'UI通用', 'boeAbstract': '测试差旅报账单', 'projectName': '刘志成项目', 'deptCode': 'UIdp', 'deptName': 'UI部门', 'trainInvoice': [{'invoiceDate': '2021-1-1', 'invoicePersonType': '内部人员', 'invoicePersonName': 'hc1', 'invoiceFromCity': '长沙', 'invoiceToCity': '上海', 'invoiceSiteType': '二等座（高铁/动车）', 'invoiceTicketFee': '500.00', 'invoiceIsReplace': '否'}], 'casename': '差旅报账单提交主流程'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(name='submit')" ]
+  },
+  "source" : "2447c028debcacbc.json",
+  "parameterValues" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试差旅报账单', 'projectName': '刘志成项目', 'deptCode': 'UIdp', 'deptName': 'UI部门', 'trainInvoice': [{'invoiceDate': '2021-1-1', 'invoicePersonType': '内部人员', 'invoicePersonName': 'hc1', 'invoiceFromCity': '长沙', 'invoiceToCity': '上海', 'invoiceSiteType': '二等座（高铁/动车）', 'invoiceTicketFee': '500.00', 'invoiceIsReplace': '否'}], 'casename': '差旅报账单提交主流程'}" ]
+}
