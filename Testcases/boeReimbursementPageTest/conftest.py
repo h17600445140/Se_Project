@@ -31,4 +31,6 @@ def newMultiDomesticTravelBoe_testdata(request) ->dict:
     return request.param
 
 if __name__ == '__main__':
-    pass
+    # newDomesticTravelBoe_testdata['boeAbstract']
+    print('---------------------')
+    print(newDomesticTravelBoe_data)

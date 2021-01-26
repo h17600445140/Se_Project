@@ -4,8 +4,7 @@ from PageClass.fscIndexPageClass.auditAdjustDirectorPage import AuditAdjustDirec
 from PageClass.fscIndexPageClass.myAuditListPage import MyAuditListPage
 from Testcases.common.handleTimer import HandleTimer
 from Testcases.common.loginDepend import LoginDepend
-from Util import logger
-
+from Util import logger, config
 
 
 class SharingCenterApprove():
@@ -35,24 +34,25 @@ class SharingCenterApprove():
             self._handleTimer.runTimer()
             self._auditAdjustDirectorPage.input_selectBoeNum(self.boeNum)
             self._auditAdjustDirectorPage.click_selectButton()
+            self._auditAdjustDirectorPage.click_selectResult()
 
         self._auditAdjustDirectorPage.click_taskTakeToBack()
         self._auditAdjustDirectorPage.click_selectResult()
 
         # 分配到组
         try:
-            self._auditAdjustDirectorPage.choiceGroup('自动化财务初审')
+            self._auditAdjustDirectorPage.choiceGroup(config.getUrlDict()['Approval']['approvalGroupC'])
         except:
             self._auditAdjustDirectorPage.click_selectResult()
-            self._auditAdjustDirectorPage.choiceGroup('自动化财务初审')
+            self._auditAdjustDirectorPage.choiceGroup(config.getUrlDict()['Approval']['approvalGroupC'])
 
         # 分配到人
         self._auditAdjustDirectorPage.click_selectResult()
         try:
-            self._auditAdjustDirectorPage.choiceOperatorUser('hc3')
+            self._auditAdjustDirectorPage.choiceOperatorUser(config.getUrlDict()['Approval']['approvalUserC'])
         except:
             self._auditAdjustDirectorPage.click_selectResult()
-            self._auditAdjustDirectorPage.choiceOperatorUser('hc3')
+            self._auditAdjustDirectorPage.choiceOperatorUser(config.getUrlDict()['Approval']['approvalUserC'])
 
         self._auditAdjustDirectorPage.gotoAuditList()
         self._myAuditListPage.input_boeNumQuery(self.boeNum)
@@ -93,19 +93,19 @@ class SharingCenterApprove():
 
         # 分配到组
         try:
-            self._auditAdjustDirectorPage.choiceGroup('自动化财务复审')
+            self._auditAdjustDirectorPage.choiceGroup(config.getUrlDict()['Approval']['approvalGroupF'])
         except:
             self._auditAdjustDirectorPage.click_selectResult()
-            self._auditAdjustDirectorPage.choiceGroup('自动化财务复审')
+            self._auditAdjustDirectorPage.choiceGroup(config.getUrlDict()['Approval']['approvalGroupF'])
 
         self._auditAdjustDirectorPage.click_selectResult()
 
         # 分配到人
         try:
-            self._auditAdjustDirectorPage.choiceOperatorUser('hc3')
+            self._auditAdjustDirectorPage.choiceOperatorUser(config.getUrlDict()['Approval']['approvalUserF'])
         except:
             self._auditAdjustDirectorPage.click_selectResult()
-            self._auditAdjustDirectorPage.choiceOperatorUser('hc3')
+            self._auditAdjustDirectorPage.choiceOperatorUser(config.getUrlDict()['Approval']['approvalUserF'])
 
         self._auditAdjustDirectorPage.gotoAuditList()
         self._myAuditListPage.input_boeNumQuery(self.boeNum)
@@ -121,7 +121,7 @@ class SharingCenterApprove():
         self.login.driver.quit()
 
 if __name__ == '__main__':
-    a = SharingCenterApprove('LMJT-BX2101240302')
+    a = SharingCenterApprove('hcGroup-BX210125101')
     a.sharingCenterApproveChuShen()
     a.sharingCenterApproveFuShen()
 

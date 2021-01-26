@@ -1,0 +1,73 @@
+---
+contractEditPage:
+        - contractName: 'hc合同012'
+          contractCode: 'hc00000012'
+          contractType: '租房合同'
+          contractAmount: '1000.00'
+          currency:
+                  currencyCode: 'CNY'
+                  currencyName:
+          vendorType: '供应商'
+          vendor:
+                  vendorCode: 'hcGYS1'
+                  vendorName:
+          signDate: '2021-1-15'
+          contractDataFrom: '2021-1-1'
+          contractDataTo: '2021-1-31'
+          respUser:
+                  respUserNo: '1'
+                  respUserName:
+          respDept:
+                  respDeptNo: 'AD'
+                  respDeptCode: 'A部门'
+          contractScope: '非公共合同'
+          frameworkContract: '是'
+          haveImage: '否'
+          casename: '框架合同新增主流程'
+
+        - contractName: 'hc合同014'
+          contractCode: 'hc00000014'
+          contractType: '租房合同'
+          contractAmount: '1000.00'
+          currency:
+                  currencyCode: 'CNY'
+                  currencyName:
+          vendorType: '供应商'
+          vendor:
+                  vendorCode: 'hcGYS1'
+                  vendorName:
+          signDate: '2021-1-15'
+          contractDataFrom: '2021-1-1'
+          contractDataTo: '2021-1-31'
+          respUser:
+                  respUserNo: '1'
+                  respUserName:
+          respDept:
+                  respDeptNo: 'AD'
+                  respDeptCode: 'A部门'
+          contractScope: '非公共合同'
+          frameworkContract: '否'
+          haveImage: '否'
+          casename: '非框架合同新增主流程'
+          paymentDetail:
+                  - paymentType: '预付款'
+                    paymentCondition: '预付款计划'
+                    plansDate: '2020-1-1'
+                    settlementUnit: 'hcGYS1'
+                    settlementAmount: '300.00'
+                    controlType: '通过'
+                    paymentMethod: 'hc现金+不挂账'
+                  - paymentType: '质保金付款'
+                    paymentCondition: '质保金付款计划'
+                    plansDate: '2020-2-1'
+                    settlementUnit: 'hcGYS1'
+                    settlementAmount: '500.00'
+                    controlType: '警告'
+                    paymentMethod: 'hc现金+不挂账'
+                  - paymentType: '项目进度付款'
+                    paymentCondition: '项目进度付款计划'
+                    plansDate: '2020-3-1'
+                    settlementUnit: 'hcGYS1'
+                    settlementAmount: '200.00'
+                    controlType: '禁止'
+                    paymentMethod: 'hc现金+不挂账'

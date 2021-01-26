@@ -56,17 +56,15 @@ class TestNewDomesticTravelBoe():
                 self.newDomesticTravelBoePage.click_addInvoiceButton()
                 self.newDomesticTravelBoePage.click_invoiceType()
                 # 差旅火车票新增
-                # invoiceFactory.get_invoice(self.login.driver, '火车票', 'boeInvoicePage').getTickets(
-                #     newDomesticTravelBoe_testdata['trainInvoice']['invoiceDate'],
-                #     newDomesticTravelBoe_testdata['trainInvoice']['invoicePersonType'],
-                #     newDomesticTravelBoe_testdata['trainInvoice']['invoicePersonName'],
-                #     newDomesticTravelBoe_testdata['trainInvoice']['invoiceFromCity'],
-                #     newDomesticTravelBoe_testdata['trainInvoice']['invoiceToCity'],
-                #     newDomesticTravelBoe_testdata['trainInvoice']['invoiceSiteType'],
-                #     newDomesticTravelBoe_testdata['trainInvoice']['invoiceTicketFee'],
-                #     newDomesticTravelBoe_testdata['trainInvoice']['invoiceIsReplace'])
                 invoiceFactory.get_invoice(self.login.driver, '火车票', 'boeInvoicePage').getTickets(
-                    '2021-1-10', '内部人员', 'hc1', '长沙', '天津', '二等座（高铁/动车）', '500.00', '否')
+                    newDomesticTravelBoe_testdata['trainInvoice']['invoiceDate'],
+                    newDomesticTravelBoe_testdata['trainInvoice']['invoicePersonType'],
+                    newDomesticTravelBoe_testdata['trainInvoice']['invoicePersonName'],
+                    newDomesticTravelBoe_testdata['trainInvoice']['invoiceFromCity'],
+                    newDomesticTravelBoe_testdata['trainInvoice']['invoiceToCity'],
+                    newDomesticTravelBoe_testdata['trainInvoice']['invoiceSiteType'],
+                    newDomesticTravelBoe_testdata['trainInvoice']['invoiceTicketFee'],
+                    newDomesticTravelBoe_testdata['trainInvoice']['invoiceIsReplace'])
 
             with allure.step("选择部门"):
                 self.newDomesticTravelBoePage.selectDepartment(newDomesticTravelBoe_testdata['deptCode'], newDomesticTravelBoe_testdata['deptName'])

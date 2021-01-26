@@ -16,7 +16,7 @@ newDomesticTravelBoe:
             deptCode: 'UIdp'
             deptName: 'UI部门'
             trainInvoice:
-                -   invoiceDate: '2021-1-1'
+                    invoiceDate: '2021-1-6'
                     invoicePersonType: '内部人员'
                     invoicePersonName: 'hc1'
                     invoiceFromCity: '长沙'

@@ -7,6 +7,7 @@ url:
   invoiceIpoolHost: http://fol.ztessc.com.cn/ipool
   fscAuditList: http://fol.ztessc.com.cn/fsc/auditList
   fscAuditAdjustDirector: http://fol.ztessc.com.cn/fsc/auditAdjustDirector
+
 user:
   account: hc001
   password: LMJT123456
@@ -16,3 +17,9 @@ leader:
 finance:
   account: hc003
   password: zfs123456
+
+Approval:
+  approvalGroupC: 自动化财务初审
+  approvalUserC: hc3
+  approvalGroupF: 自动化财务复审
+  approvalUserF: hc3

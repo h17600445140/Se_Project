@@ -80,7 +80,7 @@ class BoeCommon(BasePage):
         WebDriverWait(self.driver, 8).until(
             EC.visibility_of_element_located(self._approveButton))
         self.click(*self._approveButton)
-        sleep(1)
+        sleep(2)
         logger.info("点击单据审批同意")
 
 
@@ -199,93 +199,6 @@ class BoeCommon(BasePage):
 
 
     # —————————— Boe common抽象方法 ——————————
-
-    # 金额输入框输入
-    def input_amount(self, text, *loc):
-        self.click(*loc)
-        element = self.find_element(*loc)
-        ActionChains(self.driver).send_keys_to_element(element, Keys.BACKSPACE).perform()
-        ActionChains(self.driver).send_keys_to_element(element, text).perform()
-
-    # 系统编码下拉选择框选择
-    def select_option(self, option, *loc):
-        self.click(*loc)
-        sleep(1)
-        for i in range(30):
-            if i == 29:
-                logger.error('没有找到对应配置项，请检查配置')
-                raise Exception('没有找到对应配置项，请检查配置')
-            if self.get_elementText(*(loc[0], (loc[1] + '.option.{}').format(i))) == option:
-                self.moveToclick(*(loc[0], (loc[1] + '.option.{}').format(i)))
-                break
-        logger.info('选择的数据为：{}'.format(option))
-
-    # 浮动下拉框选择
-    def select_item(self, type):
-        for i in range(len(self.find_elements(*(By.CLASS_NAME, 'el-select-dropdown__item')))):
-            if self.find_elements(*(By.CLASS_NAME, 'el-select-dropdown__item'))[i].text == type:
-                element = self.find_elements(*(By.CLASS_NAME, 'el-select-dropdown__item'))[i]
-                ActionChains(self.driver).move_to_element(element).perform()
-                element.click()
-
-    # 操作日期面板
-    _calendar = (By.CLASS_NAME, 'calendar')
-    # 日期控件选择年月日
-    def select_date(self, year, month, day):
-
-        sleep(0.5)
-        # WebDriverWait(self.driver, 5).until(
-        #     EC.visibility_of_element_located( (By.CLASS_NAME, 'el-date-picker__header') ))
-
-        if len(self.find_elements(*(By.CLASS_NAME, 'el-picker-panel__body'))) > 1 :
-            dateHeaderPanel = self.find_elements(*(By.CLASS_NAME, 'el-date-picker__header'))[1]
-            dateContentPanel = self.find_elements(*(By.CLASS_NAME, 'el-picker-panel__content'))[1]
-        else:
-            dateHeaderPanel = self.find_element(*(By.CLASS_NAME, 'el-date-picker__header'))
-            dateContentPanel = self.find_element(*(By.CLASS_NAME, 'el-picker-panel__content'))
-
-        # 操作年份
-        selectedY = dateHeaderPanel.find_elements(*(By.TAG_NAME, 'span'))[0].text
-        selectedYear = selectedY.split(' ')[0]
-        if year > selectedYear:
-            num = int(year) - int(selectedYear)
-            for i in range(num):
-                dateHeaderPanel.find_elements(*(By.TAG_NAME, 'button'))[2].click()
-        elif year < selectedYear:
-            num = int(selectedYear) - int(year)
-            for i in range(num):
-                dateHeaderPanel.find_elements(*(By.TAG_NAME, 'button'))[0].click()
-        elif year == selectedYear:
-            pass
-
-        # 操作月份
-        selectedM = dateHeaderPanel.find_elements(*(By.TAG_NAME, 'span'))[1].text
-        selectedMonth = selectedM.split(' ')[0]
-        if month > selectedMonth:
-            num = int(month) - int(selectedMonth)
-            for i in range(num):
-                dateHeaderPanel.find_elements(*(By.TAG_NAME, 'button'))[3].click()
-        elif month < selectedMonth:
-            num = int(selectedMonth) - int(month)
-            for i in range(num):
-                dateHeaderPanel.find_elements(*(By.TAG_NAME, 'button'))[1].click()
-        elif month == selectedMonth:
-            pass
-
-        # 操作日
-        dayTable = dateContentPanel.find_element(*(By.CLASS_NAME, 'el-date-table'))
-        startNum = 0
-        for i in range(len(dayTable.find_elements(*(By.TAG_NAME, 'span')))):
-            if dayTable.find_elements(*(By.TAG_NAME, 'span'))[i].text == '1':
-                startNum = i
-                break
-        for i in range(startNum, len(dayTable.find_elements(*(By.TAG_NAME, 'span')))):
-            if dayTable.find_elements(*(By.TAG_NAME, 'span'))[i].text == day:
-                dayTable.find_elements(*(By.TAG_NAME, 'span'))[i].click()
-
-        if 'display: none' not in self.find_element(*(By.CLASS_NAME, 'el-picker-panel__footer')).get_attribute('style'):
-            self.find_element(*(By.CLASS_NAME, 'el-picker-panel__footer')).find_elements(*(By.TAG_NAME, 'button'))[1].click()
-
 
     # 差旅单选择年月
     def selectYearMonth(self, year, month):
