@@ -2,7 +2,7 @@
 import allure
 from PageClass.cmsIndexPageClass.contractEditPage import ContractEditPage
 from Testcases.common.loginDepend import LoginDepend
-from Util import logger
+from Util import logger, record
 
 
 @allure.feature("新建合同流程")
@@ -81,6 +81,17 @@ class TestContractEditPage(object):
 
         with allure.step("点击提交按钮"):
             self.contractEditPage.click_submitButton()
+
+            # 将合同写入记录文件
+            with allure.step("记录合同,合同名称/编号为 : {} - {}".format(contractEditPage_testdata['contractName'], contractEditPage_testdata['contractCode'])):
+                if contractEditPage_testdata['frameworkContract'] == '否':
+                    contractDict = {'noFrameworkContractName':contractEditPage_testdata['contractName'],
+                                    'noFrameworkContractCode':contractEditPage_testdata['contractCode']}
+                    record.writeDataToRecord(contractDict, type='contractData')
+                elif contractEditPage_testdata['frameworkContract'] == '是':
+                    contractDict = {'frameworkContractName': contractEditPage_testdata['contractName'],
+                                    'frameworkContractCode': contractEditPage_testdata['contractCode']}
+                    record.writeDataToRecord(contractDict, type='contractData')
 
         with allure.step("点击确认按钮"):
             self.contractEditPage.click_confirmButoon()

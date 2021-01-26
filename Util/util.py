@@ -117,6 +117,7 @@ def getNowTime():
     timeNow = strftime("%Y-%m-%d %H-%M-%S", localtime(time()))
     return timeNow
 
+
 # 单例模式
 def singleton(cls):
     # 创建一个字典用来保存类的实例对象
@@ -131,6 +132,7 @@ def singleton(cls):
 
     return _singleton
 
+
 # 写入记录文件
 def writeBoeNum(path, boeNum):
     with open(path, "r", encoding="UTF-8") as f:
@@ -139,6 +141,7 @@ def writeBoeNum(path, boeNum):
     data = Rdata
     with open(path, "w", encoding="UTF-8") as f:
         json.dump(data, f)
+
 
 # 读取记录文件
 def readBoeNum(path):
