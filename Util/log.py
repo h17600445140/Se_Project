@@ -1,4 +1,11 @@
 # -*- coding:utf-8 -*-
+"""
+
+author      :   huangchao
+fileName    :   log.py
+
+"""
+
 import logging
 import os
 import datetime

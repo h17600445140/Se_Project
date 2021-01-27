@@ -1,4 +1,13 @@
 # -*- coding:utf-8 -*-
+
+"""
+
+author      :   huangchao
+fileName    :   config.py
+
+"""
+
+
 import os
 import yaml
 

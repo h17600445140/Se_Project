@@ -1,5 +1,11 @@
 # -*- coding:utf-8 -*-
 
+"""
+
+author      :   huangchao
+fileName    :   dateConvert.py
+
+"""
 
 
 class DateConvert():

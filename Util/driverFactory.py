@@ -1,4 +1,11 @@
 # -*- coding:utf-8 -*-
+"""
+
+author      :   huangchao
+fileName    :   driverFactory.py
+
+"""
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from fake_useragent import UserAgent

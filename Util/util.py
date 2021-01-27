@@ -1,4 +1,11 @@
 # -*- coding:utf-8 -*-
+"""
+
+author      :   huangchao
+fileName    :   util.py
+
+"""
+
 from time import strftime, localtime, time
 from Lib.ShowapiRequest import ShowapiRequest
 from PIL import Image
