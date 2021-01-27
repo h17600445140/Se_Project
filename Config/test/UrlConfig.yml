@@ -3,6 +3,7 @@ url:
   baseHost: http://192.168.0.200/base
   easHost: http://192.168.0.200/eas
   cmsHost: http://fssc200.csztessc.com.cn:8085/cms
+  basHost: http://fssc200.csztessc.com.cn:8085/bas
   fscHost: http://192.168.0.200/fsc
   timerHost: http://192.168.0.200/ip/timerManage
   invoiceIpoolHost: http://192.168.0.200/ipool

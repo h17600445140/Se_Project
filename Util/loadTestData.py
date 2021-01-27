@@ -32,10 +32,7 @@ class LoadTestData():
     def get_ymltestdata(self, path, suitename) -> (dict, list):
         with open(path, 'r', encoding='utf-8') as f:
             cfg = f.read()
-        print(path)
-        print(suitename)
         data = yaml.load(cfg, Loader=yaml.FullLoader)
-        print(data)
         casename = [data[suitename][i]["casename"] for i in range(len(data[suitename]))]
         return data[suitename], casename
 
