@@ -441,3 +441,15 @@ ERROR - 2021-01-25 11:41:53,314 - D:\se\Se_Project\Util\log.py - log.py[:46] - �
 ERROR - 2021-01-25 11:46:23,582 - D:\se\Se_Project\Util\log.py - log.py[:46] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
 ERROR - 2021-01-25 11:47:49,782 - D:\se\Se_Project\Util\log.py - log.py[:46] - 没有找到查询结果，--- try again ---
 ERROR - 2021-01-25 11:48:51,064 - D:\se\Se_Project\Util\log.py - log.py[:46] - 没有找到查询结果，--- try again ---
+ERROR - 2021-01-27 14:44:35,895 - D:\se\Se_Project\Util\log.py - log.py[:47] - 出现异常，异常信息为：<class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-01-27 14:46:27,740 - D:\se\Se_Project\Util\log.py - log.py[:47] - 出现异常，异常信息为：<class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-01-27 14:51:22,588 - D:\se\Se_Project\Util\log.py - log.py[:47] - Exception: Don't find Boe, please check config
+ERROR - 2021-01-27 14:51:23,590 - D:\se\Se_Project\Util\log.py - log.py[:47] -  Don't find Boe, Try again
+ERROR - 2021-01-27 14:52:08,268 - D:\se\Se_Project\Util\log.py - log.py[:47] - 没有找到查询结果，--- try again ---
+ERROR - 2021-01-27 14:52:23,107 - D:\se\Se_Project\Util\log.py - log.py[:47] - 没有找到查询结果，--- try again ---
+ERROR - 2021-01-27 14:52:30,522 - D:\se\Se_Project\Util\log.py - log.py[:47] - 出现异常，异常信息为：<class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-01-27 14:53:51,586 - D:\se\Se_Project\Util\log.py - log.py[:47] - 没有找到查询结果，--- try again ---
+ERROR - 2021-01-27 14:54:23,758 - D:\se\Se_Project\Util\log.py - log.py[:47] - 出现异常，异常信息为：<class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-01-27 14:55:45,499 - D:\se\Se_Project\Util\log.py - log.py[:47] - 没有找到查询结果，--- try again ---
+ERROR - 2021-01-27 14:56:46,227 - D:\se\Se_Project\Util\log.py - log.py[:47] - 没有找到查询结果，--- try again ---
+ERROR - 2021-01-27 14:57:02,566 - D:\se\Se_Project\Util\log.py - log.py[:47] - 出现异常，异常信息为：<class 'selenium.common.exceptions.TimeoutException'>

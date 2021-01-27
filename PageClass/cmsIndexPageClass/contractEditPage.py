@@ -23,7 +23,7 @@ class ContractEditPage(CmsIndexPage):
         self.click(*self._submitButton)
         logger.info('点击提交按钮')
 
-    # 确认
+    # 确定
     def click_confirmButoon(self):
         sleep(1)
         self.click_button('确定')
@@ -70,18 +70,22 @@ class ContractEditPage(CmsIndexPage):
         try:
             targetAttribute = self.find_element(*(By.CLASS_NAME, 'el-table__row')).find_element(
             *(By.CLASS_NAME, 'el-checkbox')).get_attribute('class')
+
         except:
             sleep(1)
             targetAttribute = self.find_element(*(By.CLASS_NAME, 'el-table__row')).find_element(
             *(By.CLASS_NAME, 'el-checkbox')).get_attribute('class')
+
         if 'is-checked' not in targetAttribute:
             try:
                 self.find_element(*(By.CLASS_NAME, 'el-table__row')).find_element(
                     *(By.CLASS_NAME, 'el-checkbox')).click()
+
             except:
                 logger.warning('选中失败,重新点击选中')
                 self.find_element(*(By.CLASS_NAME, 'el-table__row')).find_element(
                     *(By.CLASS_NAME, 'el-checkbox')).click()
+
             logger.info('选择币种编码 : {}'.format(currencyCode))
             logger.info('选择币种名称 : {}'.format(currencyName))
             self.click(*(By.XPATH, '/html/body//div[3]/span/button[2]'))
@@ -108,18 +112,22 @@ class ContractEditPage(CmsIndexPage):
         try:
             targetAttribute = self.find_element(*(By.CLASS_NAME, 'el-table__row')).find_element(
                 *(By.CLASS_NAME, 'el-checkbox')).get_attribute('class')
+
         except:
             sleep(1)
             targetAttribute = self.find_element(*(By.CLASS_NAME, 'el-table__row')).find_element(
                 *(By.CLASS_NAME, 'el-checkbox')).get_attribute('class')
+
         if 'is-checked' not in targetAttribute:
             try:
                 self.find_element(*(By.CLASS_NAME, 'el-table__row')).find_element(
                     *(By.CLASS_NAME, 'el-checkbox')).click()
+
             except:
                 logger.warning('选中失败,重新点击选中')
                 self.find_element(*(By.CLASS_NAME, 'el-table__row')).find_element(
                     *(By.CLASS_NAME, 'el-checkbox')).click()
+
             logger.info('选择客商编码为 : {}'.format(vendorCode))
             logger.info('选择客商名称为 : {}'.format(vendorName))
             self.click(*(By.XPATH, '/html/body//div[3]/span/button[2]'))
@@ -205,7 +213,10 @@ class ContractEditPage(CmsIndexPage):
     _haveImage = (By.ID, 'form_haveImage')
     def selectHaveImage(self, text):
         self.click(*self._haveImage)
-        self.select_item(text)
+        try:
+            self.select_item(text)
+        except:
+            self.select_item(text)
         logger.info('是否有影像 : {}'.format(text))
 
 

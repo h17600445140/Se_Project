@@ -122,6 +122,12 @@ class BasePage(object):
         logger.debug("当前窗口为：{}".format(self.getCurrentWindowHandle()))
 
 
+    # 关闭当前窗口and切换回原来的窗口
+    def closeCurrentWindows(self):
+        self.driver.close()
+        self.switchWindow()
+
+
     # ------ 操作通用控件 ------
 
     # 点击按钮

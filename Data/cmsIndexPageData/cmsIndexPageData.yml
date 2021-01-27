@@ -1,7 +1,7 @@
 ---
 contractEditPage:
-        - contractName: 'hc合同015'
-          contractCode: 'hc00000015'
+        - contractName: 'hc合同023'
+          contractCode: 'hc00000023'
           contractType: '租房合同'
           contractAmount: '1000.00'
           currency:
@@ -25,8 +25,8 @@ contractEditPage:
           haveImage: '否'
           casename: '框架合同新增主流程'
 
-        - contractName: 'hc合同016'
-          contractCode: 'hc00000016'
+        - contractName: 'hc合同024'
+          contractCode: 'hc00000024'
           contractType: '租房合同'
           contractAmount: '1000.00'
           currency:
@@ -71,3 +71,4 @@ contractEditPage:
                     settlementAmount: '200.00'
                     controlType: '禁止'
                     paymentMethod: 'hc现金+不挂账'
+

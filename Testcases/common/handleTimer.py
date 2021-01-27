@@ -22,7 +22,11 @@ class HandleTimer():
         if self._timerType == '共享中心':
             self._timerManage.input_selectTimerName(self._timerName)
             self._timerManage.click_selectButton()
-            self._timerManage.click_sharingCenterTimer()
+            try:
+                self._timerManage.click_sharingCenterTimer()
+            except:
+                logger.warning('重试点击共享中心定时器Tab页面')
+                self._timerManage.click_sharingCenterTimer()
             self._timerManage.click_runTimer()
             self._timerManage.back()
 

@@ -95,7 +95,7 @@ class TestComFeeApplyBoe(object):
     @allure.story("通用费用申请费用报销界面业务审批")
     @allure.step("通用费用申请费用报销界面业务审批步骤")
     @pytest.mark.dependency(depends=["submit"] )
-    def test_businessApprove(self):
+    def test_businessApprove(self, comFeeApplyBoe_testdata):
         logger.info(" ----- 单据业务审批开始 ----- ")
         global boeNum
         self.businessApprove = BusinessApprove(boeNum)
@@ -107,7 +107,7 @@ class TestComFeeApplyBoe(object):
     @allure.story("通用费用申请共享中心界面财务审批")
     @allure.step("通用费用申请共享中心界面财务审批步骤")
     @pytest.mark.dependency(depends=["submit"])
-    def test_sharingCenterApprove(self):
+    def test_sharingCenterApprove(self, comFeeApplyBoe_testdata):
         logger.info(" ----- 单据财务审批开始 ----- ")
         global boeNum
         self.sharingCenterApprove = SharingCenterApprove(boeNum)

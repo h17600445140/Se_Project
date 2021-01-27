@@ -96,6 +96,12 @@ class TestContractEditPage(object):
         with allure.step("点击确认按钮"):
             self.contractEditPage.click_confirmButoon()
 
+        assert self.contractEditPage.checkContractCode(contractEditPage_testdata['contractCode']) == True
+
+        assert self.contractEditPage.checkContractStatus('待复核') == True
+
+
+
 
 
 
