@@ -113,6 +113,13 @@ class BoeCommon(BasePage):
         self.send_text(text, *self._boeAbstract)
         logger.info("输入的备注为：{}".format(text))
 
+    # 发票类型
+    _invoiceType = (By.XPATH, 'boeHeader.0.invoiceTypeCode')
+    def selectInvoiceType(self, text):
+        self.click(*self._invoiceType)
+        self.select_item(text)
+        logger.info('选择的发票类型为：{}'.format(text))
+
     # ——————————————————————————————
 
 
@@ -163,6 +170,18 @@ class BoeCommon(BasePage):
                 len(self.find_elements(*(By.CLASS_NAME, 'el-table__row'))) - 1].click()
         logger.info('选择合同编码为 : {}'.format(keyContract))
         self.click(*(By.XPATH, '/html/body//div//span/button[2]'))
+
+    # 订单编号
+    _orderNumber = (By.ID, 'boeHeaderChild.0.orderNumber')
+    def input_orderNumber(self, text):
+        self.send_text(text, *self._orderNumber)
+        logger.info('输入的订单编号为：{}'.format(text))
+
+    # 项目
+    _project = (By.ID, 'boeHeaderChild.0.projectId')
+    def input_project(self, text):
+        self.send_text(text, *self._project)
+        logger.info('输入的项目为：{}'.format(text))
 
     # --------------------------------------------------
 
