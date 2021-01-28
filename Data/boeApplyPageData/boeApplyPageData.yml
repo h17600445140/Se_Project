@@ -3,7 +3,7 @@ comFeeApplyBoe:
         -   operationType: '通用费用申请'
             boeAbstract: '测试通用费用申请'
             operationSubTypeId: '通用业务1'
-            expenseAmount: '100.10'
+            expenseAmount: '200.10'
             remark: '测试通用费用申请单'
             casename: '通用费用申请单提交主流程'
 

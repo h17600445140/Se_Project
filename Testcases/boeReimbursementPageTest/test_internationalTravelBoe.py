@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 from time import sleep
 
-from PageClass.BoeReimbursementPageClass.internationalTravelBoePage import InternationalTravelBoePage
+from PageClass.boeReimbursementPageClass.internationalTravelBoePage import InternationalTravelBoePage
 from Testcases.common.boeBusinessApprove import BusinessApprove
 from Testcases.common.boeSharingCenterApprove import SharingCenterApprove
 from Testcases.common.loginDepend import LoginDepend

@@ -4,7 +4,7 @@ from time import sleep
 import allure
 import pytest
 
-from PageClass.BoeReimbursementPageClass.newMultiDomesticTravelBoePage import NewMultiDomesticTravelBoePage
+from PageClass.boeReimbursementPageClass.newMultiDomesticTravelBoePage import NewMultiDomesticTravelBoePage
 from Testcases.common import invoiceFactory
 from Testcases.common.boeBusinessApprove import BusinessApprove
 from Testcases.common.boeSharingCenterApprove import SharingCenterApprove

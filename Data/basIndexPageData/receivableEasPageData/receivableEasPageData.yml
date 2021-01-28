@@ -1,0 +1,16 @@
+---
+newIncomeStatementBoe:
+        -   operationType: '收入'
+            boeAbstract: '测试收入报账单'
+            vendor:
+                    vendorCode: 'hcKH001'
+                    vendorName: 'hc客户001'
+            contract: 'hcKH000001'
+            orderNumber: 'hcOrder000001'
+            operationSubType: '收入小类1'
+            expenseDept:
+                    deptCode: 'AD'
+                    deptName: 'A部门'
+            expenseAmount: '100.10'
+            taxAmount: '0.10'
+            casename: '通用费用申请单提交主流程'

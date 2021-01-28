@@ -4,7 +4,7 @@ from time import sleep
 import allure
 import pytest
 
-from PageClass.BoeReimbursementPageClass.newDailyExpenseBoePage import NewDailyExpenseBoePage
+from PageClass.boeReimbursementPageClass.newDailyExpenseBoePage import NewDailyExpenseBoePage
 from Testcases.common.boeBusinessApprove import BusinessApprove
 from Testcases.common.boeSharingCenterApprove import SharingCenterApprove
 from Testcases.common.loginDepend import LoginDepend

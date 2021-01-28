@@ -80,7 +80,7 @@ class BoeCommon(BasePage):
         WebDriverWait(self.driver, 8).until(
             EC.visibility_of_element_located(self._approveButton))
         self.click(*self._approveButton)
-        sleep(2)
+        sleep(1)
         logger.info("点击单据审批同意")
 
 
@@ -99,6 +99,7 @@ class BoeCommon(BasePage):
     # 操作主表区
 
     def input_operationType(self, text):
+        self.click(*self._operationTypeId)
         WebDriverWait(self.driver, 5).until(
             EC.visibility_of_element_located(self._operationTypeId))
         self.clear(*self._operationTypeId)
@@ -113,6 +114,58 @@ class BoeCommon(BasePage):
         logger.info("输入的备注为：{}".format(text))
 
     # ——————————————————————————————
+
+
+    # -------------------- 头部附加区 --------------------
+    # 供应商/客户
+    _vendor = (By.ID, 'boeHeaderChild.0.vendorId')
+    def click_vendor(self):
+        self.click(*self._vendor)
+        logger.info('点击 Vendor 输入框')
+    # 选择供应商/客户
+    def selectVendor(self, code, vendorName=''):
+        self.click_vendor()
+        WebDriverWait(self.driver, 5).until(EC.visibility_of_element_located(
+            (By.ID, 'itemvendorCode')))
+        self.send_text(code, *(By.ID, 'itemvendorCode'))
+        self.send_text(vendorName, *(By.ID, 'itemname'))
+        self.click(*(By.XPATH, '/html/body//form/div[3]/div/button[1]'))
+        sleep(1)
+        try:
+            self.find_elements(*(By.CLASS_NAME, 'el-table__row'))[
+                len(self.find_elements(*(By.CLASS_NAME, 'el-table__row'))) - 1].click()
+        except:
+            logger.warning('警告,第一次没找到,重新查找点击')
+            self.find_elements(*(By.CLASS_NAME, 'el-table__row'))[
+                len(self.find_elements(*(By.CLASS_NAME, 'el-table__row'))) - 1].click()
+        logger.info('选择 Vendor 编码为 : {}'.format(code))
+        logger.info('选择 Vendor 名称为 : {}'.format(vendorName))
+        self.click(*(By.XPATH, '/html/body//div//span/button[2]'))
+
+    # 合同
+    _contract = (By.ID, 'boeHeaderChild.0.contractId')
+    def click_contract(self):
+        self.click(*self._contract)
+    # 选择合同
+    def selectContract(self, keyContract):
+        self.click_contract()
+        WebDriverWait(self.driver, 5).until(EC.visibility_of_element_located(
+            (By.ID, 'itemkeyword')))
+        self.send_text(keyContract, *(By.ID, 'itemkeyword'))
+        self.click(*(By.XPATH, '/html/body//form/div[2]/div/button[1]'))
+        sleep(1)
+        try:
+            self.find_elements(*(By.CLASS_NAME, 'el-table__row'))[
+                len(self.find_elements(*(By.CLASS_NAME, 'el-table__row'))) - 1].click()
+        except:
+            logger.warning('警告,第一次没找到,重新查找点击')
+            self.find_elements(*(By.CLASS_NAME, 'el-table__row'))[
+                len(self.find_elements(*(By.CLASS_NAME, 'el-table__row'))) - 1].click()
+        logger.info('选择合同编码为 : {}'.format(keyContract))
+        self.click(*(By.XPATH, '/html/body//div//span/button[2]'))
+
+    # --------------------------------------------------
+
 
     # —————————— 费用归属区 ——————————
 
@@ -229,7 +282,7 @@ class BoeCommon(BasePage):
                 monthTable.find_elements(*(By.TAG_NAME, 'a'))[i].click()
 
 
-    # 日期输入框输入
+    # 日期输入框输入（老方法，新方式见basePage）
     def input_date(self, date):
         if int(date) > 32 or int(date) < 1:
             raise Exception("请输入正确的日期值")

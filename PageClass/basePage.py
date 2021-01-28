@@ -28,6 +28,7 @@ class BasePage(object):
 
     def send_text(self, text, *loc):
         self.find_element(*loc).send_keys(text)
+        logger.debug('将 {} 输入到 {} '.format(text, loc))
 
     def click(self, *loc):
         self.find_element(*loc).click()

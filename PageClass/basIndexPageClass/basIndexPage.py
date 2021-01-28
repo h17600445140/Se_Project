@@ -63,6 +63,16 @@ class BasIndexPage(BasePage):
     # 查询
     def click_queryButton(self):
         self.click_button('查询')
+        logger.info('点击查询按钮')
+
+    # 校验boeNum是否存在
+    def checkBoeNumExistIsOrNot(self, boeNum):
+        if self.find_element(*(By.XPATH, '//*[@id="app"]//table/tbody/tr/td[2]/div/button')).text == boeNum:
+            logger.info('{} -> 单据存在'.format(boeNum))
+            return True
+        else:
+            logger.info('{} -> 单据不存在'.format(boeNum))
+            return False
 
     # 单据入口
     def boeRntry(self, boeType):
