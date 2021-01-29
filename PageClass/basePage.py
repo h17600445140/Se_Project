@@ -28,7 +28,6 @@ class BasePage(object):
 
     def send_text(self, text, *loc):
         self.find_element(*loc).send_keys(text)
-        logger.debug('将 {} 输入到 {} '.format(text, loc))
 
     def click(self, *loc):
         self.find_element(*loc).click()
@@ -81,7 +80,14 @@ class BasePage(object):
     def getToastBoxText(self):
         WebDriverWait(self.driver, 5).until(
             EC.visibility_of_element_located(self._toastBox))
-        content = self.find_element(*self._toastBox).text
+        content = self.find_elements(*self._toastBox)[len(self.find_elements(*self._toastBox))-1].text
+        return content
+
+    _boxMessage = (By.CLASS_NAME, 'el-message-box__message')
+    def getBoxMessage(self):
+        WebDriverWait(self.driver, 5).until(
+            EC.visibility_of_element_located(self._boxMessage))
+        content = self.find_element(*self._boxMessage).text
         return content
 
     def getWindowHandles(self):

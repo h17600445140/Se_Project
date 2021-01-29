@@ -1,7 +1,7 @@
 ---
 contractEditPage:
-        - contractName: 'hc合同023'
-          contractCode: 'hc00000023'
+        - contractName: 'hc合同003'
+          contractCode: 'hc00000003'
           contractType: '租房合同'
           contractAmount: '1000.00'
           currency:
@@ -9,24 +9,24 @@ contractEditPage:
                   currencyName:
           vendorType: '供应商'
           vendor:
-                  vendorCode: 'hcGYS1'
+                  vendorCode: '000001'
                   vendorName:
           signDate: '2021-1-15'
           contractDataFrom: '2021-1-1'
           contractDataTo: '2021-1-31'
           respUser:
                   respUserNo: '1'
-                  respUserName:
+                  respUserName: 'SLZ01'
           respDept:
-                  respDeptNo: 'AD'
-                  respDeptCode: 'A部门'
+                  respDeptNo: '0000002'
+                  respDeptCode: 'FR部门'
           contractScope: '非公共合同'
           frameworkContract: '是'
           haveImage: '否'
           casename: '框架合同新增主流程'
 
-        - contractName: 'hc合同024'
-          contractCode: 'hc00000024'
+        - contractName: 'hc合同004'
+          contractCode: 'hc00000004'
           contractType: '租房合同'
           contractAmount: '1000.00'
           currency:
@@ -34,17 +34,17 @@ contractEditPage:
                   currencyName:
           vendorType: '供应商'
           vendor:
-                  vendorCode: 'hcGYS1'
+                  vendorCode: '000001'
                   vendorName:
           signDate: '2021-1-15'
           contractDataFrom: '2021-1-1'
           contractDataTo: '2021-1-31'
           respUser:
                   respUserNo: '1'
-                  respUserName:
+                  respUserName: 'SLZ01'
           respDept:
-                  respDeptNo: 'AD'
-                  respDeptCode: 'A部门'
+                  respDeptNo: '0000002'
+                  respDeptCode: 'FR部门'
           contractScope: '非公共合同'
           frameworkContract: '否'
           haveImage: '否'
@@ -53,22 +53,22 @@ contractEditPage:
                   - paymentType: '预付款'
                     paymentCondition: '预付款计划'
                     plansDate: '2020-1-1'
-                    settlementUnit: 'hcGYS1'
+                    settlementUnit: '000001'
                     settlementAmount: '300.00'
                     controlType: '通过'
-                    paymentMethod: 'hc现金+不挂账'
+                    paymentMethod: '现金'
                   - paymentType: '质保金付款'
                     paymentCondition: '质保金付款计划'
                     plansDate: '2020-2-1'
-                    settlementUnit: 'hcGYS1'
+                    settlementUnit: '000001'
                     settlementAmount: '500.00'
                     controlType: '警告'
-                    paymentMethod: 'hc现金+不挂账'
+                    paymentMethod: '现金'
                   - paymentType: '项目进度付款'
                     paymentCondition: '项目进度付款计划'
                     plansDate: '2020-3-1'
-                    settlementUnit: 'hcGYS1'
+                    settlementUnit: '000001'
                     settlementAmount: '200.00'
                     controlType: '禁止'
-                    paymentMethod: 'hc现金+不挂账'
+                    paymentMethod: '现金'
 

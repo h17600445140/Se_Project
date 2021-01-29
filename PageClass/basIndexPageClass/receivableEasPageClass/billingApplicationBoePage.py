@@ -17,7 +17,7 @@ class BillingApplicationBoePage(BasIndexPage,BoeCommon):
         BasIndexPage.__init__(self, driver)
 
     # 购买方
-    _buyer = (By.ID, '//*[@id="buyer"]/div/div')
+    _buyer = (By.XPATH, '//*[@id="buyer"]/div/div')
     def click_buyer(self):
         self.click(*self._buyer)
     def selectBuyer(self, vendorName):
@@ -81,8 +81,22 @@ class BillingApplicationBoePage(BasIndexPage,BoeCommon):
     # 税率
     _goodsTaxRate = (By.ID, 'goodsInfo.0.taxRate')
     def input_goodsTaxRate(self, text):
-        self.input_amount(text, *self._goodsTaxRate)
+        self.click(*self._goodsTaxRate)
+        self.send_text(text, *self._goodsTaxRate)
         logger.info('输入的税率为：{}'.format(text))
 
     # 销售信息
     _salesInformation = (By.XPATH, '//*[@id="seller"]/div/div')
+    def selectSaler(self, text):
+        self.click(*self._salesInformation)
+        logger.info("长度为：{}".format(len(self.find_elements(*(By.CLASS_NAME, 'el-table__row')))))
+        sleep(1)
+        for i in range(len(self.find_elements(*(By.CLASS_NAME, 'el-table__row')))):
+            try:
+                if self.find_elements(*(By.CLASS_NAME, 'el-table__row'))[i].find_element(By.CLASS_NAME, 'name').text == text:
+                    self.find_elements(*(By.CLASS_NAME, 'el-table__row'))[i].click()
+            except:
+                pass
+        self.click(*(By.XPATH, '/html/body//div//span/button[2]'))
+
+

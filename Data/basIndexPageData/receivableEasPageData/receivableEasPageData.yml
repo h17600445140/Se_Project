@@ -13,4 +13,21 @@ newIncomeStatementBoe:
                     deptName: 'A部门'
             expenseAmount: '100.10'
             taxAmount: '0.10'
-            casename: '通用费用申请单提交主流程'
+            casename: '收入报账提交主流程'
+
+billingApplicationBoe:
+        -   operationType: '开票申请'
+            invoiceType: '增值税专用发票'
+            buyer: 'hc客户001'
+            contract: 'hcKH000001'
+            orderNumber: 'hcOrder000001'
+            project: 'hc项目1'
+            goods:
+                goodsCode: 'hcProduct001'
+                goodsName: '商品名称'
+            goodsAmount: '10'
+            goodPrice: '100.00'
+            goodsExpenseAmount: '1000.00'
+            goodsTaxRate: 5
+            saler: ''
+            casename: '收入报账提交主流程'

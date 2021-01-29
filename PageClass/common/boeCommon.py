@@ -102,7 +102,6 @@ class BoeCommon(BasePage):
         self.click(*self._operationTypeId)
         WebDriverWait(self.driver, 5).until(
             EC.visibility_of_element_located(self._operationTypeId))
-        self.clear(*self._operationTypeId)
         self.send_text(text, *self._operationTypeId)
         logger.info("选择的业务类型为：{}".format(text))
 
@@ -114,9 +113,11 @@ class BoeCommon(BasePage):
         logger.info("输入的备注为：{}".format(text))
 
     # 发票类型
-    _invoiceType = (By.XPATH, 'boeHeader.0.invoiceTypeCode')
+    _invoiceTypeCode = (By.ID, 'boeHeader.0.invoiceTypeCode')
     def selectInvoiceType(self, text):
-        self.click(*self._invoiceType)
+        sleep(1)
+        self.click(*self._invoiceTypeCode)
+        sleep(0.5)
         self.select_item(text)
         logger.info('选择的发票类型为：{}'.format(text))
 
@@ -180,6 +181,7 @@ class BoeCommon(BasePage):
     # 项目
     _project = (By.ID, 'boeHeaderChild.0.projectId')
     def input_project(self, text):
+        self.click(*self._project)
         self.send_text(text, *self._project)
         logger.info('输入的项目为：{}'.format(text))
 
@@ -251,6 +253,59 @@ class BoeCommon(BasePage):
         self.send_text(text, *self._paymentMemo)
 
     # ——————————————————————————————
+
+
+    # —————————————— 初审发票填写区 ————————————————
+    # 发票代码
+    _dtosInvoiceNo =  (By.ID, 'invoiceDTOS.0.billingNo')
+    def getDtosInvoiceNo(self):
+        return self._dtosInvoiceNo
+    def input_dtosInvoiceNo(self, text):
+        self.send_text(text, *self._dtosInvoiceNo)
+        logger.info('输入的发票代码为：{}'.format(text))
+
+    # 发票号码
+    _dtosInvoiceCode = (By.ID, 'invoiceDTOS.0.billingCode')
+    def input_dtosInvoiceCode(self, text):
+        self.send_text(text, *self._dtosInvoiceCode)
+        logger.info('输入的发票号码为：{}'.format(text))
+
+    # 开票日期
+    _dtosInvoiceDate = (By.ID, 'invoiceDTOS.0.billingTime')
+    def input_dtosInvoiceDate(self, date):
+        self.click(*self._dtosInvoiceDate)
+        year, month, day = date.split('-')[0], date.split('-')[1], date.split('-')[2]
+        self.select_date(year, month, day)
+        logger.info('选择的发票开票日期为：{}'.format(date))
+
+    # 发票金额
+    _dtosInvoiceFee = (By.ID, 'invoiceDTOS.0.fee')
+    def input_dtosInvoiceFee(self, text):
+        self.input_amount(text, *self._dtosInvoiceFee)
+        logger.info('输入的发票金额为：{}'.format(text))
+
+    # 税额
+    _dtosInvoiceTax = (By.ID, 'invoiceDTOS.0.tax')
+    def input_dtosInvoiceTax(self, text):
+        self.input_amount(text, *self._dtosInvoiceTax)
+        logger.info('输入的发票税额为：{}'.format(text))
+
+    # 备注
+    _dtosInvoiceRemark = (By.ID, 'invoiceDTOS.0.remarks')
+    def input_dtosInvoiceRemark(self, text):
+        self.send_text(text, *self._dtosInvoiceRemark)
+        logger.info('输入的备注为：{}'.format(text))
+
+    # 保存
+    _saveButton = (By.ID, 'auditSave')
+    def click_saveButton(self):
+        self.click(*self._saveButton)
+        logger.info('点击保存按钮')
+        if self.getToastBoxText() == '保存成功':
+            logger.info('修改信息保存成功')
+        else:
+            logger.error('保存失败')
+            raise Exception('保存修改失败')
 
     # —————————— 关联发票，新增发票按钮 ——————————
     def click_relateInvoiceButton(self):

@@ -1,0 +1,45 @@
+[32mINFO    [0m WebUIAuto:log.py:48 请求链接，链接地址为：http://192.168.0.119/cms
+[35mDEBUG   [0m WebUIAuto:log.py:45 将 1 输入到 ('id', 'loginKey') 
+[35mDEBUG   [0m WebUIAuto:log.py:45 输入账户，账户为：1
+[35mDEBUG   [0m WebUIAuto:log.py:45 将 zfs123456 输入到 ('id', 'password') 
+[35mDEBUG   [0m WebUIAuto:log.py:45 输入密码，密码为：zfs123456
+[32mINFO    [0m WebUIAuto:log.py:48 点击登录按钮
+[32mINFO    [0m WebUIAuto:log.py:48 成功登录界面：cmsHost
+[32mINFO    [0m WebUIAuto:log.py:48  ----- 合同新建流程开始 ----- 
+[32mINFO    [0m WebUIAuto:log.py:48 进入页面 -> 合同录入
+[35mDEBUG   [0m WebUIAuto:log.py:45 所有窗口为：['CDwindow-D1C11D20661063861CC6A3DE328480E0', 'CDwindow-2417861EABBC21702A24924B448EFE53']
+[35mDEBUG   [0m WebUIAuto:log.py:45 当前窗口为：CDwindow-2417861EABBC21702A24924B448EFE53
+[35mDEBUG   [0m WebUIAuto:log.py:45 将 hc合同003 输入到 ('id', 'form_contractName') 
+[32mINFO    [0m WebUIAuto:log.py:48 输入的合同名称为 : hc合同003
+[35mDEBUG   [0m WebUIAuto:log.py:45 将 hc00000003 输入到 ('id', 'form_contractCode') 
+[32mINFO    [0m WebUIAuto:log.py:48 输入的合同编号为 : hc00000003
+[32mINFO    [0m WebUIAuto:log.py:48 选择的合同类型为 : 租房合同
+[32mINFO    [0m WebUIAuto:log.py:48 输入的合同金额为 : 1000.00
+[35mDEBUG   [0m WebUIAuto:log.py:45 将 CNY 输入到 ('id', 'undefined_CURRENCY_CODE') 
+[35mDEBUG   [0m WebUIAuto:log.py:45 将  输入到 ('id', 'undefined_NAME') 
+[32mINFO    [0m WebUIAuto:log.py:48 已经选择了币种编码 : CNY
+[32mINFO    [0m WebUIAuto:log.py:48 已经选择了币种名称 : 
+[32mINFO    [0m WebUIAuto:log.py:48 选择的客商类型为 : 供应商
+[35mDEBUG   [0m WebUIAuto:log.py:45 将 000001 输入到 ('id', 'undefined_vendorCode') 
+[35mDEBUG   [0m WebUIAuto:log.py:45 将  输入到 ('id', 'undefined_vendorName') 
+[32mINFO    [0m WebUIAuto:log.py:48 选择客商编码为 : 000001
+[32mINFO    [0m WebUIAuto:log.py:48 选择客商名称为 : 
+[32mINFO    [0m WebUIAuto:log.py:48 选择的签订日期为：2021-1-15
+[32mINFO    [0m WebUIAuto:log.py:48 选择的合同日期开始时间为：2021-1-1
+[32mINFO    [0m WebUIAuto:log.py:48 选择的合同日期结束时间为：2021-1-31
+[35mDEBUG   [0m WebUIAuto:log.py:45 将 1 输入到 ('id', 'undefined_EMP_NO') 
+[35mDEBUG   [0m WebUIAuto:log.py:45 将 SLZ01 输入到 ('id', 'undefined_REAL_NAME') 
+[32mINFO    [0m WebUIAuto:log.py:48 选择的报账人工号为 : 1
+[32mINFO    [0m WebUIAuto:log.py:48 选择的报账人名称为 : SLZ01
+[35mDEBUG   [0m WebUIAuto:log.py:45 将 0000002 输入到 ('id', 'undefined_CODE') 
+[35mDEBUG   [0m WebUIAuto:log.py:45 将 FR部门 输入到 ('id', 'undefined_NAME') 
+[32mINFO    [0m WebUIAuto:log.py:48 选择的责任部门编码为 : 0000002
+[32mINFO    [0m WebUIAuto:log.py:48 选择的责任部门名称为 : FR部门
+[32mINFO    [0m WebUIAuto:log.py:48 选择的合同范围为 : 非公共合同
+[32mINFO    [0m WebUIAuto:log.py:48 是否框架合同 : 是
+[32mINFO    [0m WebUIAuto:log.py:48 是否有影像 : 否
+[32mINFO    [0m WebUIAuto:log.py:48 点击提交按钮
+[35mDEBUG   [0m WebUIAuto:log.py:45 记录文件信息, 文件信息为 : {'frameworkContractName': 'hc合同003', 'frameworkContractCode': 'hc00000003'}
+[32mINFO    [0m WebUIAuto:log.py:48 点击确定按钮
+[35mDEBUG   [0m WebUIAuto:log.py:45 所有窗口为：['CDwindow-D1C11D20661063861CC6A3DE328480E0']
+[35mDEBUG   [0m WebUIAuto:log.py:45 当前窗口为：CDwindow-D1C11D20661063861CC6A3DE328480E0

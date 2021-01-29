@@ -25,7 +25,7 @@ class TestNewIncomeStatementBoe():
         pass
 
     @allure.story("收入报账单业务报账界面单据提交")
-    @allure.step("差旅申请单费用报销界面单据提交步骤")
+    @allure.step("差旅申请单业务报账界面单据提交步骤")
     @allure.severity("blocker")
     @pytest.mark.dependency(name='submit')
     def test_newIncomeStatementBoe(self, newIncomeStatementBoe_testdata):
@@ -45,6 +45,7 @@ class TestNewIncomeStatementBoe():
                 self.newIncomeStatementBoePage.input_operationType(newIncomeStatementBoe_testdata['operationType'])
             with allure.step("输入备注"):
                 self.newIncomeStatementBoePage.input_boeAbstract(newIncomeStatementBoe_testdata['boeAbstract'])
+
             with allure.step("选择客户"):
                 self.newIncomeStatementBoePage.selectVendor(newIncomeStatementBoe_testdata['vendor']['vendorCode'], vendorName=newIncomeStatementBoe_testdata['vendor']['vendorName'])
             with allure.step("选择关联合同"):

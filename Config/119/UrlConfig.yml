@@ -1,0 +1,26 @@
+url:
+  publicHost: http://192.168.0.119/public
+  baseHost: http://192.168.0.119/base
+  easHost: http://192.168.0.119/eas
+  cmsHost: http://192.168.0.119/cms
+  fscHost: http://192.168.0.119/fsc
+  timerHost: http://192.168.0.119/ip/timerManage
+  invoiceIpoolHost: http://192.168.0.119/ipool
+  fscAuditList: http://192.168.0.119/fsc/auditList
+  fscAuditAdjustDirector: http://192.168.0.119/fsc/auditAdjustDirector
+
+user:
+  account: 1
+  password: zfs123456
+leader:
+  account: 3
+  password: 123456
+finance:
+  account: 1
+  password: 123456
+
+Approval:
+  approvalGroupC: 初审
+  approvalUserC: 1hc
+  approvalGroupF: 复审
+  approvalUserF: 1hc

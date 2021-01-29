@@ -1,0 +1,36 @@
+[32mINFO    [0m WebUIAuto:log.py:48  ----- 合同复核流程开始 ----- 
+[32mINFO    [0m WebUIAuto:log.py:48 进入页面 -> 合同复核
+[35mDEBUG   [0m WebUIAuto:log.py:45 所有窗口为：['CDwindow-D1C11D20661063861CC6A3DE328480E0', 'CDwindow-245795319482ADC6E46488DD26FF9CF1']
+[35mDEBUG   [0m WebUIAuto:log.py:45 当前窗口为：CDwindow-245795319482ADC6E46488DD26FF9CF1
+[35mDEBUG   [0m WebUIAuto:log.py:45 将 hc合同004 输入到 ('id', 'undefined_contractName') 
+[32mINFO    [0m WebUIAuto:log.py:48 输入的合同名称为 : hc合同004
+[35mDEBUG   [0m WebUIAuto:log.py:45 将 hc00000004 输入到 ('id', 'undefined_contractCode') 
+[32mINFO    [0m WebUIAuto:log.py:48 输入的合同编码为 : hc00000004
+[32mINFO    [0m WebUIAuto:log.py:48 点击查询按钮
+[32mINFO    [0m WebUIAuto:log.py:48 合同编号查询结果为 : hc00000004
+[32mINFO    [0m WebUIAuto:log.py:48 合同状态查询结果为 : 待复核
+[32mINFO    [0m WebUIAuto:log.py:48 点击同意按钮
+[32mINFO    [0m WebUIAuto:log.py:48 点击确定按钮
+[35mDEBUG   [0m WebUIAuto:log.py:45 将 hc合同004 输入到 ('id', 'undefined_contractName') 
+[32mINFO    [0m WebUIAuto:log.py:48 输入的合同名称为 : hc合同004
+[35mDEBUG   [0m WebUIAuto:log.py:45 将 hc00000004 输入到 ('id', 'undefined_contractCode') 
+[32mINFO    [0m WebUIAuto:log.py:48 输入的合同编码为 : hc00000004
+[32mINFO    [0m WebUIAuto:log.py:48 点击查询按钮
+[32mINFO    [0m WebUIAuto:log.py:48 合同编号查询结果为 : hc00000004
+[32mINFO    [0m WebUIAuto:log.py:48 合同状态查询结果为 : 执行中
+[32mINFO    [0m WebUIAuto:log.py:48 回到首页
+[35mDEBUG   [0m WebUIAuto:log.py:45 所有窗口为：['CDwindow-D1C11D20661063861CC6A3DE328480E0']
+[35mDEBUG   [0m WebUIAuto:log.py:45 当前窗口为：CDwindow-D1C11D20661063861CC6A3DE328480E0
+[35mDEBUG   [0m WebUIAuto:log.py:45 所有窗口为：['CDwindow-D1C11D20661063861CC6A3DE328480E0', 'CDwindow-A493633B76815903AD71753D2D588481']
+[35mDEBUG   [0m WebUIAuto:log.py:45 当前窗口为：CDwindow-A493633B76815903AD71753D2D588481
+[32mINFO    [0m WebUIAuto:log.py:48 点击更多按钮
+[35mDEBUG   [0m WebUIAuto:log.py:45 将 hc合同004 输入到 ('id', 'undefined_contractName') 
+[32mINFO    [0m WebUIAuto:log.py:48 输入的合同名称为 : hc合同004
+[35mDEBUG   [0m WebUIAuto:log.py:45 将 hc00000004 输入到 ('id', 'undefined_contractCode') 
+[32mINFO    [0m WebUIAuto:log.py:48 输入的合同编码为 : hc00000004
+[32mINFO    [0m WebUIAuto:log.py:48 点击查询按钮
+[32mINFO    [0m WebUIAuto:log.py:48 合同编号查询结果为 : hc00000004
+[32mINFO    [0m WebUIAuto:log.py:48 合同状态查询结果为 : 执行中
+[32mINFO    [0m WebUIAuto:log.py:48 回到首页
+[35mDEBUG   [0m WebUIAuto:log.py:45 所有窗口为：['CDwindow-D1C11D20661063861CC6A3DE328480E0']
+[35mDEBUG   [0m WebUIAuto:log.py:45 当前窗口为：CDwindow-D1C11D20661063861CC6A3DE328480E0
