@@ -46,6 +46,17 @@
 #             a[j].append(i[j])
 #     return a
 # print(trans(list))
+from multiprocessing import Pool
+
+
+def hhh(i):
+    return i * 2
+
+
+if __name__ == '__main__':
+    pool = Pool(processes=2)
+    hh = pool.map(hhh, [1, 2, 3, 4, 5, 6, 7, 8])
+    print(hh)
 
 
 

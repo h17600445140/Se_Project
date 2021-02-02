@@ -307,11 +307,27 @@ class BoeCommon(BasePage):
             logger.error('保存失败')
             raise Exception('保存修改失败')
 
+
     # —————————— 关联发票，新增发票按钮 ——————————
+    # 关联发票
     def click_relateInvoiceButton(self):
         for i in range(len(self.find_element(*(By.ID, 'cost')).find_elements(*(By.TAG_NAME, 'button')))):
             if self.find_element(*(By.ID, 'cost')).find_elements(*(By.TAG_NAME, 'button'))[i].text == '关联发票':
                 self.find_element(*(By.ID, 'cost')).find_elements(*(By.TAG_NAME, 'button'))[i].click()
+                logger.info('点击关联发票按钮')
+                break
+    # 关联对应发票号码发票
+    _itemairNumber =  (By.ID, 'itemairNumber')
+    def relateTargetInvoice(self, invoiceCode):
+        self.click_relateInvoiceButton()
+        WebDriverWait(self.driver, 5).until(
+            EC.visibility_of_element_located( self._itemairNumber ))
+        self.send_text(invoiceCode, *self._itemairNumber)
+        self.click( *(By.XPATH, '/html/body//form/div[4]/div/button[1]'))
+        sleep(1)
+        self.find_element(*(By.CLASS_NAME, 'el-col')).find_element(*(By.CLASS_NAME, 'zte-invoice')).click()
+        self.click( *(By.XPATH, '/html/body//span/button'))
+        logger.info('选择的发票为：{}'.format(invoiceCode))
 
     # 新增发票
     def click_addInvoiceButton(self):
