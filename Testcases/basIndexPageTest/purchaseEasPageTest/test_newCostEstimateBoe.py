@@ -9,14 +9,15 @@ from Testcases.common.loginDepend import LoginDepend
 from Util import logger
 
 
+
 @allure.feature("成本暂估单（新）流程")
 class TestNewCostEstimateBoe():
 
     boeNum = globals()
 
     def setup_class(self):
-        self.publicLogin = LoginDepend('basHost', 'user')
-        self.newCostEstimateBoePage = NewCostEstimateBoePage(self.publicLogin.driver)
+        self.login = LoginDepend('basHost', 'user')
+        self.newCostEstimateBoePage = NewCostEstimateBoePage(self.login.driver)
 
     def teardown_class(self):
         # self.newCostEstimateBoePage.driver.quit()
@@ -45,7 +46,7 @@ class TestNewCostEstimateBoe():
 
         with allure.step("选择项目"):
             self.newCostEstimateBoePage.input_project('hc项目1')
-        with allure.step("选择客户"):
+        with allure.step("选择供应商"):
             self.newCostEstimateBoePage.selectVendor('hcGYS1', vendorName='hc供应商1')
         with allure.step("选择关联合同"):
             self.newCostEstimateBoePage.selectContract('hc00000020')
