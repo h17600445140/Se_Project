@@ -46,14 +46,17 @@ class TestNewPurchasePrepaymentBoe():
         with allure.step("选择供应商"):
             self.newPurchasePrepaymentBoePage.selectVendor('hcGYS1', vendorName='hc供应商1')
         with allure.step("选择关联合同"):
-            self.newPurchasePrepaymentBoePage.selectContract('hc00000021')
+            self.newPurchasePrepaymentBoePage.selectContract('hc00000022')
 
         with allure.step("输入采购订单"):
             self.newPurchasePrepaymentBoePage.input_loanOrderNumber('hcOrder001')
         with allure.step("选择预付类型"):
             self.newPurchasePrepaymentBoePage.input_loanOperationSubType('预付小类1')
         with allure.step("输入预付金额"):
-            self.newPurchasePrepaymentBoePage.input_loanExpenseAmount('100.10')
+            self.newPurchasePrepaymentBoePage.input_loanExpenseAmount('200.10')
+
+        with allure.step("选择支付方式"):
+            self.newPurchasePrepaymentBoePage.selectPaymentMethod('hc挂账-不支付')
 
         with allure.step("点击单据提交"):
             self.newPurchasePrepaymentBoePage.click_boeSubmitButton()

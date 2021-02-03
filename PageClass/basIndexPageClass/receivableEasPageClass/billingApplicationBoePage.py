@@ -89,14 +89,16 @@ class BillingApplicationBoePage(BasIndexPage,BoeCommon):
     _salesInformation = (By.XPATH, '//*[@id="seller"]/div/div')
     def selectSaler(self, text):
         self.click(*self._salesInformation)
-        logger.info("长度为：{}".format(len(self.find_elements(*(By.CLASS_NAME, 'el-table__row')))))
         sleep(1)
         for i in range(len(self.find_elements(*(By.CLASS_NAME, 'el-table__row')))):
             try:
                 if self.find_elements(*(By.CLASS_NAME, 'el-table__row'))[i].find_element(By.CLASS_NAME, 'name').text == text:
                     self.find_elements(*(By.CLASS_NAME, 'el-table__row'))[i].click()
+                    break
             except:
                 pass
+            if i == len(self.find_elements(*(By.CLASS_NAME, 'el-table__row'))) - 1:
+                raise Exception('没有找到：{}'.format(text))
         self.click(*(By.XPATH, '/html/body//div//span/button[2]'))
 
 

@@ -165,6 +165,7 @@ class BasePage(object):
                 element = self.find_elements(*(By.CLASS_NAME, 'el-select-dropdown__item'))[i]
                 ActionChains(self.driver).move_to_element(element).perform()
                 element.click()
+                break
 
 
     def input_amount(self, text, *loc) -> None:

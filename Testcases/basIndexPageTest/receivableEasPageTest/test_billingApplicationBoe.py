@@ -38,9 +38,7 @@ class TestBillingApplicationBoe():
         global boeNum
         boeNum = self.billingApplicationBoePage.getBoeNum()
 
-        self.billingApplicationBoePage.input_operationType('开票申请')
 
-        self.billingApplicationBoePage.selectInvoiceType('增值税普通发票')
 
         self.billingApplicationBoePage.selectBuyer('hc客户001')
 

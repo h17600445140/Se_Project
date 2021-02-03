@@ -262,22 +262,32 @@ class BoeCommon(BasePage):
     _paymentModeCode = (By.ID, 'zfsBoePayments.0.paymentModeCode')
     # 收款账户
     _vendorId = (By.ID, 'zfsBoePayments.0.vendorId')
-    # 支付金额
-    _paymentAmount = (By.ID, 'zfsBoePayments.0.paymentAmount')
-    # 付款用途
-    _paymentMemo = (By.ID, 'zfsBoePayments.0.paymentMemo')
 
     # 操作支付区
 
+    # 支付金额
+    _paymentAmount = (By.ID, 'zfsBoePayments.0.paymentAmount')
     def input_paymentAmount(self, text):
         self.click(*self._paymentAmount)
         element = self.find_element(*self._paymentAmount)
         ActionChains(self.driver).send_keys_to_element(element, Keys.BACKSPACE).perform()
         ActionChains(self.driver).send_keys_to_element(element, text).perform()
 
+
+    # 支付方式
+    _paymentMethod = (By.ID, 'zfsBoePayments.0.paymentModeCode')
+    def selectPaymentMethod(self, paymentMethod):
+        self.click(*self._paymentMethod)
+        self.select_item(paymentMethod)
+        logger.info('选择的支付方式为：{}'.format(paymentMethod))
+
+
+    # 付款用途
+    _paymentMemo = (By.ID, 'zfsBoePayments.0.paymentMemo')
     def input_paymentMemo(self, text):
         self.clear(*self._boeAbstract)
         self.send_text(text, *self._paymentMemo)
+
 
     # ——————————————————————————————
 
