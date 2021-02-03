@@ -150,6 +150,7 @@ class BoeCommon(BasePage):
         logger.info('选择 Vendor 名称为 : {}'.format(vendorName))
         self.click(*(By.XPATH, '/html/body//div//span/button[2]'))
 
+
     # 合同
     _contract = (By.ID, 'boeHeaderChild.0.contractId')
     def click_contract(self):
@@ -172,11 +173,37 @@ class BoeCommon(BasePage):
         logger.info('选择合同编码为 : {}'.format(keyContract))
         self.click(*(By.XPATH, '/html/body//div//span/button[2]'))
 
+
+    # 成本中心
+    _ccId = (By.ID, 'boeHeaderChild.0.ccId')
+    def click_ccId(self):
+        self.click(*self._ccId)
+    def selectCc(self, ccCode, ccName=''):
+        self.click_ccId()
+        WebDriverWait(self.driver, 5).until(EC.visibility_of_element_located(
+            (By.ID, 'itemCODE')))
+        self.send_text(ccCode, *(By.ID, 'itemCODE'))
+        self.send_text(ccName, *(By.ID, 'itemNAME'))
+        self.click(*(By.XPATH, '/html/body//form/div[3]/div/button[1]'))
+        sleep(1)
+        try:
+            self.find_elements(*(By.CLASS_NAME, 'el-table__row'))[
+                len(self.find_elements(*(By.CLASS_NAME, 'el-table__row'))) - 1].click()
+        except:
+            logger.warning('警告,第一次没找到,重新查找点击')
+            self.find_elements(*(By.CLASS_NAME, 'el-table__row'))[
+                len(self.find_elements(*(By.CLASS_NAME, 'el-table__row'))) - 1].click()
+        logger.info('选择的成本中心编码为 : {}'.format(ccCode))
+        logger.info('选择的成本中心名称为 : {}'.format(ccName))
+        self.click(*(By.XPATH, '/html/body//div//span/button[2]'))
+
+
     # 订单编号
     _orderNumber = (By.ID, 'boeHeaderChild.0.orderNumber')
     def input_orderNumber(self, text):
         self.send_text(text, *self._orderNumber)
         logger.info('输入的订单编号为：{}'.format(text))
+
 
     # 项目
     _project = (By.ID, 'boeHeaderChild.0.projectId')

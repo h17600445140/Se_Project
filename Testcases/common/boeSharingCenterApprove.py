@@ -166,11 +166,10 @@ class SharingCenterApprove():
         self.login.driver.quit()
 
 if __name__ == '__main__':
-    # a = SharingCenterApprove('hcGroup-BX210129156')
+    a = SharingCenterApprove('hcGroup-BX210203109')
     # dict = {'invoiceNo':'880000000007', 'invoiceCode':'88000007', 'invoiceDate':'2020-1-1', 'invoiceFee':'1000.00', 'invoiceTax':'47.62', 'invoiceRemark':'测试开票申请单'}
     # a.sharingCenterApproveChuShen(modify=True, **dict)
-    # a.sharingCenterApproveChuShen()
-    # a.sharingCenterApproveFuShen()
-    pass
+    a.sharingCenterApproveChuShen()
+    a.sharingCenterApproveFuShen()
 
 

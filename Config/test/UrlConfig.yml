@@ -5,6 +5,7 @@ url:
   cmsHost: http://fssc200.csztessc.com.cn:8085/cms
   basHost: http://fssc200.csztessc.com.cn:8085/bas
   fscHost: http://192.168.0.200/fsc
+  ledgerHost: http://fssc200.csztessc.com.cn:8085/ledger
   timerHost: http://192.168.0.200/ip/timerManage
   invoiceIpoolHost: http://192.168.0.200/ipool
   fscAuditList: http://192.168.0.200/fsc/auditList

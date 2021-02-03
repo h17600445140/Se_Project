@@ -13,7 +13,7 @@ class LoginDepend(object):
 
     def __init__(self, host, user):
         self.driver = driverFactory.get_driver("chrome")
-        if host in ['baseHost', 'easHost', 'fscHost', 'cmsHost', 'basHost']:
+        if host in ['baseHost', 'easHost', 'fscHost', 'cmsHost', 'basHost', 'ledgerHost']:
             self.login = LoginPage(self.driver)
             self._login(host, user)
 
