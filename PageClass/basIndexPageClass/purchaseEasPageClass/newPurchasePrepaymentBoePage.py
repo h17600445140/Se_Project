@@ -8,6 +8,7 @@ from Util import logger
 
 
 
+# 采购预付
 class NewPurchasePrepaymentBoePage(BasIndexPage,BoeCommon):
 
     def __init__(self, driver):

@@ -30,11 +30,11 @@ class NewIncomeStatementBoePage(BasIndexPage,BoeCommon):
         logger.info('输入的收入类型为：{}'.format(text))
 
     # 利润中心
-    _expenseDept = (By.ID, 'cost.0.expenseDeptId')
-    def click_expenseDept(self):
-        self.click(*self._expenseDept)
+    _costExpenseDept = (By.ID, 'cost.0.expenseDeptId')
+    def click_costExpenseDept(self):
+        self.click(*self._costExpenseDept)
     def selectExpenseDept(self, deptCode, deptName=''):
-        self.click_expenseDept()
+        self.click_costExpenseDept()
         WebDriverWait(self.driver, 5).until(EC.visibility_of_element_located(
             (By.ID, 'itemDEPT_CODE')))
         self.send_text(deptCode, *(By.ID, 'itemDEPT_CODE'))

@@ -198,6 +198,30 @@ class BoeCommon(BasePage):
         self.click(*(By.XPATH, '/html/body//div//span/button[2]'))
 
 
+    # 责任部门
+    _expenseDept = (By.ID, 'boeHeaderChild.0.expenseDeptId')
+    def click_expenseDeptt(self):
+        self.click(*self._expenseDept)
+    def selectExpenseDept(self, deptCode, deptName=''):
+        self.click_expenseDeptt ()
+        WebDriverWait(self.driver, 5).until(EC.visibility_of_element_located(
+            (By.ID, 'itemDEPT_CODE')))
+        self.send_text(deptCode, *(By.ID, 'itemDEPT_CODE'))
+        self.send_text(deptName, *(By.ID, 'itemDEPT_NAME'))
+        self.click(*(By.XPATH, '/html/body//form/div[3]/div/button[1]'))
+        sleep(1)
+        try:
+            self.find_elements(*(By.CLASS_NAME, 'el-table__row'))[
+                len(self.find_elements(*(By.CLASS_NAME, 'el-table__row'))) - 1].click()
+        except:
+            logger.warning('警告,第一次没找到,重新查找点击')
+            self.find_elements(*(By.CLASS_NAME, 'el-table__row'))[
+                len(self.find_elements(*(By.CLASS_NAME, 'el-table__row'))) - 1].click()
+        logger.info('选择的部门编码为 : {}'.format(deptCode))
+        logger.info('选择的部门名称为 : {}'.format(deptName))
+        self.click(*(By.XPATH, '/html/body//div//span/button[2]'))
+
+
     # 订单编号
     _orderNumber = (By.ID, 'boeHeaderChild.0.orderNumber')
     def input_orderNumber(self, text):
@@ -210,6 +234,7 @@ class BoeCommon(BasePage):
     def input_project(self, text):
         self.click(*self._project)
         self.send_text(text, *self._project)
+        sleep(1)
         logger.info('输入的项目为：{}'.format(text))
 
     # --------------------------------------------------
@@ -288,6 +313,22 @@ class BoeCommon(BasePage):
         self.clear(*self._boeAbstract)
         self.send_text(text, *self._paymentMemo)
 
+
+    # 关联付款计划
+    _relatedPaymentPlan = (By.ID, 'zfsBoePayments.0.relatedPaymentPlanId')
+    def selectAccountReceivable(self, paymentType):
+        self.click(*self._relatedPaymentPlan)
+        sleep(1)
+        for i in range(len(self.find_elements(*(By.CLASS_NAME, 'el-table__row')))):
+            try:
+                if self.find_elements(*(By.CLASS_NAME, 'el-table__row'))[i].find_element(By.CLASS_NAME, 'paymentTypeName').text == paymentType:
+                    self.find_elements(*(By.CLASS_NAME, 'el-table__row'))[i].click()
+                    break
+            except:
+                pass
+            if i == len(self.find_elements(*(By.CLASS_NAME, 'el-table__row'))) - 1:
+                raise Exception('没有找到：{}'.format(paymentType))
+        self.click(*(By.XPATH, '/html/body//div//span/button[2]'))
 
     # ——————————————————————————————
 

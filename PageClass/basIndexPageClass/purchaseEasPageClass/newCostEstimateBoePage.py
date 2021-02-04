@@ -6,6 +6,7 @@ from Util import logger
 
 
 
+# 成本暂估（新）
 class NewCostEstimateBoePage(BasIndexPage,BoeCommon):
 
     def __init__(self, driver):

@@ -8,6 +8,7 @@ from PageClass.common.boeCommon import BoeCommon
 
 
 
+# 采购付款
 class NewPurchasingAdvicePaymentBoePage(BasIndexPage,BoeCommon):
 
     def __init__(self, driver):
