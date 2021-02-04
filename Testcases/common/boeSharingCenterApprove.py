@@ -102,7 +102,7 @@ class SharingCenterApprove():
             sleep(0.5)
             if self._boeCommon.getToastBoxText() != '审批成功':
                 logger.info('弹窗信息为：{}'.format(self._boeCommon.getToastBoxText()))
-                logger.info(self._boeCommon.getBoxMessage())
+                logger.error(self._boeCommon.getBoxMessage())
                 raise Exception('审批不成功')
             else:
                 logger.info('弹窗信息为：{}'.format(self._boeCommon.getToastBoxText()))

@@ -103,6 +103,7 @@ class BoeCommon(BasePage):
         WebDriverWait(self.driver, 5).until(
             EC.visibility_of_element_located(self._operationTypeId))
         self.send_text(text, *self._operationTypeId)
+        sleep(1)
         logger.info("选择的业务类型为：{}".format(text))
 
     def input_boeAbstract(self, text):
@@ -130,6 +131,12 @@ class BoeCommon(BasePage):
     def click_vendor(self):
         self.click(*self._vendor)
         logger.info('点击 Vendor 输入框')
+    def input_vendor(self, text):
+        self.click_vendor()
+        sleep(1)
+        self.send_text(text, *self._vendor)
+        sleep(1)
+        logger.info('输入客/商：{}'.format(text))
     # 选择供应商/客户
     def selectVendor(self, code, vendorName=''):
         self.click_vendor()
@@ -200,10 +207,10 @@ class BoeCommon(BasePage):
 
     # 责任部门
     _expenseDept = (By.ID, 'boeHeaderChild.0.expenseDeptId')
-    def click_expenseDeptt(self):
+    def click_expenseDept(self):
         self.click(*self._expenseDept)
     def selectExpenseDept(self, deptCode, deptName=''):
-        self.click_expenseDeptt ()
+        self.click_expenseDept()
         WebDriverWait(self.driver, 5).until(EC.visibility_of_element_located(
             (By.ID, 'itemDEPT_CODE')))
         self.send_text(deptCode, *(By.ID, 'itemDEPT_CODE'))

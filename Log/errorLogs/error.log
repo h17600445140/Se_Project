@@ -508,3 +508,17 @@ ERROR - 2021-02-03 11:52:22,413 - D:\se\Se_Project\Util\log.py - log.py[:54] - �
 ERROR - 2021-02-03 11:53:21,616 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
 ERROR - 2021-02-03 14:43:18,987 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
 ERROR - 2021-02-03 14:44:08,019 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-02-04 13:37:55,380 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-02-04 13:39:49,957 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-02-04 13:40:36,704 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-02-04 13:42:21,435 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - boeNum do not exist
+ERROR - 2021-02-04 13:42:21,436 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 业务审批出现异常，异常信息为：<class 'Exception'>
+ERROR - 2021-02-04 13:42:35,260 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-02-04 13:42:39,589 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-02-04 13:44:48,186 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-02-04 13:47:16,699 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - boeNum do not exist
+ERROR - 2021-02-04 13:47:16,699 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 业务审批出现异常，异常信息为：<class 'Exception'>
+ERROR - 2021-02-04 13:47:29,176 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-02-04 13:47:33,255 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-02-04 13:48:57,614 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-02-04 13:49:07,521 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - com.bstek.urule.RuleException: Node[1] not exist.

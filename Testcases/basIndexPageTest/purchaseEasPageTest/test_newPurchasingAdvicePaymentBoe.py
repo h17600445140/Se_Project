@@ -33,7 +33,7 @@ class TestNewPurchasingAdvicePaymentBoe():
 
         with allure.step("点击选择采购付款页面"):
             self.newPurchasingAdvicePaymentBoePage.selectTabType('采购付款')
-        with allure.step("进入成本暂估单（旧）单据提交页面"):
+        with allure.step("进入采购付款单单据提交页面"):
             self.newPurchasingAdvicePaymentBoePage.boeRntry('采购付款')
 
         global boeNum

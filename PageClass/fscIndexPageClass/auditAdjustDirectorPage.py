@@ -59,6 +59,7 @@ class AuditAdjustDirectorPage(FscCommonPage):
         self.click(*self._distributeToGroup)
         logger.info("点击分配到组")
         self.click(*self._selectGroup)
+        sleep(0.5)
         self.select_item(groupType)
         logger.info("选择组：{}".format(groupType))
         self.click(*self._selectGroupSubmit)

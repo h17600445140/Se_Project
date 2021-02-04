@@ -33,7 +33,7 @@ class TestCostEstimateBoe():
 
         with allure.step("点击选择采购付款页面"):
             self.newPurchasingBillBoePage.selectTabType('采购付款')
-        with allure.step("进入成本暂估单（旧）单据提交页面"):
+        with allure.step("进入采购报账单单据提交页面"):
             self.newPurchasingBillBoePage.boeRntry('采购报账')
 
         global boeNum
@@ -54,50 +54,50 @@ class TestCostEstimateBoe():
             self.newPurchasingBillBoePage.selectExpenseDept('AD', deptName='A部门')
 
 
-        with allure.step("建立关联"):
-            self.newPurchasingBillBoePage.click_makeRelated()
-            self.newPurchasingBillBoePage.relateAcceptancesheetAndInvoice('ysd005', '88800001')
+        # with allure.step("建立关联"):
+        #     self.newPurchasingBillBoePage.click_makeRelated()
+        #     self.newPurchasingBillBoePage.relateAcceptancesheetAndInvoice('ysd005', '88800001')
 
 
-    #     with allure.step("关联付款计划"):
-    #         self.newPurchasingBillBoePage.selectAccountReceivable('质保金付款')
-    #
-    #     with allure.step("点击单据提交"):
-    #         self.newPurchasingBillBoePage.click_boeSubmitButton()
-    #     with allure.step("点击单据关闭按钮"):
-    #         self.newPurchasingBillBoePage.click_close()
-    #
-    #     with allure.step("进行单据生成校验"):
-    #         self.newPurchasingBillBoePage.click_more()
-    #         self.newPurchasingBillBoePage.input_boeNumQuery(boeNum)
-    #         self.newPurchasingBillBoePage.click_queryButton()
-    #
-    #     with allure.step("断言结果：{}".format(self.newPurchasingBillBoePage.checkBoeNumExistIsOrNot(boeNum))):
-    #         assert self.newPurchasingBillBoePage.checkBoeNumExistIsOrNot(boeNum) == True
-    #
-    #
-    # @allure.story("采购报账单费用报销界面业务审批")
-    # @allure.step("采购报账单费用报销界面业务审批步骤")
-    # @pytest.mark.dependency(depends=["submit"] )
-    # def test_businessApprove(self):
-    #     logger.info(" ----- 单据业务审批开始 ----- ")
-    #     global boeNum
-    #     self.businessApprove = BusinessApprove(boeNum)
-    #     content = self.businessApprove.boeBusinessApprove()
-    #     logger.info(" ----- 单据业务审批开始 ----- ")
-    #     assert content == '审批成功'
-    #
-    #
-    # @allure.story("采购报账单共享中心界面财务审批")
-    # @allure.step("采购报账单共享中心界面财务审批步骤")
-    # @pytest.mark.dependency(depends=["submit"])
-    # def test_sharingCenterApprove(self):
-    #     logger.info(" ----- 单据财务审批开始 ----- ")
-    #     global boeNum
-    #     self.sharingCenterApprove = SharingCenterApprove(boeNum)
-    #     self.sharingCenterApprove.sharingCenterApproveChuShen()
-    #     self.sharingCenterApprove.sharingCenterApproveFuShen()
-    #     logger.info(" ----- 单据财务审批结束 ----- ")
+        with allure.step("关联付款计划"):
+            self.newPurchasingBillBoePage.selectAccountReceivable('质保金付款')
+
+        with allure.step("点击单据提交"):
+            self.newPurchasingBillBoePage.click_boeSubmitButton()
+        with allure.step("点击单据关闭按钮"):
+            self.newPurchasingBillBoePage.click_close()
+
+        with allure.step("进行单据生成校验"):
+            self.newPurchasingBillBoePage.click_more()
+            self.newPurchasingBillBoePage.input_boeNumQuery(boeNum)
+            self.newPurchasingBillBoePage.click_queryButton()
+
+        with allure.step("断言结果：{}".format(self.newPurchasingBillBoePage.checkBoeNumExistIsOrNot(boeNum))):
+            assert self.newPurchasingBillBoePage.checkBoeNumExistIsOrNot(boeNum) == True
+
+
+    @allure.story("采购报账单费用报销界面业务审批")
+    @allure.step("采购报账单费用报销界面业务审批步骤")
+    @pytest.mark.dependency(depends=["submit"] )
+    def test_businessApprove(self):
+        logger.info(" ----- 单据业务审批开始 ----- ")
+        global boeNum
+        self.businessApprove = BusinessApprove(boeNum)
+        content = self.businessApprove.boeBusinessApprove()
+        logger.info(" ----- 单据业务审批开始 ----- ")
+        assert content == '审批成功'
+
+
+    @allure.story("采购报账单共享中心界面财务审批")
+    @allure.step("采购报账单共享中心界面财务审批步骤")
+    @pytest.mark.dependency(depends=["submit"])
+    def test_sharingCenterApprove(self):
+        logger.info(" ----- 单据财务审批开始 ----- ")
+        global boeNum
+        self.sharingCenterApprove = SharingCenterApprove(boeNum)
+        self.sharingCenterApprove.sharingCenterApproveChuShen()
+        self.sharingCenterApprove.sharingCenterApproveFuShen()
+        logger.info(" ----- 单据财务审批结束 ----- ")
 
 
 
