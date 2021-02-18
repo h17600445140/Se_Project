@@ -3,6 +3,7 @@ url:
   baseHost: http://fol.ztessc.com.cn/base
   easHost: http://fol.ztessc.com.cn/eas
   fscHost: http://fol.ztessc.com.cn/fsc
+  basHost: http://fol.ztessc.com.cn/bas
   timerHost: http://fol.ztessc.com.cn/ip/timerManage
   invoiceIpoolHost: http://fol.ztessc.com.cn/ipool
   fscAuditList: http://fol.ztessc.com.cn/fsc/auditList

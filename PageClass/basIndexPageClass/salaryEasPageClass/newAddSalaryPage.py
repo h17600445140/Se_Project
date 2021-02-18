@@ -120,27 +120,22 @@ class NewAddSalaryPage(BasIndexPage,BoeCommon):
         self.click(*(By.XPATH, '/html/body//div//span/button[2]'))
 
 
-    # 计提实发
-    def input_JiTiShiFa(self, text):
-        # self.click(*(By.ID, 'form_641786a44d5c7d76b91db1b9b2ae005d'))
-        # element = self.find_element(*(By.ID, 'form_641786a44d5c7d76b91db1b9b2ae005d'))
-        #
-        # ActionChains(self.driver).send_keys_to_element(element, Keys.BACKSPACE).perform()
-        # ActionChains(self.driver).send_keys_to_element(element, Keys.ARROW_RIGHT).perform()
-        # ActionChains(self.driver).send_keys_to_element(element, text).perform()
-
-        self.input_amount(text, *(By.ID, 'form_641786a44d5c7d76b91db1b9b2ae005d'))
-
-        logger.info('输入的计提实发为：{}'.format(text))
-
-
-    # 计提应发
+    # 应发
     def input_JiTiYingFa(self, text):
-        self.input_amount(text, *(By.ID, 'form_641786a44d5613a97cdab1b9b2ae005a'))
-        logger.info('输入的计提应发为：{}'.format(text))
-
-
-    # 计提扣款
+        self.input_amount(text, *(By.ID, 'form_bebabc99-8c40-4ee7-a249-ebb05a22e16e'))
+        logger.info('输入的计提实发为：{}'.format(text))
+    # 扣款
     def input_JiTiKouKuan(self, text):
-        self.input_amount(text, *(By.ID, 'form_641786a44d6214718a21b1b9b2ae0060'))
+        self.input_amount(text, *(By.ID, 'form_d85ac8ce133d6b1a573db1b2b7ae0e82'))
+        logger.info('输入的计提应发为：{}'.format(text))
+    # 实发
+    def input_JiTiShiFa(self, text):
+        self.input_amount(text, *(By.ID, 'form_d85ac8ce1332f67edbc0b1b2b7ae0e7f'))
         logger.info('输入的计提扣款为：{}'.format(text))
+
+    # 提交
+    def clickSalarySubmitButton(self):
+        self.clickTargetButton('提交')
+        sleep(1)
+
+

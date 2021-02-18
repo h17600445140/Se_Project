@@ -99,11 +99,15 @@ class SharingCenterApprove():
                 logger.info('弹窗信息为：{}'.format(self._boeCommon.getToastBoxText()))
                 logger.info('单据财务审批成功')
         except:
-            sleep(0.5)
+            sleep(1)
             if self._boeCommon.getToastBoxText() != '审批成功':
                 logger.info('弹窗信息为：{}'.format(self._boeCommon.getToastBoxText()))
-                logger.error(self._boeCommon.getBoxMessage())
-                raise Exception('审批不成功')
+                try:
+                    logger.error(self._boeCommon.getBoxMessage())
+                except:
+                    pass
+                finally:
+                    raise Exception('审批不成功')
             else:
                 logger.info('弹窗信息为：{}'.format(self._boeCommon.getToastBoxText()))
                 logger.info('单据财务审批成功')
@@ -166,7 +170,7 @@ class SharingCenterApprove():
         self.login.driver.quit()
 
 if __name__ == '__main__':
-    a = SharingCenterApprove('hcGroup-BX210203109')
+    a = SharingCenterApprove('LMJT-BX2102180140')
     # dict = {'invoiceNo':'880000000007', 'invoiceCode':'88000007', 'invoiceDate':'2020-1-1', 'invoiceFee':'1000.00', 'invoiceTax':'47.62', 'invoiceRemark':'测试开票申请单'}
     # a.sharingCenterApproveChuShen(modify=True, **dict)
     a.sharingCenterApproveChuShen()

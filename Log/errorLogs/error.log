@@ -522,3 +522,11 @@ ERROR - 2021-02-04 13:47:29,176 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54
 ERROR - 2021-02-04 13:47:33,255 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
 ERROR - 2021-02-04 13:48:57,614 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
 ERROR - 2021-02-04 13:49:07,521 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - com.bstek.urule.RuleException: Node[1] not exist.
+ERROR - 2021-02-18 13:54:05,397 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-02-18 14:06:40,545 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-02-18 14:07:02,386 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-02-18 14:09:38,821 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-02-18 14:11:17,378 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-02-18 14:17:08,876 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-02-18 14:20:30,650 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-02-18 14:21:06,934 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---

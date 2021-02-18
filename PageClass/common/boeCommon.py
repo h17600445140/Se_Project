@@ -106,6 +106,9 @@ class BoeCommon(BasePage):
         sleep(1)
         logger.info("选择的业务类型为：{}".format(text))
 
+    def click_boeAbstract(self):
+        self.click(*self._boeAbstract)
+
     def input_boeAbstract(self, text):
         WebDriverWait(self.driver, 5).until(
             EC.visibility_of_element_located(self._boeAbstract))

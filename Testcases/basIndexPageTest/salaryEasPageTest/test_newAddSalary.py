@@ -52,8 +52,21 @@ class TestNewAddSalary():
         with allure.step("点击明细新增按钮"):
             self.newAddSalaryPage.click_salaryAddButton()
         with allure.step("选择责任部门"):
-            self.newAddSalaryPage.selectSalaryDept('hcCBZX', deptName='hc成本中心A部门')
+            self.newAddSalaryPage.selectSalaryDept('UICBZX', deptName='UI成本中心')
         with allure.step("输入薪酬明细"):
-            self.newAddSalaryPage.input_JiTiShiFa('100.00')
-            # self.newAddSalaryPage.input_JiTiYingFa('90')
-            # self.newAddSalaryPage.input_JiTiKouKuan('10')
+            self.newAddSalaryPage.input_JiTiYingFa('100.10')
+            self.newAddSalaryPage.input_JiTiKouKuan('10.10')
+            self.newAddSalaryPage.input_JiTiShiFa('90.00')
+        with allure.step("点击确认按钮"):
+            self.newAddSalaryPage.clickTargetButton('确认')
+
+        assert self.newAddSalaryPage.getToastBoxText() == '保存成功'
+
+        with allure.step("点击提交按钮"):
+            self.newAddSalaryPage.clickSalarySubmitButton()
+        with allure.step("点击确定按钮"):
+            self.newAddSalaryPage.click_button('确定')
+
+        assert self.newAddSalaryPage.getToastBoxText() == '保存成功'
+
+        self.newAddSalaryPage.closeCurrentWindows()
