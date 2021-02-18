@@ -38,8 +38,6 @@ class TestBillingApplicationBoe():
         global boeNum
         boeNum = self.billingApplicationBoePage.getBoeNum()
 
-
-
         self.billingApplicationBoePage.selectBuyer('hc客户001')
 
         self.billingApplicationBoePage.selectContract('hcKH000002')

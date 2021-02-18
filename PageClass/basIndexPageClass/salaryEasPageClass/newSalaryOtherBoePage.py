@@ -9,7 +9,7 @@ from Util import logger
 
 
 # 工资报账单（新）
-class NewSalaryWageBoePage(BasIndexPage,BoeCommon):
+class NewSalaryOtherBoePage(BasIndexPage,BoeCommon):
 
     def __init__(self, driver):
         BasIndexPage.__init__(self, driver)
@@ -21,4 +21,3 @@ class NewSalaryWageBoePage(BasIndexPage,BoeCommon):
         self.click(*self._salaryId)
         sleep(1)
         self.click(*(By.XPATH, '//*[@id="boeHeaderChild.0.salaryId.table"]/div/div/div[1]/div[3]/table/tbody/tr/td[1]'))
-

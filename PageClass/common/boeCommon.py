@@ -295,10 +295,32 @@ class BoeCommon(BasePage):
     # —————————— 支付区 ——————————
     # 支付方式
     _paymentModeCode = (By.ID, 'zfsBoePayments.0.paymentModeCode')
-    # 收款账户
-    _vendorId = (By.ID, 'zfsBoePayments.0.vendorId')
 
     # 操作支付区
+
+    # 收款账户
+    _vendorId = (By.ID, 'zfsBoePayments.0.vendorId')
+    def click_vendorAccount(self):
+        self.click(*self._vendorId)
+    def selectVendorAccount(self, accountNum, accountName=''):
+        self.click_vendorAccount()
+        WebDriverWait(self.driver, 5).until(EC.visibility_of_element_located(
+            (By.ID, 'itembankAccount')))
+        self.send_text(accountNum, *(By.ID, 'itembankAccount'))
+        self.send_text(accountName, *(By.ID, 'itemname'))
+        self.click(*(By.XPATH, '/html/body//form/div[3]/div/button[1]'))
+        sleep(1)
+        try:
+            self.find_elements(*(By.CLASS_NAME, 'el-table__row'))[
+                len(self.find_elements(*(By.CLASS_NAME, 'el-table__row'))) - 1].click()
+        except:
+            logger.warning('警告,第一次没找到,重新查找点击')
+            self.find_elements(*(By.CLASS_NAME, 'el-table__row'))[
+                len(self.find_elements(*(By.CLASS_NAME, 'el-table__row'))) - 1].click()
+        logger.info('选择的收款人为 : {}'.format(accountName))
+        logger.info('选择的银行账户为 : {}'.format(accountNum))
+        self.click(*(By.XPATH, '/html/body//div//span/button[2]'))
+
 
     # 支付金额
     _paymentAmount = (By.ID, 'zfsBoePayments.0.paymentAmount')

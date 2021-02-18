@@ -44,7 +44,7 @@ class TestNewSalaryWageBoe():
             self.newSalaryWageBoePage.input_boeAbstract('测试工资报账单（新）')
 
         with allure.step("选择关联薪资"):
-                self.newSalaryWageBoePage.select_salary()
+            self.newSalaryWageBoePage.select_salary()
 
         with allure.step("点击单据提交"):
             self.newSalaryWageBoePage.click_boeSubmitButton()
