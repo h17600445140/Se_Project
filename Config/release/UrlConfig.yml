@@ -8,6 +8,7 @@ url:
   invoiceIpoolHost: http://fol.ztessc.com.cn/ipool
   fscAuditList: http://fol.ztessc.com.cn/fsc/auditList
   fscAuditAdjustDirector: http://fol.ztessc.com.cn/fsc/auditAdjustDirector
+  fscBillExchange: http://fol.ztessc.com.cn/fsc/billExchange
 
 user:
   account: hc001

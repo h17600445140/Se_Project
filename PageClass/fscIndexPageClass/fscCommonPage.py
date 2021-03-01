@@ -9,6 +9,7 @@ from PageClass.basePage import BasePage
 from Util import logger, config
 
 
+
 class FscCommonPage(BasePage):
 
 
@@ -77,3 +78,13 @@ class FscCommonPage(BasePage):
 
     def click_missionAudit(self):
         self.click(*self._missionAudit)
+
+
+    def gotoBillExchangePage(self):
+        """
+        describe：
+            进入支付中心票据台账
+        :param : No param
+        :return: None
+        """
+        self.driver.get(config.getUrlDict()['url']['fscBillExchange'])
