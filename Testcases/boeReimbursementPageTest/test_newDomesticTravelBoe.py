@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+import datetime
 from time import sleep
 
 import allure
@@ -57,7 +58,7 @@ class TestNewDomesticTravelBoe():
                 self.newDomesticTravelBoePage.click_invoiceType()
                 # 差旅火车票新增
                 invoiceFactory.get_invoice(self.login.driver, '火车票', 'boeInvoicePage').getTickets(
-                    newDomesticTravelBoe_testdata['trainInvoice']['invoiceDate'],
+                    datetime.datetime.now().strftime("%Y-%m-%d"),
                     newDomesticTravelBoe_testdata['trainInvoice']['invoicePersonType'],
                     newDomesticTravelBoe_testdata['trainInvoice']['invoicePersonName'],
                     newDomesticTravelBoe_testdata['trainInvoice']['invoiceFromCity'],
@@ -116,6 +117,7 @@ class TestNewDomesticTravelBoe():
         content = self.businessApprove.boeBusinessApprove()
         logger.info(" ----- 单据业务审批结束 ----- ")
         assert content == '审批成功'
+
 
     @allure.story("差旅报账单共享中心界面财务审批")
     @allure.step("差旅报账单共享中心界面财务审批步骤")

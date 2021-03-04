@@ -1,0 +1,28 @@
+url:
+  publicHost: http://fssc200.csztessc.com.cn:8085/public
+  baseHost: http://fssc200.csztessc.com.cn:8085/base
+  easHost: http://fssc200.csztessc.com.cn:8085/eas
+  cmsHost: http://fssc200.csztessc.com.cn:8085/cms
+  basHost: http://fssc200.csztessc.com.cn:8085/bas
+  fscHost: http://fssc200.csztessc.com.cn:8085/fsc
+  ledgerHost: http://fssc200.csztessc.com.cn:8085/ledger
+  timerHost: http://fssc200.csztessc.com.cn:8085/ip/timerManage
+  invoiceIpoolHost: http://fssc200.csztessc.com.cn:8085/ipool
+  fscAuditList: http://fssc200.csztessc.com.cn:8085/fsc/auditList
+  fscAuditAdjustDirector: http://fssc200.csztessc.com.cn:8085/fsc/auditAdjustDirector
+
+user:
+  account: UI01
+  password: 123456
+leader:
+  account: UI02
+  password: 123456
+finance:
+  account: UI03
+  password: zfs123456
+
+Approval:
+  approvalGroupC: UI初审
+  approvalUserC: UI03
+  approvalGroupF: UI复审
+  approvalUserF: UI03

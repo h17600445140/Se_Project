@@ -1,4 +1,7 @@
 # -*- coding:utf-8 -*-
+import datetime
+import random
+import string
 from time import sleep
 
 import allure
@@ -10,6 +13,8 @@ from Testcases.common.boeSharingCenterApprove import SharingCenterApprove
 from Testcases.common.loginDepend import LoginDepend
 from Util import logger
 from Util.util import getPicturePath, getNowTime
+from Testcases.common import invoiceFactory
+
 
 
 @allure.feature("日常费用报账单流程")
@@ -50,13 +55,26 @@ class TestNewDailyExpenseBoe():
             with allure.step("输入备注"):
                 self.newDailyExpenseBoePage.input_boeAbstract(newDailyExpenseBoe_testdata['boeAbstract'])
 
-            with allure.step("选择关联发票"):
-                self.newDailyExpenseBoePage.selectRelatedInvoice(newDailyExpenseBoe_testdata['relatedInvoice'])
+            # with allure.step("选择关联发票"):
+            #     self.newDailyExpenseBoePage.selectRelatedInvoice(newDailyExpenseBoe_testdata['relatedInvoice'])
+
+
+            with allure.step("点击新增发票"):
+                self.newDailyExpenseBoePage.click_addInvoiceButton()
+                self.newDailyExpenseBoePage.click_invoiceType()
+                invoiceFactory.get_invoice(self.login.driver, '增值税普通发票', 'boeInvoicePage').getTickets(
+                    date = datetime.datetime.now().strftime('%Y-%m-%d'),
+                    invoiceNo = ''.join(random.choice(string.digits) for _ in range(12)),
+                    invoiceCode = ''.join(random.choice(string.digits) for _ in range(8)),
+                    feeTotal = '100.00',
+                    tax = '0.00',
+                    checkCode = '123456')
             with allure.step("输入业务类型"):
                 try:
                     self.newDailyExpenseBoePage.selectOperationSubType(newDailyExpenseBoe_testdata['operationSubType'])
                 except:
                     self.newDailyExpenseBoePage.selectOperationSubType(newDailyExpenseBoe_testdata['operationSubType'])
+
             with allure.step("选择部门"):
                 self.newDailyExpenseBoePage.selectDepartment(newDailyExpenseBoe_testdata['deptCode'], newDailyExpenseBoe_testdata['deptName'])
             with allure.step("输入项目"):

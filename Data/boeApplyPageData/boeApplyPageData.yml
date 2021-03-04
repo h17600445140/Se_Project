@@ -1,8 +1,8 @@
 ---
 comFeeApplyBoe:
-        -   operationType: '通用费用申请'
+        -   operationType: 'UI通用'
             boeAbstract: '测试通用费用申请'
-            operationSubTypeId: '通用业务1'
+            operationSubTypeId: 'UI通用01'
             expenseAmount: '200.10'
             remark: '测试通用费用申请单'
             casename: '通用费用申请单提交主流程'
@@ -29,7 +29,7 @@ applyInternationalTravelBoe:
             toCity: '北京'
             transportation: '动卧'
             travelTask: '会议出差'
-            projectName: '刘志成项目'
+            projectName: 'UI项目'
             casename: '测试差旅申请单（国际）提交主流程'
 
 

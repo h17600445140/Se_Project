@@ -17,7 +17,7 @@ class NewDailyExpenseBoePage(EasIndexPage,BoeCommon):
     # 关联发票
     _relatedInvoice = (By.XPATH, '//*[@id="cost"]/div/div/button[1]')
     # 业务小类
-    _operationSubType =  (By.XPATH, '/html/body/div[1]/div/div[2]/div[3]/div[2]/div/span')
+    _operationSubType =  (By.XPATH, '/html//div[1]/div/div[2]/div[3]/div[2]/div/span')
 
     def __init__(self, driver):
         EasIndexPage.__init__(self, driver)

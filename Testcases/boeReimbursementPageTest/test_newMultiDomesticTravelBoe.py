@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+import datetime
 from time import sleep
 
 import allure
@@ -63,13 +64,27 @@ class TestNewMultiDomesticTravelBoe():
                 self.newMultiDomesticTravelBoePage.click_invoiceType()
                 # 差旅火车票新增
                 invoiceFactory.get_invoice(self.login.driver, '火车票', 'boeInvoicePage').getTickets(
-                    '2021-1-4', '内部人员', 'hc1', '长沙', '天津', '二等座（高铁/动车）', '500.00', '否')
+                    datetime.datetime.now().strftime("%Y-%m-%d"),
+                    '内部人员',
+                    'UI01',
+                    '长沙',
+                    '杭州',
+                    '二等座（高铁/动车）',
+                    '500.00',
+                    '否')
 
                 self.newMultiDomesticTravelBoePage.click_addInvoiceButton()
                 self.newMultiDomesticTravelBoePage.click_invoiceType()
                 # 差旅火车票新增
                 invoiceFactory.get_invoice(self.login.driver, '火车票', 'boeInvoicePage').getTickets(
-                    '2021-1-4', '内部人员', 'hc3', '长沙', '天津', '二等座（高铁/动车）', '500.00', '否')
+                    datetime.datetime.now().strftime("%Y-%m-%d"),
+                    '内部人员',
+                    'UI02',
+                    '长沙',
+                    '杭州',
+                    '二等座（高铁/动车）',
+                    '500.00',
+                    '否')
 
             # self.newMultiDomesticTravelBoePage.click_addInvoiceButton()
             # self.newMultiDomesticTravelBoePage.click_invoiceType()

@@ -1,4 +1,6 @@
 # -*- coding:utf-8 -*-
+import os
+
 import allure
 import pytest
 
@@ -8,6 +10,7 @@ from Testcases.common.boeBusinessApprove import BusinessApprove
 from Testcases.common.boeSharingCenterApprove import SharingCenterApprove
 from Testcases.common.loginDepend import LoginDepend
 from Util import logger
+from Util.util import getNowTime, getPicturePath, readInvoiceNum
 
 
 @allure.feature("作废/红字发票申请单（新）")
@@ -20,8 +23,7 @@ class TestNewObsoleteRedLetterInvoiceApplictationBoe():
         self.newObsoleteRedLetterInvoiceApplictationBoePage = NewObsoleteRedLetterInvoiceApplictationBoePage(self.publicLogin.driver)
 
     def teardown_class(self):
-        # self.newObsoleteRedLetterInvoiceApplictationBoePage.driver.quit()
-        pass
+        self.newObsoleteRedLetterInvoiceApplictationBoePage.driver.quit()
 
     @allure.story("作废/红字发票申请单（新）业务报账界面单据提交")
     @allure.step("作废/红字发票申请单（新）业务报账界面单据提交步骤")
@@ -29,38 +31,62 @@ class TestNewObsoleteRedLetterInvoiceApplictationBoe():
     @pytest.mark.dependency(name='submit')
     def test_newObsoleteRedLetterInvoiceApplictationBoePage(self):
 
-        logger.info(" ----- 单据提交流程开始 ----- ")
+        try:
 
-        with allure.step("点击选择收入收款页面"):
-            self.newObsoleteRedLetterInvoiceApplictationBoePage.selectTabType('收入收款')
-        with allure.step("进入作废/红字发票申请单（新）单据提交页面"):
-            self.newObsoleteRedLetterInvoiceApplictationBoePage.boeRntry('作废/红字发票申请单（新）')
+            logger.info(" ----- 单据提交流程开始 ----- ")
 
-        global boeNum
-        boeNum = self.newObsoleteRedLetterInvoiceApplictationBoePage.getBoeNum()
+            with allure.step("点击选择收入收款页面"):
+                self.newObsoleteRedLetterInvoiceApplictationBoePage.selectTabType('收入收款')
+            with allure.step("进入作废/红字发票申请单（新）单据提交页面"):
+                self.newObsoleteRedLetterInvoiceApplictationBoePage.boeRntry('作废/红字发票申请单（新）')
 
-        with allure.step("选择业务类型"):
-            self.newObsoleteRedLetterInvoiceApplictationBoePage.input_operationType('红字发票')
-        with allure.step("输入备注"):
-            self.newObsoleteRedLetterInvoiceApplictationBoePage.input_boeAbstract('测试作废/红字发票申请单（新）')
+            global boeNum
+            boeNum = self.newObsoleteRedLetterInvoiceApplictationBoePage.getBoeNum()
 
-        with allure.step("选择关联发票"):
-            self.newObsoleteRedLetterInvoiceApplictationBoePage.relateTargetInvoice('88000008')
+            with allure.step("选择业务类型"):
+                self.newObsoleteRedLetterInvoiceApplictationBoePage.input_operationType('UI红字发票')
+            with allure.step("输入备注"):
+                self.newObsoleteRedLetterInvoiceApplictationBoePage.input_boeAbstract('测试作废/红字发票申请单（新）')
 
-        with allure.step("点击单据提交"):
-            self.newObsoleteRedLetterInvoiceApplictationBoePage.click_boeSubmitButton()
-        with allure.step("点击单据关闭按钮"):
-            self.newObsoleteRedLetterInvoiceApplictationBoePage.click_close()
+            boeNumPath = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'invoiceNum.json')
+            self.invoiceNum = readInvoiceNum(boeNumPath)
 
-        with allure.step("进行单据生成校验"):
-            self.newObsoleteRedLetterInvoiceApplictationBoePage.click_more()
-            self.newObsoleteRedLetterInvoiceApplictationBoePage.input_boeNumQuery(boeNum)
-            self.newObsoleteRedLetterInvoiceApplictationBoePage.click_queryButton()
+            with allure.step("选择关联发票"):
+                self.newObsoleteRedLetterInvoiceApplictationBoePage.relateTargetInvoice(self.invoiceNum)
 
-        with allure.step("断言结果：{}".format(self.newObsoleteRedLetterInvoiceApplictationBoePage.checkBoeNumExistIsOrNot(boeNum))):
-            assert self.newObsoleteRedLetterInvoiceApplictationBoePage.checkBoeNumExistIsOrNot(boeNum) == True
+            with allure.step("点击单据提交"):
+                self.newObsoleteRedLetterInvoiceApplictationBoePage.click_boeSubmitButton()
+            with allure.step("点击单据关闭按钮"):
+                self.newObsoleteRedLetterInvoiceApplictationBoePage.click_close()
 
-        logger.info(" ----- 单据提交流程结束 ----- ")
+            with allure.step("进行单据生成校验"):
+                self.newObsoleteRedLetterInvoiceApplictationBoePage.click_more()
+                self.newObsoleteRedLetterInvoiceApplictationBoePage.input_boeNumQuery(boeNum)
+                self.newObsoleteRedLetterInvoiceApplictationBoePage.click_queryButton()
+
+            with allure.step("断言结果：{}".format(self.newObsoleteRedLetterInvoiceApplictationBoePage.checkBoeNumExistIsOrNot(boeNum))):
+                assert self.newObsoleteRedLetterInvoiceApplictationBoePage.checkBoeNumExistIsOrNot(boeNum) == True
+
+            logger.info(" ----- 单据提交流程结束 ----- ")
+
+        except Exception as e:
+            logger.error("出现异常，异常信息为：{}".format(type(e)))
+            code = 'wrong'
+            timeNow = getNowTime()
+            self.newObsoleteRedLetterInvoiceApplictationBoePage.screenshot(code, timeNow)
+            allure.attach.file(getPicturePath(code, timeNow), name=timeNow + code + "screenshot",
+                               attachment_type=allure.attachment_type.PNG)
+            self.newObsoleteRedLetterInvoiceApplictationBoePage.driver.quit()
+            assert 1 == 0
+
+        else:
+            logger.info("测试用例执行成功")
+            code = 'success'
+            timeNow = getNowTime()
+            self.newObsoleteRedLetterInvoiceApplictationBoePage.screenshot(code, timeNow)
+            allure.attach.file(getPicturePath(code, timeNow), name=timeNow + code + "screenshot",
+                               attachment_type=allure.attachment_type.PNG)
+            assert 1 == 1
 
 
     @allure.story("作废/红字发票申请单（新）费用报销界面业务审批")

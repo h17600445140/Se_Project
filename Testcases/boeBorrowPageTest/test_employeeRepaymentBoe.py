@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+import datetime
 import os
 from time import sleep
 
@@ -55,14 +56,15 @@ class TestEmployeeRepaymentBoe(object):
             with allure.step("输入备注"):
                 self.employeeRepaymentBoePage.input_boeAbstract(employeeRepaymentBoe_testdata['boeAbstract'])
 
-            with allure.step("输入业务类型"):
+            with allure.step("输入还款方式"):
                 self.employeeRepaymentBoePage.selectReplaymentType(employeeRepaymentBoe_testdata['operationSubType'])
             with allure.step("输入还款金额"):
                 self.employeeRepaymentBoePage.input_expenseAmount(self.boeFee)
             with allure.step("输入收款账户"):
                 self.employeeRepaymentBoePage.selectCollectionAccount(employeeRepaymentBoe_testdata['favoriteId'])
             with allure.step("输入还款日期"):
-                self.employeeRepaymentBoePage.selectLoanRepaymentDate(employeeRepaymentBoe_testdata['loanRepaymentDate'])
+                self.employeeRepaymentBoePage.selectLoanRepaymentDate(
+                    datetime.datetime.now().strftime("%Y-%m-%d"))
             with allure.step("输入还困说明"):
                 self.employeeRepaymentBoePage.input_remark(employeeRepaymentBoe_testdata['remark'])
 

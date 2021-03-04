@@ -214,6 +214,10 @@ class BasePage(object):
         :return: None
         """
 
+        year = str(int(year))
+        month = str(int(month))
+        day = str(int(day))
+
         sleep(1)
         # WebDriverWait(self.driver, 5).until(
         #     EC.visibility_of_element_located( (By.CLASS_NAME, 'el-date-picker__header') ))
@@ -238,6 +242,7 @@ class BasePage(object):
                 dateHeaderPanel.find_elements(*(By.TAG_NAME, 'button'))[0].click()
         elif year == selectedYear:
             pass
+
         # 操作月份
         selectedM = dateHeaderPanel.find_elements(*(By.TAG_NAME, 'span'))[1].text
         selectedMonth = selectedM.split(' ')[0]
@@ -251,6 +256,7 @@ class BasePage(object):
                 dateHeaderPanel.find_elements(*(By.TAG_NAME, 'button'))[1].click()
         elif month == selectedMonth:
             pass
+
         # 操作日
         dayTable = dateContentPanel.find_element(*(By.CLASS_NAME, 'el-date-table'))
         startNum = 0
@@ -261,6 +267,7 @@ class BasePage(object):
         for i in range(startNum, len(dayTable.find_elements(*(By.TAG_NAME, 'span')))):
             if dayTable.find_elements(*(By.TAG_NAME, 'span'))[i].text == day:
                 dayTable.find_elements(*(By.TAG_NAME, 'span'))[i].click()
+                break
 
         if 'display: none' not in self.find_element(*(By.CLASS_NAME, 'el-picker-panel__footer')).get_attribute('style'):
             self.find_element(*(By.CLASS_NAME, 'el-picker-panel__footer')).find_elements(*(By.TAG_NAME, 'button'))[1].click()

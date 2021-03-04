@@ -20,7 +20,11 @@ class BoeCommon(BasePage):
     _boeNum = (By.XPATH, '//*[@id="top"]/span[3]')
     def getBoeNum(self):
         self.switchWindow()
-        boeNum = self.get_elementText(*self._boeNum)
+        try:
+            boeNum = self.get_elementText(*self._boeNum)
+        except:
+            sleep(3)
+            boeNum = self.get_elementText(*self._boeNum)
         logger.info("当前提单单据号为：{}".format(boeNum))
         return boeNum
 
@@ -37,23 +41,23 @@ class BoeCommon(BasePage):
         logger.info("点击提交单据")
 
     # 打印封面
-    _printCover = (By.XPATH, '/html/body/div[1]/div/div[4]/div/div/div[2]/div/div[2]/button[1]')
+    _printCover = (By.XPATH, '/html//button[1]')
     def click_printCover(self):
         self.click(*self._printCover)
     # 查看单据
-    _viewBoe = (By.XPATH, '/html/body/div[1]/div/div[4]/div/div/div[2]/div/div[2]/button[2]')
+    _viewBoe = (By.XPATH, '/html//button[2]')
     def click_viewBoe(self):
         self.click(*self._viewBoe)
     # 复制单据
-    _copyBoe = (By.XPATH, '/html/body/div[1]/div/div[4]/div/div/div[2]/div/div[2]/button[3]')
+    _copyBoe = (By.XPATH, '/html//button[3]')
     def click_copyBoe(self):
         self.click(*self._copyBoe)
     # 继续填单
-    _continueBoe = (By.XPATH, '/html/body/div[1]/div/div[4]/div/div/div[2]/div/div[2]/button[4]')
+    _continueBoe = (By.XPATH, '/html//button[4]')
     def click_continueBoe(self):
         self.click(*self._continueBoe)
     # 关闭
-    _close = (By.XPATH, '/html/body/div[1]/div/div[4]/div/div/div[2]/div/div[2]/button[5]')
+    _close = (By.XPATH, '/html//button[5]')
     def click_close(self):
         WebDriverWait(self.driver, 8).until(
             EC.visibility_of_element_located(self._close))

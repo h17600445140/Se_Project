@@ -1,18 +1,18 @@
 ---
 newIncomeStatementBoe:
-        -   operationType: '收入'
+        -   operationType: 'UI通用'
             boeAbstract: '测试收入报账单'
             vendor:
-                    vendorCode: 'hcKH001'
-                    vendorName: 'hc客户001'
+                    vendorCode: 'UIKH'
+                    vendorName: 'UI客户'
             contract: 'hcKH000001'
             orderNumber: 'hcOrder000001'
-            operationSubType: '收入小类1'
+            operationSubType: 'UI通用01'
             expenseDept:
-                    deptCode: 'AD'
-                    deptName: 'A部门'
+                    deptCode: 'UIDP'
+                    deptName: 'UI部门'
             expenseAmount: '100.10'
-            taxAmount: '0.10'
+            taxAmount: '0.00'
             casename: '收入报账提交主流程'
 
 billingApplicationBoe:

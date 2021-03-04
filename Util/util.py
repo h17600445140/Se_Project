@@ -149,12 +149,24 @@ def writeBoeNum(path, boeNum):
     with open(path, "w", encoding="UTF-8") as f:
         json.dump(data, f)
 
+def writeInvoiceNum(path, boeNum):
+    with open(path, "r", encoding="UTF-8") as f:
+        Rdata = json.load(f)
+    Rdata["data"].update({'invoiceNum': boeNum})
+    data = Rdata
+    with open(path, "w", encoding="UTF-8") as f:
+        json.dump(data, f)
 
 # 读取记录文件
 def readBoeNum(path):
     with open(path, "r", encoding="UTF-8") as f:
         Rdata = json.load(f)
     return Rdata['data']['boeNum']
+
+def readInvoiceNum(path):
+    with open(path, "r", encoding="UTF-8") as f:
+        Rdata = json.load(f)
+    return Rdata['data']['invoiceNum']
 
 
 if __name__ == '__main__':

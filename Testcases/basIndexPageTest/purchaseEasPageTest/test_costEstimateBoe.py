@@ -7,6 +7,7 @@ from Testcases.common.boeBusinessApprove import BusinessApprove
 from Testcases.common.boeSharingCenterApprove import SharingCenterApprove
 from Testcases.common.loginDepend import LoginDepend
 from Util import logger
+from Util.util import getNowTime, getPicturePath
 
 
 @allure.feature("成本暂估单（旧）流程")
@@ -27,52 +28,72 @@ class TestCostEstimateBoe():
     @allure.severity("blocker")
     @pytest.mark.dependency(name='submit')
     def test_costEstimateBoe(self):
+        try:
 
-        logger.info(" ----- 单据提交流程开始 ----- ")
+            logger.info(" ----- 单据提交流程开始 ----- ")
 
-        with allure.step("点击选择采购付款页面"):
-            self.costEstimateBoePage.selectTabType('采购付款')
-        with allure.step("进入成本暂估单（旧）单据提交页面"):
-            self.costEstimateBoePage.boeRntry('成本暂估（旧）')
+            with allure.step("点击选择采购付款页面"):
+                self.costEstimateBoePage.selectTabType('采购付款')
+            with allure.step("进入成本暂估单（旧）单据提交页面"):
+                self.costEstimateBoePage.boeRntry('成本暂估（旧）')
 
-        global boeNum
-        boeNum = self.costEstimateBoePage.getBoeNum()
+            global boeNum
+            boeNum = self.costEstimateBoePage.getBoeNum()
 
-        with allure.step("选择业务类型"):
-            self.costEstimateBoePage.input_operationType('成本暂估')
-        with allure.step("输入备注"):
-            self.costEstimateBoePage.input_boeAbstract('测试成本暂估单（旧）')
+            with allure.step("选择业务类型"):
+                self.costEstimateBoePage.input_operationType('成本暂估')
+            with allure.step("输入备注"):
+                self.costEstimateBoePage.input_boeAbstract('测试成本暂估单（旧）')
 
-        with allure.step("选择供应商"):
-            self.costEstimateBoePage.selectVendor('hcGYS1', vendorName='hc供应商1')
-        with allure.step("选择关联合同"):
-            self.costEstimateBoePage.selectContract('hc00000020')
+            with allure.step("选择供应商"):
+                self.costEstimateBoePage.selectVendor('hcGYS1', vendorName='hc供应商1')
+            with allure.step("选择关联合同"):
+                self.costEstimateBoePage.selectContract('hc00000020')
 
-        with allure.step("输入订单编号"):
-            self.costEstimateBoePage.input_costOrderNumber('hcOrder001')
-        with allure.step("选择业务小类"):
-            self.costEstimateBoePage.input_costOperationSubType('暂估1')
-        with allure.step("输入总金额"):
-            self.costEstimateBoePage.input_costExpenseAmount('100.10')
-        with allure.step("选择责任部门"):
-            self.costEstimateBoePage.selectCc('AD', 'A部门')
-        with allure.step("选择项目"):
-            self.costEstimateBoePage.input_costProject('hc项目1')
-        with allure.step("输入备注"):
-            self.costEstimateBoePage.input_costRemark('测试成本暂估单（旧）')
+            with allure.step("输入订单编号"):
+                self.costEstimateBoePage.input_costOrderNumber('hcOrder001')
+            with allure.step("选择业务小类"):
+                self.costEstimateBoePage.input_costOperationSubType('暂估1')
+            with allure.step("输入总金额"):
+                self.costEstimateBoePage.input_costExpenseAmount('100.10')
+            with allure.step("选择责任部门"):
+                self.costEstimateBoePage.selectCc('AD', 'A部门')
+            with allure.step("选择项目"):
+                self.costEstimateBoePage.input_costProject('hc项目1')
+            with allure.step("输入备注"):
+                self.costEstimateBoePage.input_costRemark('测试成本暂估单（旧）')
 
-        with allure.step("点击单据提交"):
-            self.costEstimateBoePage.click_boeSubmitButton()
-        with allure.step("点击单据关闭按钮"):
-            self.costEstimateBoePage.click_close()
+            with allure.step("点击单据提交"):
+                self.costEstimateBoePage.click_boeSubmitButton()
+            with allure.step("点击单据关闭按钮"):
+                self.costEstimateBoePage.click_close()
 
-        with allure.step("进行单据生成校验"):
-            self.costEstimateBoePage.click_more()
-            self.costEstimateBoePage.input_boeNumQuery(boeNum)
-            self.costEstimateBoePage.click_queryButton()
+            with allure.step("进行单据生成校验"):
+                self.costEstimateBoePage.click_more()
+                self.costEstimateBoePage.input_boeNumQuery(boeNum)
+                self.costEstimateBoePage.click_queryButton()
 
-        with allure.step("断言结果：{}".format(self.costEstimateBoePage.checkBoeNumExistIsOrNot(boeNum))):
-            assert self.costEstimateBoePage.checkBoeNumExistIsOrNot(boeNum) == True
+            with allure.step("断言结果：{}".format(self.costEstimateBoePage.checkBoeNumExistIsOrNot(boeNum))):
+                assert self.costEstimateBoePage.checkBoeNumExistIsOrNot(boeNum) == True
+
+        except Exception as e:
+            logger.error("出现异常，异常信息为：{}".format(type(e)))
+            code = 'wrong'
+            timeNow = getNowTime()
+            self.costEstimateBoePage.screenshot(code, timeNow)
+            allure.attach.file(getPicturePath(code, timeNow), name=timeNow + code + "screenshot",
+                               attachment_type=allure.attachment_type.PNG)
+            self.costEstimateBoePage.driver.quit()
+            assert 1 == 0
+
+        else:
+            logger.info("测试用例执行成功")
+            code = 'success'
+            timeNow = getNowTime()
+            self.costEstimateBoePage.screenshot(code, timeNow)
+            allure.attach.file(getPicturePath(code, timeNow), name=timeNow + code + "screenshot",
+                               attachment_type=allure.attachment_type.PNG)
+            assert 1 == 1
 
 
     @allure.story("成本暂估单（旧）费用报销界面业务审批")

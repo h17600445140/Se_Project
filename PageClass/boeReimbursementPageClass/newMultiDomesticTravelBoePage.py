@@ -26,7 +26,11 @@ class NewMultiDomesticTravelBoePage(EasIndexPage,BoeCommon):
         self.click_button('+')
         self.send_text(keyWord, *(By.ID, 'itemkeyword'))
         self.click_button('查询')
-        self.click(*(By.XPATH, '/html/body//table/tbody/tr/td[1]/div/label/span'))
+        try:
+            self.click(*(By.XPATH, '/html/body//table/tbody/tr/td[1]/div/label/span'))
+        except:
+            sleep(2)
+            self.click(*(By.XPATH, '/html/body//table/tbody/tr/td[1]/div/label/span'))
         self.click(*(By.XPATH, '/html/body//div[3]/span/button[2]'))
         logger.info('增加出行人员，出行人员的工号为：{}'.format(keyWord))
 

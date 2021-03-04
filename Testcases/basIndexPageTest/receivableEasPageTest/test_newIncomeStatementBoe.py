@@ -21,8 +21,7 @@ class TestNewIncomeStatementBoe():
         self.newIncomeStatementBoePage = NewIncomeStatementBoePage(self.publicLogin.driver)
 
     def teardown_class(self):
-        # self.newIncomeStatementBoePage.driver.quit()
-        pass
+        self.newIncomeStatementBoePage.driver.quit()
 
     @allure.story("收入报账单业务报账界面单据提交")
     @allure.step("差旅申请单业务报账界面单据提交步骤")
@@ -48,8 +47,8 @@ class TestNewIncomeStatementBoe():
 
             with allure.step("选择客户"):
                 self.newIncomeStatementBoePage.selectVendor(newIncomeStatementBoe_testdata['vendor']['vendorCode'], vendorName=newIncomeStatementBoe_testdata['vendor']['vendorName'])
-            with allure.step("选择关联合同"):
-                self.newIncomeStatementBoePage.selectContract(newIncomeStatementBoe_testdata['contract'])
+            # with allure.step("选择关联合同"):
+            #     self.newIncomeStatementBoePage.selectContract(newIncomeStatementBoe_testdata['contract'])
             with allure.step("输入订单编号"):
                 self.newIncomeStatementBoePage.input_orderNumber(newIncomeStatementBoe_testdata['orderNumber'])
             with allure.step("选择业务类型"):

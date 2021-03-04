@@ -8,6 +8,7 @@ from Testcases.common.boeBusinessApprove import BusinessApprove
 from Testcases.common.boeSharingCenterApprove import SharingCenterApprove
 from Testcases.common.loginDepend import LoginDepend
 from Util import logger
+from Util.util import getNowTime, getPicturePath
 
 
 @allure.feature("采购付款单流程")
@@ -29,41 +30,62 @@ class TestNewPurchasingAdvicePaymentBoe():
     @pytest.mark.dependency(name='submit')
     def test_newPurchasingAdvicePaymentBoe(self):
 
-        logger.info(" ----- 单据提交流程开始 ----- ")
+        try:
 
-        with allure.step("点击选择采购付款页面"):
-            self.newPurchasingAdvicePaymentBoePage.selectTabType('采购付款')
-        with allure.step("进入采购付款单单据提交页面"):
-            self.newPurchasingAdvicePaymentBoePage.boeRntry('采购付款')
+            logger.info(" ----- 单据提交流程开始 ----- ")
 
-        global boeNum
-        boeNum = self.newPurchasingAdvicePaymentBoePage.getBoeNum()
+            with allure.step("点击选择采购付款页面"):
+                self.newPurchasingAdvicePaymentBoePage.selectTabType('采购付款')
+            with allure.step("进入采购付款单单据提交页面"):
+                self.newPurchasingAdvicePaymentBoePage.boeRntry('采购付款')
 
-        with allure.step("选择业务类型"):
-            self.newPurchasingAdvicePaymentBoePage.input_operationType('付款')
-        with allure.step("输入备注"):
-            self.newPurchasingAdvicePaymentBoePage.input_boeAbstract('测试采购付款但')
+            global boeNum
+            boeNum = self.newPurchasingAdvicePaymentBoePage.getBoeNum()
 
-        with allure.step("选择供应商"):
-            self.newPurchasingAdvicePaymentBoePage.selectVendor('hcGYS1', vendorName='hc供应商1')
-        # with allure.step("选择关联合同"):
-        #     self.newPurchasingAdvicePaymentBoePage.selectContract('hc00000021')
+            with allure.step("选择业务类型"):
+                self.newPurchasingAdvicePaymentBoePage.input_operationType('付款')
+            with allure.step("输入备注"):
+                self.newPurchasingAdvicePaymentBoePage.input_boeAbstract('测试采购付款但')
 
-        with allure.step("关联挂账款"):
-            self.newPurchasingAdvicePaymentBoePage.selectAccountReceivable('hcGroup-BX210203126')
+            with allure.step("选择供应商"):
+                self.newPurchasingAdvicePaymentBoePage.selectVendor('hcGYS1', vendorName='hc供应商1')
+            # with allure.step("选择关联合同"):
+            #     self.newPurchasingAdvicePaymentBoePage.selectContract('hc00000021')
 
-        with allure.step("点击单据提交"):
-            self.newPurchasingAdvicePaymentBoePage.click_boeSubmitButton()
-        with allure.step("点击单据关闭按钮"):
-            self.newPurchasingAdvicePaymentBoePage.click_close()
+            with allure.step("关联挂账款"):
+                self.newPurchasingAdvicePaymentBoePage.selectAccountReceivable('hcGroup-BX210203126')
 
-        with allure.step("进行单据生成校验"):
-            self.newPurchasingAdvicePaymentBoePage.click_more()
-            self.newPurchasingAdvicePaymentBoePage.input_boeNumQuery(boeNum)
-            self.newPurchasingAdvicePaymentBoePage.click_queryButton()
+            with allure.step("点击单据提交"):
+                self.newPurchasingAdvicePaymentBoePage.click_boeSubmitButton()
+            with allure.step("点击单据关闭按钮"):
+                self.newPurchasingAdvicePaymentBoePage.click_close()
 
-        with allure.step("断言结果：{}".format(self.newPurchasingAdvicePaymentBoePage.checkBoeNumExistIsOrNot(boeNum))):
-            assert self.newPurchasingAdvicePaymentBoePage.checkBoeNumExistIsOrNot(boeNum) == True
+            with allure.step("进行单据生成校验"):
+                self.newPurchasingAdvicePaymentBoePage.click_more()
+                self.newPurchasingAdvicePaymentBoePage.input_boeNumQuery(boeNum)
+                self.newPurchasingAdvicePaymentBoePage.click_queryButton()
+
+            with allure.step("断言结果：{}".format(self.newPurchasingAdvicePaymentBoePage.checkBoeNumExistIsOrNot(boeNum))):
+                assert self.newPurchasingAdvicePaymentBoePage.checkBoeNumExistIsOrNot(boeNum) == True
+
+        except Exception as e:
+            logger.error("出现异常，异常信息为：{}".format(type(e)))
+            code = 'wrong'
+            timeNow = getNowTime()
+            self.newPurchasingAdvicePaymentBoePage.screenshot(code, timeNow)
+            allure.attach.file(getPicturePath(code, timeNow), name=timeNow + code + "screenshot",
+                               attachment_type=allure.attachment_type.PNG)
+            self.newPurchasingAdvicePaymentBoePage.driver.quit()
+            assert 1 == 0
+
+        else:
+            logger.info("测试用例执行成功")
+            code = 'success'
+            timeNow = getNowTime()
+            self.newPurchasingAdvicePaymentBoePage.screenshot(code, timeNow)
+            allure.attach.file(getPicturePath(code, timeNow), name=timeNow + code + "screenshot",
+                               attachment_type=allure.attachment_type.PNG)
+            assert 1 == 1
 
 
     @allure.story("采购付款单费用报销界面业务审批")
