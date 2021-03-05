@@ -1,4 +1,8 @@
 # -*- coding:utf-8 -*-
+import os
+import random
+import string
+
 import allure
 import pytest
 
@@ -7,7 +11,7 @@ from Testcases.common.boeBusinessApprove import BusinessApprove
 from Testcases.common.boeSharingCenterApprove import SharingCenterApprove
 from Testcases.common.loginDepend import LoginDepend
 from Util import logger
-from Util.util import getNowTime, getPicturePath
+from Util.util import getNowTime, getPicturePath, writeBoeNum
 
 
 @allure.feature("采购预付单流程")
@@ -20,8 +24,7 @@ class TestNewPurchasePrepaymentBoe():
         self.newPurchasePrepaymentBoePage = NewPurchasePrepaymentBoePage(self.login.driver)
 
     def teardown_class(self):
-        # self.newPurchasePrepaymentBoePage.driver.quit()
-        pass
+        self.newPurchasePrepaymentBoePage.driver.quit()
 
     @allure.story("采购预付单业务报账界面单据提交")
     @allure.step("采购预付单业务报账界面单据提交步骤")
@@ -42,24 +45,24 @@ class TestNewPurchasePrepaymentBoe():
             boeNum = self.newPurchasePrepaymentBoePage.getBoeNum()
 
             with allure.step("选择业务类型"):
-                self.newPurchasePrepaymentBoePage.input_operationType('预付')
+                self.newPurchasePrepaymentBoePage.input_operationType('UI通用')
             with allure.step("输入备注"):
                 self.newPurchasePrepaymentBoePage.input_boeAbstract('测试采购预付单')
 
             with allure.step("选择供应商"):
-                self.newPurchasePrepaymentBoePage.selectVendor('hcGYS1', vendorName='hc供应商1')
-            with allure.step("选择关联合同"):
-                self.newPurchasePrepaymentBoePage.selectContract('hc00000022')
+                self.newPurchasePrepaymentBoePage.selectVendor('UIGYS', vendorName='UI供应商')
+            # with allure.step("选择关联合同"):
+            #     self.newPurchasePrepaymentBoePage.selectContract('123456789')
 
             with allure.step("输入采购订单"):
-                self.newPurchasePrepaymentBoePage.input_loanOrderNumber('hcOrder001')
+                self.newPurchasePrepaymentBoePage.input_loanOrderNumber('UI' + "".join(random.choice(string.digits) for _ in range(6)))
             with allure.step("选择预付类型"):
-                self.newPurchasePrepaymentBoePage.input_loanOperationSubType('预付小类1')
+                self.newPurchasePrepaymentBoePage.input_loanOperationSubType('UI通用01')
             with allure.step("输入预付金额"):
-                self.newPurchasePrepaymentBoePage.input_loanExpenseAmount('200.10')
+                self.newPurchasePrepaymentBoePage.input_loanExpenseAmount('100.00')
 
             with allure.step("选择支付方式"):
-                self.newPurchasePrepaymentBoePage.selectPaymentMethod('hc挂账-不支付')
+                self.newPurchasePrepaymentBoePage.selectPaymentMethod('UI挂账')
 
             with allure.step("点击单据提交"):
                 self.newPurchasePrepaymentBoePage.click_boeSubmitButton()
@@ -91,6 +94,10 @@ class TestNewPurchasePrepaymentBoe():
             self.newPurchasePrepaymentBoePage.screenshot(code, timeNow)
             allure.attach.file(getPicturePath(code, timeNow), name=timeNow + code + "screenshot",
                                attachment_type=allure.attachment_type.PNG)
+
+            boeNumPath = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'boeNum.json')
+            writeBoeNum(boeNumPath, boeNum)
+
             assert 1 == 1
 
 

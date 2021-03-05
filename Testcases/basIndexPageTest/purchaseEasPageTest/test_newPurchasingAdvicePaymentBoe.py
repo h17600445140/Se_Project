@@ -1,4 +1,6 @@
 # -*- coding:utf-8 -*-
+import os
+
 import allure
 import pytest
 
@@ -8,7 +10,7 @@ from Testcases.common.boeBusinessApprove import BusinessApprove
 from Testcases.common.boeSharingCenterApprove import SharingCenterApprove
 from Testcases.common.loginDepend import LoginDepend
 from Util import logger
-from Util.util import getNowTime, getPicturePath
+from Util.util import getNowTime, getPicturePath, readBoeNum
 
 
 @allure.feature("采购付款单流程")
@@ -19,6 +21,9 @@ class TestNewPurchasingAdvicePaymentBoe():
     def setup_class(self):
         self.login = LoginDepend('basHost', 'user')
         self.newPurchasingAdvicePaymentBoePage = NewPurchasingAdvicePaymentBoePage(self.login.driver)
+
+        boeNumPath = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'boeNum.json')
+        self.prepaidBoeNum = readBoeNum(boeNumPath)
 
     def teardown_class(self):
         # self.newPurchasingAdvicePaymentBoePage.driver.quit()
@@ -43,17 +48,17 @@ class TestNewPurchasingAdvicePaymentBoe():
             boeNum = self.newPurchasingAdvicePaymentBoePage.getBoeNum()
 
             with allure.step("选择业务类型"):
-                self.newPurchasingAdvicePaymentBoePage.input_operationType('付款')
+                self.newPurchasingAdvicePaymentBoePage.input_operationType('UI通用')
             with allure.step("输入备注"):
-                self.newPurchasingAdvicePaymentBoePage.input_boeAbstract('测试采购付款但')
+                self.newPurchasingAdvicePaymentBoePage.input_boeAbstract('测试采购付款单')
 
             with allure.step("选择供应商"):
-                self.newPurchasingAdvicePaymentBoePage.selectVendor('hcGYS1', vendorName='hc供应商1')
+                self.newPurchasingAdvicePaymentBoePage.selectVendor('UIGYS', vendorName='UI供应商')
             # with allure.step("选择关联合同"):
             #     self.newPurchasingAdvicePaymentBoePage.selectContract('hc00000021')
 
             with allure.step("关联挂账款"):
-                self.newPurchasingAdvicePaymentBoePage.selectAccountReceivable('hcGroup-BX210203126')
+                self.newPurchasingAdvicePaymentBoePage.selectAccountReceivable(self.prepaidBoeNum)
 
             with allure.step("点击单据提交"):
                 self.newPurchasingAdvicePaymentBoePage.click_boeSubmitButton()

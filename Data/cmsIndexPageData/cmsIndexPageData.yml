@@ -1,7 +1,7 @@
 ---
 contractEditPage:
-        - contractName: 'hc合同003'
-          contractCode: 'hc00000003'
+        - contractName: 'uiContract'
+          contractCode: 'uiCT'
           contractType: '租房合同'
           contractAmount: '1000.00'
           currency:
@@ -9,7 +9,7 @@ contractEditPage:
                   currencyName:
           vendorType: '供应商'
           vendor:
-                  vendorCode: '000001'
+                  vendorCode: 'UIGYS'
                   vendorName:
           signDate: '2021-1-15'
           contractDataFrom: '2021-1-1'
@@ -22,11 +22,11 @@ contractEditPage:
                   respDeptCode: 'FR部门'
           contractScope: '非公共合同'
           frameworkContract: '是'
-          haveImage: '否'
+          haveImage: '无需上传'
           casename: '框架合同新增主流程'
 
-        - contractName: 'hc合同004'
-          contractCode: 'hc00000004'
+        - contractName: 'uiContract'
+          contractCode: 'uiCT'
           contractType: '租房合同'
           contractAmount: '1000.00'
           currency:
@@ -34,7 +34,7 @@ contractEditPage:
                   currencyName:
           vendorType: '供应商'
           vendor:
-                  vendorCode: '000001'
+                  vendorCode: 'UIGYS'
                   vendorName:
           signDate: '2021-1-15'
           contractDataFrom: '2021-1-1'
@@ -47,27 +47,27 @@ contractEditPage:
                   respDeptCode: 'FR部门'
           contractScope: '非公共合同'
           frameworkContract: '否'
-          haveImage: '否'
+          haveImage: '无需上传'
           casename: '非框架合同新增主流程'
           paymentDetail:
                   - paymentType: '预付款'
                     paymentCondition: '预付款计划'
                     plansDate: '2020-1-1'
-                    settlementUnit: '000001'
+                    settlementUnit: 'UIGYS'
                     settlementAmount: '300.00'
                     controlType: '通过'
                     paymentMethod: '现金'
                   - paymentType: '质保金付款'
                     paymentCondition: '质保金付款计划'
                     plansDate: '2020-2-1'
-                    settlementUnit: '000001'
+                    settlementUnit: 'UIGYS'
                     settlementAmount: '500.00'
                     controlType: '警告'
                     paymentMethod: '现金'
                   - paymentType: '项目进度付款'
                     paymentCondition: '项目进度付款计划'
                     plansDate: '2020-3-1'
-                    settlementUnit: '000001'
+                    settlementUnit: 'UIGYS'
                     settlementAmount: '200.00'
                     controlType: '禁止'
                     paymentMethod: '现金'

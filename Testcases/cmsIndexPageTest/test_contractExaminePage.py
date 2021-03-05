@@ -28,8 +28,7 @@ class TestContractExaminePage(object):
         self.contractExaminePage = ContractExaminePage(self.login.driver)
 
     def teardown_class(self):
-        # self.contractExaminePage.driver.quit()
-        pass
+        self.contractExaminePage.driver.quit()
 
     @allure.story("合同复核流程")
     @allure.step("合同复核操作步骤")

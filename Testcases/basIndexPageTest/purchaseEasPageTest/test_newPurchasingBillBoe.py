@@ -43,18 +43,18 @@ class TestCostEstimateBoe():
             boeNum = self.newPurchasingBillBoePage.getBoeNum()
 
             with allure.step("选择业务类型"):
-                self.newPurchasingBillBoePage.input_operationType('报账')
+                self.newPurchasingBillBoePage.input_operationType('UI通用')
             with allure.step("输入备注"):
                 self.newPurchasingBillBoePage.input_boeAbstract('测试采购报账单')
 
             with allure.step("选择供应商"):
-                self.newPurchasingBillBoePage.selectVendor('hcGYS1', vendorName='hc供应商1')
-            with allure.step("选择关联合同"):
-                self.newPurchasingBillBoePage.selectContract('hc00000022')
+                self.newPurchasingBillBoePage.selectVendor('UIGYS', vendorName='UI供应商')
+            # with allure.step("选择关联合同"):
+            #     self.newPurchasingBillBoePage.selectContract('hc00000022')
             with allure.step("输入项目"):
-                self.newPurchasingBillBoePage.input_project('hc项目1')
+                self.newPurchasingBillBoePage.input_project('UI项目')
             with allure.step("选择成本中心"):
-                self.newPurchasingBillBoePage.selectExpenseDept('AD', deptName='A部门')
+                self.newPurchasingBillBoePage.selectExpenseDept('UIDP', deptName='UI部门')
 
 
             # with allure.step("建立关联"):
@@ -62,7 +62,7 @@ class TestCostEstimateBoe():
             #     self.newPurchasingBillBoePage.relateAcceptancesheetAndInvoice('ysd005', '88800001')
 
 
-            with allure.step("关联付款计划"):
+            with allure.step("输入支付金额"):
                 self.newPurchasingBillBoePage.selectAccountReceivable('质保金付款')
 
             with allure.step("点击单据提交"):

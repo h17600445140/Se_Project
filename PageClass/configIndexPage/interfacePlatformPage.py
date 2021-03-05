@@ -43,5 +43,9 @@ class TimerManage(BasePage):
             EC.visibility_of_element_located( self._runTimer ))
         self.click(*self._runTimer)
         logger.info("运行定时器")
-        content = self.getToastBoxText()
+        try:
+            content = self.getToastBoxText()
+        except:
+            self.click(*self._runTimer)
+            content = self.getToastBoxText()
         logger.info("定时器运行结果：{}".format(content))

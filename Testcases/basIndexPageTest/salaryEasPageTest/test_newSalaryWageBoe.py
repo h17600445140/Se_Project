@@ -39,7 +39,7 @@ class TestNewSalaryWageBoe():
         boeNum = self.newSalaryWageBoePage.getBoeNum()
 
         with allure.step("选择业务类型"):
-            self.newSalaryWageBoePage.input_operationType('工资计提')
+            self.newSalaryWageBoePage.input_operationType('UI工资发放')
         with allure.step("输入备注"):
             self.newSalaryWageBoePage.input_boeAbstract('测试工资报账单（新）')
 

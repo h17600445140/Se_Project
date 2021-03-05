@@ -19,8 +19,7 @@ class TestCostEstimateBoe():
         self.newBusinessLedgerBoePage = NewBusinessLedgerBoePage(self.login.driver)
 
     def teardown_class(self):
-        # self.newBusinessLedgerBoePage.driver.quit()
-        pass
+        self.newBusinessLedgerBoePage.driver.quit()
 
     @allure.story("业务记账单（新）业务报账界面单据提交")
     @allure.step("业务记账单（新）业务报账界面单据提交步骤")
@@ -39,30 +38,30 @@ class TestCostEstimateBoe():
         boeNum = self.newBusinessLedgerBoePage.getBoeNum()
 
         with allure.step("选择业务类型"):
-            self.newBusinessLedgerBoePage.input_operationType('记账')
+            self.newBusinessLedgerBoePage.input_operationType('UI通用')
         with allure.step("输入备注"):
             self.newBusinessLedgerBoePage.input_boeAbstract('测试业务记账单（新）,测试业务记账单（新）,测试业务记账单（新）')
 
         with allure.step("输入项目"):
-            self.newBusinessLedgerBoePage.input_costProject('hc项目1')
+            self.newBusinessLedgerBoePage.input_costProject('UI项目')
         with allure.step("输入总金额"):
-            self.newBusinessLedgerBoePage.input_costExpenseAmount('100.10')
+            self.newBusinessLedgerBoePage.input_costExpenseAmount('100.00')
         with allure.step("输入业务类型"):
-            self.newBusinessLedgerBoePage.input_costOperationSubType('记账业务1')
+            self.newBusinessLedgerBoePage.input_costOperationSubType('UI通用01')
         with allure.step("选择成本中心"):
-            self.newBusinessLedgerBoePage.selectCostExpenseDept('AD', 'A部门')
+            self.newBusinessLedgerBoePage.selectCostExpenseDept('UIDP', 'UI部门')
 
         with allure.step("点击新增明细信息按钮"):
             self.newBusinessLedgerBoePage.click_addDetailButton()
 
         with allure.step("输入项目"):
-            self.newBusinessLedgerBoePage.input_costProject('hc项目1', count='1')
+            self.newBusinessLedgerBoePage.input_costProject('UI项目', count='1')
         with allure.step("输入总金额"):
-            self.newBusinessLedgerBoePage.input_costExpenseAmount('100.10', count='1')
+            self.newBusinessLedgerBoePage.input_costExpenseAmount('100.00', count='1')
         with allure.step("输入业务类型"):
-            self.newBusinessLedgerBoePage.input_costOperationSubType('记账业务1', count='1')
+            self.newBusinessLedgerBoePage.input_costOperationSubType('UI通用02', count='1')
         with allure.step("选择成本中心"):
-            self.newBusinessLedgerBoePage.selectCostExpenseDept('AD', 'A部门', count='1')
+            self.newBusinessLedgerBoePage.selectCostExpenseDept('UIDP', 'UI部门', count='1')
 
         with allure.step("点击单据提交"):
             self.newBusinessLedgerBoePage.click_boeSubmitButton()

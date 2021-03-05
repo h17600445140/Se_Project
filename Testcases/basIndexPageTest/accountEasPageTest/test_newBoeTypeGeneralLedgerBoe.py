@@ -1,4 +1,6 @@
 # -*- coding:utf-8 -*-
+import datetime
+
 import allure
 import pytest
 
@@ -20,8 +22,7 @@ class TestNewBoeTypeGeneralLedgerBoe():
         self.newBoeTypeGeneralLedgerBoePage = NewBoeTypeGeneralLedgerBoePage(self.login.driver)
 
     def teardown_class(self):
-        # self.newBoeTypeGeneralLedgerBoePage.driver.quit()
-        pass
+        self.newBoeTypeGeneralLedgerBoePage.driver.quit()
 
     @allure.story("总账单业务报账界面单据提交")
     @allure.step("总账单业务报账界面单据提交步骤")
@@ -40,16 +41,16 @@ class TestNewBoeTypeGeneralLedgerBoe():
         boeNum = self.newBoeTypeGeneralLedgerBoePage.getBoeNum()
 
         with allure.step("选择业务类型"):
-            self.newBoeTypeGeneralLedgerBoePage.input_operationType('记账')
+            self.newBoeTypeGeneralLedgerBoePage.input_operationType('UI通用')
         with allure.step("选择总账记账日期"):
-            self.newBoeTypeGeneralLedgerBoePage.select_glDate('2020-2-1')
+            self.newBoeTypeGeneralLedgerBoePage.select_glDate(datetime.datetime.now().strftime("%Y-%m-%d"))
 
         with allure.step("输入摘要"):
             self.newBoeTypeGeneralLedgerBoePage.input_voucherRemark('测试')
         with allure.step("选择会计科目"):
-            self.newBoeTypeGeneralLedgerBoePage.input_voucherAccount('测试')
+            self.newBoeTypeGeneralLedgerBoePage.input_voucherAccount('UI科目1')
         with allure.step("输入金额"):
-            self.newBoeTypeGeneralLedgerBoePage.input_voucherDebitAmount('100.10')
+            self.newBoeTypeGeneralLedgerBoePage.input_voucherDebitAmount('100.00')
 
         with allure.step("点击新增凭证分录按钮"):
             self.newBoeTypeGeneralLedgerBoePage.click_addVoucherButton()
@@ -57,9 +58,9 @@ class TestNewBoeTypeGeneralLedgerBoe():
         with allure.step("输入摘要"):
             self.newBoeTypeGeneralLedgerBoePage.input_voucherRemark('测试', count='1')
         with allure.step("选择会计科目"):
-            self.newBoeTypeGeneralLedgerBoePage.input_voucherAccount('CS', count='1')
+            self.newBoeTypeGeneralLedgerBoePage.input_voucherAccount('UI科目2', count='1')
         with allure.step("输入金额"):
-            self.newBoeTypeGeneralLedgerBoePage.input_voucherCreditAmount('100.10', count='1')
+            self.newBoeTypeGeneralLedgerBoePage.input_voucherCreditAmount('100.00', count='1')
 
         with allure.step("点击单据提交"):
             self.newBoeTypeGeneralLedgerBoePage.click_boeSubmitButton()

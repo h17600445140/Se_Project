@@ -8,7 +8,7 @@ from Testcases.common.boeSharingCenterApprove import SharingCenterApprove
 from Testcases.common.loginDepend import LoginDepend
 from Util import logger
 
-
+@allure.feature("五险一金报账单（新）流程")
 class TestNewSalaryOtherBoe():
 
     boeNum = globals()
@@ -18,8 +18,7 @@ class TestNewSalaryOtherBoe():
         self.newSalaryOtherBoePage = NewSalaryOtherBoePage(self.publicLogin.driver)
 
     def teardown_class(self):
-        # self.newSalaryOtherBoePage.driver.quit()
-        pass
+        self.newSalaryOtherBoePage.driver.quit()
 
     @allure.story("五险一金报账单（新）业务报账界面单据提交")
     @allure.step("五险一金报账单（新）业务报账界面单据提交步骤")
@@ -38,7 +37,7 @@ class TestNewSalaryOtherBoe():
         boeNum = self.newSalaryOtherBoePage.getBoeNum()
 
         with allure.step("选择业务类型"):
-            self.newSalaryOtherBoePage.input_operationType('人力资金-工资发放')
+            self.newSalaryOtherBoePage.input_operationType('UI工资发放')
         with allure.step("输入备注"):
             self.newSalaryOtherBoePage.input_boeAbstract('测试五险一金报账单（新）')
 
@@ -46,9 +45,9 @@ class TestNewSalaryOtherBoe():
             self.newSalaryOtherBoePage.select_salary()
 
         with allure.step("选择收款账户"):
-            self.newSalaryOtherBoePage.selectVendorAccount('483748379', accountName='SLZ供应商01')
+            self.newSalaryOtherBoePage.selectVendorAccount('1109123456789001', accountName='UI供应商')
         with allure.step("输入支付金额"):
-            self.newSalaryOtherBoePage.input_paymentAmount('80.00')
+            self.newSalaryOtherBoePage.input_paymentAmount('200.20')
 
         with allure.step("点击单据提交"):
             self.newSalaryOtherBoePage.click_boeSubmitButton()

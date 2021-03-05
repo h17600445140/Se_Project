@@ -38,6 +38,9 @@ class NewAddSalaryPage(BasIndexPage,BoeCommon):
 
         year, month = date.split('-')[0], date.split('-')[1]
 
+        year = str(int(year))
+        month = str(int(month))
+
         # 操作年份
         dateHeaderPanel = self.find_element(*(By.CLASS_NAME, 'el-date-picker__header'))
         selected = dateHeaderPanel.find_elements(*(By.TAG_NAME, 'span'))[0].text
@@ -122,15 +125,15 @@ class NewAddSalaryPage(BasIndexPage,BoeCommon):
 
     # 应发
     def input_JiTiYingFa(self, text):
-        self.input_amount(text, *(By.ID, 'form_bebabc99-8c40-4ee7-a249-ebb05a22e16e'))
+        self.input_amount(text, *(By.ID, 'form_5c29e2b87f25f60f1ac3b1b9b2ae00f0'))
         logger.info('输入的计提实发为：{}'.format(text))
     # 扣款
     def input_JiTiKouKuan(self, text):
-        self.input_amount(text, *(By.ID, 'form_d85ac8ce133d6b1a573db1b2b7ae0e82'))
+        self.input_amount(text, *(By.ID, 'form_5c29e2b87f36844199b2b1b9b2ae00f3'))
         logger.info('输入的计提应发为：{}'.format(text))
     # 实发
     def input_JiTiShiFa(self, text):
-        self.input_amount(text, *(By.ID, 'form_d85ac8ce1332f67edbc0b1b2b7ae0e7f'))
+        self.input_amount(text, *(By.ID, 'form_5c29e2b87f3a14b394e0b1b9b2ae00f6'))
         logger.info('输入的计提扣款为：{}'.format(text))
 
     # 提交

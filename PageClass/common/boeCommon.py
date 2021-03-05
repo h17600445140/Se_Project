@@ -312,7 +312,7 @@ class BoeCommon(BasePage):
             (By.ID, 'itembankAccount')))
         self.send_text(accountNum, *(By.ID, 'itembankAccount'))
         self.send_text(accountName, *(By.ID, 'itemname'))
-        self.click(*(By.XPATH, '/html/body//form/div[3]/div/button[1]'))
+        self.click(*(By.XPATH, '/html/body//form/div[4]/div/button[1]'))
         sleep(1)
         try:
             self.find_elements(*(By.CLASS_NAME, 'el-table__row'))[
@@ -329,10 +329,8 @@ class BoeCommon(BasePage):
     # 支付金额
     _paymentAmount = (By.ID, 'zfsBoePayments.0.paymentAmount')
     def input_paymentAmount(self, text):
-        self.click(*self._paymentAmount)
-        element = self.find_element(*self._paymentAmount)
-        ActionChains(self.driver).send_keys_to_element(element, Keys.BACKSPACE).perform()
-        ActionChains(self.driver).send_keys_to_element(element, text).perform()
+        self.input_amount(text, *self._paymentAmount)
+        logger.info('输入金额为：{}'.format(text))
 
 
     # 支付方式

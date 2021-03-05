@@ -61,6 +61,7 @@ class CmsIndexPage(BasePage):
     _contractCodeCheck =  (By.XPATH, '//*[@id="app"]/section/main/div/div/div[2]/div/div[2]/div[2]/div[2]/div[1]/div/div[3]/table/tbody/tr[1]/td[3]/div/button/span')
     def checkContractCode(self, code):
         contractCode = self.find_element(*self._contractCodeCheck).text
+        logger.info('查找到的合同编码为：{}'.format(contractCode))
         if code == contractCode:
             return True
         else:
@@ -70,6 +71,7 @@ class CmsIndexPage(BasePage):
     _contractStatusCheck = (By.XPATH, '//*[@id="app"]/section/main/div/div/div[2]/div/div[2]/div[2]/div[2]/div[1]/div/div[3]/table/tbody/tr[1]/td[12]/div')
     def checkContractStatus(self, status):
         contractStatus = self.get_elementText(*self._contractStatusCheck)
+        logger.info('查找到的合同状态为：{}'.format(contractStatus))
         if status == contractStatus:
             return True
         else:

@@ -1,4 +1,7 @@
 # -*- coding:utf-8 -*-
+import datetime
+import random
+import string
 from time import sleep
 
 from PageClass.ledgerIndexPageClass.acceptanceLedgerPage import AcceptanceLedgerPage
@@ -9,12 +12,14 @@ from Util import record
 
 class TestAcceptanceLedgerPage():
 
+    acceptanceNo = globals()
+
     def setup_class(self):
         self.login = LoginDepend('ledgerHost', 'user')
         self.acceptanceLedgerPage = AcceptanceLedgerPage(self.login.driver)
 
     def teardown_class(self):
-        pass
+        self.acceptanceLedgerPage.driver.quit()
 
     def test_addAcceptanceLedger(self):
 
@@ -24,36 +29,42 @@ class TestAcceptanceLedgerPage():
 
         self.acceptanceLedgerPage.clickTargetButton('新增')
 
-        self.acceptanceLedgerPage.input_acceptanceNo('ysd002')
+        global acceptanceNo
 
-        self.acceptanceLedgerPage.input_acceptOrderNo('dd002')
+        acceptanceNo = 'UIYSD' + ''.join(random.choice(string.digits) for _ in range(5))
 
-        self.acceptanceLedgerPage.selectAcceptVendor('hc供应商1')
+        self.acceptanceLedgerPage.input_acceptanceNo(acceptanceNo)
 
-        self.acceptanceLedgerPage.selectAcceptContract('hc00000020', contractName='hc合同020')
+        self.acceptanceLedgerPage.input_acceptOrderNo('UIDD' + ''.join(random.choice(string.digits) for _ in range(5)))
 
-        self.acceptanceLedgerPage.selectAcceptProject('hcXM1', projectName='hc项目1')
+        self.acceptanceLedgerPage.selectAcceptVendor('UI供应商')
 
-        self.acceptanceLedgerPage.selectAcceptReceivingUnit('AD', deptName='A部门')
+        # self.acceptanceLedgerPage.selectAcceptContract('hc00000020', contractName='hc合同020')
 
-        self.acceptanceLedgerPage.selectAcceptAgent('1', agentName='1hc')
+        self.acceptanceLedgerPage.selectAcceptProject('UIXM', projectName='UI项目')
 
-        self.acceptanceLedgerPage.input_acceptanceDate('2021-2-2')
+        self.acceptanceLedgerPage.selectAcceptReceivingUnit('UIDP', deptName='UI部门')
+
+        # self.acceptanceLedgerPage.selectAcceptAgent('UI01', agentName='UI01')
+
+        self.acceptanceLedgerPage.input_acceptanceDate(datetime.datetime.now().strftime("%Y-%m-%d"))
 
         self.acceptanceLedgerPage.click_acceptSubmitButton()
 
         assert self.acceptanceLedgerPage.getToastBoxText() == '保存成功'
 
-        self.acceptanceLedgerPage.input_acceptanceNoQuery('ysd002')
+        self.acceptanceLedgerPage.input_acceptanceNoQuery(acceptanceNo)
 
         self.acceptanceLedgerPage.click_acceptanceQueryButton()
 
-        assert self.acceptanceLedgerPage.get_acceptanceNoResult() == 'ysd002'
+        assert self.acceptanceLedgerPage.get_acceptanceNoResult() == acceptanceNo
 
 
     def test_editAcceptanceLedgerDetail(self):
 
-        self.acceptanceLedgerPage.input_acceptanceNoQuery('ysd002')
+        global acceptanceNo
+
+        self.acceptanceLedgerPage.input_acceptanceNoQuery(acceptanceNo)
 
         self.acceptanceLedgerPage.click_acceptanceQueryButton()
 
@@ -73,15 +84,15 @@ class TestAcceptanceLedgerPage():
 
         self.acceptanceLedgerPage.input_detailTaxAmount('100.00')
 
-        self.acceptanceLedgerPage.input_detailTaxRate('1')
+        self.acceptanceLedgerPage.input_detailTaxRate('0')
 
-        self.acceptanceLedgerPage.input_detailTax('1.00')
+        self.acceptanceLedgerPage.input_detailTax('0.00')
 
         self.acceptanceLedgerPage.click_detailSubmit()
 
         assert self.acceptanceLedgerPage.getToastBoxText() == '保存成功'
 
-        record.writeDataToRecord({'acceptanceNo':'ysd002'}, type='acceptanceLedgerData')
+        record.writeDataToRecord({'acceptanceNo':acceptanceNo}, type='acceptanceLedgerData')
 
 
 

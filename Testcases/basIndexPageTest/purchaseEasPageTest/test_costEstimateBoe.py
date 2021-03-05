@@ -20,8 +20,7 @@ class TestCostEstimateBoe():
         self.costEstimateBoePage = CostEstimateBoePage(self.login.driver)
 
     def teardown_class(self):
-        # self.costEstimateBoePage.driver.quit()
-        pass
+        self.costEstimateBoePage.driver.quit()
 
     @allure.story("成本暂估单（旧）业务报账界面单据提交")
     @allure.step("成本暂估单（旧）业务报账界面单据提交步骤")
@@ -41,25 +40,25 @@ class TestCostEstimateBoe():
             boeNum = self.costEstimateBoePage.getBoeNum()
 
             with allure.step("选择业务类型"):
-                self.costEstimateBoePage.input_operationType('成本暂估')
+                self.costEstimateBoePage.input_operationType('UI通用')
             with allure.step("输入备注"):
                 self.costEstimateBoePage.input_boeAbstract('测试成本暂估单（旧）')
 
             with allure.step("选择供应商"):
-                self.costEstimateBoePage.selectVendor('hcGYS1', vendorName='hc供应商1')
-            with allure.step("选择关联合同"):
-                self.costEstimateBoePage.selectContract('hc00000020')
+                self.costEstimateBoePage.selectVendor('UIGYS', vendorName='UI供应商')
+            # with allure.step("选择关联合同"):
+            #     self.costEstimateBoePage.selectContract('hc00000020')
 
             with allure.step("输入订单编号"):
                 self.costEstimateBoePage.input_costOrderNumber('hcOrder001')
             with allure.step("选择业务小类"):
-                self.costEstimateBoePage.input_costOperationSubType('暂估1')
+                self.costEstimateBoePage.input_costOperationSubType('UI通用01')
             with allure.step("输入总金额"):
-                self.costEstimateBoePage.input_costExpenseAmount('100.10')
+                self.costEstimateBoePage.input_costExpenseAmount('100.00')
             with allure.step("选择责任部门"):
-                self.costEstimateBoePage.selectCc('AD', 'A部门')
+                self.costEstimateBoePage.selectCc('UIDP', 'UI部门')
             with allure.step("选择项目"):
-                self.costEstimateBoePage.input_costProject('hc项目1')
+                self.costEstimateBoePage.input_costProject('UI项目')
             with allure.step("输入备注"):
                 self.costEstimateBoePage.input_costRemark('测试成本暂估单（旧）')
 

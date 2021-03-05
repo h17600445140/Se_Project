@@ -607,3 +607,42 @@ ERROR - 2021-03-04 20:25:05,357 - D:\se\Se_Project\Util\log.py - log.py[:54] - �
 ERROR - 2021-03-04 20:25:09,616 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
 ERROR - 2021-03-04 20:26:25,275 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
 ERROR - 2021-03-04 20:27:25,604 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 08:44:22,819 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 08:45:57,541 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 08:47:41,860 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 09:08:05,405 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 09:12:22,382 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 09:13:22,253 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 09:50:07,810 - D:\se\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
+ERROR - 2021-03-05 09:51:20,184 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 09:51:28,160 - D:\se\Se_Project\Util\log.py - log.py[:54] - 单据XY-BX2103050015需要生成凭证，请刷新凭证后重试
+ERROR - 2021-03-05 09:57:02,500 - D:\se\Se_Project\Util\log.py - log.py[:54] - 业务审批出现异常，异常信息为：<class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-03-05 09:58:14,135 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 10:15:05,291 - D:\se\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-03-05 10:15:53,554 - D:\se\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-03-05 10:16:35,429 - D:\se\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-03-05 10:17:39,078 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 10:18:14,661 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 10:30:06,703 - D:\se\Se_Project\Util\log.py - log.py[:54] - 业务审批出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchWindowException'>
+ERROR - 2021-03-05 10:31:47,443 - D:\se\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'AttributeError'>
+ERROR - 2021-03-05 10:59:51,479 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 11:01:08,711 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 11:02:09,680 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 11:10:07,661 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 11:10:15,126 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 11:11:19,920 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 11:15:32,408 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 11:16:31,976 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 11:40:32,313 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 11:40:41,542 - D:\se\Se_Project\Util\log.py - log.py[:54] - 单据XY-BX2103050077需要生成凭证，请刷新凭证后重试
+ERROR - 2021-03-05 11:44:09,899 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 11:45:15,498 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 13:49:49,926 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 14:00:25,105 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 14:03:49,597 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 14:04:50,281 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 14:11:05,334 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 14:12:06,650 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 15:13:20,814 - D:\se\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-05 15:13:28,177 - D:\se\Se_Project\Util\log.py - log.py[:54] - 单据XY-BX2103050130需要生成凭证，请刷新凭证后重试
+ERROR - 2021-03-05 15:20:45,129 - D:\se\Se_Project\Util\log.py - log.py[:54] - 业务审批出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchWindowException'>

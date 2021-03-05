@@ -9,7 +9,7 @@ from Testcases.common.loginDepend import LoginDepend
 from Util import logger
 
 
-
+@allure.feature("资金调拨报账单(新)流程")
 class TestNewFundAllocationBoe():
 
     boeNum = globals()
@@ -19,8 +19,7 @@ class TestNewFundAllocationBoe():
         self.newFundAllocationBoePage = NewFundAllocationBoePage(self.login.driver)
 
     def teardown_class(self):
-        # self.newFundAllocationBoePage.driver.quit()
-        pass
+        self.newFundAllocationBoePage.driver.quit()
 
     @allure.story("资金调拨报账单（新）业务报账界面单据提交")
     @allure.step("资金调拨报账单（新）业务报账界面单据提交步骤")
@@ -44,10 +43,10 @@ class TestNewFundAllocationBoe():
             self.newFundAllocationBoePage.input_boeAbstract('测试票据调拨单（新）')
 
         with allure.step("选择付款账户"):
-            self.newFundAllocationBoePage.selectReceiveVendor('新云公司')
+            self.newFundAllocationBoePage.selectReceiveVendor('UI账户')
 
         with allure.step("添加账户"):
-            self.newFundAllocationBoePage.addAccount('SLZ供应商01')
+            self.newFundAllocationBoePage.addAccount('UI供应商1')
 
         with allure.step("输入调拨金额"):
             self.newFundAllocationBoePage.input_transferAmount('100.00')

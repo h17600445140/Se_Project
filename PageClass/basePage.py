@@ -178,9 +178,9 @@ class BasePage(object):
         """
         self.click(*loc)
         element = self.find_element(*loc)
-        ActionChains(self.driver).send_keys_to_element(element, Keys.BACKSPACE).perform()
-        ActionChains(self.driver).send_keys_to_element(element, text).perform()
-
+        # ActionChains(self.driver).send_keys_to_element(element, Keys.BACKSPACE).perform()
+        # ActionChains(self.driver).send_keys_to_element(element, text).perform()
+        ActionChains(self.driver).send_keys_to_element(element, Keys.BACKSPACE).send_keys_to_element(element, text).perform()
 
     def select_option(self, option, *loc) -> None:
         """

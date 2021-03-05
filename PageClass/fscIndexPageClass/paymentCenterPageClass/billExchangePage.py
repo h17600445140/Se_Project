@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+import datetime
 import string
 import random
 from time import sleep
@@ -9,6 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 from PageClass.fscIndexPageClass.fscCommonPage import FscCommonPage
 from Util import logger
+from dateutil.relativedelta import relativedelta
 
 
 
@@ -293,7 +295,7 @@ class BillExchangePage(FscCommonPage):
         self.send_text(loginName, *(By.ID, 'undefined_LOGIN_NAME'))
         self.send_text(realName, *(By.ID, 'undefined_REAL_NAME'))
         self.click(*(By.XPATH, '/html/body//form/div[3]/div/button[1]'))
-        sleep(1)
+        sleep(3)
         try:
             self.find_elements(*(By.CLASS_NAME, 'el-table__row'))[
                 len(self.find_elements(*(By.CLASS_NAME, 'el-table__row'))) - 1].click()
@@ -323,38 +325,45 @@ class BillExchangePage(FscCommonPage):
 
         self.clickTargetButton('新增')
 
-        self.__selectLe('XYTEST')
+        self.__selectLe('UIHSZT')
 
-        self.__selectCompanyBank('8110301013100278455')
+        self.__selectCompanyBank('1109123456789')
 
-        self.__inputPostalOrderCode('ZDH' + "".join(random.choice(string.digits) for _ in range(8)))
+        postalOrder = 'UI' + "".join(random.choice(string.digits) for _ in range(8))
+
+        self.__inputPostalOrderCode(postalOrder)
 
         self.__selectBillType('银行承兑汇票')
 
         self.__selectPaperTypeCode('电票')
 
-        self.__inputPayVendorName('hc1')
+        self.__inputPayVendorName('UI01')
 
-        self.__selectPreEndorse('客商名称')
+        self.__selectPreEndorse('UI供应商')
 
-        self.__selectTicketDate('2020-3-1')
+        self.__selectTicketDate(datetime.datetime.now().strftime("%Y-%m-%d"))
 
-        self.__selectBillExpireDate('2020-3-31')
+        self.__selectBillExpireDate(str(datetime.date.today() + relativedelta(months=+1)))
 
         self.__inputTicketAmount('100.00')
 
-        self.__inputContractCode('ZDHHT' + "".join(random.choice(string.digits) for _ in range(8)))
+        self.__inputContractCode('UI' + "".join(random.choice(string.digits) for _ in range(8)))
 
-        self.__selectOperator('hc001')
+        self.__selectOperator('UI01')
 
         self.__selectOperatorDept('UI部门')
 
-        self.__selectSignDate('2020-3-1')
+        self.__selectSignDate(datetime.datetime.now().strftime("%Y-%m-%d"))
 
-        self.__selectSignEmp('hc001')
+        self.__selectSignEmp('UI01')
 
         self.clickTargetButton('提交')
 
+        return postalOrder
+
+
+if __name__ == '__main__':
+    print(str(datetime.date.today() + relativedelta(months=+3)))
 
 
 

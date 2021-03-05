@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+import datetime
 from time import sleep
 
 import allure
@@ -19,8 +20,7 @@ class TestNewAddSalary():
         self.newAddSalaryPage = NewAddSalaryPage(self.publicLogin.driver)
 
     def teardown_class(self):
-        # self.newAddSalaryPage.driver.quit()
-        pass
+        self.newAddSalaryPage.driver.quit()
 
     @allure.story("新增薪酬业务报账界面流程")
     @allure.step("新增薪酬业务报账界面流程")
@@ -39,11 +39,11 @@ class TestNewAddSalary():
         boeNum = self.newAddSalaryPage.getBoeNum()
 
         with allure.step("选择薪酬区间"):
-            self.newAddSalaryPage.selectSalaryPeriod('2021-2')
+            self.newAddSalaryPage.selectSalaryPeriod(datetime.datetime.now().strftime("%Y-%m"))
         with allure.step("选择业务类型"):
-            self.newAddSalaryPage.selectSalaryOperationType('工资计提')
+            self.newAddSalaryPage.selectSalaryOperationType('UI工资发放')
         with allure.step("输入备注"):
-            self.newAddSalaryPage.input_salaryRemark('测试')
+            self.newAddSalaryPage.input_salaryRemark('测试新增薪酬')
         with allure.step("点击保存按钮"):
             self.newAddSalaryPage.click_salarySaveButton()
 

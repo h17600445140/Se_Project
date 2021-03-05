@@ -113,3 +113,10 @@ class NewWithholdingAmortizationPage(BasIndexPage,BoeCommon):
         sleep(1)
         self.find_elements(*self._voucherAccount)[len(self.find_elements(*self._voucherAccount))-1].send_keys(text)
         logger.info("选择的贷方科目为：{}".format(text))
+
+
+    def click_autoCalculation(self):
+        self.click(*(By.XPATH, '//*[@id="app"]/div[1]/div/div[2]/div[3]/div[2]/div[1]/div/div[2]/div/form/div/div/button[3]'))
+        logger.info('点击自动计算')
+        sleep(1)
+        self.click(*(By.XPATH, '//*[@id="app"]//span/button[2]'))

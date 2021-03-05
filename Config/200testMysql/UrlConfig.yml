@@ -9,6 +9,7 @@ url:
   timerHost: http://fssc200.csztessc.com.cn:8085/ip/timerManage
   invoiceIpoolHost: http://fssc200.csztessc.com.cn:8085/ipool
   fscAuditList: http://fssc200.csztessc.com.cn:8085/fsc/auditList
+  fscBillExchange: http://fssc200.csztessc.com.cn:8085/fsc/billExchange
   fscAuditAdjustDirector: http://fssc200.csztessc.com.cn:8085/fsc/auditAdjustDirector
 
 user:

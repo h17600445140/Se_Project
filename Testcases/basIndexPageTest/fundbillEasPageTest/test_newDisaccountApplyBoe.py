@@ -6,10 +6,10 @@ from PageClass.basIndexPageClass.fundbillEasPageClass.newDisaccountApplyBoePage 
 from Testcases.common.boeBusinessApprove import BusinessApprove
 from Testcases.common.boeSharingCenterApprove import SharingCenterApprove
 from Testcases.common.loginDepend import LoginDepend
-from Util import logger
+from Util import logger, record
 
 
-
+@allure.feature("贴现托收申请单（新）流程")
 class TestNewDisaccountApplyBoe():
 
     boeNum = globals()
@@ -19,8 +19,7 @@ class TestNewDisaccountApplyBoe():
         self.newDisaccountApplyBoePage = NewDisaccountApplyBoePage(self.login.driver)
 
     def teardown_class(self):
-        # self.newDisaccountApplyBoePage.driver.quit()
-        pass
+        self.newDisaccountApplyBoePage.driver.quit()
 
     @allure.story("贴现托收申请单（新）业务报账界面单据提交")
     @allure.step("贴现托收申请单（新）业务报账界面单据提交步骤")
@@ -43,8 +42,10 @@ class TestNewDisaccountApplyBoe():
         with allure.step("输入备注"):
             self.newDisaccountApplyBoePage.input_boeAbstract('测试贴现托收申请单（新）')
 
+        postalOrder = record.readDataFromRecord(type='postalOrderData')['postalOrder2']
+
         with allure.step("关联票据"):
-            self.newDisaccountApplyBoePage.associateBill('9000000001')
+            self.newDisaccountApplyBoePage.associateBill(postalOrder)
 
         with allure.step("点击单据提交"):
             self.newDisaccountApplyBoePage.click_boeSubmitButton()

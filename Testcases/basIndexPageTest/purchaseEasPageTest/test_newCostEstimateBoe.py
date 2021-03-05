@@ -6,8 +6,10 @@ from PageClass.basIndexPageClass.purchaseEasPageClass.newCostEstimateBoePage imp
 from Testcases.common.boeBusinessApprove import BusinessApprove
 from Testcases.common.boeSharingCenterApprove import SharingCenterApprove
 from Testcases.common.loginDepend import LoginDepend
-from Util import logger
+from Util import logger, record
 from Util.util import getNowTime, getPicturePath
+
+
 
 
 @allure.feature("成本暂估单（新）流程")
@@ -20,8 +22,7 @@ class TestNewCostEstimateBoe():
         self.newCostEstimateBoePage = NewCostEstimateBoePage(self.login.driver)
 
     def teardown_class(self):
-        # self.newCostEstimateBoePage.driver.quit()
-        pass
+        self.newCostEstimateBoePage.driver.quit()
 
     @allure.story("成本暂估单（新）业务报账界面单据提交")
     @allure.step("成本暂估单（新）业务报账界面单据提交步骤")
@@ -41,21 +42,23 @@ class TestNewCostEstimateBoe():
             boeNum = self.newCostEstimateBoePage.getBoeNum()
 
             with allure.step("选择业务类型"):
-                self.newCostEstimateBoePage.input_operationType('成本暂估')
+                self.newCostEstimateBoePage.input_operationType('UI通用')
             with allure.step("输入备注"):
                 self.newCostEstimateBoePage.input_boeAbstract('测试成本暂估单(新)')
 
             with allure.step("选择项目"):
                 self.newCostEstimateBoePage.input_project('hc项目1')
             with allure.step("选择供应商"):
-                self.newCostEstimateBoePage.selectVendor('hcGYS1', vendorName='hc供应商1')
-            with allure.step("选择关联合同"):
-                self.newCostEstimateBoePage.selectContract('hc00000020')
+                self.newCostEstimateBoePage.selectVendor('UIGYS', vendorName='UI供应商')
+            # with allure.step("选择关联合同"):
+            #     self.newCostEstimateBoePage.selectContract('hc00000020')
             with allure.step("选择成本中心"):
-                self.newCostEstimateBoePage.selectCc('hcCBZX', ccName='hc成本中心A部门')
+                self.newCostEstimateBoePage.selectCc('UICBZX', ccName='UI成本中心')
+
+            acceptanceNo = record.readDataFromRecord(type='acceptanceLedgerData')['acceptanceNo']
 
             with allure.step("关联验收单"):
-                self.newCostEstimateBoePage.relateAcceptanceLedger('ysd002')
+                self.newCostEstimateBoePage.relateAcceptanceLedger(acceptanceNo)
 
             with allure.step("点击单据提交"):
                 self.newCostEstimateBoePage.click_boeSubmitButton()

@@ -275,8 +275,7 @@ class ContractEditPage(CmsIndexPage):
     def input_settlementAmount(self, text):
         self.find_elements(*self._settlementAmount)[len(self.find_elements(*self._settlementAmount))-2].click()
         element = self.find_elements(*self._settlementAmount)[len(self.find_elements(*self._settlementAmount))-2]
-        ActionChains(self.driver).send_keys_to_element(element, Keys.BACKSPACE).perform()
-        ActionChains(self.driver).send_keys_to_element(element, text).perform()
+        ActionChains(self.driver).send_keys_to_element(element, Keys.BACKSPACE).send_keys_to_element(element, text).perform()
         logger.info('输入的结算金额为 : {}'.format(text))
 
     # 控制方式

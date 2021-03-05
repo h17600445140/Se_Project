@@ -35,7 +35,7 @@ class LedgerIndexPage(BasePage):
         self.driver.implicitly_wait(1)
         for i in range(len(self.find_elements( *(By.CLASS_NAME, 'card') ))):
             if self.find_elements(*(By.CLASS_NAME, 'card'))[i].find_element(*(By.CLASS_NAME, 'title')).text == typeName:
-                self.find_elements(*(By.CLASS_NAME, 'card'))[i].find_element(*(By.CLASS_NAME, 'enter')).click()
+                self.find_elements(*(By.CLASS_NAME, 'card'))[i].find_element(*(By.CLASS_NAME, 'svg-icon')).click()
                 logger.info('进入 {} 页面'.format(typeName))
                 break
             if i == len(self.find_elements( *(By.CLASS_NAME, 'card') ))-1:

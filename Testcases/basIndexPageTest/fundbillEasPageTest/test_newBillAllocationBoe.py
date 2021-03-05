@@ -6,10 +6,10 @@ from PageClass.basIndexPageClass.fundbillEasPageClass.newBillAllocationBoePage i
 from Testcases.common.boeBusinessApprove import BusinessApprove
 from Testcases.common.boeSharingCenterApprove import SharingCenterApprove
 from Testcases.common.loginDepend import LoginDepend
-from Util import logger
+from Util import logger, record
 
 
-
+@allure.feature("票据调拨单（新）流程")
 class TestNewBillAllocationBoe():
 
 
@@ -20,8 +20,7 @@ class TestNewBillAllocationBoe():
         self.newBillAllocationBoePage = NewBillAllocationBoePage(self.login.driver)
 
     def teardown_class(self):
-        # self.newBillAllocationBoePage.driver.quit()
-        pass
+        self.newBillAllocationBoePage.driver.quit()
 
     @allure.story("票据调拨单（新）业务报账界面单据提交")
     @allure.step("票据调拨单（新）业务报账界面单据提交步骤")
@@ -45,10 +44,12 @@ class TestNewBillAllocationBoe():
             self.newBillAllocationBoePage.input_boeAbstract('测试票据调拨单（新）')
 
         with allure.step("选择收票方"):
-            self.newBillAllocationBoePage.selectReceiveVendor('SLZ供应商01')
+            self.newBillAllocationBoePage.selectReceiveVendor('UI供应商1')
+
+        postalOrder = record.readDataFromRecord(type='postalOrderData')['postalOrder1']
 
         with allure.step("关联票据"):
-            self.newBillAllocationBoePage.associateBill('ZDH95322579')
+            self.newBillAllocationBoePage.associateBill(postalOrder)
 
         with allure.step("点击单据提交"):
             self.newBillAllocationBoePage.click_boeSubmitButton()
