@@ -2,6 +2,8 @@
 import datetime
 import random
 import string
+from time import sleep
+
 from dateutil.relativedelta import relativedelta
 import allure
 from PageClass.cmsIndexPageClass.contractEditPage import ContractEditPage
@@ -133,6 +135,8 @@ class TestContractEditPage(object):
 
         with allure.step("合同录入页面点击查询按钮"):
             self.contractExaminePage.click_selectButton()
+
+        sleep(1)
 
         with allure.step("断言查询结果是否为将要进行复核的合同"):
             assert self.contractExaminePage.getResultContractCode() == contractCode

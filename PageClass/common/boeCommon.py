@@ -312,7 +312,7 @@ class BoeCommon(BasePage):
             (By.ID, 'itembankAccount')))
         self.send_text(accountNum, *(By.ID, 'itembankAccount'))
         self.send_text(accountName, *(By.ID, 'itemname'))
-        self.click(*(By.XPATH, '/html/body//form/div[4]/div/button[1]'))
+        self.click(*(By.XPATH, '/html/body//form/div[3]/div/button[1]'))
         sleep(1)
         try:
             self.find_elements(*(By.CLASS_NAME, 'el-table__row'))[
@@ -402,6 +402,19 @@ class BoeCommon(BasePage):
         self.input_amount(text, *self._dtosInvoiceTax)
         logger.info('输入的发票税额为：{}'.format(text))
 
+    # 校验码
+    _dtosCheckCode = (By.ID, 'invoiceDTOS.0.checkCode')
+    def input_dtosCheckCode(self, text):
+        self.input_amount(text, *self._dtosCheckCode)
+        logger.info('输入校验码后6位为：{}'.format(text))
+
+    # 发票类型
+    _dtosInvoiceTypeCode = (By.ID, 'invoiceDTOS.0.invoiceTypeCode')
+    def input_dtosInvoiceTypeCode(self, text):
+        self.click(*self._dtosInvoiceTypeCode)
+        self.select_item(text)
+        logger.info('选择的发票类型为：{}'.format(text))
+
     # 备注
     _dtosInvoiceRemark = (By.ID, 'invoiceDTOS.0.remarks')
     def input_dtosInvoiceRemark(self, text):
@@ -450,6 +463,7 @@ class BoeCommon(BasePage):
     _invoiceType = (By.ID, 'itembillTypeInvoice')
     def click_invoiceType(self):
         self.click(*self._invoiceType)
+        sleep(1)
     # ——————————————————————————————
 
 

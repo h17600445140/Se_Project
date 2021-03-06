@@ -1,0 +1,340 @@
+{
+  "uid" : "b9354f17f6421530",
+  "name" : "test_newAddSalary",
+  "fullName" : "Testcases.basIndexPageTest.salaryEasPageTest.test_newAddSalary.TestNewAddSalary#test_newAddSalary",
+  "historyId" : "8068b7084ad31dbf3600f58f3fac1ce9",
+  "time" : {
+    "start" : 1615017882781,
+    "stop" : 1615017898913,
+    "duration" : 16132
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'afters'",
+  "statusTrace" : "self = <allure_commons._allure.fixture object at 0x000001FDCF4C30F0>, args = (), kwargs = {}\n\n    def __call__(self, *args, **kwargs):\n        self.parameters = func_parameters(self._fixture_function, *args, **kwargs)\n    \n>       with self:\n\nC:\\Users\\zxxy\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\allure_commons\\_allure.py:184: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nC:\\Users\\zxxy\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\allure_commons\\_allure.py:191: in __enter__\n    parameters=self.parameters)\nC:\\Users\\zxxy\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\allure_pytest\\listener.py:52: in start_fixture\n    self.allure_logger.start_after_fixture(parent_uuid, uuid, after_fixture)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <allure_commons.reporter.AllureReporter object at 0x000001FDCEE7AF60>, parent_uuid = '7ce99a35-481b-4787-bfb4-e2746cd24329', uuid = 'dbdec778-62a1-4ecd-af97-97ebae0b7152'\nfixture = TestAfterResult(name='_Class__pytest_setup_class::0', status=None, statusDetails=None, stage=None, description=None, descriptionHtml=None, steps=[], attachments=[], parameters=[], start=1615017901066, stop=None)\n\n    def start_after_fixture(self, parent_uuid, uuid, fixture):\n>       self._items.get(parent_uuid).afters.append(fixture)\nE       AttributeError: 'NoneType' object has no attribute 'afters'\n\nC:\\Users\\zxxy\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\allure_commons\\reporter.py:60: AttributeError",
+  "flaky" : true,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615017847774,
+      "stop" : 1615017863444,
+      "duration" : 15670
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615017865794,
+      "stop" : 1615017882780,
+      "duration" : 16986
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'afters'",
+    "statusTrace" : "self = <allure_commons._allure.fixture object at 0x000001FDCF4C30F0>, args = (), kwargs = {}\n\n    def __call__(self, *args, **kwargs):\n        self.parameters = func_parameters(self._fixture_function, *args, **kwargs)\n    \n>       with self:\n\nC:\\Users\\zxxy\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\allure_commons\\_allure.py:184: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nC:\\Users\\zxxy\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\allure_commons\\_allure.py:191: in __enter__\n    parameters=self.parameters)\nC:\\Users\\zxxy\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\allure_pytest\\listener.py:52: in start_fixture\n    self.allure_logger.start_after_fixture(parent_uuid, uuid, after_fixture)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <allure_commons.reporter.AllureReporter object at 0x000001FDCEE7AF60>, parent_uuid = '7ce99a35-481b-4787-bfb4-e2746cd24329', uuid = 'dbdec778-62a1-4ecd-af97-97ebae0b7152'\nfixture = TestAfterResult(name='_Class__pytest_setup_class::0', status=None, statusDetails=None, stage=None, description=None, descriptionHtml=None, steps=[], attachments=[], parameters=[], start=1615017901066, stop=None)\n\n    def start_after_fixture(self, parent_uuid, uuid, fixture):\n>       self._items.get(parent_uuid).afters.append(fixture)\nE       AttributeError: 'NoneType' object has no attribute 'afters'\n\nC:\\Users\\zxxy\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\allure_commons\\reporter.py:60: AttributeError",
+    "steps" : [ {
+      "name" : "新增薪酬业务报账界面流程",
+      "time" : {
+        "start" : 1615017882781,
+        "stop" : 1615017898913,
+        "duration" : 16132
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击选择薪酬报账页面",
+        "time" : {
+          "start" : 1615017882782,
+          "stop" : 1615017883131,
+          "duration" : 349
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "进入薪酬报账新增提交页面",
+        "time" : {
+          "start" : 1615017883131,
+          "stop" : 1615017883244,
+          "duration" : 113
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "选择薪酬区间",
+        "time" : {
+          "start" : 1615017885832,
+          "stop" : 1615017887364,
+          "duration" : 1532
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "选择业务类型",
+        "time" : {
+          "start" : 1615017887364,
+          "stop" : 1615017887985,
+          "duration" : 621
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "输入备注",
+        "time" : {
+          "start" : 1615017887985,
+          "stop" : 1615017888098,
+          "duration" : 113
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "点击保存按钮",
+        "time" : {
+          "start" : 1615017888098,
+          "stop" : 1615017888160,
+          "duration" : 62
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "点击明细新增按钮",
+        "time" : {
+          "start" : 1615017888715,
+          "stop" : 1615017888912,
+          "duration" : 197
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "选择责任部门",
+        "time" : {
+          "start" : 1615017888912,
+          "stop" : 1615017890673,
+          "duration" : 1761
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "输入薪酬明细",
+        "time" : {
+          "start" : 1615017890673,
+          "stop" : 1615017892643,
+          "duration" : 1970
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "点击确认按钮",
+        "time" : {
+          "start" : 1615017892644,
+          "stop" : 1615017893167,
+          "duration" : 523
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "点击提交按钮",
+        "time" : {
+          "start" : 1615017894298,
+          "stop" : 1615017895612,
+          "duration" : 1314
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "点击确定按钮",
+        "time" : {
+          "start" : 1615017895612,
+          "stop" : 1615017896643,
+          "duration" : 1031
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 12
+    } ],
+    "attachments" : [ {
+      "uid" : "117adcafc6510055",
+      "name" : "log",
+      "source" : "117adcafc6510055.txt",
+      "type" : "text/plain",
+      "size" : 1943
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 13
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615017898914,
+      "stop" : 1615017901064,
+      "duration" : 2150
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "新增薪酬业务报账界面流程"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "新增薪酬流程"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(name='submit')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.basIndexPageTest.salaryEasPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_newAddSalary"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewAddSalary"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "55600-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.basIndexPageTest.salaryEasPageTest.test_newAddSalary"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ {
+      "uid" : "307e7d3875132d3a",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"form\"]/div[1]/div/div/label/span\"}\n  (Session info: chrome=88.0.4324.190)",
+      "time" : {
+        "start" : 1615017863446,
+        "stop" : 1615017865750,
+        "duration" : 2304
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "dependency(name='submit')" ]
+  },
+  "source" : "b9354f17f6421530.json",
+  "parameterValues" : [ ]
+}

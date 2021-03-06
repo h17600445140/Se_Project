@@ -47,7 +47,7 @@ class TestNewWithholdingAmortization():
             self.newWithholdingAmortizationPage.input_boeAbstract('测试预提申请单(新)')
 
         with allure.step("选择客商"):
-            self.newWithholdingAmortizationPage.input_vendor('UI供应商')
+            self.newWithholdingAmortizationPage.input_vendor('UI供应商1')
         with allure.step("选择预提规则"):
             self.newWithholdingAmortizationPage.selectYuTiRule('按月平均计算')
         # with allure.step("选择合同"):

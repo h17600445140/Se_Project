@@ -1,0 +1,13 @@
+[32mINFO    [0m WebUIAuto:log.py:48 请求链接，链接地址为：http://fol.ztessc.com.cn/eas
+[35mDEBUG   [0m WebUIAuto:log.py:45 输入账户，账户为：UI01
+[35mDEBUG   [0m WebUIAuto:log.py:45 输入密码，密码为：LMJT123456
+[32mINFO    [0m WebUIAuto:log.py:48 点击登录按钮
+[32mINFO    [0m WebUIAuto:log.py:48 成功登录界面：easHost
+[32mINFO    [0m WebUIAuto:log.py:48  ----- 单据流程开始 ----- 
+[32mINFO    [0m WebUIAuto:log.py:48 打开事项申请单据选择页面
+[32mINFO    [0m WebUIAuto:log.py:48 打开的单据类型为：差旅申请单（国际） ,选择的单据业务类型为: UI通用
+[32mINFO    [0m WebUIAuto:log.py:48 是否正常打开单据: True
+[35mDEBUG   [0m WebUIAuto:log.py:45 所有窗口为：['CDwindow-D57AFD77AAA42F42F0FD91ADC8AA91C6']
+[35mDEBUG   [0m WebUIAuto:log.py:45 当前窗口为：CDwindow-D57AFD77AAA42F42F0FD91ADC8AA91C6
+[31m[1mERROR   [0m WebUIAuto:log.py:54 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
+[32mINFO    [0m WebUIAuto:log.py:48 进行截图操作

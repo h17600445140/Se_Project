@@ -1,0 +1,114 @@
+{
+  "uid" : "ca94a4647d8f3fcc",
+  "name" : "test_sharingCenterApprove",
+  "fullName" : "Testcases.boeApplyPageTest.test_applyInternationalTravelBoe.TestApplyInternationalTravelBoe#test_sharingCenterApprove",
+  "historyId" : "436430b4cdb7c6386c3b0a1503387f53",
+  "time" : {
+    "start" : 1615015915959,
+    "stop" : 1615015915959,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: test_sharingCenterApprove depends on submit",
+  "statusTrace" : "('C:\\\\Users\\\\zxxy\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python36\\\\lib\\\\site-packages\\\\pytest_dependency.py', 103, 'Skipped: test_sharingCenterApprove depends on submit')",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615015886977,
+      "stop" : 1615015903915,
+      "duration" : 16938
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "skipped",
+    "statusMessage" : "Skipped: test_sharingCenterApprove depends on submit",
+    "statusTrace" : "('C:\\\\Users\\\\zxxy\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python36\\\\lib\\\\site-packages\\\\pytest_dependency.py', 103, 'Skipped: test_sharingCenterApprove depends on submit')",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f1dc1f3417cae24a",
+      "name" : "log",
+      "source" : "f1dc1f3417cae24a.txt",
+      "type" : "text/plain",
+      "size" : 1229
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615015915971,
+      "stop" : 1615015923987,
+      "duration" : 8016
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "差旅申请单（国际）共享中心界面财务审批"
+  }, {
+    "name" : "feature",
+    "value" : "差旅申请单（国际）流程"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(depends=['submit'])"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.boeApplyPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_applyInternationalTravelBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestApplyInternationalTravelBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "55600-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.boeApplyPageTest.test_applyInternationalTravelBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(depends=['submit'])" ]
+  },
+  "source" : "ca94a4647d8f3fcc.json",
+  "parameterValues" : [ ]
+}

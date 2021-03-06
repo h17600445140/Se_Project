@@ -1,0 +1,125 @@
+{
+  "uid" : "ae857f48ff09be3f",
+  "name" : "test_sharingCenterApprove",
+  "fullName" : "Testcases.basIndexPageTest.accountEasPageTest.test_newBusinessLedgerBoe.TestNewBusinessLedgerBoe#test_sharingCenterApprove",
+  "historyId" : "2520ef7d9fa1bf0682c11f5f8beae53d",
+  "time" : {
+    "start" : 1615017571434,
+    "stop" : 1615017686503,
+    "duration" : 115069
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615017511673,
+      "stop" : 1615017527205,
+      "duration" : 15532
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "业务记账单（新）共享中心界面财务审批步骤",
+      "time" : {
+        "start" : 1615017571434,
+        "stop" : 1615017686503,
+        "duration" : 115069
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "f25bece6154b9df8",
+      "name" : "log",
+      "source" : "f25bece6154b9df8.txt",
+      "type" : "text/plain",
+      "size" : 9599
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615017686505,
+      "stop" : 1615017688687,
+      "duration" : 2182
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "业务记账单（新）流程"
+  }, {
+    "name" : "story",
+    "value" : "业务记账单（新）共享中心界面财务审批"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(depends=['submit'])"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.basIndexPageTest.accountEasPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_newBusinessLedgerBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewBusinessLedgerBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "55600-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.basIndexPageTest.accountEasPageTest.test_newBusinessLedgerBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(depends=['submit'])" ]
+  },
+  "source" : "ae857f48ff09be3f.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,329 @@
+{
+  "uid" : "3bc67f52e84a595b",
+  "name" : "test_newPurchasePrepaymentBoe",
+  "fullName" : "Testcases.basIndexPageTest.purchaseEasPageTest.test_newPurchasePrepaymentBoe.TestNewPurchasePrepaymentBoe#test_newPurchasePrepaymentBoe",
+  "historyId" : "aa01072d9a1b97ae06843c524e1d18a5",
+  "time" : {
+    "start" : 1615017154140,
+    "stop" : 1615017174577,
+    "duration" : 20437
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615017137455,
+      "stop" : 1615017154139,
+      "duration" : 16684
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "采购预付单业务报账界面单据提交步骤",
+      "time" : {
+        "start" : 1615017154140,
+        "stop" : 1615017174577,
+        "duration" : 20437
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击选择采购付款页面",
+        "time" : {
+          "start" : 1615017154141,
+          "stop" : 1615017154368,
+          "duration" : 227
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "进入采购预付单单据提交页面",
+        "time" : {
+          "start" : 1615017154369,
+          "stop" : 1615017154549,
+          "duration" : 180
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "选择业务类型",
+        "time" : {
+          "start" : 1615017163321,
+          "stop" : 1615017164823,
+          "duration" : 1502
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "输入备注",
+        "time" : {
+          "start" : 1615017164823,
+          "stop" : 1615017165055,
+          "duration" : 232
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "选择供应商",
+        "time" : {
+          "start" : 1615017165055,
+          "stop" : 1615017166783,
+          "duration" : 1728
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "输入采购订单",
+        "time" : {
+          "start" : 1615017166783,
+          "stop" : 1615017166908,
+          "duration" : 125
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "选择预付类型",
+        "time" : {
+          "start" : 1615017166908,
+          "stop" : 1615017168060,
+          "duration" : 1152
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "输入预付金额",
+        "time" : {
+          "start" : 1615017168061,
+          "stop" : 1615017168812,
+          "duration" : 751
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "选择支付方式",
+        "time" : {
+          "start" : 1615017168812,
+          "stop" : 1615017169306,
+          "duration" : 494
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "点击单据提交",
+        "time" : {
+          "start" : 1615017169306,
+          "stop" : 1615017169390,
+          "duration" : 84
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "点击单据关闭按钮",
+        "time" : {
+          "start" : 1615017169390,
+          "stop" : 1615017173503,
+          "duration" : 4113
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "进行单据生成校验",
+        "time" : {
+          "start" : 1615017173503,
+          "stop" : 1615017173949,
+          "duration" : 446
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "断言结果：True",
+        "time" : {
+          "start" : 1615017174153,
+          "stop" : 1615017174178,
+          "duration" : 25
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ {
+        "uid" : "4576c26e3e65db1",
+        "name" : "2021-03-06 15-52-54successscreenshot",
+        "source" : "4576c26e3e65db1.png",
+        "type" : "image/png",
+        "size" : 102710
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 13
+    } ],
+    "attachments" : [ {
+      "uid" : "4c01f76accc3dac3",
+      "name" : "log",
+      "source" : "4c01f76accc3dac3.txt",
+      "type" : "text/plain",
+      "size" : 2327
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 14
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615017307947,
+      "stop" : 1615017310118,
+      "duration" : 2171
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "采购预付单流程"
+  }, {
+    "name" : "story",
+    "value" : "采购预付单业务报账界面单据提交"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(name='submit')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.basIndexPageTest.purchaseEasPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_newPurchasePrepaymentBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewPurchasePrepaymentBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "55600-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.basIndexPageTest.purchaseEasPageTest.test_newPurchasePrepaymentBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(name='submit')" ]
+  },
+  "source" : "3bc67f52e84a595b.json",
+  "parameterValues" : [ ]
+}

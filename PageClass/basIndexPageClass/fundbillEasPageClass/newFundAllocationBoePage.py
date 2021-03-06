@@ -75,5 +75,5 @@ class NewFundAllocationBoePage(BasIndexPage,BoeCommon):
         :param text: 调拨金额
         :return: None
         """
-        self.input_amount(text, *(By.XPATH, '/html/body/div[1]/div/div[2]/div[3]/div[2]/div/div[5]/div'))
+        self.input_amount(text, *(By.XPATH, '/html//div[1]/div/div[2]/div[3]/div[2]/div/div[5]/div'))
         logger.info('输入的調撥金额为 : {}'.format(text))

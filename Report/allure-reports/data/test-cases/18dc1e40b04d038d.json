@@ -1,0 +1,96 @@
+{
+  "uid" : "18dc1e40b04d038d",
+  "name" : "test_businessApprove",
+  "fullName" : "Testcases.basIndexPageTest.accountEasPageTest.test_newWithholdingAmortization.TestNewWithholdingAmortization#test_businessApprove",
+  "historyId" : "101a890a493fa33a639c0e00e82877a4",
+  "time" : {
+    "start" : 1615017509504,
+    "stop" : 1615017509504,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: test_businessApprove depends on submit",
+  "statusTrace" : "('C:\\\\Users\\\\zxxy\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python36\\\\lib\\\\site-packages\\\\pytest_dependency.py', 103, 'Skipped: test_businessApprove depends on submit')",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615017482569,
+      "stop" : 1615017498136,
+      "duration" : 15567
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615017509508,
+      "stop" : 1615017511657,
+      "duration" : 2149
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "预提申请单（新）流程"
+  }, {
+    "name" : "story",
+    "value" : "预提申请单（新）费用报销界面业务审批"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(depends=['submit'])"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.basIndexPageTest.accountEasPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_newWithholdingAmortization"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewWithholdingAmortization"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "55600-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.basIndexPageTest.accountEasPageTest.test_newWithholdingAmortization"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(depends=['submit'])" ]
+  },
+  "source" : "18dc1e40b04d038d.json",
+  "parameterValues" : [ ]
+}

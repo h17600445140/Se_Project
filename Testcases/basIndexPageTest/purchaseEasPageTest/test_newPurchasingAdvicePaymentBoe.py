@@ -26,8 +26,7 @@ class TestNewPurchasingAdvicePaymentBoe():
         self.prepaidBoeNum = readBoeNum(boeNumPath)
 
     def teardown_class(self):
-        # self.newPurchasingAdvicePaymentBoePage.driver.quit()
-        pass
+        self.newPurchasingAdvicePaymentBoePage.driver.quit()
 
     @allure.story("采购付款单业务报账界面单据提交")
     @allure.step("采购付款单业务报账界面单据提交步骤")

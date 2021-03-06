@@ -58,7 +58,8 @@ class TestNewDomesticTravelBoe():
                 self.newDomesticTravelBoePage.click_invoiceType()
                 # 差旅火车票新增
                 invoiceFactory.get_invoice(self.login.driver, '火车票', 'boeInvoicePage').getTickets(
-                    datetime.datetime.now().strftime("%Y-%m-%d"),
+                    # datetime.datetime.now().strftime("%Y-%m-%d")
+                    '2021-03-12',
                     newDomesticTravelBoe_testdata['trainInvoice']['invoicePersonType'],
                     newDomesticTravelBoe_testdata['trainInvoice']['invoicePersonName'],
                     newDomesticTravelBoe_testdata['trainInvoice']['invoiceFromCity'],

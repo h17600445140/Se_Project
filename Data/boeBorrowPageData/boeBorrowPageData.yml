@@ -3,7 +3,7 @@ employeeLoadBoe:
         -   operationType: 'UI通用'
             boeAbstract: '测试员工借款单'
             operationSubTypeId: 'UI通用01'
-            expenseAmount: '100.10'
+            expenseAmount: '100..00'
             projectName: 'UI项目'
             casename: '员工借款单提交主流程'
 

@@ -1,5 +1,8 @@
 # -*- coding:utf-8 -*-
+import datetime
 import os
+import random
+import string
 
 import allure
 import pytest
@@ -108,6 +111,15 @@ class TestNewObsoleteRedLetterInvoiceApplictationBoe():
         logger.info(" ----- 单据财务审批开始 ----- ")
         global boeNum
         self.sharingCenterApprove = SharingCenterApprove(boeNum)
-        self.sharingCenterApprove.sharingCenterApproveChuShen()
+
+        invoiceNum = ''.join(random.choice(string.digits) for _ in range(8))
+        invoiceDataDict = {'invoiceNo': ''.join(random.choice(string.digits) for _ in range(12)),
+                           'invoiceCode': invoiceNum,
+                           'invoiceDate': datetime.datetime.now().strftime('%Y-%m-%d'),
+                           'invoiceFee': '-1000.00',
+                           'invoiceTypeCode': '增值税普通发票',
+                           'checkCode': '123456'}
+
+        self.sharingCenterApprove.sharingCenterApproveChuShen(modify=True, **invoiceDataDict)
         self.sharingCenterApprove.sharingCenterApproveFuShen()
         logger.info(" ----- 单据财务审批结束 ----- ")

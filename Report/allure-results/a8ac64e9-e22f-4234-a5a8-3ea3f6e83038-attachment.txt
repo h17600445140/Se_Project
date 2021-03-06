@@ -1,0 +1,32 @@
+[32mINFO    [0m WebUIAuto:log.py:48 请求链接，链接地址为：http://fol.ztessc.com.cn/eas
+[35mDEBUG   [0m WebUIAuto:log.py:45 输入账户，账户为：UI01
+[35mDEBUG   [0m WebUIAuto:log.py:45 输入密码，密码为：LMJT123456
+[32mINFO    [0m WebUIAuto:log.py:48 点击登录按钮
+[32mINFO    [0m WebUIAuto:log.py:48 成功登录界面：easHost
+[32mINFO    [0m WebUIAuto:log.py:48  ----- 单据流程开始 ----- 
+[32mINFO    [0m WebUIAuto:log.py:48 打开事项申请单据选择页面
+[32mINFO    [0m WebUIAuto:log.py:48 打开的单据类型为：通用费用申请单 ,选择的单据业务类型为: UI通用
+[32mINFO    [0m WebUIAuto:log.py:48 是否正常打开单据: True
+[35mDEBUG   [0m WebUIAuto:log.py:45 所有窗口为：['CDwindow-3A35F0CEAD321EB69534B144830758C3', 'CDwindow-780EF6EA3225A46FC4018839A9A165F8']
+[35mDEBUG   [0m WebUIAuto:log.py:45 当前窗口为：CDwindow-780EF6EA3225A46FC4018839A9A165F8
+[32mINFO    [0m WebUIAuto:log.py:48 当前提单单据号为：LMJT-BX2103060276
+[32mINFO    [0m WebUIAuto:log.py:48 选择的业务类型为：UI通用
+[32mINFO    [0m WebUIAuto:log.py:48 输入的备注为：测试通用费用申请
+[32mINFO    [0m WebUIAuto:log.py:48 选择的申请类型为：UI通用01
+[32mINFO    [0m WebUIAuto:log.py:48 输入的申请金额为：200.10
+[32mINFO    [0m WebUIAuto:log.py:48 输入的申请说明为：测试通用费用申请单
+[32mINFO    [0m WebUIAuto:log.py:48 点击提交单据
+[32mINFO    [0m WebUIAuto:log.py:48 点击单据关闭按钮
+[35mDEBUG   [0m WebUIAuto:log.py:45 所有窗口为：['CDwindow-3A35F0CEAD321EB69534B144830758C3']
+[35mDEBUG   [0m WebUIAuto:log.py:45 当前窗口为：CDwindow-3A35F0CEAD321EB69534B144830758C3
+[32mINFO    [0m WebUIAuto:log.py:48 点击我的单据
+[32mINFO    [0m WebUIAuto:log.py:48 点击更多按钮
+[35mDEBUG   [0m WebUIAuto:log.py:45 所有窗口为：['CDwindow-3A35F0CEAD321EB69534B144830758C3', 'CDwindow-257903159C9EC6DFB60543AE7AE40950']
+[35mDEBUG   [0m WebUIAuto:log.py:45 当前窗口为：CDwindow-257903159C9EC6DFB60543AE7AE40950
+[32mINFO    [0m WebUIAuto:log.py:48 输入查询的单据编号为：LMJT-BX2103060276
+[32mINFO    [0m WebUIAuto:log.py:48 点击按钮：查询
+[32mINFO    [0m WebUIAuto:log.py:48 点击查询按钮
+[32mINFO    [0m WebUIAuto:log.py:48 Success ， 查询出对应结果
+[32mINFO    [0m WebUIAuto:log.py:48  ----- 单据提交流程结束 ----- 
+[32mINFO    [0m WebUIAuto:log.py:48 测试用例执行成功
+[32mINFO    [0m WebUIAuto:log.py:48 进行截图操作

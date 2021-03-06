@@ -1,0 +1,101 @@
+{
+  "uid" : "1148831e48ebbc02",
+  "name" : "test_addReceivableExchangeBill",
+  "fullName" : "Testcases.fscIndexPageTest.paymentCenterPageTest.test_billExchangePage.TestBillExchangePage#test_addReceivableExchangeBill",
+  "historyId" : "befa71b86ac5f2e335d63b94f550889a",
+  "time" : {
+    "start" : 1615016532368,
+    "stop" : 1615016586092,
+    "duration" : 53724
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615016512263,
+      "stop" : 1615016532367,
+      "duration" : 20104
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b1f3c2e3461d3823",
+      "name" : "log",
+      "source" : "b1f3c2e3461d3823.txt",
+      "type" : "text/plain",
+      "size" : 3591
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615016586093,
+      "stop" : 1615016588250,
+      "duration" : 2157
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Testcases.fscIndexPageTest.paymentCenterPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_billExchangePage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestBillExchangePage"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "55600-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.fscIndexPageTest.paymentCenterPageTest.test_billExchangePage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1148831e48ebbc02.json",
+  "parameterValues" : [ ]
+}

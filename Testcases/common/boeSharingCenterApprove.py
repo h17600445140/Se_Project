@@ -68,6 +68,13 @@ class SharingCenterApprove():
 
         if modify == True:
 
+            sleep(3)
+            if 'checkCode' in parameterList:
+                self._boeCommon.input_dtosCheckCode(kwargs['checkCode'])
+
+            if 'invoiceTypeCode' in parameterList:
+                self._boeCommon.input_dtosInvoiceTypeCode(kwargs['invoiceTypeCode'])
+
             if 'invoiceNo' in parameterList:
                 self._boeCommon.input_dtosInvoiceNo(kwargs['invoiceNo'])
 
@@ -140,10 +147,12 @@ class SharingCenterApprove():
         self._auditAdjustDirectorPage.click_taskTakeToBack()
         self._auditAdjustDirectorPage.click_selectResult()
 
+        sleep(1)
         # 分配到组
         try:
             self._auditAdjustDirectorPage.choiceGroup(config.getUrlDict()['Approval']['approvalGroupF'])
         except:
+            sleep(1)
             self._auditAdjustDirectorPage.click_selectResult()
             self._auditAdjustDirectorPage.choiceGroup(config.getUrlDict()['Approval']['approvalGroupF'])
 

@@ -226,8 +226,9 @@ class AcceptanceLedgerPage(LedgerIndexPage):
     def input_detailTaxAmount(self, text):
         self.find_elements( *(By.ID, 'form_taxAmount') )[len(self.find_elements( *(By.ID, 'form_taxAmount') ))-2].click()
         element = self.find_elements( *(By.ID, 'form_taxAmount') )[len(self.find_elements( *(By.ID, 'form_taxAmount') ))-2]
-        ActionChains(self.driver).send_keys_to_element(element, Keys.BACKSPACE).perform()
-        ActionChains(self.driver).send_keys_to_element(element, text).perform()
+        # ActionChains(self.driver).send_keys_to_element(element, Keys.BACKSPACE).perform()
+        # ActionChains(self.driver).send_keys_to_element(element, text).perform()
+        ActionChains(self.driver).send_keys_to_element(element, Keys.BACKSPACE).send_keys_to_element(element, text).perform()
         logger.info('输入的不含税金额为：{}'.format(text))
 
 

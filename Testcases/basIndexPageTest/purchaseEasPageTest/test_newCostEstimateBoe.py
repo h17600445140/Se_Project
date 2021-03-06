@@ -47,7 +47,7 @@ class TestNewCostEstimateBoe():
                 self.newCostEstimateBoePage.input_boeAbstract('测试成本暂估单(新)')
 
             with allure.step("选择项目"):
-                self.newCostEstimateBoePage.input_project('hc项目1')
+                self.newCostEstimateBoePage.input_project('UI项目')
             with allure.step("选择供应商"):
                 self.newCostEstimateBoePage.selectVendor('UIGYS', vendorName='UI供应商')
             # with allure.step("选择关联合同"):

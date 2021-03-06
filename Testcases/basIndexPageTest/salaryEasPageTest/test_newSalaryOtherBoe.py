@@ -1,4 +1,6 @@
 # -*- coding:utf-8 -*-
+from time import sleep
+
 import allure
 import pytest
 
@@ -7,6 +9,7 @@ from Testcases.common.boeBusinessApprove import BusinessApprove
 from Testcases.common.boeSharingCenterApprove import SharingCenterApprove
 from Testcases.common.loginDepend import LoginDepend
 from Util import logger
+
 
 @allure.feature("五险一金报账单（新）流程")
 class TestNewSalaryOtherBoe():
@@ -43,6 +46,8 @@ class TestNewSalaryOtherBoe():
 
         with allure.step("选择关联薪资"):
             self.newSalaryOtherBoePage.select_salary()
+
+        sleep(1)
 
         with allure.step("选择收款账户"):
             self.newSalaryOtherBoePage.selectVendorAccount('1109123456789001', accountName='UI供应商')

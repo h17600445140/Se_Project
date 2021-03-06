@@ -1,0 +1,125 @@
+{
+  "uid" : "9e45a4666537731c",
+  "name" : "test_businessApprove",
+  "fullName" : "Testcases.basIndexPageTest.receivableEasPageTest.test_billingApplicationBoe.TestBillingApplicationBoe#test_businessApprove",
+  "historyId" : "488f377bf35627fd199262df3014d6fd",
+  "time" : {
+    "start" : 1615016630807,
+    "stop" : 1615016653217,
+    "duration" : 22410
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615016588268,
+      "stop" : 1615016607188,
+      "duration" : 18920
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "开票申请单费用报销界面业务审批步骤",
+      "time" : {
+        "start" : 1615016630807,
+        "stop" : 1615016653217,
+        "duration" : 22410
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "3913ce2ae785a9b",
+      "name" : "log",
+      "source" : "3913ce2ae785a9b.txt",
+      "type" : "text/plain",
+      "size" : 1414
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615016692455,
+      "stop" : 1615016694599,
+      "duration" : 2144
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "开票申请单流程"
+  }, {
+    "name" : "story",
+    "value" : "开票申请单费用报销界面业务审批"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(depends=['submit'])"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.basIndexPageTest.receivableEasPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_billingApplicationBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestBillingApplicationBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "55600-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.basIndexPageTest.receivableEasPageTest.test_billingApplicationBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(depends=['submit'])" ]
+  },
+  "source" : "9e45a4666537731c.json",
+  "parameterValues" : [ ]
+}

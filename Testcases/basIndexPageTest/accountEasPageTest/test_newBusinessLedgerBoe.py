@@ -10,7 +10,7 @@ from Util import logger
 
 
 @allure.feature("业务记账单（新）流程")
-class TestCostEstimateBoe():
+class TestNewBusinessLedgerBoe():
 
     boeNum = globals()
 

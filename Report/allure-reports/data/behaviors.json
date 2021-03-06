@@ -7,48 +7,48 @@
       "name" : "通用费用申请单费用报销界面单据提交",
       "children" : [ {
         "name" : "test_comFeeApply[通用费用申请单提交主流程]",
-        "uid" : "3e655d18d2c1726e",
+        "uid" : "4458364236216678",
         "parentUid" : "37c77b666d680a5063f6827be34e28bb",
         "status" : "passed",
         "time" : {
-          "start" : 1611506695368,
-          "stop" : 1611506715655,
-          "duration" : 20287
+          "start" : 1615015601098,
+          "stop" : 1615015615449,
+          "duration" : 14351
         },
         "flaky" : false,
-        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试通用费用申请单', 'operationSubTypeId': 'UI通用1', 'expenseAmount': '100.10', 'remark': '测试通用费用申请单', 'casename': '通用费用申请单提交主流程'}" ]
+        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试通用费用申请', 'operationSubTypeId': 'UI通用01', 'expenseAmount': '200.10', 'remark': '测试通用费用申请单', 'casename': '通用费用申请单提交主流程'}" ]
       } ],
       "uid" : "37c77b666d680a5063f6827be34e28bb"
     }, {
       "name" : "通用费用申请费用报销界面业务审批",
       "children" : [ {
-        "name" : "test_businessApprove",
-        "uid" : "6f614d4303ebec89",
+        "name" : "test_businessApprove[通用费用申请单提交主流程]",
+        "uid" : "80113e0a914a0e75",
         "parentUid" : "22acf041ea99cf16712142afb8f420ee",
         "status" : "passed",
         "time" : {
-          "start" : 1611506715662,
-          "stop" : 1611506738032,
-          "duration" : 22370
+          "start" : 1615015615452,
+          "stop" : 1615015634470,
+          "duration" : 19018
         },
         "flaky" : false,
-        "parameters" : [ ]
+        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试通用费用申请', 'operationSubTypeId': 'UI通用01', 'expenseAmount': '200.10', 'remark': '测试通用费用申请单', 'casename': '通用费用申请单提交主流程'}" ]
       } ],
       "uid" : "22acf041ea99cf16712142afb8f420ee"
     }, {
       "name" : "通用费用申请共享中心界面财务审批",
       "children" : [ {
-        "name" : "test_sharingCenterApprove",
-        "uid" : "5d499526febcfaa5",
+        "name" : "test_sharingCenterApprove[通用费用申请单提交主流程]",
+        "uid" : "6f5d5d45720e5f65",
         "parentUid" : "9da4e5c5f67e124021b36de2de46e9ec",
         "status" : "passed",
         "time" : {
-          "start" : 1611506738039,
-          "stop" : 1611506839683,
-          "duration" : 101644
+          "start" : 1615015634476,
+          "stop" : 1615015738689,
+          "duration" : 104213
         },
         "flaky" : false,
-        "parameters" : [ ]
+        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试通用费用申请', 'operationSubTypeId': 'UI通用01', 'expenseAmount': '200.10', 'remark': '测试通用费用申请单', 'casename': '通用费用申请单提交主流程'}" ]
       } ],
       "uid" : "9da4e5c5f67e124021b36de2de46e9ec"
     } ],
@@ -59,13 +59,13 @@
       "name" : "差旅申请单费用报销界面单据提交",
       "children" : [ {
         "name" : "test_applyTravel[差旅申请单提交主流程]",
-        "uid" : "f2796e7c1d1f2214",
+        "uid" : "4600ab451079842b",
         "parentUid" : "b420d9f27d50b0a9f10e350ba6286dcc",
         "status" : "passed",
         "time" : {
-          "start" : 1611506855169,
-          "stop" : 1611506884702,
-          "duration" : 29533
+          "start" : 1615015753279,
+          "stop" : 1615015774595,
+          "duration" : 21316
         },
         "flaky" : false,
         "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试差旅申请单', 'applyAmount': '100.10', 'beginDateStr': '2021-1-1', 'endDateStr': '2021-1-20', 'travelTask': '会议出差', 'fromCity': '长沙', 'toCity': '北京', 'transportation': '动卧', 'casename': '差旅申请单提交主流程'}" ]
@@ -75,13 +75,13 @@
       "name" : "差旅申请单费用报销界面业务审批",
       "children" : [ {
         "name" : "test_businessApprove",
-        "uid" : "72520360bbfdd84f",
+        "uid" : "e9ea7745f41b1006",
         "parentUid" : "a6d23e1f01b86f9e3c2d771869555ef8",
         "status" : "passed",
         "time" : {
-          "start" : 1611506884714,
-          "stop" : 1611506907767,
-          "duration" : 23053
+          "start" : 1615015774599,
+          "stop" : 1615015793353,
+          "duration" : 18754
         },
         "flaky" : false,
         "parameters" : [ ]
@@ -91,13 +91,13 @@
       "name" : "差旅申请单共享中心界面财务审批",
       "children" : [ {
         "name" : "test_sharingCenterApprove",
-        "uid" : "7c84d1ce3744895b",
+        "uid" : "a8fe3e24e80ace46",
         "parentUid" : "28f9beaea75c82ee5c076b838e7af5b8",
         "status" : "passed",
         "time" : {
-          "start" : 1611506907774,
-          "stop" : 1611507004748,
-          "duration" : 96974
+          "start" : 1615015793359,
+          "stop" : 1615015884804,
+          "duration" : 91445
         },
         "flaky" : false,
         "parameters" : [ ]
@@ -111,29 +111,29 @@
       "name" : "差旅申请单（国际）费用报销界面单据提交",
       "children" : [ {
         "name" : "test_applyInternationalTravel[测试差旅申请单（国际）提交主流程]",
-        "uid" : "808b3120f97d526b",
+        "uid" : "51e60a2000816228",
         "parentUid" : "72ff42af35e0733fc71ba07f46301eb1",
-        "status" : "passed",
+        "status" : "failed",
         "time" : {
-          "start" : 1611507020600,
-          "stop" : 1611507051439,
-          "duration" : 30839
+          "start" : 1615015903917,
+          "stop" : 1615015915803,
+          "duration" : 11886
         },
         "flaky" : false,
-        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试差旅申请单（国际）', 'applyAmount': '100.10', 'beginDateStr': '2021-1-1', 'endDateStr': '2021-1-20', 'fromCity': '长沙', 'toCity': '北京', 'transportation': '动卧', 'travelTask': '会议出差', 'projectName': '刘志成项目', 'casename': '测试差旅申请单（国际）提交主流程'}" ]
+        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试差旅申请单（国际）', 'applyAmount': '100.10', 'beginDateStr': '2021-1-1', 'endDateStr': '2021-1-20', 'fromCity': '长沙', 'toCity': '北京', 'transportation': '动卧', 'travelTask': '会议出差', 'projectName': 'UI项目', 'casename': '测试差旅申请单（国际）提交主流程'}" ]
       } ],
       "uid" : "72ff42af35e0733fc71ba07f46301eb1"
     }, {
       "name" : "差旅申请单（国际）费用报销界面业务审批",
       "children" : [ {
         "name" : "test_businessApprove",
-        "uid" : "26678336fa231a91",
+        "uid" : "9999e7c94af492bb",
         "parentUid" : "b2ec04503fda0628ed2b45ec4e614861",
-        "status" : "passed",
+        "status" : "skipped",
         "time" : {
-          "start" : 1611507051447,
-          "stop" : 1611507073940,
-          "duration" : 22493
+          "start" : 1615015915957,
+          "stop" : 1615015915957,
+          "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ ]
@@ -143,13 +143,13 @@
       "name" : "差旅申请单（国际）共享中心界面财务审批",
       "children" : [ {
         "name" : "test_sharingCenterApprove",
-        "uid" : "b60738a92a86dc7b",
+        "uid" : "ca94a4647d8f3fcc",
         "parentUid" : "e3a08221ce709d13d5fed863dbbfe7c1",
-        "status" : "passed",
+        "status" : "skipped",
         "time" : {
-          "start" : 1611507073951,
-          "stop" : 1611507179577,
-          "duration" : 105626
+          "start" : 1615015915959,
+          "stop" : 1615015915959,
+          "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ ]
@@ -163,29 +163,29 @@
       "name" : "日常费用报账单费用报销界面单据提交",
       "children" : [ {
         "name" : "test_newDailyExpense[日常费用报账单提交主流程]",
-        "uid" : "ed538938413ffde3",
+        "uid" : "dc49f9db06d4b769",
         "parentUid" : "0feb0252492d6cd20bde6a8fd320fb0d",
         "status" : "passed",
         "time" : {
-          "start" : 1611507195321,
-          "stop" : 1611507222872,
-          "duration" : 27551
+          "start" : 1615015939853,
+          "stop" : 1615015972201,
+          "duration" : 32348
         },
         "flaky" : false,
-        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试日常费用报账单', 'relatedInvoice': '80000012', 'operationSubType': 'UI通用1', 'projectName': '刘志成项目', 'deptCode': 'UIdp', 'deptName': 'UI部门', 'casename': '日常费用报账单提交主流程'}" ]
+        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试日常费用报账单', 'operationSubType': 'UI通用01', 'projectName': 'UI项目', 'deptCode': 'UIDP', 'deptName': 'UI部门', 'casename': '日常费用报账单提交主流程'}" ]
       } ],
       "uid" : "0feb0252492d6cd20bde6a8fd320fb0d"
     }, {
       "name" : "日常费用报账单费用报销界面业务审批",
       "children" : [ {
         "name" : "test_businessApprove",
-        "uid" : "3d226596fc5f6d70",
+        "uid" : "ba033349b610f4f3",
         "parentUid" : "f4dd9a8eddd8f2f3b11738f196ec7db8",
         "status" : "passed",
         "time" : {
-          "start" : 1611507222882,
-          "stop" : 1611507245093,
-          "duration" : 22211
+          "start" : 1615015972204,
+          "stop" : 1615015995974,
+          "duration" : 23770
         },
         "flaky" : false,
         "parameters" : [ ]
@@ -195,13 +195,13 @@
       "name" : "日常费用报账单共享中心界面财务审批",
       "children" : [ {
         "name" : "test_sharingCenterApprove",
-        "uid" : "2aa461d92c43f51e",
+        "uid" : "56f3e0a334228cd0",
         "parentUid" : "a432182ec30f918582c09d6a299b1e33",
         "status" : "passed",
         "time" : {
-          "start" : 1611507245103,
-          "stop" : 1611507344853,
-          "duration" : 99750
+          "start" : 1615015995981,
+          "stop" : 1615016098736,
+          "duration" : 102755
         },
         "flaky" : false,
         "parameters" : [ ]
@@ -215,29 +215,29 @@
       "name" : "差旅报账单费用报销界面单据提交",
       "children" : [ {
         "name" : "test_newDomesticTravel[差旅报账单提交主流程]",
-        "uid" : "2447c028debcacbc",
+        "uid" : "75a81ad52df0b130",
         "parentUid" : "d28db04415cc37611ced9c271ab9dfcb",
-        "status" : "passed",
+        "status" : "failed",
         "time" : {
-          "start" : 1611507360539,
-          "stop" : 1611507401781,
-          "duration" : 41242
+          "start" : 1615016118165,
+          "stop" : 1615016155920,
+          "duration" : 37755
         },
         "flaky" : false,
-        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试差旅报账单', 'projectName': '刘志成项目', 'deptCode': 'UIdp', 'deptName': 'UI部门', 'trainInvoice': [{'invoiceDate': '2021-1-1', 'invoicePersonType': '内部人员', 'invoicePersonName': 'hc1', 'invoiceFromCity': '长沙', 'invoiceToCity': '上海', 'invoiceSiteType': '二等座（高铁/动车）', 'invoiceTicketFee': '500.00', 'invoiceIsReplace': '否'}], 'casename': '差旅报账单提交主流程'}" ]
+        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试差旅报账单', 'projectName': 'UI项目', 'deptCode': 'UIDP', 'deptName': 'UI部门', 'trainInvoice': {'invoiceDate': '2021-1-6', 'invoicePersonType': '内部人员', 'invoicePersonName': 'UI01', 'invoiceFromCity': '长沙', 'invoiceToCity': '天津', 'invoiceSiteType': '二等座（高铁/动车）', 'invoiceTicketFee': '500.00', 'invoiceIsReplace': '否'}, 'casename': '差旅报账单提交主流程'}" ]
       } ],
       "uid" : "d28db04415cc37611ced9c271ab9dfcb"
     }, {
       "name" : "差旅报账单费用报销界面业务审批",
       "children" : [ {
         "name" : "test_businessApprove",
-        "uid" : "9d10a0d991e1f026",
+        "uid" : "fbd8581b35ae3130",
         "parentUid" : "6de0596356fe52076820e0c13fd36b55",
-        "status" : "passed",
+        "status" : "skipped",
         "time" : {
-          "start" : 1611507401790,
-          "stop" : 1611507424676,
-          "duration" : 22886
+          "start" : 1615016155965,
+          "stop" : 1615016155965,
+          "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ ]
@@ -247,13 +247,13 @@
       "name" : "差旅报账单共享中心界面财务审批",
       "children" : [ {
         "name" : "test_sharingCenterApprove",
-        "uid" : "82807fac984cb929",
+        "uid" : "871b29bd222e378b",
         "parentUid" : "94e89ef861edf37412e14df096b12f62",
-        "status" : "passed",
+        "status" : "skipped",
         "time" : {
-          "start" : 1611507424693,
-          "stop" : 1611507526510,
-          "duration" : 101817
+          "start" : 1615016155969,
+          "stop" : 1615016155969,
+          "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ ]
@@ -267,29 +267,29 @@
       "name" : "多人差旅报账单费用报销界面单据提交",
       "children" : [ {
         "name" : "test_newMultiDomesticTravel[多人差旅报账单提交主流程]",
-        "uid" : "8359086eaad33bf7",
+        "uid" : "2fe83a98b9bd397a",
         "parentUid" : "7fa6424173bed2af95a24ef20894d699",
-        "status" : "passed",
+        "status" : "failed",
         "time" : {
-          "start" : 1611507542032,
-          "stop" : 1611507600909,
-          "duration" : 58877
+          "start" : 1615016180062,
+          "stop" : 1615016185729,
+          "duration" : 5667
         },
         "flaky" : false,
-        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试多人差旅报账单', 'travelers': 'hc003', 'projectName': '刘志成项目', 'casename': '多人差旅报账单提交主流程'}" ]
+        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试多人差旅报账单', 'travelers': 'UI02', 'projectName': 'UI项目', 'casename': '多人差旅报账单提交主流程'}" ]
       } ],
       "uid" : "7fa6424173bed2af95a24ef20894d699"
     }, {
       "name" : "多人差旅报账单费用报销界面业务审批",
       "children" : [ {
         "name" : "test_businessApprove",
-        "uid" : "3e4d91143b5b0af2",
+        "uid" : "c903bdcf3b912a76",
         "parentUid" : "b1909fca2b7c181309412d007ad6784a",
-        "status" : "passed",
+        "status" : "skipped",
         "time" : {
-          "start" : 1611507600920,
-          "stop" : 1611507625244,
-          "duration" : 24324
+          "start" : 1615016185774,
+          "stop" : 1615016185774,
+          "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ ]
@@ -299,13 +299,13 @@
       "name" : "多人差旅报账单共享中心界面财务审批",
       "children" : [ {
         "name" : "test_sharingCenterApprove",
-        "uid" : "e67fa89876df8993",
+        "uid" : "9ef0fc729ae887b2",
         "parentUid" : "949e061643a8579ed5d529ee7547169f",
-        "status" : "passed",
+        "status" : "skipped",
         "time" : {
-          "start" : 1611507625251,
-          "stop" : 1611507732405,
-          "duration" : 107154
+          "start" : 1615016185776,
+          "stop" : 1615016185776,
+          "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ ]
@@ -319,29 +319,29 @@
       "name" : "员工借款单费用报销界面单据提交",
       "children" : [ {
         "name" : "test_employeeLoad[员工借款单提交主流程]",
-        "uid" : "dc3c32959689b76",
+        "uid" : "629287c2428e3bd8",
         "parentUid" : "624067bfce4872fd23c19c65bcfa811c",
         "status" : "passed",
         "time" : {
-          "start" : 1611507748296,
-          "stop" : 1611507771630,
-          "duration" : 23334
+          "start" : 1615016210976,
+          "stop" : 1615016232476,
+          "duration" : 21500
         },
         "flaky" : false,
-        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试员工借款单', 'operationSubTypeId': 'UI通用1', 'expenseAmount': '100.10', 'projectName': '刘志成项目', 'casename': '员工借款单提交主流程'}" ]
+        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试员工借款单', 'operationSubTypeId': 'UI通用01', 'expenseAmount': '100..00', 'projectName': 'UI项目', 'casename': '员工借款单提交主流程'}" ]
       } ],
       "uid" : "624067bfce4872fd23c19c65bcfa811c"
     }, {
       "name" : "员工借款单费用报销界面业务审批",
       "children" : [ {
         "name" : "test_businessApprove",
-        "uid" : "52187668c839ef01",
+        "uid" : "bd76b5191ba73115",
         "parentUid" : "36fce4d76348078fb651cc99ed95246e",
         "status" : "passed",
         "time" : {
-          "start" : 1611507771637,
-          "stop" : 1611507794430,
-          "duration" : 22793
+          "start" : 1615016232480,
+          "stop" : 1615016255030,
+          "duration" : 22550
         },
         "flaky" : false,
         "parameters" : [ ]
@@ -351,13 +351,13 @@
       "name" : "员工借款单共享中心界面财务审批",
       "children" : [ {
         "name" : "test_sharingCenterApprove",
-        "uid" : "ca0dcea7e8e01582",
+        "uid" : "f1557e74960bcef3",
         "parentUid" : "5f72927cfce6fbc16ac6beae95e04818",
-        "status" : "passed",
+        "status" : "broken",
         "time" : {
-          "start" : 1611507794441,
-          "stop" : 1611507903716,
-          "duration" : 109275
+          "start" : 1615016255049,
+          "stop" : 1615016337316,
+          "duration" : 82267
         },
         "flaky" : false,
         "parameters" : [ ]
@@ -371,29 +371,29 @@
       "name" : "员工还款单费用报销界面单据提交",
       "children" : [ {
         "name" : "test_employeeRepayment[员工还款单提交主流程]",
-        "uid" : "224ec2160a2c58ea",
+        "uid" : "947975dceca9dc70",
         "parentUid" : "10522450962f80fc26dd22eda5c938dc",
-        "status" : "passed",
+        "status" : "failed",
         "time" : {
-          "start" : 1611507919460,
-          "stop" : 1611507946206,
-          "duration" : 26746
+          "start" : 1615016356566,
+          "stop" : 1615016368982,
+          "duration" : 12416
         },
         "flaky" : false,
-        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试员工还款单', 'operationSubType': 'UI通用1', 'expenseAmount': '', 'favoriteId': 'B1', 'loanRepaymentDate': '2021-1-20', 'remark': '测试', 'casename': '员工还款单提交主流程'}" ]
+        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试员工还款单', 'operationSubType': 'UI通用01', 'expenseAmount': '', 'favoriteId': 'UI账户', 'loanRepaymentDate': '2021-1-20', 'remark': '测试', 'casename': '员工还款单提交主流程'}" ]
       } ],
       "uid" : "10522450962f80fc26dd22eda5c938dc"
     }, {
       "name" : "员工还款单费用报销界面业务审批",
       "children" : [ {
         "name" : "test_businessApprove",
-        "uid" : "64a58fe631eaad5b",
+        "uid" : "3eefc3c4f27e7839",
         "parentUid" : "0ff58fef89911099ed8a8e1ef2ad7721",
-        "status" : "passed",
+        "status" : "skipped",
         "time" : {
-          "start" : 1611507946216,
-          "stop" : 1611507968959,
-          "duration" : 22743
+          "start" : 1615016369084,
+          "stop" : 1615016369084,
+          "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ ]
@@ -403,13 +403,13 @@
       "name" : "员工还款单共享中心界面财务审批",
       "children" : [ {
         "name" : "test_sharingCenterApprove",
-        "uid" : "51099d244cb2686",
+        "uid" : "2f491f29419a702a",
         "parentUid" : "ca33b2b0a7d80b1ea422c4367005268a",
-        "status" : "passed",
+        "status" : "skipped",
         "time" : {
-          "start" : 1611507968965,
-          "stop" : 1611508067136,
-          "duration" : 98171
+          "start" : 1615016369086,
+          "stop" : 1615016369086,
+          "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ ]
@@ -417,5 +417,901 @@
       "uid" : "ca33b2b0a7d80b1ea422c4367005268a"
     } ],
     "uid" : "75d74d9dec2c888ed44febd581befe86"
+  }, {
+    "name" : "新建合同流程",
+    "children" : [ {
+      "name" : "新建合同流程",
+      "children" : [ {
+        "name" : "test_cmsIndex[框架合同新增主流程]",
+        "uid" : "17a5dd22bf11e95c",
+        "parentUid" : "91ab60892d321e823c6875d25334f488",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615016394390,
+          "stop" : 1615016411901,
+          "duration" : 17511
+        },
+        "flaky" : false,
+        "parameters" : [ "{'contractName': 'uiContract', 'contractCode': 'uiCT', 'contractType': '租房合同', 'contractAmount': '1000.00', 'currency': {'currencyCode': 'CNY', 'currencyName': None}, 'vendorType': '供应商', 'vendor': {'vendorCode': 'UIGYS', 'vendorName': None}, 'signDate': '2021-1-15', 'contractDataFrom': '2021-1-1', 'contractDataTo': '2021-1-31', 'respUser': {'respUserNo': '1', 'respUserName': 'SLZ01'}, 'respDept': {'respDeptNo': '0000002', 'respDeptCode': 'FR部门'}, 'contractScope': '非公共合同', 'frameworkContract': '是', 'haveImage': '无需上传', 'casename': '框架合同新增主流程'}" ]
+      }, {
+        "name" : "test_cmsIndex[非框架合同新增主流程]",
+        "uid" : "594bc4f76e7f3603",
+        "parentUid" : "91ab60892d321e823c6875d25334f488",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615016423725,
+          "stop" : 1615016467522,
+          "duration" : 43797
+        },
+        "flaky" : false,
+        "parameters" : [ "{'contractName': 'uiContract', 'contractCode': 'uiCT', 'contractType': '租房合同', 'contractAmount': '1000.00', 'currency': {'currencyCode': 'CNY', 'currencyName': None}, 'vendorType': '供应商', 'vendor': {'vendorCode': 'UIGYS', 'vendorName': None}, 'signDate': '2021-1-15', 'contractDataFrom': '2021-1-1', 'contractDataTo': '2021-1-31', 'respUser': {'respUserNo': '1', 'respUserName': 'SLZ01'}, 'respDept': {'respDeptNo': '0000002', 'respDeptCode': 'FR部门'}, 'contractScope': '非公共合同', 'frameworkContract': '否', 'haveImage': '无需上传', 'casename': '非框架合同新增主流程', 'paymentDetail': [{'paymentType': '预付款', 'paymentCondition': '预付款计划', 'plansDate': '2020-1-1', 'settlementUnit': 'UIGYS', 'settlementAmount': '300.00', 'controlType': '通过', 'paymentMethod': '现金'}, {'paymentType': '质保金付款', 'paymentCondition': '质保金付款计划', 'plansDate': '2020-2-1', 'settlementUnit': 'UIGYS', 'settlementAmount': '500.00', 'controlType': '警告', 'paymentMethod': '现金'}, {'paymentType': '项目进度付款', 'paymentCondition': '项目进度付款计划', 'plansDate': '2020-3-1', 'settlementUnit': 'UIGYS', 'settlementAmount': '200.00', 'controlType': '禁止', 'paymentMethod': '现金'}]}" ]
+      } ],
+      "uid" : "91ab60892d321e823c6875d25334f488"
+    }, {
+      "name" : "合同复核流程",
+      "children" : [ {
+        "name" : "test_contractExamine[框架合同新增主流程]",
+        "uid" : "a03aea4db81b0ed9",
+        "parentUid" : "37600c7018eb8f9d24205ea45f80ed36",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615016411918,
+          "stop" : 1615016423720,
+          "duration" : 11802
+        },
+        "flaky" : false,
+        "parameters" : [ "{'contractName': 'uiContract', 'contractCode': 'uiCT', 'contractType': '租房合同', 'contractAmount': '1000.00', 'currency': {'currencyCode': 'CNY', 'currencyName': None}, 'vendorType': '供应商', 'vendor': {'vendorCode': 'UIGYS', 'vendorName': None}, 'signDate': '2021-1-15', 'contractDataFrom': '2021-1-1', 'contractDataTo': '2021-1-31', 'respUser': {'respUserNo': '1', 'respUserName': 'SLZ01'}, 'respDept': {'respDeptNo': '0000002', 'respDeptCode': 'FR部门'}, 'contractScope': '非公共合同', 'frameworkContract': '是', 'haveImage': '无需上传', 'casename': '框架合同新增主流程'}" ]
+      }, {
+        "name" : "test_contractExamine[非框架合同新增主流程]",
+        "uid" : "63515748dce6107d",
+        "parentUid" : "37600c7018eb8f9d24205ea45f80ed36",
+        "status" : "broken",
+        "time" : {
+          "start" : 1615016467538,
+          "stop" : 1615016469612,
+          "duration" : 2074
+        },
+        "flaky" : false,
+        "parameters" : [ "{'contractName': 'uiContract', 'contractCode': 'uiCT', 'contractType': '租房合同', 'contractAmount': '1000.00', 'currency': {'currencyCode': 'CNY', 'currencyName': None}, 'vendorType': '供应商', 'vendor': {'vendorCode': 'UIGYS', 'vendorName': None}, 'signDate': '2021-1-15', 'contractDataFrom': '2021-1-1', 'contractDataTo': '2021-1-31', 'respUser': {'respUserNo': '1', 'respUserName': 'SLZ01'}, 'respDept': {'respDeptNo': '0000002', 'respDeptCode': 'FR部门'}, 'contractScope': '非公共合同', 'frameworkContract': '否', 'haveImage': '无需上传', 'casename': '非框架合同新增主流程', 'paymentDetail': [{'paymentType': '预付款', 'paymentCondition': '预付款计划', 'plansDate': '2020-1-1', 'settlementUnit': 'UIGYS', 'settlementAmount': '300.00', 'controlType': '通过', 'paymentMethod': '现金'}, {'paymentType': '质保金付款', 'paymentCondition': '质保金付款计划', 'plansDate': '2020-2-1', 'settlementUnit': 'UIGYS', 'settlementAmount': '500.00', 'controlType': '警告', 'paymentMethod': '现金'}, {'paymentType': '项目进度付款', 'paymentCondition': '项目进度付款计划', 'plansDate': '2020-3-1', 'settlementUnit': 'UIGYS', 'settlementAmount': '200.00', 'controlType': '禁止', 'paymentMethod': '现金'}]}" ]
+      } ],
+      "uid" : "37600c7018eb8f9d24205ea45f80ed36"
+    } ],
+    "uid" : "523c0efd0c537104e0ee38639b9c6858"
+  }, {
+    "name" : "test_addAcceptanceLedger",
+    "uid" : "b21d4ff18c6d7733",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1615016489436,
+      "stop" : 1615016503755,
+      "duration" : 14319
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_editAcceptanceLedgerDetail",
+    "uid" : "34bc64a4ec4c692e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1615016503760,
+      "stop" : 1615016510121,
+      "duration" : 6361
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_addReceivableExchangeBill",
+    "uid" : "1148831e48ebbc02",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1615016532368,
+      "stop" : 1615016586092,
+      "duration" : 53724
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "开票申请单流程",
+    "children" : [ {
+      "name" : "开票申请单业务报账界面单据提交",
+      "children" : [ {
+        "name" : "test_billingApplicationBoe",
+        "uid" : "574bc3d69f5b99ea",
+        "parentUid" : "0bfda4d8d5a5cdea15f65ad0e694072e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615016607189,
+          "stop" : 1615016630792,
+          "duration" : 23603
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0bfda4d8d5a5cdea15f65ad0e694072e"
+    }, {
+      "name" : "开票申请单费用报销界面业务审批",
+      "children" : [ {
+        "name" : "test_businessApprove",
+        "uid" : "9e45a4666537731c",
+        "parentUid" : "f222bbb4ca172ab4fec39563a8b5cebe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615016630807,
+          "stop" : 1615016653217,
+          "duration" : 22410
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f222bbb4ca172ab4fec39563a8b5cebe"
+    }, {
+      "name" : "收入报账单共享中心界面财务审批",
+      "children" : [ {
+        "name" : "test_sharingCenterApprove",
+        "uid" : "d15ef3e8d75abde0",
+        "parentUid" : "338dcf3a647725cff097428e46771888",
+        "status" : "broken",
+        "time" : {
+          "start" : 1615016653226,
+          "stop" : 1615016692389,
+          "duration" : 39163
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "338dcf3a647725cff097428e46771888"
+    } ],
+    "uid" : "ac859aa2e42c937e7935c1e4394d6e25"
+  }, {
+    "name" : "作废/红字发票申请单（新）",
+    "children" : [ {
+      "name" : "作废/红字发票申请单（新）业务报账界面单据提交",
+      "children" : [ {
+        "name" : "test_newObsoleteRedLetterInvoiceApplictationBoePage",
+        "uid" : "9c0c6d2f3e47db2",
+        "parentUid" : "4e095c2e6f87cd5d11c93b3eafb69e7e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1615016711052,
+          "stop" : 1615016732082,
+          "duration" : 21030
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4e095c2e6f87cd5d11c93b3eafb69e7e"
+    }, {
+      "name" : "作废/红字发票申请单（新）费用报销界面业务审批",
+      "children" : [ {
+        "name" : "test_businessApprove",
+        "uid" : "140f2c08e611c97",
+        "parentUid" : "aed0b7e8b76e520c34acfeb73c2cdfd9",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1615016732156,
+          "stop" : 1615016732156,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "aed0b7e8b76e520c34acfeb73c2cdfd9"
+    }, {
+      "name" : "作废/红字发票申请单（新）共享中心界面财务审批",
+      "children" : [ {
+        "name" : "test_sharingCenterApprove",
+        "uid" : "6f26688c30a80401",
+        "parentUid" : "a4fed83f45e28e73e5653765b157a882",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1615016732158,
+          "stop" : 1615016732158,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a4fed83f45e28e73e5653765b157a882"
+    } ],
+    "uid" : "b48a16d87e9bd9502ba9792946204e65"
+  }, {
+    "name" : "收入报账单流程",
+    "children" : [ {
+      "name" : "收入报账单业务报账界面单据提交",
+      "children" : [ {
+        "name" : "test_newIncomeStatementBoe[收入报账提交主流程]",
+        "uid" : "6db655f66b8f6687",
+        "parentUid" : "14cc729058898b969af1e9997a29ef3f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615016757096,
+          "stop" : 1615016775902,
+          "duration" : 18806
+        },
+        "flaky" : false,
+        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试收入报账单', 'vendor': {'vendorCode': 'UIKH', 'vendorName': 'UI客户'}, 'contract': 'hcKH000001', 'orderNumber': 'hcOrder000001', 'operationSubType': 'UI通用01', 'expenseDept': {'deptCode': 'UIDP', 'deptName': 'UI部门'}, 'expenseAmount': '100.10', 'taxAmount': '0.00', 'casename': '收入报账提交主流程'}" ]
+      } ],
+      "uid" : "14cc729058898b969af1e9997a29ef3f"
+    }, {
+      "name" : "收入报账单费用报销界面业务审批",
+      "children" : [ {
+        "name" : "test_businessApprove",
+        "uid" : "365c06295d97dc9d",
+        "parentUid" : "16988f848e83c12eda711c72897d572a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615016775907,
+          "stop" : 1615016798643,
+          "duration" : 22736
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "16988f848e83c12eda711c72897d572a"
+    }, {
+      "name" : "收入报账单共享中心界面财务审批",
+      "children" : [ {
+        "name" : "test_sharingCenterApprove",
+        "uid" : "5d9d89e943722288",
+        "parentUid" : "81790181fc0e2acbbc7633bc4585c53b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615016798661,
+          "stop" : 1615016900812,
+          "duration" : 102151
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "81790181fc0e2acbbc7633bc4585c53b"
+    } ],
+    "uid" : "8aefbde46f6e6f807891092e231439c0"
+  }, {
+    "name" : "成本暂估单（旧）流程",
+    "children" : [ {
+      "name" : "成本暂估单（旧）业务报账界面单据提交",
+      "children" : [ {
+        "name" : "test_costEstimateBoe",
+        "uid" : "f89490028d1a3723",
+        "parentUid" : "ce5b4bf8b9762033fa2871ee0fcf94ac",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615016919973,
+          "stop" : 1615016941181,
+          "duration" : 21208
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ce5b4bf8b9762033fa2871ee0fcf94ac"
+    }, {
+      "name" : "成本暂估单（旧）费用报销界面业务审批",
+      "children" : [ {
+        "name" : "test_businessApprove",
+        "uid" : "5aad8dd3ca29144c",
+        "parentUid" : "30685907934e80445530628b4051f5cb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615016941186,
+          "stop" : 1615016965268,
+          "duration" : 24082
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "30685907934e80445530628b4051f5cb"
+    }, {
+      "name" : "成本暂估单（旧）共享中心界面财务审批",
+      "children" : [ {
+        "name" : "test_sharingCenterApprove",
+        "uid" : "5fc376130738b2f8",
+        "parentUid" : "23fe9faaca4c1f1d9150d1e2866e5d12",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615016965276,
+          "stop" : 1615017083547,
+          "duration" : 118271
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "23fe9faaca4c1f1d9150d1e2866e5d12"
+    } ],
+    "uid" : "580013faeb52c50620e1c3b8c0141ab4"
+  }, {
+    "name" : "成本暂估单（新）流程",
+    "children" : [ {
+      "name" : "成本暂估单（新）业务报账界面单据提交",
+      "children" : [ {
+        "name" : "test_newCostEstimateBoe",
+        "uid" : "14d50869fc39e21a",
+        "parentUid" : "e12b7b9a7b9f7fd600ac03842fb61ab6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1615017102442,
+          "stop" : 1615017129364,
+          "duration" : 26922
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e12b7b9a7b9f7fd600ac03842fb61ab6"
+    }, {
+      "name" : "成本暂估单（新）费用报销界面业务审批",
+      "children" : [ {
+        "name" : "test_businessApprove",
+        "uid" : "c2bc42ac97ac6ceb",
+        "parentUid" : "2415c3869afe43570274c5209cf5c743",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1615017129417,
+          "stop" : 1615017129417,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2415c3869afe43570274c5209cf5c743"
+    }, {
+      "name" : "成本暂估单（新）共享中心界面财务审批",
+      "children" : [ {
+        "name" : "test_sharingCenterApprove",
+        "uid" : "6bf77839ef0983c0",
+        "parentUid" : "fa5e250d23b57951807e6f7160ece777",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1615017129420,
+          "stop" : 1615017129420,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fa5e250d23b57951807e6f7160ece777"
+    } ],
+    "uid" : "d926f783ca797807169e01cf1090777c"
+  }, {
+    "name" : "采购预付单流程",
+    "children" : [ {
+      "name" : "采购预付单业务报账界面单据提交",
+      "children" : [ {
+        "name" : "test_newPurchasePrepaymentBoe",
+        "uid" : "3bc67f52e84a595b",
+        "parentUid" : "55cde0fe360262b570b46c20a1299bd2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615017154140,
+          "stop" : 1615017174577,
+          "duration" : 20437
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "55cde0fe360262b570b46c20a1299bd2"
+    }, {
+      "name" : "采购预付单费用报销界面业务审批",
+      "children" : [ {
+        "name" : "test_businessApprove",
+        "uid" : "bd1e08a0d2296731",
+        "parentUid" : "18ac3edf831bb19c5c9c72d4e89a8209",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615017174587,
+          "stop" : 1615017198458,
+          "duration" : 23871
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "18ac3edf831bb19c5c9c72d4e89a8209"
+    }, {
+      "name" : "采购预付单共享中心界面财务审批",
+      "children" : [ {
+        "name" : "test_sharingCenterApprove",
+        "uid" : "9e5bd133936f1b3a",
+        "parentUid" : "80311e8acb2d150142ce6cff5b3d9f3a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615017198463,
+          "stop" : 1615017307945,
+          "duration" : 109482
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "80311e8acb2d150142ce6cff5b3d9f3a"
+    } ],
+    "uid" : "683891586602e342fd8084b60497bde3"
+  }, {
+    "name" : "采购付款单流程",
+    "children" : [ {
+      "name" : "采购付款单业务报账界面单据提交",
+      "children" : [ {
+        "name" : "test_newPurchasingAdvicePaymentBoe",
+        "uid" : "7ffbf5f35d596ee6",
+        "parentUid" : "490658075b2ca5a0afe62a89993f92a9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615017326083,
+          "stop" : 1615017343344,
+          "duration" : 17261
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "490658075b2ca5a0afe62a89993f92a9"
+    }, {
+      "name" : "采购付款单费用报销界面业务审批",
+      "children" : [ {
+        "name" : "test_businessApprove",
+        "uid" : "98c1f75f77706ef2",
+        "parentUid" : "2e08d614883eea6826eecf9e82e04495",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615017343348,
+          "stop" : 1615017365167,
+          "duration" : 21819
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2e08d614883eea6826eecf9e82e04495"
+    }, {
+      "name" : "采购付款单共享中心界面财务审批",
+      "children" : [ {
+        "name" : "test_sharingCenterApprove",
+        "uid" : "4ce25e60be85f8b5",
+        "parentUid" : "3a2c05f7f8698ffeade0c2d071285c08",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615017365185,
+          "stop" : 1615017480391,
+          "duration" : 115206
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3a2c05f7f8698ffeade0c2d071285c08"
+    } ],
+    "uid" : "182af2fdeff00311eff7808a4789f5c8"
+  }, {
+    "name" : "预提申请单（新）流程",
+    "children" : [ {
+      "name" : "预提申请单（新）业务报账界面单据提交",
+      "children" : [ {
+        "name" : "test_newWithholdingAmortization",
+        "uid" : "f7a83e726692f856",
+        "parentUid" : "76cef522acdedc79d8ae5869b5f5efdb",
+        "status" : "broken",
+        "time" : {
+          "start" : 1615017498137,
+          "stop" : 1615017509368,
+          "duration" : 11231
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "76cef522acdedc79d8ae5869b5f5efdb"
+    }, {
+      "name" : "预提申请单（新）费用报销界面业务审批",
+      "children" : [ {
+        "name" : "test_businessApprove",
+        "uid" : "18dc1e40b04d038d",
+        "parentUid" : "0379e121fc65cd6d94c957575addaed4",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1615017509504,
+          "stop" : 1615017509504,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0379e121fc65cd6d94c957575addaed4"
+    }, {
+      "name" : "预提申请单（新）共享中心界面财务审批",
+      "children" : [ {
+        "name" : "test_sharingCenterApprove",
+        "uid" : "8ab9870d39b85101",
+        "parentUid" : "cabc0c12a47f787a2f2920b8fac2294e",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1615017509506,
+          "stop" : 1615017509506,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cabc0c12a47f787a2f2920b8fac2294e"
+    } ],
+    "uid" : "797f56e68d09790504bcd742b90d4f24"
+  }, {
+    "name" : "业务记账单（新）流程",
+    "children" : [ {
+      "name" : "业务记账单（新）业务报账界面单据提交",
+      "children" : [ {
+        "name" : "test_newBusinessLedgerBoe",
+        "uid" : "d9978fbb98edf8b7",
+        "parentUid" : "c7fc312d718a65a0c3e1f0d910a3f15e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615017527206,
+          "stop" : 1615017549172,
+          "duration" : 21966
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c7fc312d718a65a0c3e1f0d910a3f15e"
+    }, {
+      "name" : "业务记账单（新）费用报销界面业务审批",
+      "children" : [ {
+        "name" : "test_businessApprove",
+        "uid" : "57b57ec90f9374c0",
+        "parentUid" : "55656bb25f7150125b29120035245057",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615017549177,
+          "stop" : 1615017571418,
+          "duration" : 22241
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "55656bb25f7150125b29120035245057"
+    }, {
+      "name" : "业务记账单（新）共享中心界面财务审批",
+      "children" : [ {
+        "name" : "test_sharingCenterApprove",
+        "uid" : "ae857f48ff09be3f",
+        "parentUid" : "47c1d5d0a5b436a1ebdac7528b3786d9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615017571434,
+          "stop" : 1615017686503,
+          "duration" : 115069
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "47c1d5d0a5b436a1ebdac7528b3786d9"
+    } ],
+    "uid" : "a071683372dd1277c8107e7a58061be7"
+  }, {
+    "name" : "总账单流程",
+    "children" : [ {
+      "name" : "总账单业务报账界面单据提交",
+      "children" : [ {
+        "name" : "test_newBoeTypeGeneralLedgerBoe",
+        "uid" : "623c3eef20fb64f3",
+        "parentUid" : "e0f0a581c4e6cf2f5dc6029866a94c13",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615017703351,
+          "stop" : 1615017723751,
+          "duration" : 20400
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e0f0a581c4e6cf2f5dc6029866a94c13"
+    }, {
+      "name" : "总账单费用报销界面业务审批",
+      "children" : [ {
+        "name" : "test_businessApprove",
+        "uid" : "10146f1da2531129",
+        "parentUid" : "b9bb2551197f67e3dde7dc11b0961301",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615017723767,
+          "stop" : 1615017746360,
+          "duration" : 22593
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b9bb2551197f67e3dde7dc11b0961301"
+    }, {
+      "name" : "总账单共享中心界面财务审批",
+      "children" : [ {
+        "name" : "test_sharingCenterApprove",
+        "uid" : "d4150aa3fe61824f",
+        "parentUid" : "8b7ec1c08835a6d42f707117a9e473f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615017746364,
+          "stop" : 1615017845535,
+          "duration" : 99171
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8b7ec1c08835a6d42f707117a9e473f2"
+    } ],
+    "uid" : "0d02688c0e060bccb762b15dc4373b47"
+  }, {
+    "name" : "新增薪酬流程",
+    "children" : [ {
+      "name" : "新增薪酬业务报账界面流程",
+      "children" : [ {
+        "name" : "test_newAddSalary",
+        "uid" : "b9354f17f6421530",
+        "parentUid" : "f5a0e56dd8b2ccba9b8e98ba45829223",
+        "status" : "broken",
+        "time" : {
+          "start" : 1615017882781,
+          "stop" : 1615017898913,
+          "duration" : 16132
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f5a0e56dd8b2ccba9b8e98ba45829223"
+    } ],
+    "uid" : "f5f8e40fc16f2e8be4544fdcfcfbfcbe"
+  }, {
+    "name" : "工资报账单（新）流程",
+    "children" : [ {
+      "name" : "工资报账单（新）业务报账界面单据提交",
+      "children" : [ {
+        "name" : "test_newSalaryWageBoe",
+        "uid" : "2d42ee0631b3c43",
+        "parentUid" : "205ac1061c1b46c1f1d75ea7952db578",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615017930595,
+          "stop" : 1615017948759,
+          "duration" : 18164
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "205ac1061c1b46c1f1d75ea7952db578"
+    }, {
+      "name" : "工资报账单（新）费用报销界面业务审批",
+      "children" : [ {
+        "name" : "test_businessApprove",
+        "uid" : "832278b172357f07",
+        "parentUid" : "8276db96e240896a155a80fc5da44067",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615017948774,
+          "stop" : 1615017971239,
+          "duration" : 22465
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8276db96e240896a155a80fc5da44067"
+    }, {
+      "name" : "工资报账单（新）共享中心界面财务审批",
+      "children" : [ {
+        "name" : "test_sharingCenterApprove",
+        "uid" : "4b5e8e03d53d4bcf",
+        "parentUid" : "e01e33a9b15ae7621b27c81a6129d4fa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615017971251,
+          "stop" : 1615018084289,
+          "duration" : 113038
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e01e33a9b15ae7621b27c81a6129d4fa"
+    } ],
+    "uid" : "3e7ac12574b1d67ffa36a711db721769"
+  }, {
+    "name" : "五险一金报账单（新）流程",
+    "children" : [ {
+      "name" : "五险一金报账单（新）业务报账界面单据提交",
+      "children" : [ {
+        "name" : "test_newSalaryOtherBoe",
+        "uid" : "334bf88cc70f285e",
+        "parentUid" : "ac2d003976619d36ac2872b4b4d5d143",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615018102977,
+          "stop" : 1615018121777,
+          "duration" : 18800
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ac2d003976619d36ac2872b4b4d5d143"
+    }, {
+      "name" : "五险一金报账单（新）费用报销界面业务审批",
+      "children" : [ {
+        "name" : "test_businessApprove",
+        "uid" : "2c8609bb2212efe8",
+        "parentUid" : "ecddd5b49eac399a56e84354859f00e6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615018121794,
+          "stop" : 1615018145587,
+          "duration" : 23793
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ecddd5b49eac399a56e84354859f00e6"
+    }, {
+      "name" : "五险一金报账单（新）共享中心界面财务审批",
+      "children" : [ {
+        "name" : "test_sharingCenterApprove",
+        "uid" : "b8e9ed8a48c2fc74",
+        "parentUid" : "1221010e7a7a9525e8ddf8ba56e22ffd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615018145592,
+          "stop" : 1615018247132,
+          "duration" : 101540
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1221010e7a7a9525e8ddf8ba56e22ffd"
+    } ],
+    "uid" : "f60638bfbc6a45cd57c8102c9976d0c3"
+  }, {
+    "name" : "票据调拨单（新）流程",
+    "children" : [ {
+      "name" : "票据调拨单（新）业务报账界面单据提交",
+      "children" : [ {
+        "name" : "test_newBillAllocationBoe",
+        "uid" : "e21824b4fc0cee4c",
+        "parentUid" : "d322d2d2dfc25c295956c11ee3340b50",
+        "status" : "broken",
+        "time" : {
+          "start" : 1615018270802,
+          "stop" : 1615018271413,
+          "duration" : 611
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d322d2d2dfc25c295956c11ee3340b50"
+    }, {
+      "name" : "票据调拨单（新）费用报销界面业务审批",
+      "children" : [ {
+        "name" : "test_businessApprove",
+        "uid" : "8cfe2840ba78f3a4",
+        "parentUid" : "c5c5837c664b928b6925e06228a064fe",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1615018271463,
+          "stop" : 1615018271463,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c5c5837c664b928b6925e06228a064fe"
+    }, {
+      "name" : "票据调拨单（新）共享中心界面财务审批",
+      "children" : [ {
+        "name" : "test_sharingCenterApprove",
+        "uid" : "3cf1d9e2ca70ed0b",
+        "parentUid" : "6bc989400a81d3744f9434a922683c16",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1615018271466,
+          "stop" : 1615018271466,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6bc989400a81d3744f9434a922683c16"
+    } ],
+    "uid" : "3032ffab991c2fb544b8f7c07e9c3f94"
+  }, {
+    "name" : "贴现托收申请单（新）流程",
+    "children" : [ {
+      "name" : "贴现托收申请单（新）业务报账界面单据提交",
+      "children" : [ {
+        "name" : "test_newDisaccountApplyBoe",
+        "uid" : "1bd5c10ca508eed0",
+        "parentUid" : "50d06756cbb55380af6e68ab14986f34",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615018289135,
+          "stop" : 1615018304776,
+          "duration" : 15641
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "50d06756cbb55380af6e68ab14986f34"
+    }, {
+      "name" : "贴现托收申请单（新）费用报销界面业务审批",
+      "children" : [ {
+        "name" : "test_businessApprove",
+        "uid" : "a04be6a51c4be743",
+        "parentUid" : "f1469e8a35037ad3cf110635f23c2128",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615018304798,
+          "stop" : 1615018330640,
+          "duration" : 25842
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f1469e8a35037ad3cf110635f23c2128"
+    }, {
+      "name" : "贴现托收申请单（新）共享中心界面财务审批",
+      "children" : [ {
+        "name" : "test_sharingCenterApprove",
+        "uid" : "d535b4ac147de493",
+        "parentUid" : "c4fa3b13b83210a8547f694fe5768f6c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1615018330647,
+          "stop" : 1615018369455,
+          "duration" : 38808
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c4fa3b13b83210a8547f694fe5768f6c"
+    } ],
+    "uid" : "6fadc8010ea338f4c2bb1a603f18b6d0"
+  }, {
+    "name" : "资金调拨报账单(新)流程",
+    "children" : [ {
+      "name" : "资金调拨报账单（新）业务报账界面单据提交",
+      "children" : [ {
+        "name" : "test_newFundAllocationBoe",
+        "uid" : "49e7f7c2d305ecd5",
+        "parentUid" : "d3096e5b87041ab76124b0771e0b34b7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615018388409,
+          "stop" : 1615018405931,
+          "duration" : 17522
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d3096e5b87041ab76124b0771e0b34b7"
+    }, {
+      "name" : "资金调拨报账单（新）费用报销界面业务审批",
+      "children" : [ {
+        "name" : "test_businessApprove",
+        "uid" : "177f90b59e715319",
+        "parentUid" : "43b437698697a7deaf7b3a036a9d754b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615018405939,
+          "stop" : 1615018444282,
+          "duration" : 38343
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "43b437698697a7deaf7b3a036a9d754b"
+    }, {
+      "name" : "资金调拨报账单（新）共享中心界面财务审批",
+      "children" : [ {
+        "name" : "test_sharingCenterApprove",
+        "uid" : "e2d16bda417b5ad8",
+        "parentUid" : "3fc62aa125e9aa2725ed20a18e8bb105",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615018444290,
+          "stop" : 1615018555036,
+          "duration" : 110746
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3fc62aa125e9aa2725ed20a18e8bb105"
+    } ],
+    "uid" : "7d976e3ea0b242ff76c66a07a85d1158"
   } ]
 }

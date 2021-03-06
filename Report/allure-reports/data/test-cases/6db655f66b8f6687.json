@@ -1,0 +1,365 @@
+{
+  "uid" : "6db655f66b8f6687",
+  "name" : "test_newIncomeStatementBoe[收入报账提交主流程]",
+  "fullName" : "Testcases.basIndexPageTest.receivableEasPageTest.test_newIncomeStatementBoe.TestNewIncomeStatementBoe#test_newIncomeStatementBoe",
+  "historyId" : "7837782d64d699f7a9e19961525d956c",
+  "time" : {
+    "start" : 1615016757096,
+    "stop" : 1615016775902,
+    "duration" : 18806
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "newIncomeStatementBoe_testdata",
+    "time" : {
+      "start" : 1615016757095,
+      "stop" : 1615016757095,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615016740193,
+      "stop" : 1615016757095,
+      "duration" : 16902
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "差旅申请单业务报账界面单据提交步骤",
+      "time" : {
+        "start" : 1615016757096,
+        "stop" : 1615016775902,
+        "duration" : 18806
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击选择收入收款页面",
+        "time" : {
+          "start" : 1615016757097,
+          "stop" : 1615016757172,
+          "duration" : 75
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "进入收入报账单单据提交页面",
+        "time" : {
+          "start" : 1615016757172,
+          "stop" : 1615016757310,
+          "duration" : 138
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "选择业务类型",
+        "time" : {
+          "start" : 1615016763747,
+          "stop" : 1615016765203,
+          "duration" : 1456
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "输入备注",
+        "time" : {
+          "start" : 1615016765203,
+          "stop" : 1615016765405,
+          "duration" : 202
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "选择客户",
+        "time" : {
+          "start" : 1615016765405,
+          "stop" : 1615016767086,
+          "duration" : 1681
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "输入订单编号",
+        "time" : {
+          "start" : 1615016767086,
+          "stop" : 1615016767256,
+          "duration" : 170
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "选择业务类型",
+        "time" : {
+          "start" : 1615016767256,
+          "stop" : 1615016767412,
+          "duration" : 156
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "选择利润中心",
+        "time" : {
+          "start" : 1615016767412,
+          "stop" : 1615016769052,
+          "duration" : 1640
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "输入金额",
+        "time" : {
+          "start" : 1615016769052,
+          "stop" : 1615016769927,
+          "duration" : 875
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "输入税额",
+        "time" : {
+          "start" : 1615016769927,
+          "stop" : 1615016770542,
+          "duration" : 615
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "点击单据提交",
+        "time" : {
+          "start" : 1615016770542,
+          "stop" : 1615016770620,
+          "duration" : 78
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "点击单据关闭按钮",
+        "time" : {
+          "start" : 1615016770620,
+          "stop" : 1615016774537,
+          "duration" : 3917
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "进行单据生成校验",
+        "time" : {
+          "start" : 1615016774537,
+          "stop" : 1615016775165,
+          "duration" : 628
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "断言结果：True",
+        "time" : {
+          "start" : 1615016775453,
+          "stop" : 1615016775483,
+          "duration" : 30
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ {
+        "uid" : "10a80582b38f76ae",
+        "name" : "2021-03-06 15-46-15successscreenshot",
+        "source" : "10a80582b38f76ae.png",
+        "type" : "image/png",
+        "size" : 101423
+      } ],
+      "parameters" : [ {
+        "name" : "newIncomeStatementBoe_testdata",
+        "value" : "{'operationType': 'UI通用', 'boeAbstract': '测试收入报账单', 'vendor': {'vendorCode': 'UIKH', 'vendorName': 'UI客户'}, 'contract': 'hcKH000001', 'orderNumber': 'hcOrder000001', 'operationSubType': 'UI通用01', 'expenseDept': {'deptCode': 'UIDP', 'deptName': 'UI部门'}, 'expenseAmount': '100.10', 'taxAmount': '0.00', 'casename': '收入报账提交主流程'}"
+      } ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 14
+    } ],
+    "attachments" : [ {
+      "uid" : "5950b212bb95bd73",
+      "name" : "log",
+      "source" : "5950b212bb95bd73.txt",
+      "type" : "text/plain",
+      "size" : 2539
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 15
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615016900814,
+      "stop" : 1615016902984,
+      "duration" : 2170
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "收入报账单业务报账界面单据提交"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "收入报账单流程"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(name='submit')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.basIndexPageTest.receivableEasPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_newIncomeStatementBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewIncomeStatementBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "55600-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.basIndexPageTest.receivableEasPageTest.test_newIncomeStatementBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "newIncomeStatementBoe_testdata",
+    "value" : "{'operationType': 'UI通用', 'boeAbstract': '测试收入报账单', 'vendor': {'vendorCode': 'UIKH', 'vendorName': 'UI客户'}, 'contract': 'hcKH000001', 'orderNumber': 'hcOrder000001', 'operationSubType': 'UI通用01', 'expenseDept': {'deptCode': 'UIDP', 'deptName': 'UI部门'}, 'expenseAmount': '100.10', 'taxAmount': '0.00', 'casename': '收入报账提交主流程'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(name='submit')" ]
+  },
+  "source" : "6db655f66b8f6687.json",
+  "parameterValues" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试收入报账单', 'vendor': {'vendorCode': 'UIKH', 'vendorName': 'UI客户'}, 'contract': 'hcKH000001', 'orderNumber': 'hcOrder000001', 'operationSubType': 'UI通用01', 'expenseDept': {'deptCode': 'UIDP', 'deptName': 'UI部门'}, 'expenseAmount': '100.10', 'taxAmount': '0.00', 'casename': '收入报账提交主流程'}" ]
+}

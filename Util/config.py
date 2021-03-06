@@ -45,7 +45,7 @@ class Config():
     # 获取配置Url地址
     @classmethod
     def getUrlDict(cls) -> dict:
-        urlDictPath = os.path.join(Config.getRootPath(),"Config", '200testMysql', 'UrlConfig.yml')
+        urlDictPath = os.path.join(Config.getRootPath(),"Config", 'releaseZDH', 'UrlConfig.yml')
         with open(urlDictPath, 'r', encoding='utf-8') as f:
             cfg = f.read()
         urlDict = yaml.load(cfg, Loader=yaml.FullLoader)

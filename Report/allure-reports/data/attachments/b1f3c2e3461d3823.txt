@@ -1,0 +1,47 @@
+[32mINFO    [0m WebUIAuto:log.py:48 请求链接，链接地址为：http://fol.ztessc.com.cn/fsc
+[35mDEBUG   [0m WebUIAuto:log.py:45 输入账户，账户为：UI01
+[35mDEBUG   [0m WebUIAuto:log.py:45 输入密码，密码为：LMJT123456
+[32mINFO    [0m WebUIAuto:log.py:48 点击登录按钮
+[32mINFO    [0m WebUIAuto:log.py:48 成功登录界面：fscHost
+[32mINFO    [0m WebUIAuto:log.py:48 选择的核算主体编码为 : UIHSZT
+[32mINFO    [0m WebUIAuto:log.py:48 选择的核算主体名称为 : 
+[32mINFO    [0m WebUIAuto:log.py:48 点击 新增 按钮
+[32mINFO    [0m WebUIAuto:log.py:48 选择的核算主体编码为 : UIHSZT
+[32mINFO    [0m WebUIAuto:log.py:48 选择的核算主体名称为 : 
+[32mINFO    [0m WebUIAuto:log.py:48 选择的核算主体编码为 : 1109123456789
+[32mINFO    [0m WebUIAuto:log.py:48 选择的汇票类型为 : 银行承兑汇票
+[32mINFO    [0m WebUIAuto:log.py:48 选择的汇票形式为 : 电票
+[32mINFO    [0m WebUIAuto:log.py:48 选择的供应商名称为 : UI供应商
+[32mINFO    [0m WebUIAuto:log.py:48 选择的出票日期为：2021-03-06
+[32mINFO    [0m WebUIAuto:log.py:48 选择的到期日期为：2021-04-06
+[32mINFO    [0m WebUIAuto:log.py:48 输入的出票金额为：100.00
+[32mINFO    [0m WebUIAuto:log.py:48 选择员工工号为 : UI01
+[32mINFO    [0m WebUIAuto:log.py:48 选择员工名称为 : 
+[32mINFO    [0m WebUIAuto:log.py:48 选择部门名称为 : UI部门
+[32mINFO    [0m WebUIAuto:log.py:48 选择公司名称为 : 
+[32mINFO    [0m WebUIAuto:log.py:48 选择的签收日期为：2021-03-06
+[32mINFO    [0m WebUIAuto:log.py:48 选择登录账号为 : UI01
+[32mINFO    [0m WebUIAuto:log.py:48 选择员工名称为 : 
+[32mINFO    [0m WebUIAuto:log.py:48 点击 提交 按钮
+[32mINFO    [0m WebUIAuto:log.py:48 postalOrderData 的值为：{'postalOrder1': 'UI73321240', 'postalOrder2': 'UI39417745'}
+[35mDEBUG   [0m WebUIAuto:log.py:45 记录文件信息, 文件信息为 -> postalOrderData : {'postalOrder1': 'UI22183763'}
+[32mINFO    [0m WebUIAuto:log.py:48 点击 新增 按钮
+[32mINFO    [0m WebUIAuto:log.py:48 选择的核算主体编码为 : UIHSZT
+[32mINFO    [0m WebUIAuto:log.py:48 选择的核算主体名称为 : 
+[32mINFO    [0m WebUIAuto:log.py:48 选择的核算主体编码为 : 1109123456789
+[32mINFO    [0m WebUIAuto:log.py:48 选择的汇票类型为 : 银行承兑汇票
+[32mINFO    [0m WebUIAuto:log.py:48 选择的汇票形式为 : 电票
+[32mINFO    [0m WebUIAuto:log.py:48 选择的供应商名称为 : UI供应商
+[32mINFO    [0m WebUIAuto:log.py:48 选择的出票日期为：2021-03-06
+[32mINFO    [0m WebUIAuto:log.py:48 选择的到期日期为：2021-04-06
+[32mINFO    [0m WebUIAuto:log.py:48 输入的出票金额为：100.00
+[32mINFO    [0m WebUIAuto:log.py:48 选择员工工号为 : UI01
+[32mINFO    [0m WebUIAuto:log.py:48 选择员工名称为 : 
+[32mINFO    [0m WebUIAuto:log.py:48 选择部门名称为 : UI部门
+[32mINFO    [0m WebUIAuto:log.py:48 选择公司名称为 : 
+[32mINFO    [0m WebUIAuto:log.py:48 选择的签收日期为：2021-03-06
+[32mINFO    [0m WebUIAuto:log.py:48 选择登录账号为 : UI01
+[32mINFO    [0m WebUIAuto:log.py:48 选择员工名称为 : 
+[32mINFO    [0m WebUIAuto:log.py:48 点击 提交 按钮
+[32mINFO    [0m WebUIAuto:log.py:48 postalOrderData 的值为：{'postalOrder1': 'UI22183763', 'postalOrder2': 'UI39417745'}
+[35mDEBUG   [0m WebUIAuto:log.py:45 记录文件信息, 文件信息为 -> postalOrderData : {'postalOrder2': 'UI77194048'}

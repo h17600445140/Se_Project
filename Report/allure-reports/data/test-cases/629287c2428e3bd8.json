@@ -1,0 +1,305 @@
+{
+  "uid" : "629287c2428e3bd8",
+  "name" : "test_employeeLoad[员工借款单提交主流程]",
+  "fullName" : "Testcases.boeBorrowPageTest.test_employeeLoadBoe.TestEmployeeLoadBoe#test_employeeLoad",
+  "historyId" : "763a1c53dbfbec9bbcbf651f56df4983",
+  "time" : {
+    "start" : 1615016210976,
+    "stop" : 1615016232476,
+    "duration" : 21500
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615016193799,
+      "stop" : 1615016210975,
+      "duration" : 17176
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "employeeLoadBoe_testdata",
+    "time" : {
+      "start" : 1615016210975,
+      "stop" : 1615016210975,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "员工借款单费用报销界面单据提交步骤",
+      "time" : {
+        "start" : 1615016210977,
+        "stop" : 1615016232476,
+        "duration" : 21499
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "打开借款还款单据选择页面",
+        "time" : {
+          "start" : 1615016210977,
+          "stop" : 1615016211112,
+          "duration" : 135
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "打开的单据类型为：员工借款单 ,选择的单据业务类型为: UI通用",
+        "time" : {
+          "start" : 1615016211112,
+          "stop" : 1615016211527,
+          "duration" : 415
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "输入业务类型",
+        "time" : {
+          "start" : 1615016221517,
+          "stop" : 1615016222725,
+          "duration" : 1208
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "输入备注",
+        "time" : {
+          "start" : 1615016222725,
+          "stop" : 1615016222917,
+          "duration" : 192
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "输入业务类型",
+        "time" : {
+          "start" : 1615016222917,
+          "stop" : 1615016224103,
+          "duration" : 1186
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "输入总金额",
+        "time" : {
+          "start" : 1615016224103,
+          "stop" : 1615016224933,
+          "duration" : 830
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "输入项目",
+        "time" : {
+          "start" : 1615016224933,
+          "stop" : 1615016226063,
+          "duration" : 1130
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "点击单据提交",
+        "time" : {
+          "start" : 1615016226063,
+          "stop" : 1615016226203,
+          "duration" : 140
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "点击单据关闭按钮",
+        "time" : {
+          "start" : 1615016226203,
+          "stop" : 1615016230682,
+          "duration" : 4479
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "进行单据生成校验",
+        "time" : {
+          "start" : 1615016230682,
+          "stop" : 1615016232115,
+          "duration" : 1433
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ {
+        "uid" : "a8152b4852fb37e2",
+        "name" : "2021-03-06 15-37-12successscreenshot",
+        "source" : "a8152b4852fb37e2.png",
+        "type" : "image/png",
+        "size" : 100393
+      } ],
+      "parameters" : [ {
+        "name" : "employeeLoadBoe_testdata",
+        "value" : "{'operationType': 'UI通用', 'boeAbstract': '测试员工借款单', 'operationSubTypeId': 'UI通用01', 'expenseAmount': '100..00', 'projectName': 'UI项目', 'casename': '员工借款单提交主流程'}"
+      } ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 10
+    } ],
+    "attachments" : [ {
+      "uid" : "4097ed06d0169ae7",
+      "name" : "log",
+      "source" : "4097ed06d0169ae7.txt",
+      "type" : "text/plain",
+      "size" : 2552
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 11
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615016337420,
+      "stop" : 1615016339566,
+      "duration" : 2146
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "story",
+    "value" : "员工借款单费用报销界面单据提交"
+  }, {
+    "name" : "feature",
+    "value" : "员工借款单流程"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(name='submit')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.boeBorrowPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_employeeLoadBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestEmployeeLoadBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "55600-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.boeBorrowPageTest.test_employeeLoadBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "employeeLoadBoe_testdata",
+    "value" : "{'operationType': 'UI通用', 'boeAbstract': '测试员工借款单', 'operationSubTypeId': 'UI通用01', 'expenseAmount': '100..00', 'projectName': 'UI项目', 'casename': '员工借款单提交主流程'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(name='submit')" ]
+  },
+  "source" : "629287c2428e3bd8.json",
+  "parameterValues" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试员工借款单', 'operationSubTypeId': 'UI通用01', 'expenseAmount': '100..00', 'projectName': 'UI项目', 'casename': '员工借款单提交主流程'}" ]
+}

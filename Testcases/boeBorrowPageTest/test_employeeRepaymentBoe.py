@@ -59,7 +59,8 @@ class TestEmployeeRepaymentBoe(object):
             with allure.step("输入还款方式"):
                 self.employeeRepaymentBoePage.selectReplaymentType(employeeRepaymentBoe_testdata['operationSubType'])
             with allure.step("输入还款金额"):
-                self.employeeRepaymentBoePage.input_expenseAmount(self.boeFee)
+                # self.employeeRepaymentBoePage.input_expenseAmount(self.boeFee)
+                self.employeeRepaymentBoePage.input_expenseAmount('100..00')
             with allure.step("输入收款账户"):
                 self.employeeRepaymentBoePage.selectCollectionAccount(employeeRepaymentBoe_testdata['favoriteId'])
             with allure.step("输入还款日期"):

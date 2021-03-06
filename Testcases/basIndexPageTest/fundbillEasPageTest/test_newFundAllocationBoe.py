@@ -19,7 +19,8 @@ class TestNewFundAllocationBoe():
         self.newFundAllocationBoePage = NewFundAllocationBoePage(self.login.driver)
 
     def teardown_class(self):
-        self.newFundAllocationBoePage.driver.quit()
+        # self.newFundAllocationBoePage.driver.quit()
+        pass
 
     @allure.story("资金调拨报账单（新）业务报账界面单据提交")
     @allure.step("资金调拨报账单（新）业务报账界面单据提交步骤")

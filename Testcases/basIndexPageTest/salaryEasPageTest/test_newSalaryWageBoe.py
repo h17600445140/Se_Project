@@ -19,8 +19,7 @@ class TestNewSalaryWageBoe():
         self.newSalaryWageBoePage = NewSalaryWageBoePage(self.publicLogin.driver)
 
     def teardown_class(self):
-        # self.newSalaryWageBoePage.driver.quit()
-        pass
+        self.newSalaryWageBoePage.driver.quit()
 
     @allure.story("工资报账单（新）业务报账界面单据提交")
     @allure.step("工资报账单（新）业务报账界面单据提交步骤")

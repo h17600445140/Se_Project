@@ -1,0 +1,197 @@
+{
+  "uid" : "2fe83a98b9bd397a",
+  "name" : "test_newMultiDomesticTravel[多人差旅报账单提交主流程]",
+  "fullName" : "Testcases.boeReimbursementPageTest.test_newMultiDomesticTravelBoe.TestNewMultiDomesticTravelBoe#test_newMultiDomesticTravel",
+  "historyId" : "6dfea0379609f522225870075259c24b",
+  "time" : {
+    "start" : 1615016180062,
+    "stop" : 1615016185729,
+    "duration" : 5667
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 1 == 0\n  +1\n  -0",
+  "statusTrace" : "self = <Testcases.boeReimbursementPageTest.test_newMultiDomesticTravelBoe.TestNewMultiDomesticTravelBoe object at 0x000001FDCF51EEB8>\nnewMultiDomesticTravelBoe_testdata = {'boeAbstract': '测试多人差旅报账单', 'casename': '多人差旅报账单提交主流程', 'operationType': 'UI通用', 'projectName': 'UI项目', ...}\n\n    @allure.story(\"多人差旅报账单费用报销界面单据提交\")\n    @allure.step(\"多人差旅报账单费用报销界面单据提交步骤\")\n    @allure.severity(\"blocker\")\n    @pytest.mark.dependency(name='submit')\n    def test_newMultiDomesticTravel(self, newMultiDomesticTravelBoe_testdata):\n        try:\n            logger.info(\" ----- 单据流程开始 ----- \")\n            with allure.step(\"打开费用报销单据选择页面\"):\n                self.newMultiDomesticTravelBoePage.open_boeReimburse()\n            with allure.step(\"打开的单据类型为：{} ,选择的单据业务类型为: {}\".format('多人差旅报账单', newMultiDomesticTravelBoe_testdata['operationType'])):\n                try:\n>                   self.newMultiDomesticTravelBoePage.open_boe('多人差旅报账单', newMultiDomesticTravelBoe_testdata['operationType'])\n\nTestcases\\boeReimbursementPageTest\\test_newMultiDomesticTravelBoe.py:41: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <PageClass.boeReimbursementPageClass.newMultiDomesticTravelBoePage.NewMultiDomesticTravelBoePage object at 0x000001FDCF39CC88>, boeType = '多人差旅报账单', boeName = 'UI通用'\n\n    def open_boe(self, boeType, boeName):\n        logger.info(\"打开的单据类型为：{} ,选择的单据业务类型为: {}\".format(boeType, boeName))\n    \n        flag = False\n        for i in range(len(self.find_elements(*(By.XPATH, '//*[@id=\"app\"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div')))):\n            if flag == True:\n                break\n            if self.get_elementText(*(By.XPATH, '//*[@id=\"app\"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div[{}]/div[1]/span'.format(i+1))) == boeType:\n                for j in range(len(self.find_elements(*(By.XPATH, '//*[@id=\"app\"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div[{}]/div[2]/div'.format(i+1))))):\n                    if self.get_elementText(*(By.XPATH, '//*[@id=\"app\"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div[{}]/div[2]/div[{}]/div[2]'.format(i+1, j+1))) == boeName:\n                        self.moveToclick(*(By.XPATH, '//*[@id=\"app\"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div[{}]/div[2]/div[{}]'.format(i+1, j+1)))\n                        flag = True\n                        break\n                    else:\n                        pass\n            else:\n                pass\n        logger.info(\"是否正常打开单据: {}\".format(flag))\n        if flag != True:\n            logger.error('Exception: Don\\'t find Boe, please check config')\n>           raise Exception('Don\\'t find Boe, please check config')\nE           Exception: Don't find Boe, please check config\n\nPageClass\\easIndexPageClass\\easIndexPage.py:50: Exception\n\nDuring handling of the above exception, another exception occurred:\n\nself = <Testcases.boeReimbursementPageTest.test_newMultiDomesticTravelBoe.TestNewMultiDomesticTravelBoe object at 0x000001FDCF51EEB8>\nnewMultiDomesticTravelBoe_testdata = {'boeAbstract': '测试多人差旅报账单', 'casename': '多人差旅报账单提交主流程', 'operationType': 'UI通用', 'projectName': 'UI项目', ...}\n\n    @allure.story(\"多人差旅报账单费用报销界面单据提交\")\n    @allure.step(\"多人差旅报账单费用报销界面单据提交步骤\")\n    @allure.severity(\"blocker\")\n    @pytest.mark.dependency(name='submit')\n    def test_newMultiDomesticTravel(self, newMultiDomesticTravelBoe_testdata):\n        try:\n            logger.info(\" ----- 单据流程开始 ----- \")\n            with allure.step(\"打开费用报销单据选择页面\"):\n                self.newMultiDomesticTravelBoePage.open_boeReimburse()\n            with allure.step(\"打开的单据类型为：{} ,选择的单据业务类型为: {}\".format('多人差旅报账单', newMultiDomesticTravelBoe_testdata['operationType'])):\n                try:\n                    self.newMultiDomesticTravelBoePage.open_boe('多人差旅报账单', newMultiDomesticTravelBoe_testdata['operationType'])\n                except:\n                    sleep(1)\n                    logger.error(\" Don't find Boe, Try again\")\n>                   self.newMultiDomesticTravelBoePage.open_boe('多人差旅报账单', newMultiDomesticTravelBoe_testdata['operationType'])\n\nTestcases\\boeReimbursementPageTest\\test_newMultiDomesticTravelBoe.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <PageClass.boeReimbursementPageClass.newMultiDomesticTravelBoePage.NewMultiDomesticTravelBoePage object at 0x000001FDCF39CC88>, boeType = '多人差旅报账单', boeName = 'UI通用'\n\n    def open_boe(self, boeType, boeName):\n        logger.info(\"打开的单据类型为：{} ,选择的单据业务类型为: {}\".format(boeType, boeName))\n    \n        flag = False\n        for i in range(len(self.find_elements(*(By.XPATH, '//*[@id=\"app\"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div')))):\n            if flag == True:\n                break\n            if self.get_elementText(*(By.XPATH, '//*[@id=\"app\"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div[{}]/div[1]/span'.format(i+1))) == boeType:\n                for j in range(len(self.find_elements(*(By.XPATH, '//*[@id=\"app\"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div[{}]/div[2]/div'.format(i+1))))):\n                    if self.get_elementText(*(By.XPATH, '//*[@id=\"app\"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div[{}]/div[2]/div[{}]/div[2]'.format(i+1, j+1))) == boeName:\n                        self.moveToclick(*(By.XPATH, '//*[@id=\"app\"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div[{}]/div[2]/div[{}]'.format(i+1, j+1)))\n                        flag = True\n                        break\n                    else:\n                        pass\n            else:\n                pass\n        logger.info(\"是否正常打开单据: {}\".format(flag))\n        if flag != True:\n            logger.error('Exception: Don\\'t find Boe, please check config')\n>           raise Exception('Don\\'t find Boe, please check config')\nE           Exception: Don't find Boe, please check config\n\nPageClass\\easIndexPageClass\\easIndexPage.py:50: Exception\n\nDuring handling of the above exception, another exception occurred:\n\nself = <Testcases.boeReimbursementPageTest.test_newMultiDomesticTravelBoe.TestNewMultiDomesticTravelBoe object at 0x000001FDCF51EEB8>\nnewMultiDomesticTravelBoe_testdata = {'boeAbstract': '测试多人差旅报账单', 'casename': '多人差旅报账单提交主流程', 'operationType': 'UI通用', 'projectName': 'UI项目', ...}\n\n    @allure.story(\"多人差旅报账单费用报销界面单据提交\")\n    @allure.step(\"多人差旅报账单费用报销界面单据提交步骤\")\n    @allure.severity(\"blocker\")\n    @pytest.mark.dependency(name='submit')\n    def test_newMultiDomesticTravel(self, newMultiDomesticTravelBoe_testdata):\n        try:\n            logger.info(\" ----- 单据流程开始 ----- \")\n            with allure.step(\"打开费用报销单据选择页面\"):\n                self.newMultiDomesticTravelBoePage.open_boeReimburse()\n            with allure.step(\"打开的单据类型为：{} ,选择的单据业务类型为: {}\".format('多人差旅报账单', newMultiDomesticTravelBoe_testdata['operationType'])):\n                try:\n                    self.newMultiDomesticTravelBoePage.open_boe('多人差旅报账单', newMultiDomesticTravelBoe_testdata['operationType'])\n                except:\n                    sleep(1)\n                    logger.error(\" Don't find Boe, Try again\")\n                    self.newMultiDomesticTravelBoePage.open_boe('多人差旅报账单', newMultiDomesticTravelBoe_testdata['operationType'])\n    \n            global boeNum\n            boeNum = self.newMultiDomesticTravelBoePage.getBoeNum()\n    \n            with allure.step(\"输入业务类型\"):\n                self.newMultiDomesticTravelBoePage.input_operationType(newMultiDomesticTravelBoe_testdata['operationType'])\n            with allure.step(\"输入备注\"):\n                self.newMultiDomesticTravelBoePage.input_boeAbstract(newMultiDomesticTravelBoe_testdata['boeAbstract'])\n    \n            with allure.step(\"增加出行人员\"):\n                self.newMultiDomesticTravelBoePage.add_travelers(newMultiDomesticTravelBoe_testdata['travelers'])\n            with allure.step(\"输入项目\"):\n                self.newMultiDomesticTravelBoePage.select_projectId(newMultiDomesticTravelBoe_testdata['projectName'])\n    \n            self.newMultiDomesticTravelBoePage.clearPersonCard()\n    \n            with allure.step(\"新增发票操作\"):\n                self.newMultiDomesticTravelBoePage.click_addInvoiceButton()\n                self.newMultiDomesticTravelBoePage.click_invoiceType()\n                # 差旅火车票新增\n                invoiceFactory.get_invoice(self.login.driver, '火车票', 'boeInvoicePage').getTickets(\n                    # datetime.datetime.now().strftime(\"%Y-%m-%d\")\n                    '2021-03-10',\n                    '内部人员',\n                    'UI01',\n                    '长沙',\n                    '杭州',\n                    '二等座（高铁/动车）',\n                    '500.00',\n                    '否')\n    \n                self.newMultiDomesticTravelBoePage.click_addInvoiceButton()\n                self.newMultiDomesticTravelBoePage.click_invoiceType()\n                # 差旅火车票新增\n                invoiceFactory.get_invoice(self.login.driver, '火车票', 'boeInvoicePage').getTickets(\n                    # datetime.datetime.now().strftime(\"%Y-%m-%d\")\n                    '2021-03-10',\n                    '内部人员',\n                    'UI02',\n                    '长沙',\n                    '杭州',\n                    '二等座（高铁/动车）',\n                    '500.00',\n                    '否')\n    \n            # self.newMultiDomesticTravelBoePage.click_addInvoiceButton()\n            # self.newMultiDomesticTravelBoePage.click_invoiceType()\n            # invoiceFactory.get_invoice(self.login.driver, '增值税普通发票', 'boeInvoicePage').getTickets(\n            #     '2021-1-27', '811000000002', '81100002', '100.10', '0.10', '123456')\n    \n            with allure.step(\"点击单据提交\"):\n                self.newMultiDomesticTravelBoePage.click_boeSubmitButton()\n            with allure.step(\"点击单据关闭按钮\"):\n                self.newMultiDomesticTravelBoePage.click_close()\n    \n            with allure.step(\"进行单据生成校验\"):\n                self.newMultiDomesticTravelBoePage.click_myBoeList()\n                self.newMultiDomesticTravelBoePage.click_moreButton()\n                self.newMultiDomesticTravelBoePage.input_boeNo(boeNum)\n                self.newMultiDomesticTravelBoePage.click_boeNoSelectButton()\n                status = self.newMultiDomesticTravelBoePage.selectResultIsOrNot(boeNum)\n    \n            logger.info(\" ----- 单据提交流程结束 ----- \")\n            assert status == True\n    \n        except Exception as e:\n            logger.error(\"出现异常，异常信息为：{}\".format(type(e)))\n            code = 'wrong'\n            timeNow = getNowTime()\n            self.newMultiDomesticTravelBoePage.screenshot(code, timeNow)\n            allure.attach.file(getPicturePath(code, timeNow), name=timeNow + code + \"screenshot\",\n                               attachment_type=allure.attachment_type.PNG)\n            self.newMultiDomesticTravelBoePage.driver.quit()\n>           assert 1 == 0\nE           assert 1 == 0\nE             +1\nE             -0\n\nTestcases\\boeReimbursementPageTest\\test_newMultiDomesticTravelBoe.py:119: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615016164008,
+      "stop" : 1615016180061,
+      "duration" : 16053
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "newMultiDomesticTravelBoe_testdata",
+    "time" : {
+      "start" : 1615016180062,
+      "stop" : 1615016180062,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 1 == 0\n  +1\n  -0",
+    "statusTrace" : "self = <Testcases.boeReimbursementPageTest.test_newMultiDomesticTravelBoe.TestNewMultiDomesticTravelBoe object at 0x000001FDCF51EEB8>\nnewMultiDomesticTravelBoe_testdata = {'boeAbstract': '测试多人差旅报账单', 'casename': '多人差旅报账单提交主流程', 'operationType': 'UI通用', 'projectName': 'UI项目', ...}\n\n    @allure.story(\"多人差旅报账单费用报销界面单据提交\")\n    @allure.step(\"多人差旅报账单费用报销界面单据提交步骤\")\n    @allure.severity(\"blocker\")\n    @pytest.mark.dependency(name='submit')\n    def test_newMultiDomesticTravel(self, newMultiDomesticTravelBoe_testdata):\n        try:\n            logger.info(\" ----- 单据流程开始 ----- \")\n            with allure.step(\"打开费用报销单据选择页面\"):\n                self.newMultiDomesticTravelBoePage.open_boeReimburse()\n            with allure.step(\"打开的单据类型为：{} ,选择的单据业务类型为: {}\".format('多人差旅报账单', newMultiDomesticTravelBoe_testdata['operationType'])):\n                try:\n>                   self.newMultiDomesticTravelBoePage.open_boe('多人差旅报账单', newMultiDomesticTravelBoe_testdata['operationType'])\n\nTestcases\\boeReimbursementPageTest\\test_newMultiDomesticTravelBoe.py:41: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <PageClass.boeReimbursementPageClass.newMultiDomesticTravelBoePage.NewMultiDomesticTravelBoePage object at 0x000001FDCF39CC88>, boeType = '多人差旅报账单', boeName = 'UI通用'\n\n    def open_boe(self, boeType, boeName):\n        logger.info(\"打开的单据类型为：{} ,选择的单据业务类型为: {}\".format(boeType, boeName))\n    \n        flag = False\n        for i in range(len(self.find_elements(*(By.XPATH, '//*[@id=\"app\"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div')))):\n            if flag == True:\n                break\n            if self.get_elementText(*(By.XPATH, '//*[@id=\"app\"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div[{}]/div[1]/span'.format(i+1))) == boeType:\n                for j in range(len(self.find_elements(*(By.XPATH, '//*[@id=\"app\"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div[{}]/div[2]/div'.format(i+1))))):\n                    if self.get_elementText(*(By.XPATH, '//*[@id=\"app\"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div[{}]/div[2]/div[{}]/div[2]'.format(i+1, j+1))) == boeName:\n                        self.moveToclick(*(By.XPATH, '//*[@id=\"app\"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div[{}]/div[2]/div[{}]'.format(i+1, j+1)))\n                        flag = True\n                        break\n                    else:\n                        pass\n            else:\n                pass\n        logger.info(\"是否正常打开单据: {}\".format(flag))\n        if flag != True:\n            logger.error('Exception: Don\\'t find Boe, please check config')\n>           raise Exception('Don\\'t find Boe, please check config')\nE           Exception: Don't find Boe, please check config\n\nPageClass\\easIndexPageClass\\easIndexPage.py:50: Exception\n\nDuring handling of the above exception, another exception occurred:\n\nself = <Testcases.boeReimbursementPageTest.test_newMultiDomesticTravelBoe.TestNewMultiDomesticTravelBoe object at 0x000001FDCF51EEB8>\nnewMultiDomesticTravelBoe_testdata = {'boeAbstract': '测试多人差旅报账单', 'casename': '多人差旅报账单提交主流程', 'operationType': 'UI通用', 'projectName': 'UI项目', ...}\n\n    @allure.story(\"多人差旅报账单费用报销界面单据提交\")\n    @allure.step(\"多人差旅报账单费用报销界面单据提交步骤\")\n    @allure.severity(\"blocker\")\n    @pytest.mark.dependency(name='submit')\n    def test_newMultiDomesticTravel(self, newMultiDomesticTravelBoe_testdata):\n        try:\n            logger.info(\" ----- 单据流程开始 ----- \")\n            with allure.step(\"打开费用报销单据选择页面\"):\n                self.newMultiDomesticTravelBoePage.open_boeReimburse()\n            with allure.step(\"打开的单据类型为：{} ,选择的单据业务类型为: {}\".format('多人差旅报账单', newMultiDomesticTravelBoe_testdata['operationType'])):\n                try:\n                    self.newMultiDomesticTravelBoePage.open_boe('多人差旅报账单', newMultiDomesticTravelBoe_testdata['operationType'])\n                except:\n                    sleep(1)\n                    logger.error(\" Don't find Boe, Try again\")\n>                   self.newMultiDomesticTravelBoePage.open_boe('多人差旅报账单', newMultiDomesticTravelBoe_testdata['operationType'])\n\nTestcases\\boeReimbursementPageTest\\test_newMultiDomesticTravelBoe.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <PageClass.boeReimbursementPageClass.newMultiDomesticTravelBoePage.NewMultiDomesticTravelBoePage object at 0x000001FDCF39CC88>, boeType = '多人差旅报账单', boeName = 'UI通用'\n\n    def open_boe(self, boeType, boeName):\n        logger.info(\"打开的单据类型为：{} ,选择的单据业务类型为: {}\".format(boeType, boeName))\n    \n        flag = False\n        for i in range(len(self.find_elements(*(By.XPATH, '//*[@id=\"app\"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div')))):\n            if flag == True:\n                break\n            if self.get_elementText(*(By.XPATH, '//*[@id=\"app\"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div[{}]/div[1]/span'.format(i+1))) == boeType:\n                for j in range(len(self.find_elements(*(By.XPATH, '//*[@id=\"app\"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div[{}]/div[2]/div'.format(i+1))))):\n                    if self.get_elementText(*(By.XPATH, '//*[@id=\"app\"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div[{}]/div[2]/div[{}]/div[2]'.format(i+1, j+1))) == boeName:\n                        self.moveToclick(*(By.XPATH, '//*[@id=\"app\"]/section/main/div/div/div[2]/div[3]/div[3]/div/div[2]/div[{}]/div[2]/div[{}]'.format(i+1, j+1)))\n                        flag = True\n                        break\n                    else:\n                        pass\n            else:\n                pass\n        logger.info(\"是否正常打开单据: {}\".format(flag))\n        if flag != True:\n            logger.error('Exception: Don\\'t find Boe, please check config')\n>           raise Exception('Don\\'t find Boe, please check config')\nE           Exception: Don't find Boe, please check config\n\nPageClass\\easIndexPageClass\\easIndexPage.py:50: Exception\n\nDuring handling of the above exception, another exception occurred:\n\nself = <Testcases.boeReimbursementPageTest.test_newMultiDomesticTravelBoe.TestNewMultiDomesticTravelBoe object at 0x000001FDCF51EEB8>\nnewMultiDomesticTravelBoe_testdata = {'boeAbstract': '测试多人差旅报账单', 'casename': '多人差旅报账单提交主流程', 'operationType': 'UI通用', 'projectName': 'UI项目', ...}\n\n    @allure.story(\"多人差旅报账单费用报销界面单据提交\")\n    @allure.step(\"多人差旅报账单费用报销界面单据提交步骤\")\n    @allure.severity(\"blocker\")\n    @pytest.mark.dependency(name='submit')\n    def test_newMultiDomesticTravel(self, newMultiDomesticTravelBoe_testdata):\n        try:\n            logger.info(\" ----- 单据流程开始 ----- \")\n            with allure.step(\"打开费用报销单据选择页面\"):\n                self.newMultiDomesticTravelBoePage.open_boeReimburse()\n            with allure.step(\"打开的单据类型为：{} ,选择的单据业务类型为: {}\".format('多人差旅报账单', newMultiDomesticTravelBoe_testdata['operationType'])):\n                try:\n                    self.newMultiDomesticTravelBoePage.open_boe('多人差旅报账单', newMultiDomesticTravelBoe_testdata['operationType'])\n                except:\n                    sleep(1)\n                    logger.error(\" Don't find Boe, Try again\")\n                    self.newMultiDomesticTravelBoePage.open_boe('多人差旅报账单', newMultiDomesticTravelBoe_testdata['operationType'])\n    \n            global boeNum\n            boeNum = self.newMultiDomesticTravelBoePage.getBoeNum()\n    \n            with allure.step(\"输入业务类型\"):\n                self.newMultiDomesticTravelBoePage.input_operationType(newMultiDomesticTravelBoe_testdata['operationType'])\n            with allure.step(\"输入备注\"):\n                self.newMultiDomesticTravelBoePage.input_boeAbstract(newMultiDomesticTravelBoe_testdata['boeAbstract'])\n    \n            with allure.step(\"增加出行人员\"):\n                self.newMultiDomesticTravelBoePage.add_travelers(newMultiDomesticTravelBoe_testdata['travelers'])\n            with allure.step(\"输入项目\"):\n                self.newMultiDomesticTravelBoePage.select_projectId(newMultiDomesticTravelBoe_testdata['projectName'])\n    \n            self.newMultiDomesticTravelBoePage.clearPersonCard()\n    \n            with allure.step(\"新增发票操作\"):\n                self.newMultiDomesticTravelBoePage.click_addInvoiceButton()\n                self.newMultiDomesticTravelBoePage.click_invoiceType()\n                # 差旅火车票新增\n                invoiceFactory.get_invoice(self.login.driver, '火车票', 'boeInvoicePage').getTickets(\n                    # datetime.datetime.now().strftime(\"%Y-%m-%d\")\n                    '2021-03-10',\n                    '内部人员',\n                    'UI01',\n                    '长沙',\n                    '杭州',\n                    '二等座（高铁/动车）',\n                    '500.00',\n                    '否')\n    \n                self.newMultiDomesticTravelBoePage.click_addInvoiceButton()\n                self.newMultiDomesticTravelBoePage.click_invoiceType()\n                # 差旅火车票新增\n                invoiceFactory.get_invoice(self.login.driver, '火车票', 'boeInvoicePage').getTickets(\n                    # datetime.datetime.now().strftime(\"%Y-%m-%d\")\n                    '2021-03-10',\n                    '内部人员',\n                    'UI02',\n                    '长沙',\n                    '杭州',\n                    '二等座（高铁/动车）',\n                    '500.00',\n                    '否')\n    \n            # self.newMultiDomesticTravelBoePage.click_addInvoiceButton()\n            # self.newMultiDomesticTravelBoePage.click_invoiceType()\n            # invoiceFactory.get_invoice(self.login.driver, '增值税普通发票', 'boeInvoicePage').getTickets(\n            #     '2021-1-27', '811000000002', '81100002', '100.10', '0.10', '123456')\n    \n            with allure.step(\"点击单据提交\"):\n                self.newMultiDomesticTravelBoePage.click_boeSubmitButton()\n            with allure.step(\"点击单据关闭按钮\"):\n                self.newMultiDomesticTravelBoePage.click_close()\n    \n            with allure.step(\"进行单据生成校验\"):\n                self.newMultiDomesticTravelBoePage.click_myBoeList()\n                self.newMultiDomesticTravelBoePage.click_moreButton()\n                self.newMultiDomesticTravelBoePage.input_boeNo(boeNum)\n                self.newMultiDomesticTravelBoePage.click_boeNoSelectButton()\n                status = self.newMultiDomesticTravelBoePage.selectResultIsOrNot(boeNum)\n    \n            logger.info(\" ----- 单据提交流程结束 ----- \")\n            assert status == True\n    \n        except Exception as e:\n            logger.error(\"出现异常，异常信息为：{}\".format(type(e)))\n            code = 'wrong'\n            timeNow = getNowTime()\n            self.newMultiDomesticTravelBoePage.screenshot(code, timeNow)\n            allure.attach.file(getPicturePath(code, timeNow), name=timeNow + code + \"screenshot\",\n                               attachment_type=allure.attachment_type.PNG)\n            self.newMultiDomesticTravelBoePage.driver.quit()\n>           assert 1 == 0\nE           assert 1 == 0\nE             +1\nE             -0\n\nTestcases\\boeReimbursementPageTest\\test_newMultiDomesticTravelBoe.py:119: AssertionError",
+    "steps" : [ {
+      "name" : "多人差旅报账单费用报销界面单据提交步骤",
+      "time" : {
+        "start" : 1615016180063,
+        "stop" : 1615016185728,
+        "duration" : 5665
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert 1 == 0\n  +1\n  -0\n",
+      "statusTrace" : "  File \"C:\\Users\\zxxy\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\allure_commons\\_allure.py\", line 157, in impl\n    return func(*a, **kw)\n  File \"D:\\se\\Se_Project\\Testcases\\boeReimbursementPageTest\\test_newMultiDomesticTravelBoe.py\", line 119, in test_newMultiDomesticTravel\n    assert 1 == 0\n",
+      "steps" : [ {
+        "name" : "打开费用报销单据选择页面",
+        "time" : {
+          "start" : 1615016180063,
+          "stop" : 1615016180132,
+          "duration" : 69
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "打开的单据类型为：多人差旅报账单 ,选择的单据业务类型为: UI通用",
+        "time" : {
+          "start" : 1615016180132,
+          "stop" : 1615016183199,
+          "duration" : 3067
+        },
+        "status" : "broken",
+        "statusMessage" : "Exception: Don't find Boe, please check config\n",
+        "statusTrace" : "  File \"D:\\se\\Se_Project\\Testcases\\boeReimbursementPageTest\\test_newMultiDomesticTravelBoe.py\", line 45, in test_newMultiDomesticTravel\n    self.newMultiDomesticTravelBoePage.open_boe('多人差旅报账单', newMultiDomesticTravelBoe_testdata['operationType'])\n  File \"D:\\se\\Se_Project\\PageClass\\easIndexPageClass\\easIndexPage.py\", line 50, in open_boe\n    raise Exception('Don\\'t find Boe, please check config')\n",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ {
+        "uid" : "2bb2332c74d8e153",
+        "name" : "2021-03-06 15-36-23wrongscreenshot",
+        "source" : "2bb2332c74d8e153.png",
+        "type" : "image/png",
+        "size" : 227022
+      } ],
+      "parameters" : [ {
+        "name" : "newMultiDomesticTravelBoe_testdata",
+        "value" : "{'operationType': 'UI通用', 'boeAbstract': '测试多人差旅报账单', 'travelers': 'UI02', 'projectName': 'UI项目', 'casename': '多人差旅报账单提交主流程'}"
+      } ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true,
+      "stepsCount" : 2
+    } ],
+    "attachments" : [ {
+      "uid" : "9ace526027603e76",
+      "name" : "log",
+      "source" : "9ace526027603e76.txt",
+      "type" : "text/plain",
+      "size" : 1312
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 3
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615016185779,
+      "stop" : 1615016193792,
+      "duration" : 8013
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "多人差旅报账单费用报销界面单据提交"
+  }, {
+    "name" : "feature",
+    "value" : "多人差旅报账单流程"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(name='submit')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.boeReimbursementPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_newMultiDomesticTravelBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewMultiDomesticTravelBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "55600-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.boeReimbursementPageTest.test_newMultiDomesticTravelBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "newMultiDomesticTravelBoe_testdata",
+    "value" : "{'operationType': 'UI通用', 'boeAbstract': '测试多人差旅报账单', 'travelers': 'UI02', 'projectName': 'UI项目', 'casename': '多人差旅报账单提交主流程'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "dependency(name='submit')" ]
+  },
+  "source" : "2fe83a98b9bd397a.json",
+  "parameterValues" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试多人差旅报账单', 'travelers': 'UI02', 'projectName': 'UI项目', 'casename': '多人差旅报账单提交主流程'}" ]
+}

@@ -73,6 +73,7 @@ class TestNewDailyExpenseBoe():
                 try:
                     self.newDailyExpenseBoePage.selectOperationSubType(newDailyExpenseBoe_testdata['operationSubType'])
                 except:
+                    sleep(1)
                     self.newDailyExpenseBoePage.selectOperationSubType(newDailyExpenseBoe_testdata['operationSubType'])
 
             with allure.step("选择部门"):

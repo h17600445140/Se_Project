@@ -1,0 +1,33 @@
+[32mINFO    [0m WebUIAuto:log.py:48 请求链接，链接地址为：http://fol.ztessc.com.cn/bas
+[35mDEBUG   [0m WebUIAuto:log.py:45 输入账户，账户为：UI01
+[35mDEBUG   [0m WebUIAuto:log.py:45 输入密码，密码为：LMJT123456
+[32mINFO    [0m WebUIAuto:log.py:48 点击登录按钮
+[32mINFO    [0m WebUIAuto:log.py:48 成功登录界面：basHost
+[32mINFO    [0m WebUIAuto:log.py:48  ----- 单据提交流程开始 ----- 
+[32mINFO    [0m WebUIAuto:log.py:48 点击进入收入收款界面
+[32mINFO    [0m WebUIAuto:log.py:48 进入单据 -> 开票申请单
+[35mDEBUG   [0m WebUIAuto:log.py:45 所有窗口为：['CDwindow-8EFE612835E6955915FA5FDB42A3458E', 'CDwindow-1D77DF52A14D18BF31E76E8E711A1152']
+[35mDEBUG   [0m WebUIAuto:log.py:45 当前窗口为：CDwindow-1D77DF52A14D18BF31E76E8E711A1152
+[32mINFO    [0m WebUIAuto:log.py:48 当前提单单据号为：LMJT-BX2103060211
+[32mINFO    [0m WebUIAuto:log.py:48 选择的业务类型为：UI通用
+[32mINFO    [0m WebUIAuto:log.py:48 选择的发票类型为：增值税普通发票
+[32mINFO    [0m WebUIAuto:log.py:48 选择的购买方为 : UI客户
+[32mINFO    [0m WebUIAuto:log.py:48 输入的项目为：UI项目
+[32mINFO    [0m WebUIAuto:log.py:48 选择的商品编码为 : UISP
+[32mINFO    [0m WebUIAuto:log.py:48 选择的商品名称为 : UI商品
+[32mINFO    [0m WebUIAuto:log.py:48 输入的商品数量为：10
+[32mINFO    [0m WebUIAuto:log.py:48 输入的含税单价为：100.00
+[32mINFO    [0m WebUIAuto:log.py:48 输入的含税金额为：1000.00
+[32mINFO    [0m WebUIAuto:log.py:48 输入的税率为：5
+[32mINFO    [0m WebUIAuto:log.py:48 点击提交单据
+[32mINFO    [0m WebUIAuto:log.py:48 点击单据关闭按钮
+[35mDEBUG   [0m WebUIAuto:log.py:45 所有窗口为：['CDwindow-8EFE612835E6955915FA5FDB42A3458E']
+[35mDEBUG   [0m WebUIAuto:log.py:45 当前窗口为：CDwindow-8EFE612835E6955915FA5FDB42A3458E
+[32mINFO    [0m WebUIAuto:log.py:48 点击更多按钮
+[32mINFO    [0m WebUIAuto:log.py:48 点击按钮：查询
+[32mINFO    [0m WebUIAuto:log.py:48 点击查询按钮
+[32mINFO    [0m WebUIAuto:log.py:48 LMJT-BX2103060211 -> 单据存在
+[32mINFO    [0m WebUIAuto:log.py:48 LMJT-BX2103060211 -> 单据存在
+[32mINFO    [0m WebUIAuto:log.py:48  ----- 单据提交流程结束 ----- 
+[32mINFO    [0m WebUIAuto:log.py:48 测试用例执行成功
+[32mINFO    [0m WebUIAuto:log.py:48 进行截图操作

@@ -1,0 +1,29 @@
+url:
+  publicHost: http://fol.ztessc.com.cn/public
+  baseHost: http://fol.ztessc.com.cn/base
+  easHost: http://fol.ztessc.com.cn/eas
+  cmsHost: http://fol.ztessc.com.cn/cms
+  basHost: http://fol.ztessc.com.cn/bas
+  fscHost: http://fol.ztessc.com.cn/fsc
+  ledgerHost: http://fol.ztessc.com.cn/ledger
+  timerHost: http://fol.ztessc.com.cn/ip/timerManage
+  invoiceIpoolHost: http://fol.ztessc.com.cn/ipool
+  fscAuditList: http://fol.ztessc.com.cn/fsc/auditList
+  fscBillExchange: http://fol.ztessc.com.cn/fsc/billExchange
+  fscAuditAdjustDirector: http://fol.ztessc.com.cn/fsc/auditAdjustDirector
+
+user:
+  account: UI01
+  password: LMJT123456
+leader:
+  account: UI02
+  password: LMJT123456
+finance:
+  account: UI03
+  password: LMJT123456
+
+Approval:
+  approvalGroupC: UI初审
+  approvalUserC: UI03
+  approvalGroupF: UI复审
+  approvalUserF: UI03

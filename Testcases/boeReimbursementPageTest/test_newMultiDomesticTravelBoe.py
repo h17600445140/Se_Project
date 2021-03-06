@@ -64,7 +64,8 @@ class TestNewMultiDomesticTravelBoe():
                 self.newMultiDomesticTravelBoePage.click_invoiceType()
                 # 差旅火车票新增
                 invoiceFactory.get_invoice(self.login.driver, '火车票', 'boeInvoicePage').getTickets(
-                    datetime.datetime.now().strftime("%Y-%m-%d"),
+                    # datetime.datetime.now().strftime("%Y-%m-%d")
+                    '2021-03-11',
                     '内部人员',
                     'UI01',
                     '长沙',
@@ -77,7 +78,8 @@ class TestNewMultiDomesticTravelBoe():
                 self.newMultiDomesticTravelBoePage.click_invoiceType()
                 # 差旅火车票新增
                 invoiceFactory.get_invoice(self.login.driver, '火车票', 'boeInvoicePage').getTickets(
-                    datetime.datetime.now().strftime("%Y-%m-%d"),
+                    # datetime.datetime.now().strftime("%Y-%m-%d")
+                    '2021-03-11',
                     '内部人员',
                     'UI02',
                     '长沙',
@@ -136,6 +138,7 @@ class TestNewMultiDomesticTravelBoe():
         content = self.businessApprove.boeBusinessApprove()
         logger.info(" ----- 单据业务审批结束 ----- ")
         assert content == '审批成功'
+
 
     @allure.story("多人差旅报账单共享中心界面财务审批")
     @allure.step("多人差旅报账单共享中心界面财务审批步骤")

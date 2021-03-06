@@ -1,0 +1,125 @@
+{
+  "uid" : "e9ea7745f41b1006",
+  "name" : "test_businessApprove",
+  "fullName" : "Testcases.boeApplyPageTest.test_applyTravelBoe.TestApplyTravelBoe#test_businessApprove",
+  "historyId" : "db07690c049624a13c994fc06f414259",
+  "time" : {
+    "start" : 1615015774599,
+    "stop" : 1615015793353,
+    "duration" : 18754
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615015740852,
+      "stop" : 1615015753277,
+      "duration" : 12425
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "差旅申请单费用报销界面业务审批步骤",
+      "time" : {
+        "start" : 1615015774599,
+        "stop" : 1615015793353,
+        "duration" : 18754
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "8c5e26141ae2a431",
+      "name" : "log",
+      "source" : "8c5e26141ae2a431.txt",
+      "type" : "text/plain",
+      "size" : 1414
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615015884810,
+      "stop" : 1615015886967,
+      "duration" : 2157
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "差旅申请单费用报销界面业务审批"
+  }, {
+    "name" : "feature",
+    "value" : "差旅申请单流程"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(depends=['submit'])"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.boeApplyPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_applyTravelBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestApplyTravelBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "55600-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.boeApplyPageTest.test_applyTravelBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(depends=['submit'])" ]
+  },
+  "source" : "e9ea7745f41b1006.json",
+  "parameterValues" : [ ]
+}

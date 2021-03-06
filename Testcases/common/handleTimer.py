@@ -27,7 +27,11 @@ class HandleTimer():
             except:
                 logger.warning('重试点击共享中心定时器Tab页面')
                 self._timerManage.click_sharingCenterTimer()
-            self._timerManage.click_runTimer()
+            try:
+                self._timerManage.click_runTimer()
+            except:
+                sleep(1)
+                self._timerManage.click_runTimer()
             self._timerManage.back()
 
 
