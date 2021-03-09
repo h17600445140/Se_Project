@@ -1,0 +1,14 @@
+[32mINFO    [0m WebUIAuto:log.py:48 输入查询的验收单号为：UIYSD29922
+[32mINFO    [0m WebUIAuto:log.py:48 点击按钮：查询
+[32mINFO    [0m WebUIAuto:log.py:48 点击新增按钮
+[32mINFO    [0m WebUIAuto:log.py:48 输入的名称为：hcProduct
+[32mINFO    [0m WebUIAuto:log.py:48 输入的规格为：大
+[32mINFO    [0m WebUIAuto:log.py:48 输入的单位为：个
+[32mINFO    [0m WebUIAuto:log.py:48 输入的数量为：1
+[32mINFO    [0m WebUIAuto:log.py:48 输入的不含税单价为：100.00
+[32mINFO    [0m WebUIAuto:log.py:48 输入的不含税金额为：100.00
+[32mINFO    [0m WebUIAuto:log.py:48 输入的税率为：0
+[32mINFO    [0m WebUIAuto:log.py:48 输入的税额为：0.00
+[32mINFO    [0m WebUIAuto:log.py:48 点击提交按钮
+[32mINFO    [0m WebUIAuto:log.py:48 acceptanceLedgerData 的值为：{'acceptanceNo': 'UIYSD76441'}
+[35mDEBUG   [0m WebUIAuto:log.py:45 记录文件信息, 文件信息为 -> acceptanceLedgerData : {'acceptanceNo': 'UIYSD29922'}

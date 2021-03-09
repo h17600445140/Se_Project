@@ -36,12 +36,13 @@ class TestNewDomesticTravelBoe():
         try:
             logger.info(" ----- 单据流程开始 ----- ")
             with allure.step("打开费用报销单据选择页面"):
+                sleep(3)
                 self.newDomesticTravelBoePage.open_boeReimburse()
             with allure.step("打开的单据类型为：{} ,选择的单据业务类型为: {}".format('差旅报账单', newDomesticTravelBoe_testdata['operationType'])):
                 try:
                     self.newDomesticTravelBoePage.open_boe('差旅报账单', newDomesticTravelBoe_testdata['operationType'])
                 except:
-                    sleep(1)
+                    sleep(3)
                     logger.error(" Don't find Boe, Try again")
                     self.newDomesticTravelBoePage.open_boe('差旅报账单', newDomesticTravelBoe_testdata['operationType'])
 
@@ -59,7 +60,7 @@ class TestNewDomesticTravelBoe():
                 # 差旅火车票新增
                 invoiceFactory.get_invoice(self.login.driver, '火车票', 'boeInvoicePage').getTickets(
                     # datetime.datetime.now().strftime("%Y-%m-%d")
-                    '2021-03-12',
+                    '2021-02-21',
                     newDomesticTravelBoe_testdata['trainInvoice']['invoicePersonType'],
                     newDomesticTravelBoe_testdata['trainInvoice']['invoicePersonName'],
                     newDomesticTravelBoe_testdata['trainInvoice']['invoiceFromCity'],

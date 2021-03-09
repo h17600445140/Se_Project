@@ -37,12 +37,13 @@ class TestEmployeeRepaymentBoe(object):
         try:
             logger.info(" ----- 单据流程开始 ----- ")
             with allure.step("打开借款还款单据选择页面"):
+                sleep(3)
                 self.employeeRepaymentBoePage.open_boeBorrow()
             with allure.step("打开的单据类型为：{} ,选择的单据业务类型为: {}".format('员工还款单', employeeRepaymentBoe_testdata['operationType'])):
                 try:
                     self.employeeRepaymentBoePage.open_boe('员工还款单', employeeRepaymentBoe_testdata['operationType'])
                 except:
-                    sleep(1)
+                    sleep(3)
                     logger.error(" Don't find Boe, Try again")
                     self.employeeRepaymentBoePage.open_boe('员工还款单', employeeRepaymentBoe_testdata['operationType'])
 

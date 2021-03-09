@@ -89,7 +89,7 @@ class BillingApplicationBoePage(BasIndexPage,BoeCommon):
     _salesInformation = (By.XPATH, '//*[@id="seller"]/div/div')
     def selectSaler(self, text):
         self.click(*self._salesInformation)
-        sleep(1)
+        sleep(3)
         for i in range(len(self.find_elements(*(By.CLASS_NAME, 'el-table__row')))):
             try:
                 if self.find_elements(*(By.CLASS_NAME, 'el-table__row'))[i].find_element(By.CLASS_NAME, 'name').text == text:

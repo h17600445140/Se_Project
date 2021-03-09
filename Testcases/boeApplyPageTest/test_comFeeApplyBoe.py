@@ -33,12 +33,13 @@ class TestComFeeApplyBoe(object):
         try:
             logger.info(" ----- 单据流程开始 ----- ")
             with allure.step("打开事项申请选择页面"):
+                sleep(3)
                 self.comFeeApplyBoePage.open_boeApply()
             with allure.step("打开的单据类型为：{} ,选择的单据业务类型为: {}".format('通用费用申请单', comFeeApplyBoe_testdata['operationType'])):
                 try:
                     self.comFeeApplyBoePage.open_boe('通用费用申请单', comFeeApplyBoe_testdata['operationType'])
                 except:
-                    sleep(1)
+                    sleep(3)
                     logger.error(" Don't find Boe, Try again")
                     self.comFeeApplyBoePage.open_boe('通用费用申请单', comFeeApplyBoe_testdata['operationType'])
 

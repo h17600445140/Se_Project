@@ -1,0 +1,26 @@
+[32mINFO    [0m WebUIAuto:log.py:48 请求链接，链接地址为：http://fol.ztessc.com.cn/bas
+[35mDEBUG   [0m WebUIAuto:log.py:45 输入账户，账户为：UI01
+[35mDEBUG   [0m WebUIAuto:log.py:45 输入密码，密码为：LMJT123456
+[32mINFO    [0m WebUIAuto:log.py:48 点击登录按钮
+[32mINFO    [0m WebUIAuto:log.py:48 成功登录界面：basHost
+[32mINFO    [0m WebUIAuto:log.py:48  ----- 单据提交流程开始 ----- 
+[32mINFO    [0m WebUIAuto:log.py:48 点击进入资金票据界面
+[32mINFO    [0m WebUIAuto:log.py:48 进入单据 -> 票据调拨报账单（新）
+[35mDEBUG   [0m WebUIAuto:log.py:45 所有窗口为：['CDwindow-48604272ABC6921F06D6FDA76B4F17A8', 'CDwindow-B95DA1BC8E67907CAB6838D02E0AB3A2']
+[35mDEBUG   [0m WebUIAuto:log.py:45 当前窗口为：CDwindow-B95DA1BC8E67907CAB6838D02E0AB3A2
+[32mINFO    [0m WebUIAuto:log.py:48 当前提单单据号为：LMJT-BX2103080257
+[32mINFO    [0m WebUIAuto:log.py:48 选择的业务类型为：UI通用
+[32mINFO    [0m WebUIAuto:log.py:48 输入的备注为：测试票据调拨单（新）
+[32mINFO    [0m WebUIAuto:log.py:48 选择的收款人为 : UI供应商1
+[32mINFO    [0m WebUIAuto:log.py:48 选择的银行账户为 : 
+[32mINFO    [0m WebUIAuto:log.py:48 点击 关联票据 按钮
+[32mINFO    [0m WebUIAuto:log.py:48 选择的汇票编码为 : UI54309210
+[32mINFO    [0m WebUIAuto:log.py:48 点击提交单据
+[32mINFO    [0m WebUIAuto:log.py:48 点击单据关闭按钮
+[35mDEBUG   [0m WebUIAuto:log.py:45 所有窗口为：['CDwindow-48604272ABC6921F06D6FDA76B4F17A8']
+[35mDEBUG   [0m WebUIAuto:log.py:45 当前窗口为：CDwindow-48604272ABC6921F06D6FDA76B4F17A8
+[32mINFO    [0m WebUIAuto:log.py:48 点击更多按钮
+[32mINFO    [0m WebUIAuto:log.py:48 点击按钮：查询
+[32mINFO    [0m WebUIAuto:log.py:48 点击查询按钮
+[32mINFO    [0m WebUIAuto:log.py:48 LMJT-BX2103080257 -> 单据存在
+[32mINFO    [0m WebUIAuto:log.py:48 LMJT-BX2103080257 -> 单据存在

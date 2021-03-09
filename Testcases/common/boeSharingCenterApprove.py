@@ -45,7 +45,9 @@ class SharingCenterApprove():
         try:
             self._auditAdjustDirectorPage.choiceGroup(config.getUrlDict()['Approval']['approvalGroupC'])
         except:
+            sleep(1)
             self._auditAdjustDirectorPage.click_selectResult()
+            sleep(1)
             self._auditAdjustDirectorPage.choiceGroup(config.getUrlDict()['Approval']['approvalGroupC'])
 
         # 分配到人
@@ -60,7 +62,11 @@ class SharingCenterApprove():
         self._myAuditListPage.input_boeNumQuery(self.boeNum)
         self._myAuditListPage.click_boeNumQueryButton()
 
-        self._myAuditListPage.getIntoBoe()
+        try:
+            self._myAuditListPage.getIntoBoe()
+        except:
+            sleep(1)
+            self._myAuditListPage.getIntoBoe()
         self._boeCommon.switchWindow()
 
         parameterList = [i for i in kwargs.keys()]
@@ -138,13 +144,16 @@ class SharingCenterApprove():
                 self._auditAdjustDirectorPage.input_selectBoeNum(self.boeNum)
                 self._auditAdjustDirectorPage.click_selectButton()
                 flag = self._auditAdjustDirectorPage.elementExistIsOrNot(*self._auditAdjustDirectorPage.getSelectResult())
-            if num == 20:
+            if num == 50:
                 break
             else:
                 num = num + 1
 
+        sleep(0.5)
         self._auditAdjustDirectorPage.click_selectResult()
+        sleep(0.5)
         self._auditAdjustDirectorPage.click_taskTakeToBack()
+        sleep(0.5)
         self._auditAdjustDirectorPage.click_selectResult()
 
         sleep(1)
@@ -154,6 +163,7 @@ class SharingCenterApprove():
         except:
             sleep(1)
             self._auditAdjustDirectorPage.click_selectResult()
+            sleep(1)
             self._auditAdjustDirectorPage.choiceGroup(config.getUrlDict()['Approval']['approvalGroupF'])
 
         self._auditAdjustDirectorPage.click_selectResult()
@@ -169,7 +179,11 @@ class SharingCenterApprove():
         self._myAuditListPage.input_boeNumQuery(self.boeNum)
         self._myAuditListPage.click_boeNumQueryButton()
 
-        self._myAuditListPage.getIntoBoe()
+        try:
+            self._myAuditListPage.getIntoBoe()
+        except:
+            sleep(1)
+            self._myAuditListPage.getIntoBoe()
         self._boeCommon.switchWindow()
 
         self._boeCommon.click_accountMessage()

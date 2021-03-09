@@ -1,0 +1,359 @@
+{
+  "uid" : "dbe7e8168925885f",
+  "name" : "test_billingApplicationBoe",
+  "fullName" : "Testcases.basIndexPageTest.receivableEasPageTest.test_billingApplicationBoe.TestBillingApplicationBoe#test_billingApplicationBoe",
+  "historyId" : "369f84a3e2b6a3adaf3226b8e0c2619e",
+  "time" : {
+    "start" : 1615209844262,
+    "stop" : 1615209866924,
+    "duration" : 22662
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615209834870,
+      "stop" : 1615209844261,
+      "duration" : 9391
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "开票申请单业务报账界面单据提交步骤",
+      "time" : {
+        "start" : 1615209844263,
+        "stop" : 1615209866924,
+        "duration" : 22661
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击选择收入收款页面",
+        "time" : {
+          "start" : 1615209844263,
+          "stop" : 1615209844337,
+          "duration" : 74
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "进入收入报账单单据提交页面",
+        "time" : {
+          "start" : 1615209844337,
+          "stop" : 1615209844418,
+          "duration" : 81
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "选择业务类型",
+        "time" : {
+          "start" : 1615209847517,
+          "stop" : 1615209848994,
+          "duration" : 1477
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "选择发票类型",
+        "time" : {
+          "start" : 1615209848994,
+          "stop" : 1615209850989,
+          "duration" : 1995
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "选择项目",
+        "time" : {
+          "start" : 1615209852413,
+          "stop" : 1615209853679,
+          "duration" : 1266
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "选择商品",
+        "time" : {
+          "start" : 1615209853679,
+          "stop" : 1615209855231,
+          "duration" : 1552
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "输入商品数量",
+        "time" : {
+          "start" : 1615209855231,
+          "stop" : 1615209856014,
+          "duration" : 783
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "输入含税单价",
+        "time" : {
+          "start" : 1615209856014,
+          "stop" : 1615209856710,
+          "duration" : 696
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "输入含税金额",
+        "time" : {
+          "start" : 1615209856710,
+          "stop" : 1615209857403,
+          "duration" : 693
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "选择商品税率",
+        "time" : {
+          "start" : 1615209857403,
+          "stop" : 1615209857529,
+          "duration" : 126
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "选择纳税人",
+        "time" : {
+          "start" : 1615209857529,
+          "stop" : 1615209861863,
+          "duration" : 4334
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "点击单据提交",
+        "time" : {
+          "start" : 1615209861864,
+          "stop" : 1615209862096,
+          "duration" : 232
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "点击单据关闭按钮",
+        "time" : {
+          "start" : 1615209862096,
+          "stop" : 1615209865890,
+          "duration" : 3794
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "进行单据生成校验",
+        "time" : {
+          "start" : 1615209865891,
+          "stop" : 1615209866312,
+          "duration" : 421
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "断言结果：True",
+        "time" : {
+          "start" : 1615209866524,
+          "stop" : 1615209866546,
+          "duration" : 22
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ {
+        "uid" : "fcf61e74794726f3",
+        "name" : "2021-03-08 21-24-26successscreenshot",
+        "source" : "fcf61e74794726f3.png",
+        "type" : "image/png",
+        "size" : 101693
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 15,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "5b0914649a56791a",
+      "name" : "log",
+      "source" : "5b0914649a56791a.txt",
+      "type" : "text/plain",
+      "size" : 2466
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 16,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615209988257,
+      "stop" : 1615209990390,
+      "duration" : 2133
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "story",
+    "value" : "开票申请单业务报账界面单据提交"
+  }, {
+    "name" : "feature",
+    "value" : "开票申请单流程"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(name='submit')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.basIndexPageTest.receivableEasPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_billingApplicationBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestBillingApplicationBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "63468-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.basIndexPageTest.receivableEasPageTest.test_billingApplicationBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(name='submit')" ]
+  },
+  "source" : "dbe7e8168925885f.json",
+  "parameterValues" : [ ]
+}

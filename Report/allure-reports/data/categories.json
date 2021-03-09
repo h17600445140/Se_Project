@@ -6,77 +6,17 @@
     "children" : [ {
       "name" : "AssertionError: assert 1 == 0\n  +1\n  -0",
       "children" : [ {
-        "name" : "test_applyInternationalTravel[测试差旅申请单（国际）提交主流程]",
-        "uid" : "51e60a2000816228",
-        "parentUid" : "c0a776b5fa3eec3868aa5e8e96941f56",
-        "status" : "failed",
-        "time" : {
-          "start" : 1615015903917,
-          "stop" : 1615015915803,
-          "duration" : 11886
-        },
-        "flaky" : false,
-        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试差旅申请单（国际）', 'applyAmount': '100.10', 'beginDateStr': '2021-1-1', 'endDateStr': '2021-1-20', 'fromCity': '长沙', 'toCity': '北京', 'transportation': '动卧', 'travelTask': '会议出差', 'projectName': 'UI项目', 'casename': '测试差旅申请单（国际）提交主流程'}" ]
-      }, {
         "name" : "test_newDomesticTravel[差旅报账单提交主流程]",
-        "uid" : "75a81ad52df0b130",
+        "uid" : "eeba96d44d0ce0ad",
         "parentUid" : "c0a776b5fa3eec3868aa5e8e96941f56",
         "status" : "failed",
         "time" : {
-          "start" : 1615016118165,
-          "stop" : 1615016155920,
-          "duration" : 37755
+          "start" : 1615209140861,
+          "stop" : 1615209176989,
+          "duration" : 36128
         },
         "flaky" : false,
         "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试差旅报账单', 'projectName': 'UI项目', 'deptCode': 'UIDP', 'deptName': 'UI部门', 'trainInvoice': {'invoiceDate': '2021-1-6', 'invoicePersonType': '内部人员', 'invoicePersonName': 'UI01', 'invoiceFromCity': '长沙', 'invoiceToCity': '天津', 'invoiceSiteType': '二等座（高铁/动车）', 'invoiceTicketFee': '500.00', 'invoiceIsReplace': '否'}, 'casename': '差旅报账单提交主流程'}" ]
-      }, {
-        "name" : "test_newMultiDomesticTravel[多人差旅报账单提交主流程]",
-        "uid" : "2fe83a98b9bd397a",
-        "parentUid" : "c0a776b5fa3eec3868aa5e8e96941f56",
-        "status" : "failed",
-        "time" : {
-          "start" : 1615016180062,
-          "stop" : 1615016185729,
-          "duration" : 5667
-        },
-        "flaky" : false,
-        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试多人差旅报账单', 'travelers': 'UI02', 'projectName': 'UI项目', 'casename': '多人差旅报账单提交主流程'}" ]
-      }, {
-        "name" : "test_employeeRepayment[员工还款单提交主流程]",
-        "uid" : "947975dceca9dc70",
-        "parentUid" : "c0a776b5fa3eec3868aa5e8e96941f56",
-        "status" : "failed",
-        "time" : {
-          "start" : 1615016356566,
-          "stop" : 1615016368982,
-          "duration" : 12416
-        },
-        "flaky" : false,
-        "parameters" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试员工还款单', 'operationSubType': 'UI通用01', 'expenseAmount': '', 'favoriteId': 'UI账户', 'loanRepaymentDate': '2021-1-20', 'remark': '测试', 'casename': '员工还款单提交主流程'}" ]
-      }, {
-        "name" : "test_newObsoleteRedLetterInvoiceApplictationBoePage",
-        "uid" : "9c0c6d2f3e47db2",
-        "parentUid" : "c0a776b5fa3eec3868aa5e8e96941f56",
-        "status" : "failed",
-        "time" : {
-          "start" : 1615016711052,
-          "stop" : 1615016732082,
-          "duration" : 21030
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_newCostEstimateBoe",
-        "uid" : "14d50869fc39e21a",
-        "parentUid" : "c0a776b5fa3eec3868aa5e8e96941f56",
-        "status" : "failed",
-        "time" : {
-          "start" : 1615017102442,
-          "stop" : 1615017129364,
-          "duration" : 26922
-        },
-        "flaky" : false,
-        "parameters" : [ ]
       } ],
       "uid" : "c0a776b5fa3eec3868aa5e8e96941f56"
     } ],
@@ -84,117 +24,21 @@
   }, {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/section/section/main/div/div/div/div[3]/div/div[4]/div[2]/table/tbody/tr/td[1]/div/label/span/span\"}\n  (Session info: chrome=88.0.4324.190)",
-      "children" : [ {
-        "name" : "test_sharingCenterApprove",
-        "uid" : "f1557e74960bcef3",
-        "parentUid" : "86d3f222ffc9206423cf692fcc94d1b1",
-        "status" : "broken",
-        "time" : {
-          "start" : 1615016255049,
-          "stop" : 1615016337316,
-          "duration" : 82267
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "86d3f222ffc9206423cf692fcc94d1b1"
-    }, {
-      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/section/main/div[2]/div/div[2]/div/div[2]/div/div[3]/table/tbody/tr[1]/td[3]/div/button/span\"}\n  (Session info: chrome=88.0.4324.190)",
-      "children" : [ {
-        "name" : "test_contractExamine[非框架合同新增主流程]",
-        "uid" : "63515748dce6107d",
-        "parentUid" : "8eec9c6c2cb478fa06e6075cd896c441",
-        "status" : "broken",
-        "time" : {
-          "start" : 1615016467538,
-          "stop" : 1615016469612,
-          "duration" : 2074
-        },
-        "flaky" : false,
-        "parameters" : [ "{'contractName': 'uiContract', 'contractCode': 'uiCT', 'contractType': '租房合同', 'contractAmount': '1000.00', 'currency': {'currencyCode': 'CNY', 'currencyName': None}, 'vendorType': '供应商', 'vendor': {'vendorCode': 'UIGYS', 'vendorName': None}, 'signDate': '2021-1-15', 'contractDataFrom': '2021-1-1', 'contractDataTo': '2021-1-31', 'respUser': {'respUserNo': '1', 'respUserName': 'SLZ01'}, 'respDept': {'respDeptNo': '0000002', 'respDeptCode': 'FR部门'}, 'contractScope': '非公共合同', 'frameworkContract': '否', 'haveImage': '无需上传', 'casename': '非框架合同新增主流程', 'paymentDetail': [{'paymentType': '预付款', 'paymentCondition': '预付款计划', 'plansDate': '2020-1-1', 'settlementUnit': 'UIGYS', 'settlementAmount': '300.00', 'controlType': '通过', 'paymentMethod': '现金'}, {'paymentType': '质保金付款', 'paymentCondition': '质保金付款计划', 'plansDate': '2020-2-1', 'settlementUnit': 'UIGYS', 'settlementAmount': '500.00', 'controlType': '警告', 'paymentMethod': '现金'}, {'paymentType': '项目进度付款', 'paymentCondition': '项目进度付款计划', 'plansDate': '2020-3-1', 'settlementUnit': 'UIGYS', 'settlementAmount': '200.00', 'controlType': '禁止', 'paymentMethod': '现金'}]}" ]
-      } ],
-      "uid" : "8eec9c6c2cb478fa06e6075cd896c441"
-    }, {
-      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[id=\"invoiceDTOS.0.billingNo\"]\"}\n  (Session info: chrome=88.0.4324.190)",
-      "children" : [ {
-        "name" : "test_sharingCenterApprove",
-        "uid" : "d15ef3e8d75abde0",
-        "parentUid" : "bff3017b702ee42515f883aa4c4f1f51",
-        "status" : "broken",
-        "time" : {
-          "start" : 1615016653226,
-          "stop" : 1615016692389,
-          "duration" : 39163
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "bff3017b702ee42515f883aa4c4f1f51"
-    }, {
-      "name" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=88.0.4324.190)",
-      "children" : [ {
-        "name" : "test_newWithholdingAmortization",
-        "uid" : "f7a83e726692f856",
-        "parentUid" : "18aae86752738db4a29d6758525dda3f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1615017498137,
-          "stop" : 1615017509368,
-          "duration" : 11231
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "18aae86752738db4a29d6758525dda3f"
-    }, {
       "name" : "AttributeError: 'NoneType' object has no attribute 'afters'",
       "children" : [ {
         "name" : "test_newAddSalary",
-        "uid" : "b9354f17f6421530",
+        "uid" : "c411c271c25f553c",
         "parentUid" : "3c0ae18717e12e9bc0aedd11791325c6",
         "status" : "broken",
         "time" : {
-          "start" : 1615017882781,
-          "stop" : 1615017898913,
-          "duration" : 16132
+          "start" : 1615211297660,
+          "stop" : 1615211312747,
+          "duration" : 15087
         },
-        "flaky" : true,
+        "flaky" : false,
         "parameters" : [ ]
       } ],
       "uid" : "3c0ae18717e12e9bc0aedd11791325c6"
-    }, {
-      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: chrome=88.0.4324.190)",
-      "children" : [ {
-        "name" : "test_newBillAllocationBoe",
-        "uid" : "e21824b4fc0cee4c",
-        "parentUid" : "2b8ac8c80e9d39da82b1238f4b8bb2fe",
-        "status" : "broken",
-        "time" : {
-          "start" : 1615018270802,
-          "stop" : 1615018271413,
-          "duration" : 611
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "2b8ac8c80e9d39da82b1238f4b8bb2fe"
-    }, {
-      "name" : "selenium.common.exceptions.TimeoutException: Message:",
-      "children" : [ {
-        "name" : "test_sharingCenterApprove",
-        "uid" : "d535b4ac147de493",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1615018330647,
-          "stop" : 1615018369455,
-          "duration" : 38808
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "31bb78a6a95ede3f78b260ed048910d8"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]

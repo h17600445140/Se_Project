@@ -1,0 +1,383 @@
+{
+  "uid" : "a10f227627de8ed3",
+  "name" : "test_newBusinessLedgerBoe",
+  "fullName" : "Testcases.basIndexPageTest.accountEasPageTest.test_newBusinessLedgerBoe.TestNewBusinessLedgerBoe#test_newBusinessLedgerBoe",
+  "historyId" : "523982cf6821c50aaaed1a8bc652be88",
+  "time" : {
+    "start" : 1615210993937,
+    "stop" : 1615211011623,
+    "duration" : 17686
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615210984890,
+      "stop" : 1615210993936,
+      "duration" : 9046
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "业务记账单（新）业务报账界面单据提交步骤",
+      "time" : {
+        "start" : 1615210993937,
+        "stop" : 1615211011623,
+        "duration" : 17686
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击选择财务记账页面",
+        "time" : {
+          "start" : 1615210993937,
+          "stop" : 1615210994128,
+          "duration" : 191
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "进入业务记账单（新）单据提交页面",
+        "time" : {
+          "start" : 1615210994128,
+          "stop" : 1615210994227,
+          "duration" : 99
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "选择业务类型",
+        "time" : {
+          "start" : 1615210996358,
+          "stop" : 1615210997853,
+          "duration" : 1495
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "输入备注",
+        "time" : {
+          "start" : 1615210997853,
+          "stop" : 1615210998154,
+          "duration" : 301
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "输入项目",
+        "time" : {
+          "start" : 1615210998155,
+          "stop" : 1615210999464,
+          "duration" : 1309
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "输入总金额",
+        "time" : {
+          "start" : 1615210999465,
+          "stop" : 1615210999938,
+          "duration" : 473
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "输入业务类型",
+        "time" : {
+          "start" : 1615210999938,
+          "stop" : 1615211001102,
+          "duration" : 1164
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "选择成本中心",
+        "time" : {
+          "start" : 1615211001102,
+          "stop" : 1615211002694,
+          "duration" : 1592
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "点击新增明细信息按钮",
+        "time" : {
+          "start" : 1615211002695,
+          "stop" : 1615211002995,
+          "duration" : 300
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "输入项目",
+        "time" : {
+          "start" : 1615211002996,
+          "stop" : 1615211004169,
+          "duration" : 1173
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "输入总金额",
+        "time" : {
+          "start" : 1615211004169,
+          "stop" : 1615211004643,
+          "duration" : 474
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "输入业务类型",
+        "time" : {
+          "start" : 1615211004643,
+          "stop" : 1615211005786,
+          "duration" : 1143
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "选择成本中心",
+        "time" : {
+          "start" : 1615211005786,
+          "stop" : 1615211007394,
+          "duration" : 1608
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "点击单据提交",
+        "time" : {
+          "start" : 1615211007394,
+          "stop" : 1615211007654,
+          "duration" : 260
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "点击单据关闭按钮",
+        "time" : {
+          "start" : 1615211007654,
+          "stop" : 1615211010974,
+          "duration" : 3320
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "进行单据生成校验",
+        "time" : {
+          "start" : 1615211010974,
+          "stop" : 1615211011357,
+          "duration" : 383
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "断言结果：True",
+        "time" : {
+          "start" : 1615211011592,
+          "stop" : 1615211011623,
+          "duration" : 31
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 17,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "1d46e6170d4144e5",
+      "name" : "log",
+      "source" : "1d46e6170d4144e5.txt",
+      "type" : "text/plain",
+      "size" : 2562
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 18,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615211122162,
+      "stop" : 1615211124275,
+      "duration" : 2113
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "业务记账单（新）流程"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "story",
+    "value" : "业务记账单（新）业务报账界面单据提交"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(name='submit')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.basIndexPageTest.accountEasPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_newBusinessLedgerBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewBusinessLedgerBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "63468-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.basIndexPageTest.accountEasPageTest.test_newBusinessLedgerBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(name='submit')" ]
+  },
+  "source" : "a10f227627de8ed3.json",
+  "parameterValues" : [ ]
+}

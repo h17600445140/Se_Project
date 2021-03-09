@@ -38,12 +38,13 @@ class TestNewDailyExpenseBoe():
         try:
             logger.info(" ----- 单据流程开始 ----- ")
             with allure.step("打开费用报销单据选择页面"):
+                sleep(3)
                 self.newDailyExpenseBoePage.open_boeReimburse()
             with allure.step("打开的单据类型为：{} ,选择的单据业务类型为: {}".format('日常费用报账单', newDailyExpenseBoe_testdata['operationType'])):
                 try:
                     self.newDailyExpenseBoePage.open_boe('日常费用报账单', newDailyExpenseBoe_testdata['operationType'])
                 except:
-                    sleep(1)
+                    sleep(3)
                     logger.error(" Don't find Boe, Try again")
                     self.newDailyExpenseBoePage.open_boe('日常费用报账单', newDailyExpenseBoe_testdata['operationType'])
 

@@ -1,0 +1,125 @@
+{
+  "uid" : "99c452f0e4d23b71",
+  "name" : "test_sharingCenterApprove",
+  "fullName" : "Testcases.basIndexPageTest.salaryEasPageTest.test_newSalaryWageBoe.TestNewSalaryWageBoe#test_sharingCenterApprove",
+  "historyId" : "2a87a4f894e0784e6fc1194427142eba",
+  "time" : {
+    "start" : 1615211355239,
+    "stop" : 1615211463135,
+    "duration" : 107896
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615211316951,
+      "stop" : 1615211325743,
+      "duration" : 8792
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "工资报账单（新）共享中心界面财务审批步骤",
+      "time" : {
+        "start" : 1615211355239,
+        "stop" : 1615211463135,
+        "duration" : 107896
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "e71d66380cbf8b7a",
+      "name" : "log",
+      "source" : "e71d66380cbf8b7a.txt",
+      "type" : "text/plain",
+      "size" : 9347
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615211463136,
+      "stop" : 1615211465266,
+      "duration" : 2130
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "工资报账单（新）流程"
+  }, {
+    "name" : "story",
+    "value" : "工资报账单（新）共享中心界面财务审批"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(depends=['submit'])"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.basIndexPageTest.salaryEasPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_newSalaryWageBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewSalaryWageBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "63468-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.basIndexPageTest.salaryEasPageTest.test_newSalaryWageBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(depends=['submit'])" ]
+  },
+  "source" : "99c452f0e4d23b71.json",
+  "parameterValues" : [ ]
+}

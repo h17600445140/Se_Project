@@ -20,11 +20,15 @@ class BusinessApprove():
         try:
 
             self._easIndexPage.click_myWaitApprove()
+            sleep(1)
             self._easIndexPage.click_moreButton()
 
+            sleep(1)
             self._easIndexPage.input_boeNo(self.boeNum)
+            sleep(1)
             self._easIndexPage.click_boeNoSelectButton()
 
+            sleep(1)
             status = self._easIndexPage.selectResultIsOrNotBusiness(self.boeNum)
             if status == True:
                 pass
@@ -32,9 +36,12 @@ class BusinessApprove():
                 logger.error("boeNum do not exist")
                 raise Exception("boeNum do not exist")
 
+            sleep(1)
             self._easIndexPage.click_boeBusinessApprove()
+            sleep(1)
             self._easIndexPage.click_boeBusinessTipConfirm()
 
+            sleep(1)
             if self._easIndexPage.getToastBoxText() == '操作成功':
                 content = '审批成功'
                 logger.info("审批状态为：{}".format(content))

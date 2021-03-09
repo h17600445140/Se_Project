@@ -1,8 +1,0 @@
-[32mINFO    [0m WebUIAuto:log.py:48  ----- 合同复核流程开始 ----- 
-[32mINFO    [0m WebUIAuto:log.py:48 进入页面 -> 合同复核
-[35mDEBUG   [0m WebUIAuto:log.py:45 所有窗口为：['CDwindow-9CEFBC3EC9BCCB872C6733E59458700B', 'CDwindow-D33C4391AB202B2CFE27DA4F717D76AE']
-[35mDEBUG   [0m WebUIAuto:log.py:45 当前窗口为：CDwindow-D33C4391AB202B2CFE27DA4F717D76AE
-[32mINFO    [0m WebUIAuto:log.py:48 输入的合同名称为 : uiContract444
-[32mINFO    [0m WebUIAuto:log.py:48 输入的合同编码为 : uiCT981094
-[32mINFO    [0m WebUIAuto:log.py:48 点击按钮：查询
-[32mINFO    [0m WebUIAuto:log.py:48 点击查询按钮

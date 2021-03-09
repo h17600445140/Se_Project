@@ -42,10 +42,12 @@ class AuditAdjustDirectorPage(FscCommonPage):
     _selectResult = (By.XPATH, '//*[@id="app"]/section/section/main/div/div/div/div[3]/div/div[4]/div[2]/table/tbody/tr/td[1]/div/label/span/span')
     def click_selectResult(self):
         try:
+            sleep(1)
             self.click(*self._selectResult)
             logger.info("点击查询结果")
         except:
             logger.error("没有找到查询结果，--- try again ---")
+            sleep(1)
             self.click(*self._selectResult)
 
     def getSelectResult(self):

@@ -1,0 +1,125 @@
+{
+  "uid" : "fe0986ea563f40a9",
+  "name" : "test_businessApprove",
+  "fullName" : "Testcases.basIndexPageTest.fundbillEasPageTest.test_newDisaccountApplyBoe.TestNewDisaccountApplyBoe#test_businessApprove",
+  "historyId" : "8215c5c1796f81c8379677f2f7b677f0",
+  "time" : {
+    "start" : 1615211762842,
+    "stop" : 1615211782265,
+    "duration" : 19423
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615211743153,
+      "stop" : 1615211752353,
+      "duration" : 9200
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "贴现托收申请单（新）费用报销界面业务审批步骤",
+      "time" : {
+        "start" : 1615211762842,
+        "stop" : 1615211782265,
+        "duration" : 19423
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "d6a88ce837b3e5db",
+      "name" : "log",
+      "source" : "d6a88ce837b3e5db.txt",
+      "type" : "text/plain",
+      "size" : 1414
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615211869759,
+      "stop" : 1615211871890,
+      "duration" : 2131
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "贴现托收申请单（新）费用报销界面业务审批"
+  }, {
+    "name" : "feature",
+    "value" : "贴现托收申请单（新）流程"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(depends=['submit'])"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.basIndexPageTest.fundbillEasPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_newDisaccountApplyBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewDisaccountApplyBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "63468-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.basIndexPageTest.fundbillEasPageTest.test_newDisaccountApplyBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(depends=['submit'])" ]
+  },
+  "source" : "fe0986ea563f40a9.json",
+  "parameterValues" : [ ]
+}

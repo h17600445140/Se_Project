@@ -1,0 +1,263 @@
+{
+  "uid" : "9b6ce276eebaedb5",
+  "name" : "test_newDisaccountApplyBoe",
+  "fullName" : "Testcases.basIndexPageTest.fundbillEasPageTest.test_newDisaccountApplyBoe.TestNewDisaccountApplyBoe#test_newDisaccountApplyBoe",
+  "historyId" : "e85e1b335a3a2cddfe9ab61114bc9b24",
+  "time" : {
+    "start" : 1615211752354,
+    "stop" : 1615211762833,
+    "duration" : 10479
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615211743153,
+      "stop" : 1615211752353,
+      "duration" : 9200
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "贴现托收申请单（新）业务报账界面单据提交步骤",
+      "time" : {
+        "start" : 1615211752355,
+        "stop" : 1615211762833,
+        "duration" : 10478
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击选择资金票据页面",
+        "time" : {
+          "start" : 1615211752355,
+          "stop" : 1615211752608,
+          "duration" : 253
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "进入贴现托收申请单（新）单据提交页面",
+        "time" : {
+          "start" : 1615211752609,
+          "stop" : 1615211752751,
+          "duration" : 142
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "选择业务类型",
+        "time" : {
+          "start" : 1615211755151,
+          "stop" : 1615211756620,
+          "duration" : 1469
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "输入备注",
+        "time" : {
+          "start" : 1615211756621,
+          "stop" : 1615211756804,
+          "duration" : 183
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "关联票据",
+        "time" : {
+          "start" : 1615211756804,
+          "stop" : 1615211758476,
+          "duration" : 1672
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "点击单据提交",
+        "time" : {
+          "start" : 1615211758477,
+          "stop" : 1615211758711,
+          "duration" : 234
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "点击单据关闭按钮",
+        "time" : {
+          "start" : 1615211758711,
+          "stop" : 1615211762201,
+          "duration" : 3490
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "进行单据生成校验",
+        "time" : {
+          "start" : 1615211762201,
+          "stop" : 1615211762613,
+          "duration" : 412
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "断言结果：True",
+        "time" : {
+          "start" : 1615211762815,
+          "stop" : 1615211762833,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 9,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "91868e777f269141",
+      "name" : "log",
+      "source" : "91868e777f269141.txt",
+      "type" : "text/plain",
+      "size" : 1877
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 10,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615211869759,
+      "stop" : 1615211871890,
+      "duration" : 2131
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "贴现托收申请单（新）流程"
+  }, {
+    "name" : "story",
+    "value" : "贴现托收申请单（新）业务报账界面单据提交"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(name='submit')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.basIndexPageTest.fundbillEasPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_newDisaccountApplyBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewDisaccountApplyBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "63468-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.basIndexPageTest.fundbillEasPageTest.test_newDisaccountApplyBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(name='submit')" ]
+  },
+  "source" : "9b6ce276eebaedb5.json",
+  "parameterValues" : [ ]
+}

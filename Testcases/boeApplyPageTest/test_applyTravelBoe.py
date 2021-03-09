@@ -34,13 +34,14 @@ class TestApplyTravelBoe(object):
         try:
             logger.info(" ----- 单据流程开始 ----- ")
             with allure.step("打开事项申请单据选择页面"):
+                sleep(3)
                 self.applyTravelBoePage.open_boeApply()
             with allure.step("打开的单据类型为：{} ,选择的单据业务类型为: {}".format('差旅申请单', applyTravelBoe_testdata['operationType'])):
                 try:
                     self.applyTravelBoePage.open_boe('差旅申请单', applyTravelBoe_testdata['operationType'])
                 except:
                     logger.error(" Don't find Boe, Try again")
-                    sleep(1)
+                    sleep(3)
                     self.comFeeApplyBoePage.open_boe('通用费用申请单', applyTravelBoe_testdata['operationType'])
 
             global boeNum

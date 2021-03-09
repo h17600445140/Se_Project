@@ -1,0 +1,305 @@
+{
+  "uid" : "52378e6583c35076",
+  "name" : "test_newMultiDomesticTravel[多人差旅报账单提交主流程]",
+  "fullName" : "Testcases.boeReimbursementPageTest.test_newMultiDomesticTravelBoe.TestNewMultiDomesticTravelBoe#test_newMultiDomesticTravel",
+  "historyId" : "6dfea0379609f522225870075259c24b",
+  "time" : {
+    "start" : 1615209193867,
+    "stop" : 1615209238045,
+    "duration" : 44178
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615209185082,
+      "stop" : 1615209193866,
+      "duration" : 8784
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "newMultiDomesticTravelBoe_testdata",
+    "time" : {
+      "start" : 1615209193866,
+      "stop" : 1615209193866,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "多人差旅报账单费用报销界面单据提交步骤",
+      "time" : {
+        "start" : 1615209193867,
+        "stop" : 1615209238045,
+        "duration" : 44178
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "打开费用报销单据选择页面",
+        "time" : {
+          "start" : 1615209193867,
+          "stop" : 1615209196966,
+          "duration" : 3099
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "打开的单据类型为：多人差旅报账单 ,选择的单据业务类型为: UI通用",
+        "time" : {
+          "start" : 1615209196966,
+          "stop" : 1615209197412,
+          "duration" : 446
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "输入业务类型",
+        "time" : {
+          "start" : 1615209202772,
+          "stop" : 1615209204043,
+          "duration" : 1271
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "输入备注",
+        "time" : {
+          "start" : 1615209204043,
+          "stop" : 1615209204217,
+          "duration" : 174
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "增加出行人员",
+        "time" : {
+          "start" : 1615209204217,
+          "stop" : 1615209206130,
+          "duration" : 1913
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "输入项目",
+        "time" : {
+          "start" : 1615209206130,
+          "stop" : 1615209207432,
+          "duration" : 1302
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "新增发票操作",
+        "time" : {
+          "start" : 1615209207835,
+          "stop" : 1615209231768,
+          "duration" : 23933
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "点击单据提交",
+        "time" : {
+          "start" : 1615209231768,
+          "stop" : 1615209231884,
+          "duration" : 116
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "点击单据关闭按钮",
+        "time" : {
+          "start" : 1615209231884,
+          "stop" : 1615209236452,
+          "duration" : 4568
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "进行单据生成校验",
+        "time" : {
+          "start" : 1615209236452,
+          "stop" : 1615209237657,
+          "duration" : 1205
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ {
+        "uid" : "f4a2271b1fc9808f",
+        "name" : "2021-03-08 21-13-57successscreenshot",
+        "source" : "f4a2271b1fc9808f.png",
+        "type" : "image/png",
+        "size" : 100607
+      } ],
+      "parameters" : [ {
+        "name" : "newMultiDomesticTravelBoe_testdata",
+        "value" : "{'operationType': 'UI通用', 'boeAbstract': '测试多人差旅报账单', 'travelers': 'UI02', 'projectName': 'UI项目', 'casename': '多人差旅报账单提交主流程'}"
+      } ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 10,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "8bdb8c25c9f5f051",
+      "name" : "log",
+      "source" : "8bdb8c25c9f5f051.txt",
+      "type" : "text/plain",
+      "size" : 2750
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 11,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615209356843,
+      "stop" : 1615209358972,
+      "duration" : 2129
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "多人差旅报账单流程"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "story",
+    "value" : "多人差旅报账单费用报销界面单据提交"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(name='submit')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.boeReimbursementPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_newMultiDomesticTravelBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewMultiDomesticTravelBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "63468-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.boeReimbursementPageTest.test_newMultiDomesticTravelBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "newMultiDomesticTravelBoe_testdata",
+    "value" : "{'operationType': 'UI通用', 'boeAbstract': '测试多人差旅报账单', 'travelers': 'UI02', 'projectName': 'UI项目', 'casename': '多人差旅报账单提交主流程'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(name='submit')" ]
+  },
+  "source" : "52378e6583c35076.json",
+  "parameterValues" : [ "{'operationType': 'UI通用', 'boeAbstract': '测试多人差旅报账单', 'travelers': 'UI02', 'projectName': 'UI项目', 'casename': '多人差旅报账单提交主流程'}" ]
+}

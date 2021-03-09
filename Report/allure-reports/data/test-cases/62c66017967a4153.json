@@ -1,0 +1,125 @@
+{
+  "uid" : "62c66017967a4153",
+  "name" : "test_businessApprove",
+  "fullName" : "Testcases.basIndexPageTest.salaryEasPageTest.test_newSalaryOtherBoe.TestNewSalaryOtherBoe#test_businessApprove",
+  "historyId" : "9cb89d09b176a81b316f12d752bf1718",
+  "time" : {
+    "start" : 1615211487962,
+    "stop" : 1615211506628,
+    "duration" : 18666
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615211465276,
+      "stop" : 1615211474533,
+      "duration" : 9257
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "五险一金报账单（新）费用报销界面业务审批步骤",
+      "time" : {
+        "start" : 1615211487962,
+        "stop" : 1615211506628,
+        "duration" : 18666
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "265c1e576a50829d",
+      "name" : "log",
+      "source" : "265c1e576a50829d.txt",
+      "type" : "text/plain",
+      "size" : 1414
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615211603058,
+      "stop" : 1615211605190,
+      "duration" : 2132
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "五险一金报账单（新）费用报销界面业务审批"
+  }, {
+    "name" : "feature",
+    "value" : "五险一金报账单（新）流程"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(depends=['submit'])"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.basIndexPageTest.salaryEasPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_newSalaryOtherBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewSalaryOtherBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "63468-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.basIndexPageTest.salaryEasPageTest.test_newSalaryOtherBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(depends=['submit'])" ]
+  },
+  "source" : "62c66017967a4153.json",
+  "parameterValues" : [ ]
+}

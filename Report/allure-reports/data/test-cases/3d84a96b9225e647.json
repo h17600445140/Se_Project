@@ -1,0 +1,125 @@
+{
+  "uid" : "3d84a96b9225e647",
+  "name" : "test_sharingCenterApprove",
+  "fullName" : "Testcases.boeReimbursementPageTest.test_newMultiDomesticTravelBoe.TestNewMultiDomesticTravelBoe#test_sharingCenterApprove",
+  "historyId" : "68fb69a68a52488b03c60ba814f95401",
+  "time" : {
+    "start" : 1615209257630,
+    "stop" : 1615209356840,
+    "duration" : 99210
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615209185082,
+      "stop" : 1615209193866,
+      "duration" : 8784
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "多人差旅报账单共享中心界面财务审批步骤",
+      "time" : {
+        "start" : 1615209257630,
+        "stop" : 1615209356840,
+        "duration" : 99210
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "e44ce0c1bce0ff49",
+      "name" : "log",
+      "source" : "e44ce0c1bce0ff49.txt",
+      "type" : "text/plain",
+      "size" : 8545
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615209356843,
+      "stop" : 1615209358972,
+      "duration" : 2129
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "多人差旅报账单共享中心界面财务审批"
+  }, {
+    "name" : "feature",
+    "value" : "多人差旅报账单流程"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(depends=['submit'])"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.boeReimbursementPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_newMultiDomesticTravelBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewMultiDomesticTravelBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "63468-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.boeReimbursementPageTest.test_newMultiDomesticTravelBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(depends=['submit'])" ]
+  },
+  "source" : "3d84a96b9225e647.json",
+  "parameterValues" : [ ]
+}

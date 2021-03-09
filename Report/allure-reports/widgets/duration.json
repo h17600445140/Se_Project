@@ -1,770 +1,770 @@
 [ {
-  "uid" : "2d42ee0631b3c43",
-  "name" : "test_newSalaryWageBoe",
-  "time" : {
-    "start" : 1615017930595,
-    "stop" : 1615017948759,
-    "duration" : 18164
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "bd76b5191ba73115",
-  "name" : "test_businessApprove",
-  "time" : {
-    "start" : 1615016232480,
-    "stop" : 1615016255030,
-    "duration" : 22550
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "dc49f9db06d4b769",
-  "name" : "test_newDailyExpense[日常费用报账单提交主流程]",
-  "time" : {
-    "start" : 1615015939853,
-    "stop" : 1615015972201,
-    "duration" : 32348
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "832278b172357f07",
-  "name" : "test_businessApprove",
-  "time" : {
-    "start" : 1615017948774,
-    "stop" : 1615017971239,
-    "duration" : 22465
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "bd1e08a0d2296731",
-  "name" : "test_businessApprove",
-  "time" : {
-    "start" : 1615017174587,
-    "stop" : 1615017198458,
-    "duration" : 23871
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4ce25e60be85f8b5",
-  "name" : "test_sharingCenterApprove",
-  "time" : {
-    "start" : 1615017365185,
-    "stop" : 1615017480391,
-    "duration" : 115206
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "574bc3d69f5b99ea",
-  "name" : "test_billingApplicationBoe",
-  "time" : {
-    "start" : 1615016607189,
-    "stop" : 1615016630792,
-    "duration" : 23603
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "6bf77839ef0983c0",
-  "name" : "test_sharingCenterApprove",
-  "time" : {
-    "start" : 1615017129420,
-    "stop" : 1615017129420,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "80113e0a914a0e75",
-  "name" : "test_businessApprove[通用费用申请单提交主流程]",
-  "time" : {
-    "start" : 1615015615452,
-    "stop" : 1615015634470,
-    "duration" : 19018
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "2fe83a98b9bd397a",
-  "name" : "test_newMultiDomesticTravel[多人差旅报账单提交主流程]",
-  "time" : {
-    "start" : 1615016180062,
-    "stop" : 1615016185729,
-    "duration" : 5667
-  },
-  "status" : "failed",
-  "severity" : "blocker"
-}, {
-  "uid" : "18dc1e40b04d038d",
-  "name" : "test_businessApprove",
-  "time" : {
-    "start" : 1615017509504,
-    "stop" : 1615017509504,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "e9ea7745f41b1006",
-  "name" : "test_businessApprove",
-  "time" : {
-    "start" : 1615015774599,
-    "stop" : 1615015793353,
-    "duration" : 18754
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5aad8dd3ca29144c",
-  "name" : "test_businessApprove",
-  "time" : {
-    "start" : 1615016941186,
-    "stop" : 1615016965268,
-    "duration" : 24082
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4b5e8e03d53d4bcf",
-  "name" : "test_sharingCenterApprove",
-  "time" : {
-    "start" : 1615017971251,
-    "stop" : 1615018084289,
-    "duration" : 113038
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4600ab451079842b",
-  "name" : "test_applyTravel[差旅申请单提交主流程]",
-  "time" : {
-    "start" : 1615015753279,
-    "stop" : 1615015774595,
-    "duration" : 21316
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "d15ef3e8d75abde0",
-  "name" : "test_sharingCenterApprove",
-  "time" : {
-    "start" : 1615016653226,
-    "stop" : 1615016692389,
-    "duration" : 39163
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "ae857f48ff09be3f",
-  "name" : "test_sharingCenterApprove",
-  "time" : {
-    "start" : 1615017571434,
-    "stop" : 1615017686503,
-    "duration" : 115069
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "594bc4f76e7f3603",
-  "name" : "test_cmsIndex[非框架合同新增主流程]",
-  "time" : {
-    "start" : 1615016423725,
-    "stop" : 1615016467522,
-    "duration" : 43797
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "10146f1da2531129",
-  "name" : "test_businessApprove",
-  "time" : {
-    "start" : 1615017723767,
-    "stop" : 1615017746360,
-    "duration" : 22593
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "6f5d5d45720e5f65",
-  "name" : "test_sharingCenterApprove[通用费用申请单提交主流程]",
-  "time" : {
-    "start" : 1615015634476,
-    "stop" : 1615015738689,
-    "duration" : 104213
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f7a83e726692f856",
-  "name" : "test_newWithholdingAmortization",
-  "time" : {
-    "start" : 1615017498137,
-    "stop" : 1615017509368,
-    "duration" : 11231
-  },
-  "status" : "broken",
-  "severity" : "blocker"
-}, {
-  "uid" : "140f2c08e611c97",
-  "name" : "test_businessApprove",
-  "time" : {
-    "start" : 1615016732156,
-    "stop" : 1615016732156,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "17a5dd22bf11e95c",
-  "name" : "test_cmsIndex[框架合同新增主流程]",
-  "time" : {
-    "start" : 1615016394390,
-    "stop" : 1615016411901,
-    "duration" : 17511
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "d535b4ac147de493",
-  "name" : "test_sharingCenterApprove",
-  "time" : {
-    "start" : 1615018330647,
-    "stop" : 1615018369455,
-    "duration" : 38808
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "d9978fbb98edf8b7",
-  "name" : "test_newBusinessLedgerBoe",
-  "time" : {
-    "start" : 1615017527206,
-    "stop" : 1615017549172,
-    "duration" : 21966
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "c903bdcf3b912a76",
-  "name" : "test_businessApprove",
-  "time" : {
-    "start" : 1615016185774,
-    "stop" : 1615016185774,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "98c1f75f77706ef2",
-  "name" : "test_businessApprove",
-  "time" : {
-    "start" : 1615017343348,
-    "stop" : 1615017365167,
-    "duration" : 21819
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "e2d16bda417b5ad8",
-  "name" : "test_sharingCenterApprove",
-  "time" : {
-    "start" : 1615018444290,
-    "stop" : 1615018555036,
-    "duration" : 110746
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "334bf88cc70f285e",
-  "name" : "test_newSalaryOtherBoe",
-  "time" : {
-    "start" : 1615018102977,
-    "stop" : 1615018121777,
-    "duration" : 18800
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "1148831e48ebbc02",
-  "name" : "test_addReceivableExchangeBill",
-  "time" : {
-    "start" : 1615016532368,
-    "stop" : 1615016586092,
-    "duration" : 53724
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "3cf1d9e2ca70ed0b",
-  "name" : "test_sharingCenterApprove",
-  "time" : {
-    "start" : 1615018271466,
-    "stop" : 1615018271466,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "2c8609bb2212efe8",
-  "name" : "test_businessApprove",
-  "time" : {
-    "start" : 1615018121794,
-    "stop" : 1615018145587,
-    "duration" : 23793
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "51e60a2000816228",
-  "name" : "test_applyInternationalTravel[测试差旅申请单（国际）提交主流程]",
-  "time" : {
-    "start" : 1615015903917,
-    "stop" : 1615015915803,
-    "duration" : 11886
-  },
-  "status" : "failed",
-  "severity" : "blocker"
-}, {
-  "uid" : "e21824b4fc0cee4c",
-  "name" : "test_newBillAllocationBoe",
-  "time" : {
-    "start" : 1615018270802,
-    "stop" : 1615018271413,
-    "duration" : 611
-  },
-  "status" : "broken",
-  "severity" : "blocker"
-}, {
-  "uid" : "b21d4ff18c6d7733",
-  "name" : "test_addAcceptanceLedger",
-  "time" : {
-    "start" : 1615016489436,
-    "stop" : 1615016503755,
-    "duration" : 14319
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c2bc42ac97ac6ceb",
-  "name" : "test_businessApprove",
-  "time" : {
-    "start" : 1615017129417,
-    "stop" : 1615017129417,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "a03aea4db81b0ed9",
-  "name" : "test_contractExamine[框架合同新增主流程]",
-  "time" : {
-    "start" : 1615016411918,
-    "stop" : 1615016423720,
-    "duration" : 11802
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "57b57ec90f9374c0",
-  "name" : "test_businessApprove",
-  "time" : {
-    "start" : 1615017549177,
-    "stop" : 1615017571418,
-    "duration" : 22241
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9e45a4666537731c",
-  "name" : "test_businessApprove",
-  "time" : {
-    "start" : 1615016630807,
-    "stop" : 1615016653217,
-    "duration" : 22410
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "14d50869fc39e21a",
-  "name" : "test_newCostEstimateBoe",
-  "time" : {
-    "start" : 1615017102442,
-    "stop" : 1615017129364,
-    "duration" : 26922
-  },
-  "status" : "failed",
-  "severity" : "blocker"
-}, {
-  "uid" : "f1557e74960bcef3",
-  "name" : "test_sharingCenterApprove",
-  "time" : {
-    "start" : 1615016255049,
-    "stop" : 1615016337316,
-    "duration" : 82267
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "365c06295d97dc9d",
-  "name" : "test_businessApprove",
-  "time" : {
-    "start" : 1615016775907,
-    "stop" : 1615016798643,
-    "duration" : 22736
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "1bd5c10ca508eed0",
-  "name" : "test_newDisaccountApplyBoe",
-  "time" : {
-    "start" : 1615018289135,
-    "stop" : 1615018304776,
-    "duration" : 15641
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "a8fe3e24e80ace46",
-  "name" : "test_sharingCenterApprove",
-  "time" : {
-    "start" : 1615015793359,
-    "stop" : 1615015884804,
-    "duration" : 91445
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "947975dceca9dc70",
-  "name" : "test_employeeRepayment[员工还款单提交主流程]",
-  "time" : {
-    "start" : 1615016356566,
-    "stop" : 1615016368982,
-    "duration" : 12416
-  },
-  "status" : "failed",
-  "severity" : "blocker"
-}, {
-  "uid" : "5d9d89e943722288",
-  "name" : "test_sharingCenterApprove",
-  "time" : {
-    "start" : 1615016798661,
-    "stop" : 1615016900812,
-    "duration" : 102151
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b9354f17f6421530",
-  "name" : "test_newAddSalary",
-  "time" : {
-    "start" : 1615017882781,
-    "stop" : 1615017898913,
-    "duration" : 16132
-  },
-  "status" : "broken",
-  "severity" : "blocker"
-}, {
-  "uid" : "63515748dce6107d",
-  "name" : "test_contractExamine[非框架合同新增主流程]",
-  "time" : {
-    "start" : 1615016467538,
-    "stop" : 1615016469612,
-    "duration" : 2074
-  },
-  "status" : "broken",
-  "severity" : "blocker"
-}, {
-  "uid" : "871b29bd222e378b",
-  "name" : "test_sharingCenterApprove",
-  "time" : {
-    "start" : 1615016155969,
-    "stop" : 1615016155969,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "3eefc3c4f27e7839",
-  "name" : "test_businessApprove",
-  "time" : {
-    "start" : 1615016369084,
-    "stop" : 1615016369084,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "6f26688c30a80401",
-  "name" : "test_sharingCenterApprove",
-  "time" : {
-    "start" : 1615016732158,
-    "stop" : 1615016732158,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "ba033349b610f4f3",
-  "name" : "test_businessApprove",
-  "time" : {
-    "start" : 1615015972204,
-    "stop" : 1615015995974,
-    "duration" : 23770
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "2f491f29419a702a",
-  "name" : "test_sharingCenterApprove",
-  "time" : {
-    "start" : 1615016369086,
-    "stop" : 1615016369086,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "629287c2428e3bd8",
+  "uid" : "140a9427b4dc124a",
   "name" : "test_employeeLoad[员工借款单提交主流程]",
   "time" : {
-    "start" : 1615016210976,
-    "stop" : 1615016232476,
-    "duration" : 21500
+    "start" : 1615209366620,
+    "stop" : 1615209385490,
+    "duration" : 18870
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "49e7f7c2d305ecd5",
-  "name" : "test_newFundAllocationBoe",
+  "uid" : "506eac2ea0ba73bb",
+  "name" : "test_applyTravel[差旅申请单提交主流程]",
   "time" : {
-    "start" : 1615018388409,
-    "stop" : 1615018405931,
-    "duration" : 17522
+    "start" : 1615208667312,
+    "stop" : 1615208702414,
+    "duration" : 35102
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "34bc64a4ec4c692e",
-  "name" : "test_editAcceptanceLedgerDetail",
+  "uid" : "1c833eb6caaf0084",
+  "name" : "test_sharingCenterApprove",
   "time" : {
-    "start" : 1615016503760,
-    "stop" : 1615016510121,
-    "duration" : 6361
+    "start" : 1615210886622,
+    "stop" : 1615210982756,
+    "duration" : 96134
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "fbd8581b35ae3130",
+  "uid" : "2c594d6f9c607fc7",
+  "name" : "test_sharingCenterApprove",
+  "time" : {
+    "start" : 1615210030043,
+    "stop" : 1615210125769,
+    "duration" : 95726
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cb2f9d123a783c38",
   "name" : "test_businessApprove",
   "time" : {
-    "start" : 1615016155965,
-    "stop" : 1615016155965,
-    "duration" : 0
+    "start" : 1615208852053,
+    "stop" : 1615208871911,
+    "duration" : 19858
   },
-  "status" : "skipped",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9ef0fc729ae887b2",
+  "uid" : "b6b5e6912362f72f",
   "name" : "test_sharingCenterApprove",
   "time" : {
-    "start" : 1615016185776,
-    "stop" : 1615016185776,
-    "duration" : 0
+    "start" : 1615210170480,
+    "stop" : 1615210266137,
+    "duration" : 95657
   },
-  "status" : "skipped",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9999e7c94af492bb",
-  "name" : "test_businessApprove",
+  "uid" : "b666dfc8c7c2dc01",
+  "name" : "test_addAcceptanceLedger",
   "time" : {
-    "start" : 1615015915957,
-    "stop" : 1615015915957,
-    "duration" : 0
+    "start" : 1615209750838,
+    "stop" : 1615209764862,
+    "duration" : 14024
   },
-  "status" : "skipped",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "8ab9870d39b85101",
+  "uid" : "c094648bd2dde4cf",
   "name" : "test_sharingCenterApprove",
   "time" : {
-    "start" : 1615017509506,
-    "stop" : 1615017509506,
-    "duration" : 0
+    "start" : 1615210312178,
+    "stop" : 1615210408731,
+    "duration" : 96553
   },
-  "status" : "skipped",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "8cfe2840ba78f3a4",
-  "name" : "test_businessApprove",
+  "uid" : "4669c5be3136268c",
+  "name" : "test_sharingCenterApprove",
   "time" : {
-    "start" : 1615018271463,
-    "stop" : 1615018271463,
-    "duration" : 0
+    "start" : 1615210453882,
+    "stop" : 1615210551640,
+    "duration" : 97758
   },
-  "status" : "skipped",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "4458364236216678",
-  "name" : "test_comFeeApply[通用费用申请单提交主流程]",
+  "uid" : "e762aae1c5d069c4",
+  "name" : "test_contractExamine[非框架合同新增主流程]",
   "time" : {
-    "start" : 1615015601098,
-    "stop" : 1615015615449,
-    "duration" : 14351
+    "start" : 1615209729077,
+    "stop" : 1615209738966,
+    "duration" : 9889
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "56f3e0a334228cd0",
-  "name" : "test_sharingCenterApprove",
-  "time" : {
-    "start" : 1615015995981,
-    "stop" : 1615016098736,
-    "duration" : 102755
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "6db655f66b8f6687",
-  "name" : "test_newIncomeStatementBoe[收入报账提交主流程]",
-  "time" : {
-    "start" : 1615016757096,
-    "stop" : 1615016775902,
-    "duration" : 18806
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "9c0c6d2f3e47db2",
-  "name" : "test_newObsoleteRedLetterInvoiceApplictationBoePage",
-  "time" : {
-    "start" : 1615016711052,
-    "stop" : 1615016732082,
-    "duration" : 21030
-  },
-  "status" : "failed",
-  "severity" : "blocker"
-}, {
-  "uid" : "5fc376130738b2f8",
-  "name" : "test_sharingCenterApprove",
-  "time" : {
-    "start" : 1615016965276,
-    "stop" : 1615017083547,
-    "duration" : 118271
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "177f90b59e715319",
-  "name" : "test_businessApprove",
-  "time" : {
-    "start" : 1615018405939,
-    "stop" : 1615018444282,
-    "duration" : 38343
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d4150aa3fe61824f",
-  "name" : "test_sharingCenterApprove",
-  "time" : {
-    "start" : 1615017746364,
-    "stop" : 1615017845535,
-    "duration" : 99171
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b8e9ed8a48c2fc74",
-  "name" : "test_sharingCenterApprove",
-  "time" : {
-    "start" : 1615018145592,
-    "stop" : 1615018247132,
-    "duration" : 101540
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9e5bd133936f1b3a",
-  "name" : "test_sharingCenterApprove",
-  "time" : {
-    "start" : 1615017198463,
-    "stop" : 1615017307945,
-    "duration" : 109482
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "623c3eef20fb64f3",
-  "name" : "test_newBoeTypeGeneralLedgerBoe",
-  "time" : {
-    "start" : 1615017703351,
-    "stop" : 1615017723751,
-    "duration" : 20400
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "7ffbf5f35d596ee6",
-  "name" : "test_newPurchasingAdvicePaymentBoe",
-  "time" : {
-    "start" : 1615017326083,
-    "stop" : 1615017343344,
-    "duration" : 17261
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "f89490028d1a3723",
-  "name" : "test_costEstimateBoe",
-  "time" : {
-    "start" : 1615016919973,
-    "stop" : 1615016941181,
-    "duration" : 21208
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "ca94a4647d8f3fcc",
-  "name" : "test_sharingCenterApprove",
-  "time" : {
-    "start" : 1615015915959,
-    "stop" : 1615015915959,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "3bc67f52e84a595b",
-  "name" : "test_newPurchasePrepaymentBoe",
-  "time" : {
-    "start" : 1615017154140,
-    "stop" : 1615017174577,
-    "duration" : 20437
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "75a81ad52df0b130",
+  "uid" : "eeba96d44d0ce0ad",
   "name" : "test_newDomesticTravel[差旅报账单提交主流程]",
   "time" : {
-    "start" : 1615016118165,
-    "stop" : 1615016155920,
-    "duration" : 37755
+    "start" : 1615209140861,
+    "stop" : 1615209176989,
+    "duration" : 36128
   },
   "status" : "failed",
   "severity" : "blocker"
 }, {
-  "uid" : "a04be6a51c4be743",
+  "uid" : "a12758d004b9e6c2",
   "name" : "test_businessApprove",
   "time" : {
-    "start" : 1615018304798,
-    "stop" : 1615018330640,
-    "duration" : 25842
+    "start" : 1615210010566,
+    "stop" : 1615210030039,
+    "duration" : 19473
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d71b35743ed49c09",
+  "name" : "test_addReceivableExchangeBill",
+  "time" : {
+    "start" : 1615209781308,
+    "stop" : 1615209832754,
+    "duration" : 51446
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "226b2ac4c73be61a",
+  "name" : "test_businessApprove",
+  "time" : {
+    "start" : 1615210716564,
+    "stop" : 1615210735767,
+    "duration" : 19203
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f26bb76a983210b0",
+  "name" : "test_businessApprove",
+  "time" : {
+    "start" : 1615211011629,
+    "stop" : 1615211031547,
+    "duration" : 19918
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4a9e209bf57e144c",
+  "name" : "test_businessApprove",
+  "time" : {
+    "start" : 1615210292111,
+    "stop" : 1615210312172,
+    "duration" : 20061
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b84b56290a49f7aa",
+  "name" : "test_editAcceptanceLedgerDetail",
+  "time" : {
+    "start" : 1615209764865,
+    "stop" : 1615209770808,
+    "duration" : 5943
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe0986ea563f40a9",
+  "name" : "test_businessApprove",
+  "time" : {
+    "start" : 1615211762842,
+    "stop" : 1615211782265,
+    "duration" : 19423
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4d4f2c0c47fc6331",
+  "name" : "test_sharingCenterApprove",
+  "time" : {
+    "start" : 1615209177061,
+    "stop" : 1615209177061,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "c411c271c25f553c",
+  "name" : "test_newAddSalary",
+  "time" : {
+    "start" : 1615211297660,
+    "stop" : 1615211312747,
+    "duration" : 15087
+  },
+  "status" : "broken",
+  "severity" : "blocker"
+}, {
+  "uid" : "ee5cfa1ccf4f0c9",
+  "name" : "test_cmsIndex[框架合同新增主流程]",
+  "time" : {
+    "start" : 1615209660735,
+    "stop" : 1615209677228,
+    "duration" : 16493
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "6242714123f82ea",
+  "name" : "test_sharingCenterApprove",
+  "time" : {
+    "start" : 1615209886452,
+    "stop" : 1615209988255,
+    "duration" : 101803
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "62c66017967a4153",
+  "name" : "test_businessApprove",
+  "time" : {
+    "start" : 1615211487962,
+    "stop" : 1615211506628,
+    "duration" : 18666
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cca3277e84ad3e8a",
+  "name" : "test_sharingCenterApprove",
+  "time" : {
+    "start" : 1615208725702,
+    "stop" : 1615208816970,
+    "duration" : 91268
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "882f1f467bb28de1",
+  "name" : "test_businessApprove[通用费用申请单提交主流程]",
+  "time" : {
+    "start" : 1615208524359,
+    "stop" : 1615208547086,
+    "duration" : 22727
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b9c0963399cbae5",
+  "name" : "test_businessApprove",
+  "time" : {
+    "start" : 1615211146457,
+    "stop" : 1615211165980,
+    "duration" : 19523
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6d0936149c5f5a4d",
+  "name" : "test_sharingCenterApprove",
+  "time" : {
+    "start" : 1615209404345,
+    "stop" : 1615209502472,
+    "duration" : 98127
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "15c794bbd4b33ac6",
+  "name" : "test_businessApprove",
+  "time" : {
+    "start" : 1615211335575,
+    "stop" : 1615211355228,
+    "duration" : 19653
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "768282c758bb57aa",
+  "name" : "test_sharingCenterApprove",
+  "time" : {
+    "start" : 1615209030885,
+    "stop" : 1615209130028,
+    "duration" : 99143
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d78488f6b3d978d1",
+  "name" : "test_newSalaryOtherBoe",
+  "time" : {
+    "start" : 1615211474534,
+    "stop" : 1615211487958,
+    "duration" : 13424
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "e3952e5a6b1a5dc8",
+  "name" : "test_applyInternationalTravel[测试差旅申请单（国际）提交主流程]",
+  "time" : {
+    "start" : 1615208827245,
+    "stop" : 1615208852049,
+    "duration" : 24804
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "a10f227627de8ed3",
+  "name" : "test_newBusinessLedgerBoe",
+  "time" : {
+    "start" : 1615210993937,
+    "stop" : 1615211011623,
+    "duration" : 17686
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "dbe7e8168925885f",
+  "name" : "test_billingApplicationBoe",
+  "time" : {
+    "start" : 1615209844262,
+    "stop" : 1615209866924,
+    "duration" : 22662
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "10f39f3103ad0f5f",
+  "name" : "test_newSalaryWageBoe",
+  "time" : {
+    "start" : 1615211325744,
+    "stop" : 1615211335565,
+    "duration" : 9821
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "8993d5903bd8d83f",
+  "name" : "test_sharingCenterApprove",
+  "time" : {
+    "start" : 1615208871930,
+    "stop" : 1615208969752,
+    "duration" : 97822
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "477ce41187f93235",
+  "name" : "test_newFundAllocationBoe",
+  "time" : {
+    "start" : 1615211880541,
+    "stop" : 1615211893236,
+    "duration" : 12695
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "ae1d225f5f680126",
+  "name" : "test_businessApprove",
+  "time" : {
+    "start" : 1615209177058,
+    "stop" : 1615209177058,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "3d1b48fd0fe9321e",
+  "name" : "test_businessApprove",
+  "time" : {
+    "start" : 1615210434425,
+    "stop" : 1615210453878,
+    "duration" : 19453
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1926a121ad207336",
+  "name" : "test_newWithholdingAmortization",
+  "time" : {
+    "start" : 1615210845271,
+    "stop" : 1615210864525,
+    "duration" : 19254
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "ec9dbb7669f50d2e",
+  "name" : "test_newPurchasePrepaymentBoe",
+  "time" : {
+    "start" : 1615210562655,
+    "stop" : 1615210575750,
+    "duration" : 13095
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "eb4e6ebcf818598a",
+  "name" : "test_businessApprove",
+  "time" : {
+    "start" : 1615210150781,
+    "stop" : 1615210170473,
+    "duration" : 19692
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3d84a96b9225e647",
+  "name" : "test_sharingCenterApprove",
+  "time" : {
+    "start" : 1615209257630,
+    "stop" : 1615209356840,
+    "duration" : 99210
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c55ffab7e1f652c6",
+  "name" : "test_sharingCenterApprove",
+  "time" : {
+    "start" : 1615211506637,
+    "stop" : 1615211603057,
+    "duration" : 96420
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "47ca5e8af1450086",
+  "name" : "test_newBillAllocationBoe",
+  "time" : {
+    "start" : 1615211614058,
+    "stop" : 1615211625735,
+    "duration" : 11677
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "b7b7d43862cc40d",
+  "name" : "test_businessApprove",
+  "time" : {
+    "start" : 1615209238050,
+    "stop" : 1615209257623,
+    "duration" : 19573
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "494c62b24cb5015b",
+  "name" : "test_employeeRepayment[员工还款单提交主流程]",
+  "time" : {
+    "start" : 1615209513578,
+    "stop" : 1615209534153,
+    "duration" : 20575
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "a3b2dbe1f1757a19",
+  "name" : "test_newIncomeStatementBoe[收入报账提交主流程]",
+  "time" : {
+    "start" : 1615210137048,
+    "stop" : 1615210150777,
+    "duration" : 13729
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "4020935b7fe7bac8",
+  "name" : "test_comFeeApply[通用费用申请单提交主流程]",
+  "time" : {
+    "start" : 1615208503023,
+    "stop" : 1615208524343,
+    "duration" : 21320
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "e5fef91bdc0112bb",
+  "name" : "test_businessApprove",
+  "time" : {
+    "start" : 1615208702421,
+    "stop" : 1615208725693,
+    "duration" : 23272
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a0dde2d72884301",
+  "name" : "test_sharingCenterApprove",
+  "time" : {
+    "start" : 1615211165986,
+    "stop" : 1615211263051,
+    "duration" : 97065
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "73cea4d7909b662f",
+  "name" : "test_newObsoleteRedLetterInvoiceApplictationBoePage",
+  "time" : {
+    "start" : 1615209999429,
+    "stop" : 1615210010562,
+    "duration" : 11133
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "9235f3f5d07200f3",
+  "name" : "test_sharingCenterApprove",
+  "time" : {
+    "start" : 1615210735774,
+    "stop" : 1615210833127,
+    "duration" : 97353
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a32efe89ebeb6cb3",
+  "name" : "test_businessApprove",
+  "time" : {
+    "start" : 1615211893241,
+    "stop" : 1615211912944,
+    "duration" : 19703
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "49eba1d4caa5bfbf",
+  "name" : "test_sharingCenterApprove",
+  "time" : {
+    "start" : 1615210595626,
+    "stop" : 1615210693088,
+    "duration" : 97462
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "33acfad1710e05c",
+  "name" : "test_sharingCenterApprove",
+  "time" : {
+    "start" : 1615211031553,
+    "stop" : 1615211122160,
+    "duration" : 90607
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8e11353419567d27",
+  "name" : "test_sharingCenterApprove[通用费用申请单提交主流程]",
+  "time" : {
+    "start" : 1615208547093,
+    "stop" : 1615208654885,
+    "duration" : 107792
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "23264053b87e5b3e",
+  "name" : "test_newPurchasingAdvicePaymentBoe",
+  "time" : {
+    "start" : 1615210704187,
+    "stop" : 1615210716557,
+    "duration" : 12370
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "fe84ceb519e016d6",
+  "name" : "test_sharingCenterApprove",
+  "time" : {
+    "start" : 1615211912951,
+    "stop" : 1615212009231,
+    "duration" : 96280
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "478d25f522e22059",
+  "name" : "test_businessApprove",
+  "time" : {
+    "start" : 1615209010547,
+    "stop" : 1615209030876,
+    "duration" : 20329
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b252da93e4d6d82a",
+  "name" : "test_businessApprove",
+  "time" : {
+    "start" : 1615209534157,
+    "stop" : 1615209552859,
+    "duration" : 18702
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1e459c5437ab0bb1",
+  "name" : "test_sharingCenterApprove",
+  "time" : {
+    "start" : 1615211645055,
+    "stop" : 1615211741018,
+    "duration" : 95963
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ed02f5639d6f5792",
+  "name" : "test_cmsIndex[非框架合同新增主流程]",
+  "time" : {
+    "start" : 1615209687335,
+    "stop" : 1615209729072,
+    "duration" : 41737
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "17de5c695cd54841",
+  "name" : "test_businessApprove",
+  "time" : {
+    "start" : 1615209866928,
+    "stop" : 1615209886446,
+    "duration" : 19518
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "52378e6583c35076",
+  "name" : "test_newMultiDomesticTravel[多人差旅报账单提交主流程]",
+  "time" : {
+    "start" : 1615209193867,
+    "stop" : 1615209238045,
+    "duration" : 44178
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "9b6ce276eebaedb5",
+  "name" : "test_newDisaccountApplyBoe",
+  "time" : {
+    "start" : 1615211752354,
+    "stop" : 1615211762833,
+    "duration" : 10479
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "184203e53afae12e",
+  "name" : "test_sharingCenterApprove",
+  "time" : {
+    "start" : 1615211782272,
+    "stop" : 1615211869758,
+    "duration" : 87486
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e9803d68c451f4ce",
+  "name" : "test_sharingCenterApprove",
+  "time" : {
+    "start" : 1615209552869,
+    "stop" : 1615209649218,
+    "duration" : 96349
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8ede67b189445caf",
+  "name" : "test_newDailyExpense[日常费用报账单提交主流程]",
+  "time" : {
+    "start" : 1615208981391,
+    "stop" : 1615209010543,
+    "duration" : 29152
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "299643d625b9d58e",
+  "name" : "test_contractExamine[框架合同新增主流程]",
+  "time" : {
+    "start" : 1615209677231,
+    "stop" : 1615209687331,
+    "duration" : 10100
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "99c452f0e4d23b71",
+  "name" : "test_sharingCenterApprove",
+  "time" : {
+    "start" : 1615211355239,
+    "stop" : 1615211463135,
+    "duration" : 107896
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3925208b46b4d8e8",
+  "name" : "test_newCostEstimateBoe",
+  "time" : {
+    "start" : 1615210420330,
+    "stop" : 1615210434420,
+    "duration" : 14090
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "84532dddb9801265",
+  "name" : "test_costEstimateBoe",
+  "time" : {
+    "start" : 1615210276858,
+    "stop" : 1615210292107,
+    "duration" : 15249
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "8e66b7c2ab1b4214",
+  "name" : "test_businessApprove",
+  "time" : {
+    "start" : 1615210575754,
+    "stop" : 1615210595621,
+    "duration" : 19867
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fa98a597c3de3d3a",
+  "name" : "test_businessApprove",
+  "time" : {
+    "start" : 1615209385494,
+    "stop" : 1615209404339,
+    "duration" : 18845
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1977e67830b4a98d",
+  "name" : "test_businessApprove",
+  "time" : {
+    "start" : 1615210864534,
+    "stop" : 1615210886616,
+    "duration" : 22082
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "952d6ca715e0bdef",
+  "name" : "test_newBoeTypeGeneralLedgerBoe",
+  "time" : {
+    "start" : 1615211133223,
+    "stop" : 1615211146449,
+    "duration" : 13226
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "d938b4649bccc3dd",
+  "name" : "test_businessApprove",
+  "time" : {
+    "start" : 1615211625756,
+    "stop" : 1615211645050,
+    "duration" : 19294
   },
   "status" : "passed",
   "severity" : "normal"

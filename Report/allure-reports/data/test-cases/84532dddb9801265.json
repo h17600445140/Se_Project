@@ -1,0 +1,359 @@
+{
+  "uid" : "84532dddb9801265",
+  "name" : "test_costEstimateBoe",
+  "fullName" : "Testcases.basIndexPageTest.purchaseEasPageTest.test_costEstimateBoe.TestCostEstimateBoe#test_costEstimateBoe",
+  "historyId" : "1c2aa9eb447aa6a12f069f88669bae8c",
+  "time" : {
+    "start" : 1615210276858,
+    "stop" : 1615210292107,
+    "duration" : 15249
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615210268274,
+      "stop" : 1615210276857,
+      "duration" : 8583
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "成本暂估单（旧）业务报账界面单据提交步骤",
+      "time" : {
+        "start" : 1615210276859,
+        "stop" : 1615210292107,
+        "duration" : 15248
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击选择采购付款页面",
+        "time" : {
+          "start" : 1615210276859,
+          "stop" : 1615210277066,
+          "duration" : 207
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "进入成本暂估单（旧）单据提交页面",
+        "time" : {
+          "start" : 1615210277066,
+          "stop" : 1615210277155,
+          "duration" : 89
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "选择业务类型",
+        "time" : {
+          "start" : 1615210279245,
+          "stop" : 1615210280714,
+          "duration" : 1469
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "输入备注",
+        "time" : {
+          "start" : 1615210280714,
+          "stop" : 1615210280887,
+          "duration" : 173
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "选择供应商",
+        "time" : {
+          "start" : 1615210280887,
+          "stop" : 1615210282470,
+          "duration" : 1583
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "输入订单编号",
+        "time" : {
+          "start" : 1615210282470,
+          "stop" : 1615210282608,
+          "duration" : 138
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "选择业务小类",
+        "time" : {
+          "start" : 1615210282609,
+          "stop" : 1615210283761,
+          "duration" : 1152
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "输入总金额",
+        "time" : {
+          "start" : 1615210283762,
+          "stop" : 1615210284435,
+          "duration" : 673
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "选择责任部门",
+        "time" : {
+          "start" : 1615210284435,
+          "stop" : 1615210286009,
+          "duration" : 1574
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "选择项目",
+        "time" : {
+          "start" : 1615210286009,
+          "stop" : 1615210287323,
+          "duration" : 1314
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "输入备注",
+        "time" : {
+          "start" : 1615210287323,
+          "stop" : 1615210287414,
+          "duration" : 91
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "点击单据提交",
+        "time" : {
+          "start" : 1615210287414,
+          "stop" : 1615210287498,
+          "duration" : 84
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "点击单据关闭按钮",
+        "time" : {
+          "start" : 1615210287498,
+          "stop" : 1615210291068,
+          "duration" : 3570
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "进行单据生成校验",
+        "time" : {
+          "start" : 1615210291069,
+          "stop" : 1615210291480,
+          "duration" : 411
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "断言结果：True",
+        "time" : {
+          "start" : 1615210291731,
+          "stop" : 1615210291748,
+          "duration" : 17
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ {
+        "uid" : "bb72fc894e8cf71f",
+        "name" : "2021-03-08 21-31-31successscreenshot",
+        "source" : "bb72fc894e8cf71f.png",
+        "type" : "image/png",
+        "size" : 102979
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 15,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "16f4ba45a137bb8a",
+      "name" : "log",
+      "source" : "16f4ba45a137bb8a.txt",
+      "type" : "text/plain",
+      "size" : 2584
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 16,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615210408732,
+      "stop" : 1615210410850,
+      "duration" : 2118
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "story",
+    "value" : "成本暂估单（旧）业务报账界面单据提交"
+  }, {
+    "name" : "feature",
+    "value" : "成本暂估单（旧）流程"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(name='submit')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.basIndexPageTest.purchaseEasPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_costEstimateBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCostEstimateBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "63468-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.basIndexPageTest.purchaseEasPageTest.test_costEstimateBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(name='submit')" ]
+  },
+  "source" : "84532dddb9801265.json",
+  "parameterValues" : [ ]
+}

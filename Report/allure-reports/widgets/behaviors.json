@@ -1,17 +1,6 @@
 {
   "total" : 28,
   "items" : [ {
-    "uid" : "39b0651ccde88c513ab683945343cd27",
-    "name" : "差旅申请单（国际）流程",
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 2,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 3
-    }
-  }, {
     "uid" : "833d2b8eb0434102012394cd32d8ca6d",
     "name" : "差旅报账单流程",
     "statistic" : {
@@ -23,46 +12,68 @@
       "total" : 3
     }
   }, {
+    "uid" : "f5f8e40fc16f2e8be4544fdcfcfbfcbe",
+    "name" : "新增薪酬流程",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "abe903ae1aca57a34252d96d36d4af19",
+    "name" : "通用费用申请单流程",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "4d626d9ed64d92ddf400579ff0eebccc",
+    "name" : "差旅申请单流程",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "39b0651ccde88c513ab683945343cd27",
+    "name" : "差旅申请单（国际）流程",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "1a4e86cd7e508422e2f26fe5222d83d0",
+    "name" : "日常费用报账单流程",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
     "uid" : "cb430a75d9855b46f4284bf4f05d08dd",
     "name" : "多人差旅报账单流程",
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
-      "skipped" : 2,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 3
-    }
-  }, {
-    "uid" : "75d74d9dec2c888ed44febd581befe86",
-    "name" : "员工还款单流程",
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 2,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 3
-    }
-  }, {
-    "uid" : "b48a16d87e9bd9502ba9792946204e65",
-    "name" : "作废/红字发票申请单（新）",
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 2,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 3
-    }
-  }, {
-    "uid" : "d926f783ca797807169e01cf1090777c",
-    "name" : "成本暂估单（新）流程",
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 2,
-      "passed" : 0,
+      "skipped" : 0,
+      "passed" : 3,
       "unknown" : 0,
       "total" : 3
     }
@@ -71,9 +82,20 @@
     "name" : "员工借款单流程",
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "75d74d9dec2c888ed44febd581befe86",
+    "name" : "员工还款单流程",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
       "unknown" : 0,
       "total" : 3
     }
@@ -82,33 +104,11 @@
     "name" : "开票申请单流程",
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 3,
       "unknown" : 0,
       "total" : 3
-    }
-  }, {
-    "uid" : "6fadc8010ea338f4c2bb1a603f18b6d0",
-    "name" : "贴现托收申请单（新）流程",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 2,
-      "unknown" : 0,
-      "total" : 3
-    }
-  }, {
-    "uid" : "523c0efd0c537104e0ee38639b9c6858",
-    "name" : "新建合同流程",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 2
     }
   } ]
 }

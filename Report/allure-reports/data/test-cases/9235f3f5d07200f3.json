@@ -1,0 +1,125 @@
+{
+  "uid" : "9235f3f5d07200f3",
+  "name" : "test_sharingCenterApprove",
+  "fullName" : "Testcases.basIndexPageTest.purchaseEasPageTest.test_newPurchasingAdvicePaymentBoe.TestNewPurchasingAdvicePaymentBoe#test_sharingCenterApprove",
+  "historyId" : "7491f1525ff4103766cb5c0d2281fc8d",
+  "time" : {
+    "start" : 1615210735774,
+    "stop" : 1615210833127,
+    "duration" : 97353
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615210695218,
+      "stop" : 1615210704186,
+      "duration" : 8968
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "采购付款单共享中心界面财务审批步骤",
+      "time" : {
+        "start" : 1615210735774,
+        "stop" : 1615210833127,
+        "duration" : 97353
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "2c6c9c5f00f2f946",
+      "name" : "log",
+      "source" : "2c6c9c5f00f2f946.txt",
+      "type" : "text/plain",
+      "size" : 8545
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615210833129,
+      "stop" : 1615210835247,
+      "duration" : 2118
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "采购付款单流程"
+  }, {
+    "name" : "story",
+    "value" : "采购付款单共享中心界面财务审批"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(depends=['submit'])"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.basIndexPageTest.purchaseEasPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_newPurchasingAdvicePaymentBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewPurchasingAdvicePaymentBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "63468-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.basIndexPageTest.purchaseEasPageTest.test_newPurchasingAdvicePaymentBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(depends=['submit'])" ]
+  },
+  "source" : "9235f3f5d07200f3.json",
+  "parameterValues" : [ ]
+}

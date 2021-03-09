@@ -1,0 +1,125 @@
+{
+  "uid" : "15c794bbd4b33ac6",
+  "name" : "test_businessApprove",
+  "fullName" : "Testcases.basIndexPageTest.salaryEasPageTest.test_newSalaryWageBoe.TestNewSalaryWageBoe#test_businessApprove",
+  "historyId" : "6ccb81b07da8bc46abc0a85fcb055c6e",
+  "time" : {
+    "start" : 1615211335575,
+    "stop" : 1615211355228,
+    "duration" : 19653
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615211316951,
+      "stop" : 1615211325743,
+      "duration" : 8792
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "工资报账单（新）费用报销界面业务审批步骤",
+      "time" : {
+        "start" : 1615211335576,
+        "stop" : 1615211355227,
+        "duration" : 19651
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "a77db0fc4d12564b",
+      "name" : "log",
+      "source" : "a77db0fc4d12564b.txt",
+      "type" : "text/plain",
+      "size" : 1414
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615211463136,
+      "stop" : 1615211465266,
+      "duration" : 2130
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "工资报账单（新）流程"
+  }, {
+    "name" : "story",
+    "value" : "工资报账单（新）费用报销界面业务审批"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(depends=['submit'])"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.basIndexPageTest.salaryEasPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_newSalaryWageBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewSalaryWageBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "63468-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.basIndexPageTest.salaryEasPageTest.test_newSalaryWageBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(depends=['submit'])" ]
+  },
+  "source" : "15c794bbd4b33ac6.json",
+  "parameterValues" : [ ]
+}

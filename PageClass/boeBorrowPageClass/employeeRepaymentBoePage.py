@@ -77,6 +77,7 @@ class EmployeeRepaymentBoePage(EasIndexPage,BoeCommon):
 
     def selectCollectionAccount(self, accountName):
         self.click(*self._favoriteId)
+        sleep(3)
         self.send_text(accountName, *(By.ID, 'itemBANK_ACCOUNT_NAME'))
         self.click(*(By.XPATH, '/html/body//form/div[2]/div/button[1]'))
         self.click(*(By.XPATH, '/html/body//table/tbody/tr'))

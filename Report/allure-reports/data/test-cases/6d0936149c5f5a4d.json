@@ -1,0 +1,125 @@
+{
+  "uid" : "6d0936149c5f5a4d",
+  "name" : "test_sharingCenterApprove",
+  "fullName" : "Testcases.boeBorrowPageTest.test_employeeLoadBoe.TestEmployeeLoadBoe#test_sharingCenterApprove",
+  "historyId" : "dd57b05de1d70b52aff0742d8c13bdc4",
+  "time" : {
+    "start" : 1615209404345,
+    "stop" : 1615209502472,
+    "duration" : 98127
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615209358980,
+      "stop" : 1615209366618,
+      "duration" : 7638
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "员工借款单共享中心界面财务审批步骤",
+      "time" : {
+        "start" : 1615209404346,
+        "stop" : 1615209502472,
+        "duration" : 98126
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "7c652af2e7016d7f",
+      "name" : "log",
+      "source" : "7c652af2e7016d7f.txt",
+      "type" : "text/plain",
+      "size" : 8581
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615209502474,
+      "stop" : 1615209504598,
+      "duration" : 2124
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "员工借款单流程"
+  }, {
+    "name" : "story",
+    "value" : "员工借款单共享中心界面财务审批"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(depends=['submit'])"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.boeBorrowPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_employeeLoadBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestEmployeeLoadBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "63468-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.boeBorrowPageTest.test_employeeLoadBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(depends=['submit'])" ]
+  },
+  "source" : "6d0936149c5f5a4d.json",
+  "parameterValues" : [ ]
+}

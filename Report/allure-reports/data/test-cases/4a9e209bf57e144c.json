@@ -1,0 +1,125 @@
+{
+  "uid" : "4a9e209bf57e144c",
+  "name" : "test_businessApprove",
+  "fullName" : "Testcases.basIndexPageTest.purchaseEasPageTest.test_costEstimateBoe.TestCostEstimateBoe#test_businessApprove",
+  "historyId" : "73e35d75aef1a06b26565cb29cb3e8a9",
+  "time" : {
+    "start" : 1615210292111,
+    "stop" : 1615210312172,
+    "duration" : 20061
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615210268274,
+      "stop" : 1615210276857,
+      "duration" : 8583
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "成本暂估单（旧）费用报销界面业务审批步骤",
+      "time" : {
+        "start" : 1615210292111,
+        "stop" : 1615210312171,
+        "duration" : 20060
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "3bed054e326bdd69",
+      "name" : "log",
+      "source" : "3bed054e326bdd69.txt",
+      "type" : "text/plain",
+      "size" : 1414
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615210408732,
+      "stop" : 1615210410850,
+      "duration" : 2118
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "成本暂估单（旧）流程"
+  }, {
+    "name" : "story",
+    "value" : "成本暂估单（旧）费用报销界面业务审批"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(depends=['submit'])"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.basIndexPageTest.purchaseEasPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_costEstimateBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCostEstimateBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "63468-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.basIndexPageTest.purchaseEasPageTest.test_costEstimateBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(depends=['submit'])" ]
+  },
+  "source" : "4a9e209bf57e144c.json",
+  "parameterValues" : [ ]
+}

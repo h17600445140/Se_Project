@@ -1,0 +1,125 @@
+{
+  "uid" : "1977e67830b4a98d",
+  "name" : "test_businessApprove",
+  "fullName" : "Testcases.basIndexPageTest.accountEasPageTest.test_newWithholdingAmortization.TestNewWithholdingAmortization#test_businessApprove",
+  "historyId" : "101a890a493fa33a639c0e00e82877a4",
+  "time" : {
+    "start" : 1615210864534,
+    "stop" : 1615210886616,
+    "duration" : 22082
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615210835253,
+      "stop" : 1615210845270,
+      "duration" : 10017
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "预提申请单（新）费用报销界面业务审批步骤",
+      "time" : {
+        "start" : 1615210864535,
+        "stop" : 1615210886616,
+        "duration" : 22081
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "207f184eb62b2d6f",
+      "name" : "log",
+      "source" : "207f184eb62b2d6f.txt",
+      "type" : "text/plain",
+      "size" : 1414
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615210982757,
+      "stop" : 1615210984886,
+      "duration" : 2129
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "预提申请单（新）费用报销界面业务审批"
+  }, {
+    "name" : "feature",
+    "value" : "预提申请单（新）流程"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(depends=['submit'])"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.basIndexPageTest.accountEasPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_newWithholdingAmortization"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewWithholdingAmortization"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "63468-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.basIndexPageTest.accountEasPageTest.test_newWithholdingAmortization"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(depends=['submit'])" ]
+  },
+  "source" : "1977e67830b4a98d.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,125 @@
+{
+  "uid" : "d938b4649bccc3dd",
+  "name" : "test_businessApprove",
+  "fullName" : "Testcases.basIndexPageTest.fundbillEasPageTest.test_newBillAllocationBoe.TestNewBillAllocationBoe#test_businessApprove",
+  "historyId" : "477fcc38277ee572a0803866d7be1be7",
+  "time" : {
+    "start" : 1615211625756,
+    "stop" : 1615211645050,
+    "duration" : 19294
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615211605197,
+      "stop" : 1615211614057,
+      "duration" : 8860
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "票据调拨单（新）费用报销界面业务审批步骤",
+      "time" : {
+        "start" : 1615211625757,
+        "stop" : 1615211645050,
+        "duration" : 19293
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "6cb9f8ba055bbc38",
+      "name" : "log",
+      "source" : "6cb9f8ba055bbc38.txt",
+      "type" : "text/plain",
+      "size" : 1414
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615211741019,
+      "stop" : 1615211743143,
+      "duration" : 2124
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "票据调拨单（新）流程"
+  }, {
+    "name" : "story",
+    "value" : "票据调拨单（新）费用报销界面业务审批"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(depends=['submit'])"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.basIndexPageTest.fundbillEasPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_newBillAllocationBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewBillAllocationBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "63468-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.basIndexPageTest.fundbillEasPageTest.test_newBillAllocationBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(depends=['submit'])" ]
+  },
+  "source" : "d938b4649bccc3dd.json",
+  "parameterValues" : [ ]
+}

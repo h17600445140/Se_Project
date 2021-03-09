@@ -1,0 +1,25 @@
+[32mINFO    [0m WebUIAuto:log.py:48 请求链接，链接地址为：http://fol.ztessc.com.cn/bas
+[35mDEBUG   [0m WebUIAuto:log.py:45 输入账户，账户为：UI01
+[35mDEBUG   [0m WebUIAuto:log.py:45 输入密码，密码为：LMJT123456
+[32mINFO    [0m WebUIAuto:log.py:48 点击登录按钮
+[32mINFO    [0m WebUIAuto:log.py:48 成功登录界面：basHost
+[32mINFO    [0m WebUIAuto:log.py:48  ----- 新增薪酬流程开始 ----- 
+[32mINFO    [0m WebUIAuto:log.py:48 点击进入薪酬报账界面
+[32mINFO    [0m WebUIAuto:log.py:48 进入单据 -> 新增薪酬
+[35mDEBUG   [0m WebUIAuto:log.py:45 所有窗口为：['CDwindow-EDAB84FB3544AE177C58F0A31E262E55', 'CDwindow-B9D172A76DC9DE226B4894FA0D6F7A35']
+[35mDEBUG   [0m WebUIAuto:log.py:45 当前窗口为：CDwindow-B9D172A76DC9DE226B4894FA0D6F7A35
+[32mINFO    [0m WebUIAuto:log.py:48 当前提单单据号为：LMJT-XC202103023
+[32mINFO    [0m WebUIAuto:log.py:48 选择的薪酬业务类型为 : UI工资发放
+[32mINFO    [0m WebUIAuto:log.py:48 输入的备注为 : 测试新增薪酬
+[32mINFO    [0m WebUIAuto:log.py:48 点击保存按钮
+[32mINFO    [0m WebUIAuto:log.py:48 点击新增按钮
+[32mINFO    [0m WebUIAuto:log.py:48 选择的责任部门编码为 : UICBZX
+[32mINFO    [0m WebUIAuto:log.py:48 选择的责任部门名称为 : UI成本中心
+[32mINFO    [0m WebUIAuto:log.py:48 输入的计提实发为：100.10
+[32mINFO    [0m WebUIAuto:log.py:48 输入的计提应发为：10.10
+[32mINFO    [0m WebUIAuto:log.py:48 输入的计提扣款为：90.00
+[32mINFO    [0m WebUIAuto:log.py:48 点击 确认 按钮
+[32mINFO    [0m WebUIAuto:log.py:48 点击 提交 按钮
+[32mINFO    [0m WebUIAuto:log.py:48 点击按钮：确定
+[35mDEBUG   [0m WebUIAuto:log.py:45 所有窗口为：['CDwindow-EDAB84FB3544AE177C58F0A31E262E55']
+[35mDEBUG   [0m WebUIAuto:log.py:45 当前窗口为：CDwindow-EDAB84FB3544AE177C58F0A31E262E55

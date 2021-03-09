@@ -1,0 +1,269 @@
+{
+  "uid" : "73cea4d7909b662f",
+  "name" : "test_newObsoleteRedLetterInvoiceApplictationBoePage",
+  "fullName" : "Testcases.basIndexPageTest.receivableEasPageTest.test_newObsoleteRedLetterInvoiceApplictationBoe.TestNewObsoleteRedLetterInvoiceApplictationBoe#test_newObsoleteRedLetterInvoiceApplictationBoePage",
+  "historyId" : "05bb983ca3a9a7bae4148f91199c752b",
+  "time" : {
+    "start" : 1615209999429,
+    "stop" : 1615210010562,
+    "duration" : 11133
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615209990394,
+      "stop" : 1615209999428,
+      "duration" : 9034
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "作废/红字发票申请单（新）业务报账界面单据提交步骤",
+      "time" : {
+        "start" : 1615209999429,
+        "stop" : 1615210010562,
+        "duration" : 11133
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "点击选择收入收款页面",
+        "time" : {
+          "start" : 1615209999429,
+          "stop" : 1615209999494,
+          "duration" : 65
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "进入作废/红字发票申请单（新）单据提交页面",
+        "time" : {
+          "start" : 1615209999495,
+          "stop" : 1615209999627,
+          "duration" : 132
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "选择业务类型",
+        "time" : {
+          "start" : 1615210002014,
+          "stop" : 1615210003461,
+          "duration" : 1447
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "输入备注",
+        "time" : {
+          "start" : 1615210003461,
+          "stop" : 1615210003653,
+          "duration" : 192
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "选择关联发票",
+        "time" : {
+          "start" : 1615210003654,
+          "stop" : 1615210005182,
+          "duration" : 1528
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "点击单据提交",
+        "time" : {
+          "start" : 1615210005182,
+          "stop" : 1615210006031,
+          "duration" : 849
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "点击单据关闭按钮",
+        "time" : {
+          "start" : 1615210006031,
+          "stop" : 1615210009527,
+          "duration" : 3496
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "进行单据生成校验",
+        "time" : {
+          "start" : 1615210009527,
+          "stop" : 1615210009975,
+          "duration" : 448
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "断言结果：True",
+        "time" : {
+          "start" : 1615210010184,
+          "stop" : 1615210010207,
+          "duration" : 23
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ {
+        "uid" : "afa419495be4c069",
+        "name" : "2021-03-08 21-26-50successscreenshot",
+        "source" : "afa419495be4c069.png",
+        "type" : "image/png",
+        "size" : 102559
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 9,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "fbaea5bc200c2b06",
+      "name" : "log",
+      "source" : "fbaea5bc200c2b06.txt",
+      "type" : "text/plain",
+      "size" : 2084
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 10,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615210125771,
+      "stop" : 1615210127894,
+      "duration" : 2123
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "作废/红字发票申请单（新）业务报账界面单据提交"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "作废/红字发票申请单（新）"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(name='submit')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.basIndexPageTest.receivableEasPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_newObsoleteRedLetterInvoiceApplictationBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewObsoleteRedLetterInvoiceApplictationBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "63468-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.basIndexPageTest.receivableEasPageTest.test_newObsoleteRedLetterInvoiceApplictationBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(name='submit')" ]
+  },
+  "source" : "73cea4d7909b662f.json",
+  "parameterValues" : [ ]
+}

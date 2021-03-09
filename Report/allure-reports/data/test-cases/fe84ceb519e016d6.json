@@ -1,0 +1,125 @@
+{
+  "uid" : "fe84ceb519e016d6",
+  "name" : "test_sharingCenterApprove",
+  "fullName" : "Testcases.basIndexPageTest.fundbillEasPageTest.test_newFundAllocationBoe.TestNewFundAllocationBoe#test_sharingCenterApprove",
+  "historyId" : "0330a8024b274530501e0b7d91039725",
+  "time" : {
+    "start" : 1615211912951,
+    "stop" : 1615212009231,
+    "duration" : 96280
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615211871898,
+      "stop" : 1615211880540,
+      "duration" : 8642
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "资金调拨报账单（新）共享中心界面财务审批步骤",
+      "time" : {
+        "start" : 1615211912951,
+        "stop" : 1615212009231,
+        "duration" : 96280
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "6041bfdfc8bd68d7",
+      "name" : "log",
+      "source" : "6041bfdfc8bd68d7.txt",
+      "type" : "text/plain",
+      "size" : 8545
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615212009233,
+      "stop" : 1615212009233,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "资金调拨报账单（新）共享中心界面财务审批"
+  }, {
+    "name" : "feature",
+    "value" : "资金调拨报账单(新)流程"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(depends=['submit'])"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.basIndexPageTest.fundbillEasPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_newFundAllocationBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewFundAllocationBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "63468-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.basIndexPageTest.fundbillEasPageTest.test_newFundAllocationBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(depends=['submit'])" ]
+  },
+  "source" : "fe84ceb519e016d6.json",
+  "parameterValues" : [ ]
+}

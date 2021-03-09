@@ -1,0 +1,125 @@
+{
+  "uid" : "fa98a597c3de3d3a",
+  "name" : "test_businessApprove",
+  "fullName" : "Testcases.boeBorrowPageTest.test_employeeLoadBoe.TestEmployeeLoadBoe#test_businessApprove",
+  "historyId" : "07c9478ae0b7a1b725e1df06a2de23e3",
+  "time" : {
+    "start" : 1615209385494,
+    "stop" : 1615209404339,
+    "duration" : 18845
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615209358980,
+      "stop" : 1615209366618,
+      "duration" : 7638
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "员工借款单费用报销界面业务审批步骤",
+      "time" : {
+        "start" : 1615209385494,
+        "stop" : 1615209404339,
+        "duration" : 18845
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "c1925e6c4e9c3a50",
+      "name" : "log",
+      "source" : "c1925e6c4e9c3a50.txt",
+      "type" : "text/plain",
+      "size" : 1414
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615209502474,
+      "stop" : 1615209504598,
+      "duration" : 2124
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "员工借款单费用报销界面业务审批"
+  }, {
+    "name" : "feature",
+    "value" : "员工借款单流程"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(depends=['submit'])"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.boeBorrowPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_employeeLoadBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestEmployeeLoadBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "63468-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.boeBorrowPageTest.test_employeeLoadBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(depends=['submit'])" ]
+  },
+  "source" : "fa98a597c3de3d3a.json",
+  "parameterValues" : [ ]
+}

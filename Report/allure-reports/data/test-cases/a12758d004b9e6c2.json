@@ -1,0 +1,125 @@
+{
+  "uid" : "a12758d004b9e6c2",
+  "name" : "test_businessApprove",
+  "fullName" : "Testcases.basIndexPageTest.receivableEasPageTest.test_newObsoleteRedLetterInvoiceApplictationBoe.TestNewObsoleteRedLetterInvoiceApplictationBoe#test_businessApprove",
+  "historyId" : "a24b3ccae6f5cb0179d47857bc7139ce",
+  "time" : {
+    "start" : 1615210010566,
+    "stop" : 1615210030039,
+    "duration" : 19473
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1615209990394,
+      "stop" : 1615209999428,
+      "duration" : 9034
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "作废/红字发票申请单（新）费用报销界面业务审批步骤",
+      "time" : {
+        "start" : 1615210010567,
+        "stop" : 1615210030039,
+        "duration" : 19472
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "e235a6bc58a23f74",
+      "name" : "log",
+      "source" : "e235a6bc58a23f74.txt",
+      "type" : "text/plain",
+      "size" : 1414
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1615210125771,
+      "stop" : 1615210127894,
+      "duration" : 2123
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "作废/红字发票申请单（新）"
+  }, {
+    "name" : "story",
+    "value" : "作废/红字发票申请单（新）费用报销界面业务审批"
+  }, {
+    "name" : "tag",
+    "value" : "dependency(depends=['submit'])"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcases.basIndexPageTest.receivableEasPageTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_newObsoleteRedLetterInvoiceApplictationBoe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewObsoleteRedLetterInvoiceApplictationBoe"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3T6FO04H"
+  }, {
+    "name" : "thread",
+    "value" : "63468-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcases.basIndexPageTest.receivableEasPageTest.test_newObsoleteRedLetterInvoiceApplictationBoe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "dependency(depends=['submit'])" ]
+  },
+  "source" : "a12758d004b9e6c2.json",
+  "parameterValues" : [ ]
+}
