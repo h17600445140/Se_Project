@@ -10,19 +10,20 @@ url:
   invoiceIpoolHost: http://192.168.0.200/ipool
   fscAuditList: http://192.168.0.200/fsc/auditList
   fscAuditAdjustDirector: http://192.168.0.200/fsc/auditAdjustDirector
+  fscBillExchange: http://192.168.0.200/fsc/billExchange
 
 user:
-  account: 1
+  account: UI01
   password: 123456
 leader:
-  account: 3
+  account: UI02
   password: 123456
 finance:
-  account: 1
+  account: UI03
   password: 123456
 
 Approval:
-  approvalGroupC: 初审
-  approvalUserC: 1hc
-  approvalGroupF: 复审
-  approvalUserF: 1hc
+  approvalGroupC: UI初审
+  approvalUserC: UI03
+  approvalGroupF: UI复审
+  approvalUserF: UI03

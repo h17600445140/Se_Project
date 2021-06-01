@@ -1305,3 +1305,31 @@ ERROR - 2021-03-08 20:48:03,029 - D:\se\Se_Project\Util\log.py - log.py[:54] - �
 ERROR - 2021-03-08 20:51:45,636 - D:\se\Se_Project\Util\log.py - log.py[:54] - Exception: Don't find Boe, please check config
 ERROR - 2021-03-08 20:51:48,638 - D:\se\Se_Project\Util\log.py - log.py[:54] -  Don't find Boe, Try again
 ERROR - 2021-03-08 21:12:54,558 - D:\se\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-03-15 10:45:52,217 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'AttributeError'>
+ERROR - 2021-03-15 10:49:30,010 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
+ERROR - 2021-03-15 10:50:03,142 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
+ERROR - 2021-03-15 10:50:33,182 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
+ERROR - 2021-03-15 10:51:03,669 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
+ERROR - 2021-03-15 10:51:33,304 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
+ERROR - 2021-03-15 10:52:15,423 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-03-15 10:52:45,782 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
+ERROR - 2021-03-15 10:54:11,257 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
+ERROR - 2021-03-15 10:54:42,333 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
+ERROR - 2021-03-15 10:55:08,133 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
+ERROR - 2021-03-15 10:55:33,877 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
+ERROR - 2021-03-15 10:56:01,414 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
+ERROR - 2021-03-15 10:56:42,566 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-03-15 10:57:12,313 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
+ERROR - 2021-03-15 11:00:41,083 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.TimeoutException'>
+ERROR - 2021-03-15 11:01:10,761 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
+ERROR - 2021-03-15 11:02:19,842 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
+ERROR - 2021-03-15 11:02:52,773 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
+ERROR - 2021-03-15 11:03:25,734 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
+ERROR - 2021-03-15 11:03:56,860 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
+ERROR - 2021-03-15 15:37:33,793 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.ElementNotInteractableException'>
+ERROR - 2021-03-15 15:38:23,554 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.NoSuchElementException'>
+ERROR - 2021-03-15 15:47:31,333 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 出现异常，异常信息为：<class 'selenium.common.exceptions.ElementNotInteractableException'>
+ERROR - 2021-03-15 16:30:18,557 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-15 16:32:42,126 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-15 16:35:13,597 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - 没有找到查询结果，--- try again ---
+ERROR - 2021-03-15 16:35:40,834 - D:\Pycharm\Se_Project\Util\log.py - log.py[:54] - No available service

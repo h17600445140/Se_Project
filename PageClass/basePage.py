@@ -20,11 +20,106 @@ class BasePage(object):
     def __init__(self, driver):
         self.driver = driver
 
+    # ----- driver常用属性 -----
+
+    # 当前页面标题
+    def get_pageTitle(self):
+        return self.driver.title
+
+    # 当前url
+    def get_currentUrl(self):
+        return self.driver.current_url
+
+    # 当前浏览器名字
+    def get_browserName(self):
+        return self.driver.name
+
+    # 当前页面源码
+    def get_pageSource(self):
+        return self.driver.page_source
+
+    # 当前窗口句柄
+    def getCurrentWindowHandle(self):
+        return self.driver.current_window_handle
+
+    # 当前所有窗口句柄
+    def getWindowHandles(self):
+        return self.driver.window_handles
+
+    # ------------------------
+
+    # ----- driver常用方法 -----
+
+    # 回退
+    def back(self):
+        self.driver.back()
+        logger.info("页面后退")
+
+    # 前进
+    def forward(self):
+        self.driver.forward()
+        logger.info("页面前进")
+
+    # 刷新
+    def refresh(self):
+        self.driver.refresh()
+        logger.info("页面刷新")
+
+    # 关闭当前窗口
+    def close(self):
+        self.driver.close()
+        logger.info("关闭当前窗口")
+
+    # 退出浏览器
+    def quit(self):
+        self.driver.quit()
+        logger.info("退出浏览器")
+
+    def switchToFrame(self):
+        self.driver.switch_to.frame()
+        logger.info("切换到Frame窗口")
+
+    def switchToAlert(self):
+        self.driver.switch_to.alert()
+        logger.info("切换到alert窗口")
+
+    def switchToActiveElement(self):
+        self.driver.switch_to.active_element()
+        logger.info("切换到活动元素")
+
+    # -----------------------
+
     def find_element(self, *loc):
         return self.driver.find_element(*loc)
 
     def find_elements(self, *loc):
         return self.driver.find_elements(*loc)
+
+
+    # ----- element常用属性 -----
+
+    def get_elementText(self, *loc):
+        return self.find_element(*loc).text
+
+    def get_elementTagName(self, *loc):
+        return self.find_element(*loc).tag_name
+
+    # 元素宽高和坐标
+    def get_elementRect(self, *loc):
+        return self.find_element(*loc).rect
+
+    # 元素宽高
+    def get_elementSize(self, *loc):
+        return self.find_element(*loc).size
+
+    # 元素标识
+    def get_elementId(self, *loc):
+        return self.find_element(*loc).id
+
+    # -----------------------
+
+
+    # ----- element常用方法 -----
 
     def send_text(self, text, *loc):
         self.find_element(*loc).send_keys(text)
@@ -32,23 +127,29 @@ class BasePage(object):
     def click(self, *loc):
         self.find_element(*loc).click()
 
+    def clear(self, *loc):
+        self.find_element(*loc).clear()
+
+    def getElementAttribute(self, attribute, *loc):
+        return self.find_element(*loc).get_attribute(attribute)
+
+    def elementIsEnable(self, *loc) -> bool:
+        return self.driver.find_element(*loc).is_enabled()
+
+    def elementIsDisplay(self, *loc) -> bool:
+        return self.driver.find_element(*loc).is_displayed()
+
+    def elementIsSelect(self, *loc) -> bool:
+        return self.driver.find_element(*loc).is_selected()
+
+    # -----------------------
+
+
     def moveToclick(self, *loc):
         element = self.find_element(*loc)
         ActionChains(self.driver).move_to_element(element).perform()
         self.click(*loc)
 
-    def clear(self, *loc):
-        self.find_element(*loc).clear()
-
-    def get_elementText(self, *loc):
-        return self.find_element(*loc).text
-
-    def get_title(self):
-        return self.driver.title
-
-    def refresh(self):
-        self.driver.refresh()
-        logger.info("页面刷新")
 
     def screenshot(self, code, timeNow):
         self.driver.get_screenshot_as_file(getPicturePath(code,timeNow))
@@ -64,17 +165,6 @@ class BasePage(object):
             logger.info("元素存在")
             return True
 
-    def elementIsEnable(self, *loc) -> bool:
-        return self.driver.find_element(*loc).is_enabled()
-
-    def elementIsDisplay(self, *loc) -> bool:
-        return self.driver.find_element(*loc).is_displayed()
-
-    def elementIsSelect(self, *loc) -> bool:
-        return self.driver.find_element(*loc).is_selected()
-
-    def getElementAttribute(self, attribute, *loc):
-        return self.driver.find_element(*loc).get_attribute(attribute)
 
     _toastBox = (By.CLASS_NAME, 'el-message__content')
     def getToastBoxText(self):
@@ -90,18 +180,11 @@ class BasePage(object):
         content = self.find_element(*self._boxMessage).text
         return content
 
-    def getWindowHandles(self):
-        return self.driver.window_handles
 
-    def getCurrentWindowHandle(self):
-        return self.driver.current_window_handle
 
     def switchToWin(self, window):
         self.driver.switch_to.window(window)
 
-    def back(self):
-        self.driver.back()
-        logger.info("浏览器回退操作")
 
     # 执行JS代码
     def executeScript(self, js):
